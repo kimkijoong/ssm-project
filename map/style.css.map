@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../css/style.css",
+	"sources": [
+		"../sass/style.sass",
+		"../sass/_placeholder.sass",
+		"../sass/_functions.sass",
+		"../sass/_mixins.scss"
+	],
+	"mappings": "AAKA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,KAAM;CAAG",
+	"names": []
+}
