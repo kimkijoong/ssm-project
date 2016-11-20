@@ -1,5 +1,30 @@
-@function column($n: 1)
-  $result: ($n * $column-base-width) + (($n - 1) * ($gutter-base-width * 2))
-  @if $fluid
-    $result: percentage($result / $page-width)
+@function column_width($n , $container-width)
+  $result: floor((($container-width - ($container-padding*2)) - (($n - 1) * ($gutter-width*2))) / $n)
+  // @if $fluid
+  //   $result: percentage($result / $page-width)
   @return $result
+
+@function strip-units($unit)
+  @return $unit / ($unit * 0 + 1)
+
+
+@function font-size($value)
+  @if $using-rem-unit
+    @return $value / $basic_font_size * 1rem
+  @else
+    @return $value * 1px
+
+
+@function line_height($value)
+  @if $using-guide-10px
+    @return ceil($value/10)*10 * 1px
+  @else
+    @return 1.5
+
+
+@function heading_text($value)
+  $num : $basic_font_size
+  @for $i from $value through 6
+    @if $i != 6
+      $num : $num * $type_scale
+  @return $num

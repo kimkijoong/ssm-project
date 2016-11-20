@@ -9,3 +9,42 @@
   -o-transition: $property $duration $easing-function $delay;
   transition: $property $duration $easing-function $delay;
 }
+
+@mixin column_for( $count, $container-width ) {
+  $width : column_width( $count, $container-width );
+  @for $i from 1 through $count {
+    .col-#{$i}{
+      @extend %col-float;
+      width: ( ( ( $width + $gutter-width ) * $i ) - $gutter-width ) * 1px;
+      @if $gutter-position == "left" {
+        margin-left: $gutter-width * 1px;
+      } @else if $gutter-position == "right" {
+        margin-right: $gutter-width * 1px;
+      } @else if $gutter-position == "center" {
+        margin-right: $gutter-width / 2 * 1px;
+        margin-left: $gutter-width / 2 * 1px;
+      }
+    }
+  }
+}
+
+@mixin font-rule( $font-size ) {
+  font-size: font-size( $font-size );
+  line-height: line_height( $font-size );
+}
+
+@mixin heading-rule () {
+  @for $i from 1 through 6 {
+    h#{$i}{
+      $font-size : heading_text($i);
+      font-size : font-size( $font-size );
+      line-height: line_height( $font-size )
+    }
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$xs-container-width}) and (max-width: #{$sm-container-width - 1px}) {
+    @content;
+  }
+}
