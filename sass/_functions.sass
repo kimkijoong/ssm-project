@@ -1,5 +1,5 @@
-@function column_width($n , $container-width)
-  $result: floor((($container-width - ($container-padding*2)) - (($n - 1) * ($gutter-width*2))) / $n)
+@function column-width($n , $container-width)
+  $result: floor((($container-width - ($container-padding*2)) - (($n - 1) * ($gutter-width))) / $n)
   // @if $fluid
   //   $result: percentage($result / $page-width)
   @return $result
@@ -15,16 +15,26 @@
     @return $value * 1px
 
 
-@function line_height($value)
+@function line-height($value)
   @if $using-guide-10px
     @return ceil($value/10)*10 * 1px
   @else
     @return 1.5
 
 
-@function heading_text($value)
+@function heading-text($value)
   $num : $basic_font_size
   @for $i from $value through 6
     @if $i != 6
       $num : $num * $type_scale
   @return $num
+
+
+@function col-fluid($width, $gutter-width, $container-width, $count, $i, $fluid)
+  @if $fluid
+    // $a : ( $container-width -  $container-padding * 2 ) / $count
+    // $b : $gutter-width * ($count -1) / $container-width
+    // @return ( $a - $b ) * 1%
+    @return ( ( ( $width + $gutter-width ) * $i ) - $gutter-width ) * 1px
+  @else
+    @return ( ( ( $width + $gutter-width ) * $i ) - $gutter-width ) * 1px

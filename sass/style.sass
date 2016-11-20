@@ -13,11 +13,63 @@
   padding: 0
   margin: -1px
 
+.row.isolate [class*="-col-"]
+  margin-right: -100%
+
+.row
+  @extend %clearfix
+
+.readable-hidden,
+.a11y-hidden,
+.screen-off
+  overflow: hidden
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  position: absolute
+  left: -99999px
 
 .dev
  +font-rule( 21 )
 
 +heading-rule()
 
-+mobile
-  +column_for( 12 , $md-container-width )
+// @media only screen and (max-width: (#{$sm-container-width}-1)*1px)
+//   +column-for( 4 , $xs-container-width )
+
+// @media only screen and (min-width: $sm-container-width*1px) and (max-width: (#{$md-container-width}-1)*1px)
+//   +column-for( 12 , $sm-container-width )
+//
+// @media only screen and (min-width: $md-container-width*1px) and (max-width: (#{$lg-container-width}-1)*1px)
+//   +column-for( 12 , $md-container-width )
+//
+// @media only screen and (min-width: $lg-container-width*1px) and (max-width: (#{$xl-container-width}-1)*1px)
+//   +column-for( 12 , $lg-container-width )
+//
+// @media only screen and (min-width: $xl-container-width*1px)
+//   +column-for( 12 , $xl-container-width )
+
++respond-to($xs-container-width)
+  +column-for( 4 , $xs-container-width , true)
+  +isolate( 4 , $xs-container-width , true)
+
+
++respond-to($sm-container-width)
+  +column-for( 12 , $sm-container-width , false)
+  +isolate( 12 , $sm-container-width , false)
+
++respond-to($md-container-width)
+  +column-for( 12 , $md-container-width , false)
+  +isolate( 12 , $md-container-width , false)
+
++respond-to($lg-container-width)
+  +column-for( 12 , $lg-container-width , false)
+  +isolate( 12 , $lg-container-width , false)
+
++respond-to($xl-container-width)
+  +column-for( 12 , $xl-container-width , false)
+  +isolate( 12 , $xl-container-width , false)
+
+
++column-for( 1 , 0 , false)

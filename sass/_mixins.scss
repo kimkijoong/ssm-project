@@ -10,12 +10,53 @@
   transition: $property $duration $easing-function $delay;
 }
 
-@mixin column_for( $count, $container-width ) {
-  $width : column_width( $count, $container-width );
+@mixin column-for( $count, $container-width , $fluid) {
+  $col : null;
+  $width : column-width( $count, $container-width );
+
+  %col-float {
+    float: left
+  }
+  .container{
+    @if $fluid {
+      // width: 100%;
+      width: ( ( ( $width + $gutter-width ) * $count ) - $gutter-width + ($container-padding*2)) * 1px;
+      padding: {
+        left: $container-padding;
+        right: $container-padding;
+      }
+    } @else {
+      width: ( ( ( $width + $gutter-width ) * $count ) - $gutter-width + ($container-padding*2)) * 1px;
+      padding: {
+        left: $container-padding;
+        right: $container-padding;
+      }
+    }
+    @extend %margin-0-auto;
+  }
+
+  @if $container-width == $xs-container-width {
+    $col: "xs-";
+  }
+  @else if $container-width == $sm-container-width {
+    $col: "sm-";
+  }
+  @else if $container-width == $md-container-width {
+    $col: "md-";
+  }
+  @else if $container-width == $lg-container-width {
+    $col: "lg-";
+  }
+  @else if $container-width == $xl-container-width {
+    $col: "xl-";
+  }
+  .#{$col}hidden{
+    display: none;
+  }
   @for $i from 1 through $count {
-    .col-#{$i}{
-      @extend %col-float;
-      width: ( ( ( $width + $gutter-width ) * $i ) - $gutter-width ) * 1px;
+    .#{$col}col-#{$i}{
+      @extend .col-float;
+      width: col-fluid($width, $gutter-width, $container-width, $count, $i, $fluid);
       @if $gutter-position == "left" {
         margin-left: $gutter-width * 1px;
       } @else if $gutter-position == "right" {
@@ -25,6 +66,56 @@
         margin-left: $gutter-width / 2 * 1px;
       }
     }
+  }
+  @for $i from 1 through $count {
+    .#{$col}prefix-#{$i}{
+      margin-left: ( ( $width + $gutter-width ) * $i  ) * 1px;
+    }
+  }
+  @for $i from 1 through $count {
+    .#{$col}suffix-#{$i}{
+      margin-right: ( ( $width + $gutter-width ) * $i  ) * 1px;
+    }
+  }
+  @for $i from 1 through $count {
+    .#{$col}push-#{$i}{
+      @extend .col-postion-r;
+      left: ( ( $width + $gutter-width ) * $i  ) * 1px;
+    }
+  }
+  @for $i from 1 through $count {
+    .#{$col}pull-#{$i}{
+      @extend .col-postion-r;
+      right: ( ( $width + $gutter-width ) * $i  ) * 1px;
+    }
+  }
+}
+
+@mixin isolate ($count, $container-width , $fluid){
+  $col : null;
+  $width : column-width( $count, $container-width );
+  @if $container-width == $xs-container-width {
+    $col: "xs-";
+  }
+  @else if $container-width == $sm-container-width {
+    $col: "sm-";
+  }
+  @else if $container-width == $md-container-width {
+    $col: "md-";
+  }
+  @else if $container-width == $lg-container-width {
+    $col: "lg-";
+  }
+  @else if $container-width == $xl-container-width {
+    $col: "xl-";
+  }
+  $j: 0;
+  @for $i from 1 through $count {
+    $j: $j+1;
+    .row.isolate .#{$col}order-#{$i}, .row.isolate .#{$col}o-#{$i} {
+      margin-left: ( ( $width + $gutter-width ) * $j) * 1px;
+    }
+
   }
 }
 
@@ -36,15 +127,27 @@
 @mixin heading-rule () {
   @for $i from 1 through 6 {
     h#{$i}{
-      $font-size : heading_text($i);
+      $font-size : heading-text($i);
       font-size : font-size( $font-size );
-      line-height: line_height( $font-size )
+      line-height: line-height( $font-size )
     }
   }
 }
 
-@mixin mobile {
-  @media (min-width: #{$xs-container-width}) and (max-width: #{$sm-container-width - 1px}) {
-    @content;
+@mixin respond-to($media) {
+  @if $media == $xs-container-width {
+    @media only screen and (max-width: (#{$sm-container-width}-1)*1px) { @content; }
+  }
+  @else if $media == $sm-container-width {
+    @media only screen and (min-width: $sm-container-width*1px) and (max-width: (#{$md-container-width}-1)*1px) { @content; }
+  }
+  @else if $media == $md-container-width {
+    @media only screen and (min-width: $md-container-width*1px) and (max-width: (#{$lg-container-width}-1)*1px) { @content; }
+  }
+  @else if $media == $lg-container-width {
+    @media only screen and (min-width: $lg-container-width*1px) and (max-width: (#{$xl-container-width}-1)*1px) { @content; }
+  }
+  @else if $media == $xl-container-width {
+    @media only screen and (min-width: $xl-container-width*1px) { @content; }
   }
 }
