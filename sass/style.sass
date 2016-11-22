@@ -13,6 +13,22 @@
   padding: 0
   margin: -1px
 
+@if $gutter-position == "left"
+  .row [class*="-col-"]:first-child
+    margin:
+      left: 0
+@else if $gutter-position == "right"
+  .row [class*="-col-"]:last-child
+    margin:
+      right: 0
+@else if $gutter-position == "center"
+  .row [class*="-col-"]:first-child,
+    margin:
+      left: 0
+  .row [class*="-col-"]:last-child
+    margin:
+      right: 0
+
 .row.isolate [class*="-col-"]
   margin-right: -100%
 
@@ -56,7 +72,7 @@
 
 
 +respond-to($sm-container-width)
-  +column-for( 12 , $sm-container-width , false)
+  +column-for( 12 , $sm-container-width , true)
   +isolate( 12 , $sm-container-width , false)
 
 +respond-to($md-container-width)
