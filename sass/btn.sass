@@ -1,0 +1,51 @@
+// button 기본 값
+.btn
+  position: relative
+  min-width: 120px
+  max-height: 84px
+  background-color: #ffffff
+  cursor: pointer
+  padding:
+    left: 24px
+    right: 24px
+    top: 16px
+    bottom: 16px
+  font:
+    weight: normal
+    size: 14px
+  line-height: 20px
+  text-align: center
+  vertical-align: middle
+  border: 1px solid transparent
+  border-radius: 2px
+  white-space: nowrap
+  background-image: none
+  transition: background 0.2 ease, color 0.1 ease
+  &:hover, &:focus, &.focus
+    outline: 0
+    text-decoration: none
+  &:active
+    outline: 0
+    background-image: none
+  &:disabled, &.disabled
+    cursor: not-allowed
+    pointer-events: none
+
+
+// button default class
+.btn-default
+  color: #4d5256
+  border-color: #ded3d6
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
+  &:hover, &.hover, &:focus, &:active, &.active
+    color: #4d5256
+    background-color: #f1f5f5
+  &:active, &.active,   &:disabled, &.disabled
+    box-shadow: none
+  &:disabled, &.disabled
+     color: rgba(76, 128, 241, 0.4)
+     border-color: rgba(76, 128, 241, 0.3)
+
+
+// button primary class
+.btn-primary
