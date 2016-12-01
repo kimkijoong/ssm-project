@@ -1,29 +1,87 @@
+=fluid-container-width($width, $count, $fluid)
+  box-sizing: border-box
+  @if $fluid
+    width: 100%
+  @else
+    width: container($width, $count)
+
+  padding:
+    left: $container-padding * 1px
+    right: $container-padding * 1px
+
+  @extend %margin-0-auto
+
+=grid-bg()
+  content: ""
+  height: 100vh
+  z-index: 1000
+  top: 0
+  margin: 0 auto
+  display: block
+  background-origin: content-box
+
+=base-line($width, $gutter, $unit, $fluid)
+  @if $fluid
+    $new-gutter : floor($gutter/($width + $gutter) * 100)
+    background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) 100 - $new-gutter * $unit, transparent 100 - $new-gutter * $unit, transparent 100 * $unit)
+  @else
+    background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) $width * $unit, transparent $width * $unit, transparent ($width + $gutter) * $unit)
+
+  // @if $gutter-position == "right"
+  //   background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) $width * $unit, transparent $width * $unit, transparent ($width + $gutter) * $unit)
+  // @else if $gutter-position == "left"
+  //   background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) $width * $unit, transparent $width * $unit, transparent ($width + $gutter) * $unit)
+  // @else if $gutter-position == "center"
+  //   background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, transparent $gutter/2 * $unit, rgba(135, 105, 81, 0.5) $gutter/2 * $unit, rgba(135, 105, 81, 0.5) ($width + ($gutter/2)) * $unit, transparent ($width + ($gutter/2)) * $unit)
+  //   background-position: -$gutter/2 * $unit 0
+  // @if $fluid
+  //   background-size: 100 * $unit 1px
+  // @else
+  //   background-size: ($width + $gutter) * $unit 1px
+  background-size: ($width + $gutter) * $unit 1px
+
+
+
 =column-for( $count, $container-width , $fluid )
   $col : null
   $gutter : null
   $unit : null
-  $width : column-width( $count, $container-width )
+  $width : null
   @if $fluid
     $gutter : gutter-percent( $count, $container-width)
+    $width : (100 - $gutter * ($count - 1)) / $count
     $unit : 1%
   @else
     $gutter : $gutter-width
+    $width : column-width( $count, $container-width )
     $unit : 1px
 
   %col-float
     float: left
 
+
   .container
-    @if $fluid
+    +fluid-container-width($width, $count, $fluid)
+  @if $container-width == 0
+
+  @else
+    .grid-box
+      height: 100vh
       width: 100%
-    @else
-      width: container($width, $count)
+      position: fixed
+      top: 0
+      &.guide-line
+        &::before
+          +fluid-container-width($width, $count, $fluid)
+          +grid-bg()
+          background-image: linear-gradient( transparent 9px, rgb(24, 39, 241) 10px)
+          background-size: 1px 10px
+      &.base-line
+        &::after
+          +fluid-container-width($width, $count, $fluid)
+          +grid-bg()
+          +base-line($width, $gutter, $unit, $fluid)
 
-    padding:
-      left: $container-padding * 1px
-      right: $container-padding * 1px
-
-    @extend %margin-0-auto
 
 
   @if $container-width == $xs-container-width
@@ -47,10 +105,8 @@
   @for $i from 1 through $count
     .#{$col}col-#{$i}
       @extend .col-float
-      @if $fluid
-        width: (100 / ($count / $i) - $gutter) * $unit
-      @else
-        width: ( ( ( $width + $gutter ) * $i ) - $gutter ) * $unit
+      width: ( ( ( $width + $gutter ) * $i ) - $gutter ) * $unit
+
 
       @if $gutter-position == "left"
         margin-left: $gutter * $unit
