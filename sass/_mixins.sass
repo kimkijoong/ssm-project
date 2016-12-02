@@ -120,39 +120,52 @@
 
   @for $i from 1 through $count
     .#{$col}prefix-#{$i}
-      @if $fluid
-        margin-left: 100 / ($count / $i)  * $unit
+      // @if $fluid
+      //   margin-left: 100 / ($count / $i)  * $unit
+      // @else
+      //   margin-left: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        margin-left: ( ( $width + $gutter ) * $i + ( $gutter / 2 ) ) * $unit
       @else
-        margin-left: ( ( $width + $gutter ) * $i  ) * $unit
+        margin-left: ( ( $width + $gutter ) * $i + $gutter ) * $unit
 
 
 
   @for $i from 1 through $count
     .#{$col}suffix-#{$i}
-      @if $fluid
-        margin-right: 100 / ($count / $i)  * $unit
+      // @if $fluid
+      //   margin-right: 100 / ($count / $i)  * $unit
+      // @else
+      //   margin-right: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        margin-right: ( ( $width + $gutter ) * $i + ( $gutter / 2 ) ) * $unit
       @else
-        margin-right: ( ( $width + $gutter ) * $i  ) * $unit
-
+        margin-right: ( ( $width + $gutter ) * $i + $gutter ) * $unit
 
 
   @for $i from 1 through $count
     .#{$col}push-#{$i}
       @extend .col-postion-r
-      @if $fluid
-        left: 100 / ($count / $i)  * $unit
+      // @if $fluid
+      //   left: 100 / ($count / $i)  * $unit
+      // @else
+      //   left: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        left: ( ( $width + $gutter ) * $i ) * $unit
       @else
-        left: ( ( $width + $gutter ) * $i  ) * $unit
-
-
+        left: ( ( $width + $gutter ) * $i ) * $unit
 
   @for $i from 1 through $count
     .#{$col}pull-#{$i}
       @extend .col-postion-r
-      @if $fluid
-        right: 100 / ($count / $i)  * $unit
+      // @if $fluid
+      //   right: 100 / ($count / $i)  * $unit
+      // @else
+      //   right: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        right: ( ( $width + $gutter ) * $i ) * $unit
       @else
-        right: ( ( $width + $gutter ) * $i  ) * $unit
+        right: ( ( $width + $gutter ) * $i ) * $unit
 
 
 

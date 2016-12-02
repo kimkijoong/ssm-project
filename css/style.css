@@ -30,10 +30,6 @@
   margin-left: 0;
 }
 
-.row [class*="-col-"]:last-child {
-  margin-right: 0;
-}
-
 .row.isolate [class*="-col-"] {
   margin-right: -100%;
 }
@@ -133,71 +129,67 @@ h6 {
   }
   .xs-col-1 {
     width: 22.75%;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
+    margin-left: 3%;
   }
   .xs-col-2 {
     width: 48.5%;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
+    margin-left: 3%;
   }
   .xs-col-3 {
     width: 74.25%;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
+    margin-left: 3%;
   }
   .xs-col-4 {
     width: 100%;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
+    margin-left: 3%;
   }
   .xs-prefix-1 {
-    margin-left: 25%;
+    margin-left: 28.75%;
   }
   .xs-prefix-2 {
-    margin-left: 50%;
+    margin-left: 54.5%;
   }
   .xs-prefix-3 {
-    margin-left: 75%;
+    margin-left: 80.25%;
   }
   .xs-prefix-4 {
-    margin-left: 100%;
+    margin-left: 106%;
   }
   .xs-suffix-1 {
-    margin-right: 25%;
+    margin-right: 28.75%;
   }
   .xs-suffix-2 {
-    margin-right: 50%;
+    margin-right: 54.5%;
   }
   .xs-suffix-3 {
-    margin-right: 75%;
+    margin-right: 80.25%;
   }
   .xs-suffix-4 {
-    margin-right: 100%;
+    margin-right: 106%;
   }
   .xs-push-1 {
-    left: 25%;
+    left: 25.75%;
   }
   .xs-push-2 {
-    left: 50%;
+    left: 51.5%;
   }
   .xs-push-3 {
-    left: 75%;
+    left: 77.25%;
   }
   .xs-push-4 {
-    left: 100%;
+    left: 103%;
   }
   .xs-pull-1 {
-    right: 25%;
+    right: 25.75%;
   }
   .xs-pull-2 {
-    right: 50%;
+    right: 51.5%;
   }
   .xs-pull-3 {
-    right: 75%;
+    right: 77.25%;
   }
   .xs-pull-4 {
-    right: 100%;
+    right: 103%;
   }
   .row.isolate .xs-order-1, .row.isolate .xs-o-1 {
     margin-left: 25%;
@@ -261,135 +253,123 @@ h6 {
   }
   .sm-col-1 {
     width: 53px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-2 {
     width: 116px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-3 {
     width: 179px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-4 {
     width: 242px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-5 {
     width: 305px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-6 {
     width: 368px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-7 {
     width: 431px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-8 {
     width: 494px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-9 {
     width: 557px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-10 {
     width: 620px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-11 {
     width: 683px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-col-12 {
     width: 746px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sm-prefix-1 {
-    margin-left: 63px;
+    margin-left: 73px;
   }
   .sm-prefix-2 {
-    margin-left: 126px;
+    margin-left: 136px;
   }
   .sm-prefix-3 {
-    margin-left: 189px;
+    margin-left: 199px;
   }
   .sm-prefix-4 {
-    margin-left: 252px;
+    margin-left: 262px;
   }
   .sm-prefix-5 {
-    margin-left: 315px;
+    margin-left: 325px;
   }
   .sm-prefix-6 {
-    margin-left: 378px;
+    margin-left: 388px;
   }
   .sm-prefix-7 {
-    margin-left: 441px;
+    margin-left: 451px;
   }
   .sm-prefix-8 {
-    margin-left: 504px;
+    margin-left: 514px;
   }
   .sm-prefix-9 {
-    margin-left: 567px;
+    margin-left: 577px;
   }
   .sm-prefix-10 {
-    margin-left: 630px;
+    margin-left: 640px;
   }
   .sm-prefix-11 {
-    margin-left: 693px;
+    margin-left: 703px;
   }
   .sm-prefix-12 {
-    margin-left: 756px;
+    margin-left: 766px;
   }
   .sm-suffix-1 {
-    margin-right: 63px;
+    margin-right: 73px;
   }
   .sm-suffix-2 {
-    margin-right: 126px;
+    margin-right: 136px;
   }
   .sm-suffix-3 {
-    margin-right: 189px;
+    margin-right: 199px;
   }
   .sm-suffix-4 {
-    margin-right: 252px;
+    margin-right: 262px;
   }
   .sm-suffix-5 {
-    margin-right: 315px;
+    margin-right: 325px;
   }
   .sm-suffix-6 {
-    margin-right: 378px;
+    margin-right: 388px;
   }
   .sm-suffix-7 {
-    margin-right: 441px;
+    margin-right: 451px;
   }
   .sm-suffix-8 {
-    margin-right: 504px;
+    margin-right: 514px;
   }
   .sm-suffix-9 {
-    margin-right: 567px;
+    margin-right: 577px;
   }
   .sm-suffix-10 {
-    margin-right: 630px;
+    margin-right: 640px;
   }
   .sm-suffix-11 {
-    margin-right: 693px;
+    margin-right: 703px;
   }
   .sm-suffix-12 {
-    margin-right: 756px;
+    margin-right: 766px;
   }
   .sm-push-1 {
     left: 63px;
@@ -549,135 +529,123 @@ h6 {
   }
   .md-col-1 {
     width: 74px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-2 {
     width: 158px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-3 {
     width: 242px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-4 {
     width: 326px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-5 {
     width: 410px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-6 {
     width: 494px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-7 {
     width: 578px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-8 {
     width: 662px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-9 {
     width: 746px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-10 {
     width: 830px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-11 {
     width: 914px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-col-12 {
     width: 998px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .md-prefix-1 {
-    margin-left: 84px;
+    margin-left: 94px;
   }
   .md-prefix-2 {
-    margin-left: 168px;
+    margin-left: 178px;
   }
   .md-prefix-3 {
-    margin-left: 252px;
+    margin-left: 262px;
   }
   .md-prefix-4 {
-    margin-left: 336px;
+    margin-left: 346px;
   }
   .md-prefix-5 {
-    margin-left: 420px;
+    margin-left: 430px;
   }
   .md-prefix-6 {
-    margin-left: 504px;
+    margin-left: 514px;
   }
   .md-prefix-7 {
-    margin-left: 588px;
+    margin-left: 598px;
   }
   .md-prefix-8 {
-    margin-left: 672px;
+    margin-left: 682px;
   }
   .md-prefix-9 {
-    margin-left: 756px;
+    margin-left: 766px;
   }
   .md-prefix-10 {
-    margin-left: 840px;
+    margin-left: 850px;
   }
   .md-prefix-11 {
-    margin-left: 924px;
+    margin-left: 934px;
   }
   .md-prefix-12 {
-    margin-left: 1008px;
+    margin-left: 1018px;
   }
   .md-suffix-1 {
-    margin-right: 84px;
+    margin-right: 94px;
   }
   .md-suffix-2 {
-    margin-right: 168px;
+    margin-right: 178px;
   }
   .md-suffix-3 {
-    margin-right: 252px;
+    margin-right: 262px;
   }
   .md-suffix-4 {
-    margin-right: 336px;
+    margin-right: 346px;
   }
   .md-suffix-5 {
-    margin-right: 420px;
+    margin-right: 430px;
   }
   .md-suffix-6 {
-    margin-right: 504px;
+    margin-right: 514px;
   }
   .md-suffix-7 {
-    margin-right: 588px;
+    margin-right: 598px;
   }
   .md-suffix-8 {
-    margin-right: 672px;
+    margin-right: 682px;
   }
   .md-suffix-9 {
-    margin-right: 756px;
+    margin-right: 766px;
   }
   .md-suffix-10 {
-    margin-right: 840px;
+    margin-right: 850px;
   }
   .md-suffix-11 {
-    margin-right: 924px;
+    margin-right: 934px;
   }
   .md-suffix-12 {
-    margin-right: 1008px;
+    margin-right: 1018px;
   }
   .md-push-1 {
     left: 84px;
@@ -837,135 +805,123 @@ h6 {
   }
   .lg-col-1 {
     width: 109px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-2 {
     width: 228px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-3 {
     width: 347px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-4 {
     width: 466px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-5 {
     width: 585px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-6 {
     width: 704px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-7 {
     width: 823px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-8 {
     width: 942px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-9 {
     width: 1061px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-10 {
     width: 1180px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-11 {
     width: 1299px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-col-12 {
     width: 1418px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .lg-prefix-1 {
-    margin-left: 119px;
+    margin-left: 129px;
   }
   .lg-prefix-2 {
-    margin-left: 238px;
+    margin-left: 248px;
   }
   .lg-prefix-3 {
-    margin-left: 357px;
+    margin-left: 367px;
   }
   .lg-prefix-4 {
-    margin-left: 476px;
+    margin-left: 486px;
   }
   .lg-prefix-5 {
-    margin-left: 595px;
+    margin-left: 605px;
   }
   .lg-prefix-6 {
-    margin-left: 714px;
+    margin-left: 724px;
   }
   .lg-prefix-7 {
-    margin-left: 833px;
+    margin-left: 843px;
   }
   .lg-prefix-8 {
-    margin-left: 952px;
+    margin-left: 962px;
   }
   .lg-prefix-9 {
-    margin-left: 1071px;
+    margin-left: 1081px;
   }
   .lg-prefix-10 {
-    margin-left: 1190px;
+    margin-left: 1200px;
   }
   .lg-prefix-11 {
-    margin-left: 1309px;
+    margin-left: 1319px;
   }
   .lg-prefix-12 {
-    margin-left: 1428px;
+    margin-left: 1438px;
   }
   .lg-suffix-1 {
-    margin-right: 119px;
+    margin-right: 129px;
   }
   .lg-suffix-2 {
-    margin-right: 238px;
+    margin-right: 248px;
   }
   .lg-suffix-3 {
-    margin-right: 357px;
+    margin-right: 367px;
   }
   .lg-suffix-4 {
-    margin-right: 476px;
+    margin-right: 486px;
   }
   .lg-suffix-5 {
-    margin-right: 595px;
+    margin-right: 605px;
   }
   .lg-suffix-6 {
-    margin-right: 714px;
+    margin-right: 724px;
   }
   .lg-suffix-7 {
-    margin-right: 833px;
+    margin-right: 843px;
   }
   .lg-suffix-8 {
-    margin-right: 952px;
+    margin-right: 962px;
   }
   .lg-suffix-9 {
-    margin-right: 1071px;
+    margin-right: 1081px;
   }
   .lg-suffix-10 {
-    margin-right: 1190px;
+    margin-right: 1200px;
   }
   .lg-suffix-11 {
-    margin-right: 1309px;
+    margin-right: 1319px;
   }
   .lg-suffix-12 {
-    margin-right: 1428px;
+    margin-right: 1438px;
   }
   .lg-push-1 {
     left: 119px;
@@ -1125,135 +1081,123 @@ h6 {
   }
   .xl-col-1 {
     width: 149px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-2 {
     width: 308px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-3 {
     width: 467px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-4 {
     width: 626px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-5 {
     width: 785px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-6 {
     width: 944px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-7 {
     width: 1103px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-8 {
     width: 1262px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-9 {
     width: 1421px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-10 {
     width: 1580px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-11 {
     width: 1739px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-col-12 {
     width: 1898px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .xl-prefix-1 {
-    margin-left: 159px;
+    margin-left: 169px;
   }
   .xl-prefix-2 {
-    margin-left: 318px;
+    margin-left: 328px;
   }
   .xl-prefix-3 {
-    margin-left: 477px;
+    margin-left: 487px;
   }
   .xl-prefix-4 {
-    margin-left: 636px;
+    margin-left: 646px;
   }
   .xl-prefix-5 {
-    margin-left: 795px;
+    margin-left: 805px;
   }
   .xl-prefix-6 {
-    margin-left: 954px;
+    margin-left: 964px;
   }
   .xl-prefix-7 {
-    margin-left: 1113px;
+    margin-left: 1123px;
   }
   .xl-prefix-8 {
-    margin-left: 1272px;
+    margin-left: 1282px;
   }
   .xl-prefix-9 {
-    margin-left: 1431px;
+    margin-left: 1441px;
   }
   .xl-prefix-10 {
-    margin-left: 1590px;
+    margin-left: 1600px;
   }
   .xl-prefix-11 {
-    margin-left: 1749px;
+    margin-left: 1759px;
   }
   .xl-prefix-12 {
-    margin-left: 1908px;
+    margin-left: 1918px;
   }
   .xl-suffix-1 {
-    margin-right: 159px;
+    margin-right: 169px;
   }
   .xl-suffix-2 {
-    margin-right: 318px;
+    margin-right: 328px;
   }
   .xl-suffix-3 {
-    margin-right: 477px;
+    margin-right: 487px;
   }
   .xl-suffix-4 {
-    margin-right: 636px;
+    margin-right: 646px;
   }
   .xl-suffix-5 {
-    margin-right: 795px;
+    margin-right: 805px;
   }
   .xl-suffix-6 {
-    margin-right: 954px;
+    margin-right: 964px;
   }
   .xl-suffix-7 {
-    margin-right: 1113px;
+    margin-right: 1123px;
   }
   .xl-suffix-8 {
-    margin-right: 1272px;
+    margin-right: 1282px;
   }
   .xl-suffix-9 {
-    margin-right: 1431px;
+    margin-right: 1441px;
   }
   .xl-suffix-10 {
-    margin-right: 1590px;
+    margin-right: 1600px;
   }
   .xl-suffix-11 {
-    margin-right: 1749px;
+    margin-right: 1759px;
   }
   .xl-suffix-12 {
-    margin-right: 1908px;
+    margin-right: 1918px;
   }
   .xl-push-1 {
     left: 159px;
@@ -1378,16 +1322,15 @@ h6 {
 
 .error .col-1 {
   width: -20px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .error .prefix-1 {
-  margin-left: -10px;
+  margin-left: 0px;
 }
 
 .error .suffix-1 {
-  margin-right: -10px;
+  margin-right: 0px;
 }
 
 .error .push-1 {
