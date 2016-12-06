@@ -1,0 +1,11 @@
+{
+  "name": "ssm-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w -r sass -o css --output-style expanded --source-map ./map"
+  },
+  "author": "",
+  "license": "ISC"
+}
