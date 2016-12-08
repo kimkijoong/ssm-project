@@ -6,10 +6,11 @@
 
 @function container($width, $count)
   $result: ( ( ( $width + $gutter-width ) * $count ) - $gutter-width + ($container-padding*2)) * 1px
+  // $result: ( ( ( $width + $gutter-width ) * $count ) - $gutter-width) * 1px
   @return $result
 
 @function gutter-percent( $count, $container-width)
-  $result: floor( ( $gutter-width * ( $count - 1 ) / $container-width * 100 ) / ( $count - 1 )) 
+  $result: floor( ( $gutter-width * ( $count - 1 ) / $container-width * 100 ) / ( $count - 1 ))
   @return $result
 
 @function strip-units($unit)
