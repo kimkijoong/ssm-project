@@ -5,25 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tab UI</title>
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="../../dist/css/tab-ui.css">
+  <link rel="stylesheet" href="../../dist/css/initialization/normalize.min.css">
+  <link rel="stylesheet" href="../../dist/css/initialization/reset.min.css">
+  <link rel="stylesheet" href="../../dist/css/tab.css">
+  <link rel="stylesheet" href="../../dist/css/rippler.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="../js/but-static-js/tab-ui.js"></script>
+
 </head>
 <body>
-  <h1>
+  <h1 class="h1-sample">
     Tab UI
   </h1>
   <div class="wrap">
     <div class="tab-interface">
       <!-- 탭 인덱스 -->
       <ul class="tab-list" role="tablist">
-        <li id="tab1" role="tab" aria-controls="section1" aria-selected="true" tabindex="0">담아온글</li>
-        <li id="tab2" role="tab" aria-controls="section2" aria-selected="false" tabindex="0">구독작가</li>
+        <li id="tab1" role="tab" aria-controls="section1" aria-selected="true" tabindex="0"
+        class="waves-effect waves-mint">담아온글</li>
+        <li id="tab2" role="tab" aria-controls="section2" aria-selected="false" tabindex="0" class="waves-effect waves-mint">구독작가</li>
       </ul>
       <div class="tab-contents">
         <section id="section1" role="tabpanel" aria-labelledby="tab1">
-          <a href="#" class="card-bookmark-writing">
+          <a href="#" class="card-bookmark-writing waves-effect waves-mint">
             <div role="article">
               <div class="bookmark-section1">
                 <div role="img" class="profile-img"><img src="" alt=""></div>
@@ -40,7 +44,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="card-bookmark-writing">
+          <a href="#" class="card-bookmark-writing waves-effect waves-mint">
             <div role="article">
               <div class="bookmark-section1">
                 <div role="img" class="profile-img"><img src="" alt=""></div>
@@ -57,7 +61,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="card-bookmark-writing">
+          <a href="#" class="card-bookmark-writing waves-effect waves-mint">
             <div role="article">
               <div class="bookmark-section1">
                 <div role="img" class="profile-img"><img src="" alt=""></div>
@@ -76,7 +80,7 @@
           </a>
         </section>
         <section id="section2" class="unvisual" role="tabpanel" aria-labelledby="tab2">
-          <a href="#" class="card-bookmark-writing">
+          <a href="#" class="card-bookmark-writing waves-effect waves-mint">
             <div role="article">
               <div class="bookmark-section1">
                 <div role="img" class="profile-img"><img src="" alt=""></div>
@@ -93,7 +97,7 @@
               </div>
             </div>
           </a>
-          <a href="#" class="card-bookmark-writing">
+          <a href="#" class="card-bookmark-writing waves-effect waves-mint">
             <div role="article">
               <div class="bookmark-section1">
                 <div role="img" class="profile-img"><img src="" alt=""></div>
@@ -114,5 +118,6 @@
       </div>
     </div>
   </div>
+  <script src="../js/but-static-js/waves.js" charset="utf-8"></script>
 </body>
 </html>
