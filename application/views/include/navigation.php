@@ -67,15 +67,17 @@
         <fieldset>
             <label class="" for="search">search</label>
             <input id="search" type="text" data-ng-model="search.topic">
-            <input id="datepicker" type="text" data-ng-model="dateRange.startDate">
-            <input id="datepicker2" type="text" data-ng-model="dateRange.endDate">
+            <input id="datepicker" type="text" data-ng-model="range.startDate">
+            <input id="datepicker2" type="text" data-ng-model="range.endDate">
         </fieldset>
         <button class="search" type="submit"><img src="" alt="검색"></button>
     </form>
-    <div class="date-topic-list" role="오늘의 주제" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: startDate : endDate">
-        <p ng-switch on="List.category">오늘의 주제<br><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span></p>
-        <p role="topic">{{List.topic}}</p>
-        <a href="/Home/write_page/{{List.seq}}"><img src="" alt="글 작성"></a>
+    <div data-ng-controller="TopicListController" >
+        <div class="date-topic-list" role="오늘의 주제" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate">
+            <p ng-switch on="List.category">오늘의 주제<br><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span></p>
+            <p role="topic">{{List.topic}}</p>
+            <a href="/Home/write_page/{{List.seq}}"><img src="" alt="글 작성"></a>
+        </div>
     </div>
-    <pre>{{ dateRange | json }}</pre>
+
 </header>

@@ -15,4 +15,4 @@ require('./controllers/TodayTopic'); //오늘의 주제를 service(TodayTopicser
 require('./service/TopicList');
 require('./service/TodayTopicservice'); //서버에 오늘의 주제를 요청하여 전달받는다.
 // Filters
-require('./filters/DateRange');
+require('./filters/DateRangeFilter');

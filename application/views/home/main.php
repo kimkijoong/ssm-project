@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ssum: main</title>
+	<?php include_once("./application/views/include/navigation.php") ?>
 </head>
 <body dir="ltr" lang="ko-KR" data-ng-app="ButProjectApp">
 	<div class="app"
