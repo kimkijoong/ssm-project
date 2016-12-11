@@ -76,7 +76,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-
 ###SASS###
 
 .sass-cache
