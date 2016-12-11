@@ -1,0 +1,1 @@
+<link rel="stylesheet" type="text/css" id="theme" href="/static/lib/css/admin/boarder_post_edit_style.css"/>
