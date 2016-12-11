@@ -15,7 +15,7 @@ class Home extends CI_Controller {
             redirect('/Login');
         }*/
         $this->load->model('Boarder_model');
-        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select');
+        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic');
     }
     /**
      * Index Page for this controller.
@@ -154,5 +154,17 @@ class Home extends CI_Controller {
     public function bringInSsm()
     {
         $this->load->view('home/bringInSsum');
+    }
+
+    //앵귤러 controller
+    public function TopicList(){
+        //주제들을 모두 가져온다.
+        $data = $this->Boarder_model->TopicList();
+        echo json_encode($data);
+    }
+    public function TodayTopic(){
+        //그날의 주제를 가져온다.
+        $data = $this->Boarder_model->TodayTopic();
+        echo json_encode($data);
     }
 }

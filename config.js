@@ -36,12 +36,12 @@ let config = {
     'js'    : `${PATHS.src}/${PATHS.js}`,
     'fonts' : {
       'source' : `${PATHS.src}/${PATHS.fonts}/**/*.{eot,woff,woff2,ttf}`,
-      'output' : `${PATHS.dist}/${PATHS.fonts}`
+      'output' : `${PATHS.static}/${PATHS.fonts}`
     },
     // 이미지 소스/출력 설정
     'images': {
       'source' : `${PATHS.src}/${PATHS.images}/**/*.{png,jpg,jpeg,gif,svg}`,
-      'output' : `${PATHS.dist}/${PATHS.images}`
+      'output' : `${PATHS.static}/${PATHS.images}`
     },
     // 아이콘 폰트 소스/출력 설정
     'iconfonts': {

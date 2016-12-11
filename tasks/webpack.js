@@ -11,7 +11,7 @@ let config         = require('../config');
 let webpack_config = require('../webpack.config');
 
 gulp.task('webpack', ()=> {
-  return gulp.src(`${config.paths.js}/main.js`)
+  return gulp.src(`${config.paths.js}/*.js`)
              .pipe( webpack(webpack_config) )
              .pipe(gulp.dest( `${config.paths.static}/js` ));
 });

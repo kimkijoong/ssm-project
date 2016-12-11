@@ -323,4 +323,16 @@ Class Boarder_model extends CI_Model {
         return $data;
     }
 
+
+    //앵귤러 모델
+    public function TopicList(){
+        //주제들을 모두 가져온다.
+        $result = $this->db->query('SELECT * FROM daily_topic')->result();
+        return $result;
+    }
+    public function TodayTopic(){
+        // 그날의 주제를 가져온다.
+        $result = $this->db->query('SELECT * FROM daily_topic ORDER BY public_date DESC LIMIT 1')->result();
+        return $result;
+    }
 }

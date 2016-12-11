@@ -5,7 +5,7 @@ class Acl {
         if (isset($CI->allow) && (is_array($CI->allow) === false OR in_array($CI->router->method, $CI->allow) === false)) {
             if (!$CI->session->userdata('user_email')) { // 로그인을 했는지 판단을 하는 로직을 넣으면 되겠죠.
                 // redirect url도 알아서...
-                redirect("Home");
+                redirect("/Home");
             }
         } else if (isset($CI->allow2) && (is_array($CI->allow2) === false OR in_array($CI->router->method, $CI->allow2) === false)) {
             if (!$CI->session->userdata('user_email')) { // 로그인을 했는지 판단을 하는 로직을 넣으면 되겠죠.

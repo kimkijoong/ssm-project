@@ -6,10 +6,13 @@
 // require('jquery');
 let angular = require('angular');
 
-let bipan = angular.module('BipanListApp', []);
+let bipan = angular.module('ButProjectApp', []);
 
 // Controllers
-require('./controllers/ListController');
-require('./service/test');
+require('./controllers/TopicListController'); // 모든 주제를 service(TopicList)로부터 전달받아 뷰에 전달해준다.
+require('./controllers/TodayTopic'); //오늘의 주제를 service(TodayTopicservice)로부터 전달받아 뷰에 전달해준다.
+//Service
+require('./service/TopicList');
+require('./service/TodayTopicservice'); //서버에 오늘의 주제를 요청하여 전달받는다.
 // Filters
-require('./filters/readingZeroFilter');
+require('./filters/DateRange');

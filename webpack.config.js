@@ -17,7 +17,7 @@ module.exports = {
 
   // 출력 설정
   'output'  : {
-    'path': path.join(__dirname, `${config.paths.dist}/js`),
+    'path': path.join(__dirname, `${config.paths.static}/js`),
     'filename': '[name].bundle.js'
   },
 

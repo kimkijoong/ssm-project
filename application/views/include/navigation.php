@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <header class="header">
     <div class="logo">
         <h1 class="readable-hidden">씀 로고(메인화면으로 바로가기)</h1>
@@ -60,15 +61,21 @@
         <button class="search"><img src="" alt="검색"></button>
     </div> -->
     <!-- 검색 클릭 시, -->
-    <div class="search-bar">
-        <h1 class="readable-hidden">search</h1>
+    <h1 class="readable-hidden">search</h1>
 
-        <form class="" action="" method="post">
-            <fieldset>
-                <label class="" for="search">search</label>
-                <input id="search" type="text">
-            </fieldset>
-            <button class="search" type="submit"><img src="" alt="검색"></button>
-        </form>
+    <form class="" action="" method="post">
+        <fieldset>
+            <label class="" for="search">search</label>
+            <input id="search" type="text" data-ng-model="search.topic">
+            <input id="datepicker" type="text" data-ng-model="dateRange.startDate">
+            <input id="datepicker2" type="text" data-ng-model="dateRange.endDate">
+        </fieldset>
+        <button class="search" type="submit"><img src="" alt="검색"></button>
+    </form>
+    <div class="date-topic-list" role="오늘의 주제" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: startDate : endDate">
+        <p ng-switch on="List.category">오늘의 주제<br><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span></p>
+        <p role="topic">{{List.topic}}</p>
+        <a href="/Home/write_page/{{List.seq}}"><img src="" alt="글 작성"></a>
     </div>
+    <pre>{{ dateRange | json }}</pre>
 </header>

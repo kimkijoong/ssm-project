@@ -14,12 +14,5 @@ angular.module('BipanListApp').service('test', ['$http' , function($http){
     'test_data' : []
   }
   return _service;
-//   $http({
-//   method: 'POST',
-//   url: 'Home/openSsmList_select'
-// }).success(function(response){
-//     // var data = response;
-//     console.log(response);
-//   });
-  // return data;
+
 }]);

@@ -1,13 +1,9 @@
-<IfModule mod_url.c>
-    checkURL On
-    ServerEncoding EUC-KR
-    ClientEncoding UTF-8
-    RewrIteEngine On
-    RewrIteBase /
-    RewrIteCond $1 !^(index\.php|images|captcha|data|include|uploads|robots\.txt)
-    RewrIteCond %{REQUEST_FILENAME} !-f
-    RewrIteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php?/$1 [L]
+<IfModule mod_rewrite.c>
+ RewriteEngine On
+ RewriteBase /
+ RewriteCond $1 !^(index\.php|images|captcha|data|include|uploads|robots\.txt)
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule ^(.*)$ /index.php/$1 [L]
 </IfModule>
-php_flag register_globals on
-php_flag register_long_arrays on
+

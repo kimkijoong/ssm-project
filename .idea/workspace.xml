@@ -1,7 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7f9c209-e27d-4596-bac0-76634001eb57" name="Default" comment="" />
+    <list default="true" id="0aec3329-5be6-485a-9527-3ed171bc2b7f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/fonts/icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/fonts/icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/fonts/icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/fonts/icons.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/banner/collection.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/banner/leather-bags.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/banner/shoes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/banner/woman.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/blog/jared-paul-stern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/blog/life.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/blog/travel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/header/woman.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/header/woman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-AmericanExpress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-AmericanExpress.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-AmericanExpress@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Arrow.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Arrow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Behance.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Behance.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Behance@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Dribbble.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Dribbble.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Dribbble@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Facebook@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Instagram.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Instagram.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Instagram@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-MasterCard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-MasterCard.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-MasterCard@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-PayPal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-PayPal.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-PayPal@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Twitter@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Visa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Visa.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-Visa@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-cart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-cart.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-cart@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-clock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-clock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-clock@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-comments.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-comments.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-comments@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-face.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-face.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-face@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-headset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-headset.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-headset@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-lock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-lock@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-select.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-select@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-wishlist.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-wishlist.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/icons/Icon-wishlist@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/products/fitted-dress.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/products/flowy-printed-dress.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/products/fluted-hem-dress.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/products/textured-pleats-dress.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/sprites/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/undefined/images/sprites/icons@2x.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.eot" afterPath="$PROJECT_DIR$/src/fonts/icons.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.ttf" afterPath="$PROJECT_DIR$/src/fonts/icons.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.woff" afterPath="$PROJECT_DIR$/src/fonts/icons.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.woff2" afterPath="$PROJECT_DIR$/src/fonts/icons.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Home.php" afterPath="$PROJECT_DIR$/application/controllers/Home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/hooks/Acl.php" afterPath="$PROJECT_DIR$/application/hooks/Acl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Boarder_model.php" afterPath="$PROJECT_DIR$/application/models/Boarder_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/main.php" afterPath="$PROJECT_DIR$/application/views/home/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/include/navigation.php" afterPath="$PROJECT_DIR$/application/views/include/navigation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/include/script/script.php" afterPath="$PROJECT_DIR$/application/views/include/script/script.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers/ListController.js" afterPath="$PROJECT_DIR$/src/js/controllers/ListController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main.es6" afterPath="$PROJECT_DIR$/src/js/main.es6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/service/test.js" afterPath="$PROJECT_DIR$/src/js/service/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/style.sass" afterPath="$PROJECT_DIR$/src/sass/style.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/main.bundle.js" afterPath="$PROJECT_DIR$/static/js/main.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/webpack.js" afterPath="$PROJECT_DIR$/tasks/webpack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+    </list>
     <ignored path="htdocs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -15,12 +111,123 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="Boarder_model.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/application/models/Boarder_model.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-4384">
+                    <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+                    <folding>
+                      <marker date="1481399166724" expanded="true" signature="1413:1686" ph="SELECT a.seq... notebook" />
+                      <marker date="1481399166724" expanded="true" signature="1814:2161" ph="SELECT a.seq... notebook" />
+                      <marker date="1481399166724" expanded="true" signature="3561:3630" ph="SELECT seq F... notebook" />
+                      <marker date="1481399166724" expanded="true" signature="3718:4024" ph="SELECT a.seq... notebook" />
+                      <marker date="1481399166724" expanded="true" signature="4254:4560" ph="SELECT a.seq... notebook" />
+                      <marker date="1481399166724" expanded="true" signature="4718:4776" ph="UPDATE noteb... " />
+                      <marker date="1481399166724" expanded="true" signature="4906:4987" ph="SELECT * FRO... boarder_post" />
+                      <marker date="1481399166724" expanded="true" signature="5986:6233" ph="SELECT * FRO... boarder_post" />
+                      <marker date="1481399166724" expanded="true" signature="6355:6498" ph="SELECT * FRO... boarder_post" />
+                      <marker date="1481399166724" expanded="true" signature="6628:6779" ph="SELECT * FRO... boarder_post" />
+                      <marker date="1481399166724" expanded="true" signature="9269:9359" ph="UPDATE board... " />
+                      <marker date="1481399166724" expanded="true" signature="13923:13971" ph="DELETE FROM " />
+                      <marker date="1481399166724" expanded="true" signature="14042:14089" ph="DELETE FROM " />
+                      <marker date="1481399166724" expanded="true" signature="14222:14271" ph="DELETE FROM " />
+                      <marker date="1481399166724" expanded="true" signature="15535:15704" ph="UPDATE board... " />
+                      <marker date="1481399166724" expanded="true" signature="15818:15844" ph="SELECT * FRO... boarder_list" />
+                      <marker date="1481399166724" expanded="true" signature="15994:16019" ph="SELECT * FRO... daily_topic" />
+                      <marker date="1481399166724" expanded="true" signature="15994:16031" ph="SELECT * FRO... daily_topic" />
+                      <marker date="1481399166724" expanded="true" signature="16158:16217" ph="SELECT * FRO... daily_topic" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="htdocs" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/home/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/include/script/script.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mySsum.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/home/mySsum.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mySsumList.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/home/mySsumList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2156">
+              <caret line="17" column="134" selection-start-line="17" selection-start-column="134" selection-end-line="17" selection-end-column="134" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/include/navigation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="580">
+              <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +240,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/hooks/Acl.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/models/Boarder_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Home.php" />
+        <option value="$PROJECT_DIR$/application/views/home/main.php" />
+        <option value="$PROJECT_DIR$/application/views/include/script/script.php" />
+        <option value="$PROJECT_DIR$/application/views/include/navigation.php" />
       </list>
     </option>
   </component>
@@ -43,12 +258,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="1932" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -75,9 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -86,8 +300,173 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htdocs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -99,6 +478,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -151,6 +531,9 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -198,22 +581,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a7f9c209-e27d-4596-bac0-76634001eb57" name="Default" comment="" />
-      <created>1481193159205</created>
+      <changelist id="0aec3329-5be6-485a-9527-3ed171bc2b7f" name="Default" comment="" />
+      <created>1481202122375</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1481193159205</updated>
-      <workItem from="1481193161652" duration="2830000" />
-      <workItem from="1481198906829" duration="1968000" />
+      <updated>1481202122375</updated>
+      <workItem from="1481202123709" duration="9054000" />
+      <workItem from="1481256214827" duration="12509000" />
+      <workItem from="1481360553984" duration="1000" />
+      <workItem from="1481360563239" duration="5000" />
+      <workItem from="1481385205748" duration="1000" />
+      <workItem from="1481393662664" duration="16079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4798000" />
+    <option name="totallyTimeSpent" value="37649000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="false" />
+    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -221,13 +608,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Material Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -258,7 +645,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+    <entry file="file://$PROJECT_DIR$/application/views/home/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -266,7 +653,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/cache/.htaccess">
+    <entry file="file://$PROJECT_DIR$/application/views/home/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/hooks/Acl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -275,9 +707,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
+        <state relative-caret-position="475">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -285,22 +744,160 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/hooks/Acl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+        <state relative-caret-position="390">
+          <caret line="77" column="28" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Boarder_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4384">
+          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+          <folding>
+            <marker date="1481399166724" expanded="true" signature="1413:1686" ph="SELECT a.seq... notebook" />
+            <marker date="1481399166724" expanded="true" signature="1814:2161" ph="SELECT a.seq... notebook" />
+            <marker date="1481399166724" expanded="true" signature="3561:3630" ph="SELECT seq F... notebook" />
+            <marker date="1481399166724" expanded="true" signature="3718:4024" ph="SELECT a.seq... notebook" />
+            <marker date="1481399166724" expanded="true" signature="4254:4560" ph="SELECT a.seq... notebook" />
+            <marker date="1481399166724" expanded="true" signature="4718:4776" ph="UPDATE noteb... " />
+            <marker date="1481399166724" expanded="true" signature="4906:4987" ph="SELECT * FRO... boarder_post" />
+            <marker date="1481399166724" expanded="true" signature="5986:6233" ph="SELECT * FRO... boarder_post" />
+            <marker date="1481399166724" expanded="true" signature="6355:6498" ph="SELECT * FRO... boarder_post" />
+            <marker date="1481399166724" expanded="true" signature="6628:6779" ph="SELECT * FRO... boarder_post" />
+            <marker date="1481399166724" expanded="true" signature="9269:9359" ph="UPDATE board... " />
+            <marker date="1481399166724" expanded="true" signature="13923:13971" ph="DELETE FROM " />
+            <marker date="1481399166724" expanded="true" signature="14042:14089" ph="DELETE FROM " />
+            <marker date="1481399166724" expanded="true" signature="14222:14271" ph="DELETE FROM " />
+            <marker date="1481399166724" expanded="true" signature="15535:15704" ph="UPDATE board... " />
+            <marker date="1481399166724" expanded="true" signature="15818:15844" ph="SELECT * FRO... boarder_list" />
+            <marker date="1481399166724" expanded="true" signature="15994:16019" ph="SELECT * FRO... daily_topic" />
+            <marker date="1481399166724" expanded="true" signature="15994:16031" ph="SELECT * FRO... daily_topic" />
+            <marker date="1481399166724" expanded="true" signature="16158:16217" ph="SELECT * FRO... daily_topic" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/mySsumList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home/mySsum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2156">
+          <caret line="17" column="134" selection-start-line="17" selection-start-column="134" selection-end-line="17" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/include/script/script.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/home/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="589">
+          <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/include/navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
           <folding />
         </state>
       </provider>
