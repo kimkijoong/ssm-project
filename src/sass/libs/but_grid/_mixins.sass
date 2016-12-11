@@ -1,0 +1,242 @@
+=fluid-container-width($width, $count, $fluid)
+  box-sizing: border-box
+  @if $fluid
+    width: 100%
+  @else
+    width: container($width, $count)
+
+  padding:
+    left: $container-padding * 1px
+    right: $container-padding * 1px
+
+  @extend %margin-0-auto
+
+=grid-bg()
+  content: ""
+  height: 100vh
+  z-index: 1000
+  top: 0
+  margin: 0 auto
+  display: block
+  background-origin: content-box
+
+=base-line($width, $gutter, $unit, $fluid)
+  @if $fluid
+    $new-gutter : floor($gutter/($width + $gutter) * 100)
+    background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) 100 - $new-gutter * $unit, transparent 100 - $new-gutter * $unit, transparent 100 * $unit)
+  @else
+    background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) $width * $unit, transparent $width * $unit, transparent ($width + $gutter) * $unit)
+
+  // @if $gutter-position == "right"
+  //   background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) $width * $unit, transparent $width * $unit, transparent ($width + $gutter) * $unit)
+  // @else if $gutter-position == "left"
+  //   background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, rgba(135, 105, 81, 0.5) $width * $unit, transparent $width * $unit, transparent ($width + $gutter) * $unit)
+  // @else if $gutter-position == "center"
+  //   background-image: linear-gradient( 90deg,rgba(135, 105, 81, 0.5) 0 * $unit, transparent $gutter/2 * $unit, rgba(135, 105, 81, 0.5) $gutter/2 * $unit, rgba(135, 105, 81, 0.5) ($width + ($gutter/2)) * $unit, transparent ($width + ($gutter/2)) * $unit)
+  //   background-position: -$gutter/2 * $unit 0
+  // @if $fluid
+  //   background-size: 100 * $unit 1px
+  // @else
+  //   background-size: ($width + $gutter) * $unit 1px
+  background-size: ($width + $gutter) * $unit 1px
+
+
+
+=column-for( $count, $container-width , $fluid )
+  $col : null
+  $gutter : null
+  $unit : null
+  $width : null
+  @if $fluid
+    $gutter : gutter-percent( $count, $container-width)
+    $width : (100 - $gutter * ($count - 1)) / $count
+    $unit : 1%
+  @else
+    $gutter : $gutter-width
+    $width : column-width( $count, $container-width )
+    $unit : 1px
+
+  %col-float
+    float: left
+
+
+  .container
+    +fluid-container-width($width, $count, $fluid)
+  @if $container-width == 0
+
+  @else
+    .grid-box
+      height: 100vh
+      width: 100%
+      position: fixed
+      top: 0
+      &.guide-line
+        &::before
+          +fluid-container-width($width, $count, $fluid)
+          +grid-bg()
+          background-image: linear-gradient( transparent 9px, rgb(24, 39, 241) 10px)
+          background-size: 1px 10px
+      &.base-line
+        &::after
+          +fluid-container-width($width, $count, $fluid)
+          +grid-bg()
+          +base-line($width, $gutter, $unit, $fluid)
+
+
+
+  @if $container-width == $xs-container-width
+    $col: "xs-"
+
+  @else if $container-width == $sm-container-width
+    $col: "sm-"
+
+  @else if $container-width == $md-container-width
+    $col: "md-"
+
+  @else if $container-width == $lg-container-width
+    $col: "lg-"
+
+  @else if $container-width == $xl-container-width
+    $col: "xl-"
+
+  .#{$col}hidden
+    display: none
+
+  @for $i from 1 through $count
+    .#{$col}col-#{$i}
+      @extend .col-float
+      width: ( ( ( $width + $gutter ) * $i ) - $gutter ) * $unit
+
+
+      @if $gutter-position == "left"
+        margin-left: $gutter * $unit
+      @else if $gutter-position == "right"
+        margin-right: $gutter * $unit
+      @else if $gutter-position == "center"
+        margin-right: $gutter / 2 * $unit
+        margin-left: $gutter / 2 * $unit
+
+
+
+  @for $i from 1 through $count
+    .#{$col}prefix-#{$i}
+      // @if $fluid
+      //   margin-left: 100 / ($count / $i)  * $unit
+      // @else
+      //   margin-left: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        margin-left: ( ( $width + $gutter ) * $i + ( $gutter / 2 ) ) * $unit
+      @else
+        margin-left: ( ( $width + $gutter ) * $i + $gutter ) * $unit
+
+
+
+  @for $i from 1 through $count
+    .#{$col}suffix-#{$i}
+      // @if $fluid
+      //   margin-right: 100 / ($count / $i)  * $unit
+      // @else
+      //   margin-right: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        margin-right: ( ( $width + $gutter ) * $i + ( $gutter / 2 ) ) * $unit
+      @else
+        margin-right: ( ( $width + $gutter ) * $i + $gutter ) * $unit
+
+
+  @for $i from 1 through $count
+    .#{$col}push-#{$i}
+      @extend .col-postion-r
+      // @if $fluid
+      //   left: 100 / ($count / $i)  * $unit
+      // @else
+      //   left: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        left: ( ( $width + $gutter ) * $i ) * $unit
+      @else
+        left: ( ( $width + $gutter ) * $i ) * $unit
+
+  @for $i from 1 through $count
+    .#{$col}pull-#{$i}
+      @extend .col-postion-r
+      // @if $fluid
+      //   right: 100 / ($count / $i)  * $unit
+      // @else
+      //   right: ( ( $width + $gutter ) * $i  ) * $unit
+      @if $gutter-position == "center"
+        right: ( ( $width + $gutter ) * $i ) * $unit
+      @else
+        right: ( ( $width + $gutter ) * $i ) * $unit
+
+
+
+
+=isolate ($count, $container-width , $fluid)
+  $col : null
+  $width : column-width( $count, $container-width )
+  $unit : null
+  @if $fluid
+    $unit : 1%
+  @else
+    $unit : 1px
+  @if $container-width == $xs-container-width
+    $col: "xs-"
+
+  @else if $container-width == $sm-container-width
+    $col: "sm-"
+
+  @else if $container-width == $md-container-width
+    $col: "md-"
+
+  @else if $container-width == $lg-container-width
+    $col: "lg-"
+
+  @else if $container-width == $xl-container-width
+    $col: "xl-"
+
+  $j: 0
+  @for $i from 1 through $count
+    $j: $j+1
+    .row.isolate .#{$col}order-#{$i}, .row.isolate .#{$col}o-#{$i}
+      @if $fluid
+        margin-left: 100 / ($count / $i)  * $unit
+      @else
+        margin-left: ( ( $width + $gutter-width ) * $j) * $unit
+
+
+
+
+
+
+=font-rule( $font-size )
+  font-size: font-size( $font-size )
+  line-height: line_height( $font-size )
+
+
+=heading-rule ()
+  @for $i from 1 through 6
+    h#{$i}
+      $font-size : heading-text($i)
+      font-size : font-size( $font-size )
+      line-height: line-height( $font-size )
+
+
+
+
+=respond-to($media)
+  @if $media == $xs-container-width
+    $mobile-max: $sm-container-width - 1
+    @media only screen and ( max-width: ( $mobile-max ) * 1px )  {@content}
+
+  @else if $media == $sm-container-width
+    $mobile-max: $sm-container-width * 1px
+    $tablet-max: ( $md-container-width - 1) * 1px
+    @media only screen and ( min-width: $mobile-max ) and ( max-width: $tablet-max )  {@content}
+
+  @else if $media == $md-container-width
+    @media only screen and ( min-width: $md-container-width * 1px ) and ( max-width: ( $lg-container-width - 1 ) * 1px )  {@content}
+
+  @else if $media == $lg-container-width
+    @media only screen and ( min-width: $lg-container-width * 1px ) and ( max-width: ( $xl-container-width - 1 ) * 1px )  {@content}
+
+  @else if $media == $xl-container-width
+    @media only screen and ( min-width: $xl-container-width * 1px )  {@content}

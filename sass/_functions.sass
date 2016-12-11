@@ -1,5 +1,0 @@
-@function column($n: 1)
-  $result: ($n * $column-base-width) + (($n - 1) * ($gutter-base-width * 2))
-  @if $fluid
-    $result: percentage($result / $page-width)
-  @return $result

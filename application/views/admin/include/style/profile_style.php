@@ -1,0 +1,1 @@
+<link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/css/cropper/cropper.min.css"/>
