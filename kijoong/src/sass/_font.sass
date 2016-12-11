@@ -1,0 +1,219 @@
+/////////////////////////////////////////////////////////
+// color default set
+/////////////////////////////////////////////////////////
+
+$basic-blue: #51bcd8
+$basic-white: #ffffff
+$support-blue-1: #b2dbe6
+$support-blue-2: #14a6cc
+$support-blue-3: #0e8cad
+$support-blue-4: #0b677e
+$background-color: #e9ebee
+$warning-babypink: #fff5f5
+$warning-blush-pink: #fe8b90
+$warning-watermelon: #f44c52
+$gray-50: #fafafa
+$gray-100: #f5f5f5
+$gray-200: #eeeeee
+$gray-300: #e0e0e0
+$gray-400: #bdbdbd
+$gray-500: #9e9e9e
+$gray-600: #757575
+$gray-700: #616161
+$gray-800: #424242
+$gray-900: #212121
+
+/////////////////////////////////////////////////////////
+//  txt default
+/////////////////////////////////////////////////////////
+// @mixin '='로 사용해도됨
+// @include는 '+'로 사용해도됨
+
+=noto-thin
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 100
+
+=noto-light
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 300
+
+=noto-regular
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 400
+
+=noto-medium
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 500
+
+=noto-bold
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 700
+
+=noto-black
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 800
+
+=nanum-regular
+    font-family: 'NanumMyeongjo', serif
+    font-style: normal
+    font-weight: 400
+
+=nanum-bold
+    font-family: 'NanumMyeongjo', serif
+    font-style: normal
+    font-weight: 600
+
+=nanum-extrabold
+    font-family: 'NanumMyeongjo', serif
+    font-style: normal
+    font-weight: 700
+
+
+
+/////////////////////////////////////////////////////////
+//  common mixin
+/////////////////////////////////////////////////////////
+
+=txt-title
+    +nanum-extrabold
+    font-size: 36px
+    text-align: center
+    color: $support-blue-2
+
+=txt-contents
+    +nanum-bold
+    font-size: 14px
+    color: $gray-700
+
+/////////////////////////////////////////////////////////
+//  desktop-main
+/////////////////////////////////////////////////////////
+
+=txt-main-date
+    +nanum-extrabold
+    font-size: 24px
+    color: $gray-800
+    text-align: left
+
+=txt-main-title
+    +nanum-regular
+    font-size: 90px
+    color: $gray-500
+
+=txt-main-caption
+    +nanum-bold
+    font-size: 16px
+    color: $gray-800
+
+/////////////////////////////////////////////////////////
+//  desktop-write
+/////////////////////////////////////////////////////////
+
+// txt-title
+
+// txt-contents
+
+/////////////////////////////////////////////////////////
+//  desktop-open-ch
+/////////////////////////////////////////////////////////
+//++++++++++++++++++++++++++++++++++++
+// <상단 공개씀 예시부분>
+//++++++++++++++++++++++++++++++++++++
+
+// open-ch 날짜
+=txt-open-ch-date
+    +nanum-bold
+    font-size: 14px
+    text-align: center
+    color: $gray-800
+
+// txt-title
+// txt-contents
+
+//++++++++++++++++++++++++++++++++++++
+// <카드 부분>
+//++++++++++++++++++++++++++++++++++++
+
+=txt-card-username
+    +nanum-bold
+    font-size: 14px
+    color: $gray-800
+
+
+=txt-card-title
+    +nanum-bold
+    font-size: 22px
+    text-align: center
+    color: $gray-700
+
+// txt-contents
+
+=txt-card-date
+    +nanum-bold
+    font-size: 12px
+    text-align: center
+    color: $gray-700
+
+/////////////////////////////////////////////////////////
+//  desktop-menu-left-popup
+/////////////////////////////////////////////////////////
+
+=txt-nav-username
+    +noto-bold
+    font-size: 16px
+    text-align: center
+    color: $basic-white
+
+=txt-nav-usercaption
+    +noto-medium
+    font-size: 14px
+    text-align: center
+    color: $basic-white
+
+=txt-nav-footer
+    +noto-bold
+    text-align: center
+    color: $basic-white
+    font-size: 12px
+
+/////////////////////////////////////////////////////////
+//  desktop-bookmark-writing
+/////////////////////////////////////////////////////////
+
+//제목
+
+=txt-tab-normal
+    +nanum-extrabold
+    text-align: center
+    font-size: 18px
+    color: $gray-500
+// hover까지는 구현할 필요없음
+
+//username -> txt-card-username
+
+=txt-card-bookmark-writing-title
+    +nanum-bold
+    font-size: 20px
+    color: $gray-800
+
+=txt-card-bookmark--writing-content
+    +nanum-regular
+    font-size: 14px
+    color: $gray-800
+
+=txt-card-bookmark--writing-date
+    +nanum-bold
+    font-size: 14px
+    color: $gray-600
+
+/////////////////////////////////////////////////////////
+//  desktop-bookmark-author
+/////////////////////////////////////////////////////////
+
+=
