@@ -66,7 +66,6 @@
     <form class="" action="" method="post">
         <fieldset>
             <label class="" for="search">search</label>
-            <input id="search" type="text" data-ng-model="search.topic">
             <input id="datepicker" type="text" data-ng-model="range.startDate">
             <input id="datepicker2" type="text" data-ng-model="range.endDate">
         </fieldset>

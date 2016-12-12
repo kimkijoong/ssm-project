@@ -30,6 +30,5 @@
 		</footer>
 	</div>
 	<?php include_once("./application/views/include/script/script.php") ?>
-	<script type="text/javascript" src="/static/js/main.bundle.js"></script>
 </body>
 </html>
