@@ -28,7 +28,7 @@ $(document).ready(function()
         {
             event.preventDefault();
             var selectedId = "#" + $(this).attr('aria-controls');
-            console.log($(selectedId).children().eq(0).focus());
+            $(selectedId).children().children().eq(0).focus();
         }
     });
     // 키보드 오른쪽 방향키 , 왼쪽 방향키로 탭 인덱스 탐색
@@ -68,7 +68,7 @@ $(document).ready(function()
             if ($(this).prev().prevObject.attr('aria-controls') == 'section1')
             {
                 $('#tab2').attr('aria-selected', true).siblings().attr('aria-selected', false);
-                $('#section3').removeClass('unvisual').siblings().addClass('unvisual')
+                $('#section2').removeClass('unvisual').siblings().addClass('unvisual')
                 $('#tab2').focus();
             }
         }
