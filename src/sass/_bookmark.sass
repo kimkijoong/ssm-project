@@ -1,0 +1,163 @@
+$card-height: 140px
+$tab-default-color: $gray-500
+$tab-focus-color: $support-blue-3
+$tab-selected-color: $basic-blue
+$font-family: 'NanumMyeongjo', serif
+
+
+
+@mixin clear-fix
+    display: block
+    clear: both
+    content: ""
+
+@mixin card-normal
+    background-color: #ffffff
+    border-radius: 2px
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+    outline: none
+
+@mixin card-hover
+    background-color: #ffffff
+    border-radius: 2px
+    z-index: 2
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+    outline: none
+
+@mixin card-focus
+    background-color: #ffffff
+    border-radius: 2px
+    outline: thin dotted
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+
+body
+    background-color: $background-color
+
+.tab-list
+    display: block
+    &::after
+        @include clear-fix
+    li
+        float: left
+        list-style: none
+        cursor: pointer
+        position: relative
+        outline: none
+    li
+        display: block
+        box-sizing: border-box
+        background-color: $background-color
+        color: $tab-default-color
+        font-family: $font-family
+        font-size: 18px
+        font-weight: 800
+        text-align: center
+        padding: 16px
+        width: 50%
+        border-bottom: 3px solid $tab-default-color
+        text-decoration: none
+        &:focus
+            border-color: $tab-focus-color !important
+            color: $tab-focus-color !important
+
+[aria-selected="true"]
+    color: $tab-selected-color !important
+    border-bottom: 3px solid $tab-selected-color !important
+
+.unvisual
+    display: none
+
+.tab-contents
+    margin-top: 25px
+
+
+.card-bookmark-writing
+    height: $card-height
+    display: block
+    box-sizing: border-box
+    text-decoration: none
+    margin-bottom: 10px
+    @include card-normal
+    &:focus
+        @include card-focus
+    &:hover
+        @include card-hover
+    &:active
+        @include card-normal
+
+
+.bookmark-section1
+    width: percentage(136px / 844px)
+    height: $card-height
+    float: left
+    border-right: 1px solid $gray-400
+
+.bookmark-section2
+    width: percentage(706px / 844px)
+    height: $card-height
+    position: relative
+    float: left
+    box-sizing: border-box
+    padding: 18px 28px 18px 26px
+    &::after
+        @include clear-fix
+
+.profile-img
+    display: block
+    overflow: hidden
+    border-radius: 100%
+    margin: 22px 34px 16px
+
+
+
+
+.username
+    display: block
+    font-family: $font-family
+    font-size: 14px
+    font-weight: bold
+    text-align: center
+    color: $gray-800
+    margin:
+        top: 16px
+        left: 28px
+        right: 28px
+
+.card-content-heading
+    display: block
+    font-family: $font-family
+    font-size: 20px
+    font-weight: bold
+    color: $gray-800
+    margin-bottom: 41px
+
+.card-content-text
+    position: absolute
+    font-family: $font-family
+    font-size: 14px
+    font-weight: normal
+    color: $gray-800
+    padding:
+        left: 26px
+        right: 28px
+        bottom: 18px
+    bottom: 0
+    left: 0
+    line-height: 1.5
+
+.card-info-date
+    display: block
+    position: absolute
+    font-family: $font-family
+    font-size: 14px
+    font-weight: bold
+    top: 18px
+    right: 28px
+    color: $gray-800
+
+h1
+    margin-top: 110px
+    margin-bottom: 56px
