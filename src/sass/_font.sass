@@ -1,0 +1,410 @@
+
+/////////////////////////////////////////////////////////
+// 분기점
+/////////////////////////////////////////////////////////
+$md-container-width: 1024px
+
+
+
+/////////////////////////////////////////////////////////
+//  txt default
+/////////////////////////////////////////////////////////
+
+%noto-thin
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 100
+
+%noto-light
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 300
+
+%noto-regular
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 400
+
+%noto-medium
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 500
+
+%noto-bold
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 700
+
+%noto-black
+    font-family: 'Noto Sans KR', sans-serif
+    font-style: normal
+    font-weight: 800
+
+%nanum-regular
+    font-family: 'NanumMyeongjo', serif
+    font-style: normal
+    font-weight: 400
+
+%nanum-bold
+    font-family: 'NanumMyeongjo', serif
+    font-style: normal
+    font-weight: 600
+
+%nanum-extrabold
+    font-family: 'NanumMyeongjo', serif
+    font-style: normal
+    font-weight: 700
+
+
+
+
+/////////////////////////////////////////////////////////
+//  common mixin
+/////////////////////////////////////////////////////////
+
+.txt-page-title
+    @extend %nanum-extrabold
+    font-size: 36px
+    text-align: center
+    color: $support-blue-2
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-card-title
+    @extend %nanum-bold
+    font-size: 22px
+    text-align: center
+    color: $gray-700
+    @media screen and (min-width: $md-container-width)
+        font-size: 14px
+
+.txt-card-contents
+    @extend %nanum-bold
+    font-size: 14px
+    color: $gray-700
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-card-date
+    @extend %nanum-bold
+    font-size: 12px
+    text-align: center
+    color: $gray-700
+    @media screen and (min-width: $md-container-width)
+        //나눔 레귤러로 바꾸기
+        font-weight: 600
+        font-size: 10px
+
+/////////////////////////////////////////////////////////
+//  button-txt
+/////////////////////////////////////////////////////////
+
+// 일반적인 버튼의 기본값은 txt-btn-default를 사용합니다.
+// 특수한 경우에만 컬러를 변경합니다.
+
+.txt-btn-default
+    @extend %noto-medium
+    font-size: 12px
+    text-align: center
+    color: $gray-700
+    @media screen and (min-width: $md-container-width)
+        font-family: 'NanumMyeongjo', serif
+        font-style: normal
+        font-weight: 700
+
+.txt-btn-default-disabled
+    @extend .txt-btn-default
+    color: $gray-400
+    @media screen and (min-width: $md-container-width)
+        font-family: 'NanumMyeongjo', serif
+        font-style: normal
+        font-weight: 700
+
+.txt-btn-solid
+    @extend .txt-btn-default
+    color: $basic-white
+    @media screen and (min-width: $md-container-width)
+        font-family: 'NanumMyeongjo', serif
+        font-style: normal
+        font-weight: 700
+
+.txt-btn-danger
+    @extend .txt-btn-default
+    color: $warning-watermelon
+    @media screen and (min-width: $md-container-width)
+        font-family: 'NanumMyeongjo', serif
+        font-style: normal
+        font-weight: 700
+
+.txt-btn-main
+    @extend %noto-medium
+    font-size: 18px
+    color: $gray-700
+    text-align: center
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-btn-main-disabled
+    @extend .txt-btn-main
+    color: $gray-400
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-btn-menu
+    @extend %noto-medium
+    font-size: 16px
+    color: $basic-white
+    text-align: center
+
+
+
+/////////////////////////////////////////////////////////
+//  desktop-main
+/////////////////////////////////////////////////////////
+
+.txt-main-date
+    @extend %nanum-extrabold
+    font-size: 24px
+    color: $gray-800
+    text-align: left
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+        text-align: center
+
+.txt-main-title
+    @extend %nanum-regular
+    font-size: 90px
+    color: $gray-500
+    @media screen and (min-width: $md-container-width)
+        font-size: 38px
+        text-align: center
+
+.txt-main-caption
+    @extend %nanum-bold
+    font-size: 16px
+    color: $gray-800
+
+/////////////////////////////////////////////////////////
+//  desktop-write
+/////////////////////////////////////////////////////////
+
+// txt-page-title
+
+// txt-card-contents
+
+/////////////////////////////////////////////////////////
+//  desktop-open-ch
+/////////////////////////////////////////////////////////
+//////////////////////////
+// <상단 공개씀 예시부분>
+//////////////////////////
+
+// open-ch 날짜
+.txt-page-date
+    @extend %nanum-bold
+    font-size: 14px
+    text-align: center
+    color: $gray-800
+
+// txt-page-title
+// txt-card-contents
+// txt-card-date
+
+//////////////////////////
+// <카드 부분>
+//////////////////////////
+
+.txt-card-username
+    @extend %nanum-bold
+    font-size: 14px
+    color: $gray-800
+
+
+
+//txt-card-title
+
+// txt-card-contents
+
+//txt-card-date
+
+
+/////////////////////////////////////////////////////////
+//  desktop-menu-left-popup
+/////////////////////////////////////////////////////////
+
+.txt-nav-username
+    @extend %noto-bold
+    font-size: 16px
+    text-align: center
+    color: $basic-white
+    @media screen and (min-width: $md-container-width)
+        font-size: 14px
+        text-align: left
+
+.txt-nav-usercaption
+    @extend %noto-medium
+    font-size: 14px
+    text-align: center
+    color: $basic-white
+
+.txt-nav-footer
+    @extend %noto-bold
+    text-align: center
+    color: $basic-white
+    font-size: 12px
+    @media screen and (min-width: $md-container-width)
+        font-size: 10px
+
+/////////////////////////////////////////////////////////
+//  desktop-slide (menu-right)
+/////////////////////////////////////////////////////////
+
+.txt-slide-search-date
+    @extend %noto-regular
+    font-size: 16px
+    color: $gray-800
+    @media screen and (min-width: $md-container-width)
+        font-size: 11px
+
+.txt-slide-date
+    @extend %noto-light
+    font-size: 52px
+    color: $basic-blue
+    text-align: right
+    @media screen and (min-width: $md-container-width)
+        font-size: 38px
+
+.txt-slide-time
+    @extend %noto-regular
+    font-size: 16px
+    color: $gray-700
+    text-align: right
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-slide-title
+    @extend %noto-medium
+    font-size: 20px
+    color: $gray-700
+    text-align: right
+    @media screen and (min-width: $md-container-width)
+        font-size: 16px
+
+.txt-slide-pagination
+    @extend %noto-bold
+    font-size: 12px
+    color: $gray-600
+    text-align: center
+
+/////////////////////////////////////////////////////////
+//  desktop-bookmark-writing
+/////////////////////////////////////////////////////////
+
+
+.txt-tab-normal
+    @extend %nanum-extrabold
+    text-align: center
+    font-size: 18px
+    color: $gray-500
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+// hover까지는 구현할 필요없음
+
+//username -> txt-card-username
+
+.txt-card-bookmark-writing-title
+    @extend %nanum-bold
+    font-size: 20px
+    color: $gray-800
+
+
+.txt-card-bookmark-writing-content
+    @extend %nanum-regular
+    font-size: 14px
+    color: $gray-800
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-card-bookmark-writing-date
+    @extend %nanum-bold
+    font-size: 14px
+    color: $gray-600
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+/////////////////////////////////////////////////////////
+//  desktop-book-mark-author
+/////////////////////////////////////////////////////////
+
+.txt-card-bookmark-username
+    @extend %nanum-extrabold
+    font-size: 18px
+    color: $gray-800
+
+.txt-card-bookmark-usercaption
+    @extend %nanum-bold
+    font-size: 12px
+    color: $gray-800
+
+/////////////////////////////////////////////////////////
+//  desktop-topic-list
+/////////////////////////////////////////////////////////
+
+.txt-card-topic-list-time
+    @extend %nanum-bold
+    font-size: 14px
+    color: $gray-700
+
+.txt-card-topic-list-title
+    @extend %nanum-extrabold
+    font-size: 30px
+    color: $gray-700
+
+.txt-card-topic-list-info
+    @extend %nanum-bold
+    font-size: 14px
+    color: $gray-700
+
+/////////////////////////////////////////////////////////
+//  desktop-my-ch
+/////////////////////////////////////////////////////////
+
+.txt-card-my-ch-label
+    @extend %noto-bold
+    font-size: 12px
+    text-align: right
+    color: $basic-white
+
+/////////////////////////////////////////////////////////
+//  desktop-my-ch-detail
+/////////////////////////////////////////////////////////
+
+//common txt 참고
+
+/////////////////////////////////////////////////////////
+//  desktop-setting
+/////////////////////////////////////////////////////////
+
+.txt-card-setting-title
+    @extend %noto-bold
+    font-size: 14px
+    color: $warning-blush-pink
+    text-align: left
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-card-setting-input
+    @extend %noto-medium
+    font-size: 14px
+    color: $support-blue-3
+    text-align: left
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
+
+.txt-card-setting-info
+    @extend %noto-medium
+    color: $basic-blue
+    text-align: left
+    font-size: 14px
+    @media screen and (min-width: $md-container-width)
+        font-size: 12px
