@@ -1,9 +1,7 @@
-
+@import "../../static/css/libs/but_grid/grid_style.css"
 /////////////////////////////////////////////////////////
 // 분기점
 /////////////////////////////////////////////////////////
-$md-container-width: 1024px
-
 
 
 /////////////////////////////////////////////////////////
@@ -67,7 +65,7 @@ $md-container-width: 1024px
     font-size: 36px
     text-align: center
     color: $support-blue-2
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-card-title
@@ -75,14 +73,14 @@ $md-container-width: 1024px
     font-size: 22px
     text-align: center
     color: $gray-700
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 14px
 
 .txt-card-contents
     @extend %nanum-bold
     font-size: 14px
     color: $gray-700
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-card-date
@@ -90,7 +88,7 @@ $md-container-width: 1024px
     font-size: 12px
     text-align: center
     color: $gray-700
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         //나눔 레귤러로 바꾸기
         font-weight: 600
         font-size: 10px
@@ -112,7 +110,7 @@ $md-container-width: 1024px
     font-size: 12px
     text-align: center
     color: $gray-700
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-family: 'NanumMyeongjo', serif
         font-style: normal
         font-weight: 700
@@ -120,7 +118,7 @@ $md-container-width: 1024px
 .txt-btn-default-disabled
     @extend .txt-btn-default
     color: $gray-400
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-family: 'NanumMyeongjo', serif
         font-style: normal
         font-weight: 700
@@ -128,7 +126,7 @@ $md-container-width: 1024px
 .txt-btn-solid
     @extend .txt-btn-default
     color: $basic-white
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-family: 'NanumMyeongjo', serif
         font-style: normal
         font-weight: 700
@@ -136,7 +134,7 @@ $md-container-width: 1024px
 .txt-btn-danger
     @extend .txt-btn-default
     color: $warning-watermelon
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-family: 'NanumMyeongjo', serif
         font-style: normal
         font-weight: 700
@@ -146,13 +144,13 @@ $md-container-width: 1024px
     font-size: 18px
     color: $gray-700
     text-align: center
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-btn-main-disabled
     @extend .txt-btn-main
     color: $gray-400
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-btn-menu
@@ -172,7 +170,7 @@ $md-container-width: 1024px
     font-size: 24px
     color: $gray-800
     text-align: left
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
         text-align: center
 
@@ -180,7 +178,7 @@ $md-container-width: 1024px
     @extend %nanum-regular
     font-size: 90px
     color: $gray-500
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 38px
         text-align: center
 
@@ -242,7 +240,7 @@ $md-container-width: 1024px
     font-size: 16px
     text-align: center
     color: $basic-white
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 14px
         text-align: left
 
@@ -257,7 +255,7 @@ $md-container-width: 1024px
     text-align: center
     color: $basic-white
     font-size: 12px
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 10px
 
 /////////////////////////////////////////////////////////
@@ -268,7 +266,7 @@ $md-container-width: 1024px
     @extend %noto-regular
     font-size: 16px
     color: $gray-800
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 11px
 
 .txt-slide-date
@@ -276,7 +274,7 @@ $md-container-width: 1024px
     font-size: 52px
     color: $basic-blue
     text-align: right
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 38px
 
 .txt-slide-time
@@ -284,7 +282,7 @@ $md-container-width: 1024px
     font-size: 16px
     color: $gray-700
     text-align: right
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-slide-title
@@ -292,7 +290,7 @@ $md-container-width: 1024px
     font-size: 20px
     color: $gray-700
     text-align: right
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 16px
 
 .txt-slide-pagination
@@ -311,7 +309,7 @@ $md-container-width: 1024px
     text-align: center
     font-size: 18px
     color: $gray-500
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 // hover까지는 구현할 필요없음
 
@@ -327,14 +325,14 @@ $md-container-width: 1024px
     @extend %nanum-regular
     font-size: 14px
     color: $gray-800
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-card-bookmark-writing-date
     @extend %nanum-bold
     font-size: 14px
     color: $gray-600
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 /////////////////////////////////////////////////////////
@@ -397,7 +395,7 @@ $md-container-width: 1024px
     font-size: 14px
     color: $warning-blush-pink
     text-align: left
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-card-setting-input
@@ -405,7 +403,7 @@ $md-container-width: 1024px
     font-size: 14px
     color: $support-blue-3
     text-align: left
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 .txt-card-setting-info
@@ -413,7 +411,7 @@ $md-container-width: 1024px
     color: $basic-blue
     text-align: left
     font-size: 14px
-    @media screen and (max-width: $md-container-width)
+    +respond-to($sm-container-width)
         font-size: 12px
 
 body

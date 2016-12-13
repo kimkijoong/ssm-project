@@ -1,3 +1,5 @@
+@import url(../../static/css/libs/but_grid/grid_style.css);
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -350,6 +352,14 @@ table {
   display: block;
   clear: both;
   content: "";
+}
+
+.col-float {
+  float: left;
+}
+
+.col-postion-r {
+  position: relative;
 }
 
 .txt-slide-date {
@@ -748,9 +758,10 @@ body {
 }
 
 .card-box,
+.card-box:active,
 .card-bookmark-writing,
 .card-bookmark-writing:active {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 0 0 rgba(0,0,0,0.12);
   transition: box-shadow 0.2s ease;
@@ -758,9 +769,8 @@ body {
 }
 
 .card-box:hover,
-.card-box:active,
 .card-bookmark-writing:hover {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 2px;
   z-index: 2;
   box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 0 8px 0 rgba(0,0,0,0.12);
@@ -770,7 +780,7 @@ body {
 
 .card-box:focus,
 .card-bookmark-writing:focus {
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 2px;
   outline: thin dotted;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 0 0 rgba(0,0,0,0.12);
@@ -780,20 +790,50 @@ body {
 .card-box {
   height: 370px;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .btn-default {
   display: block;
   min-width: 80px;
-  padding: 8px 18px 4px;
-  border: 1px solid #9E9E9E;
-  background-color: #FFFFFF;
+  padding: 6px 18px 6px;
+  border: 1px solid #616161;
+  background-color: #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: box-shadow 0.2s ease;
 }
 
-.margin-LR-reset {
-  margin-left: 0;
-  margin-right: 0;
+.btn-default:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-default:active {
+  background-color: #f5f5f5;
+  box-shadow: none;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-default:disabled {
+  color: #bdbdbd;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-default:focus {
+  background-color: #f5f5f5;
+  box-shadow: none;
+  outline: none;
+  transition: box-shadow 0.2s ease;
 }
 
 body {
@@ -917,7 +957,6 @@ h1 {
 
 .book-mark-author {
   position: relative;
-  height: 100%;
   text-decoration: none;
 }
 
@@ -950,7 +989,19 @@ h1 {
   margin-right: auto;
 }
 
-@media screen and (max-width: 1024px) {
+#section1>article {
+  margin-left: 0;
+}
+
+#section2>article:nth-child(3n) {
+  margin-right: 0;
+}
+
+#section2>article:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .txt-page-title {
     font-size: 12px;
   }
