@@ -1,5 +1,5 @@
 /* import */
-@import "_placeholder"
+@import "../_placeholder"
 
 
 
@@ -66,29 +66,39 @@ body
  /* Fluid */
 /* header */
 .header
-	+setWH(320px, 34px)
+	// +setWH(320px, 34px)
+	min-width: 320px
+	height: 34px
 	color: #fff
 	+setPosition(fixed, top 0 left 0 z-index 999)
+	+setFont(size 12px)
 	display: flex
 	align-items: center
 	justify-content: center
 	background-color: #51bcd8
 
 .logo
-	+setWH(18px, 18px)
+	// +setWH(18px, 18px)
+	// +setWH(112px, 18px)
+	+setWH(150px, 18px)
 	display: inline-block
 
 .logo-but-white
 	@extend %a
 	
 	+setWH(18px, 18px)
-	+setFont(size 14px)
+	+setFont(size 12px)
+	float: left
 	color: #fff
 	text-align: center
 	border: 1px solid #fff
 
 .logo-text
-	display: none
+	+setWH(120px,18px)
+	display: block
+	float: left
+
+	
 
 /* mask */
 #mask
@@ -126,7 +136,9 @@ body
 
 /* menu */
 .navigation
-	+setWH(214px, 568px)
+	// +setWH(214px, 568px)
+	min-height: 568px
+	+setWH(214px, 100vh)
 	+setPosition(absolute, top 0 left -238px z-index 99999)
 	background-color: #51bcd8
 
@@ -224,20 +236,23 @@ body
 	margin: 0 auto
 	margin-top: 7px
 
-
-#btn-close
+.btn-close
 	+setWH(24px, 24px)
-	+setPosition(absolute, top 0 right -24px)
 	color: #fff
 	cursor: pointer
 	border: 1px solid #14a6cc
 	background-color: #14a6cc
 
+#nav-btn-close
+	+setPosition(absolute, top 0 right -24px)
+
 
 /* aside */
 .aside
-	+setWH(260px, 568px)
-	+setPosition(absolute, top 0 right -260px z-index 99999)
+	// +setWH(260px, 568px)
+	min-height: 568px
+	+setWH(260px, 100vh)
+	+setPosition(absolute, top 0 right -284px z-index 99999)
 	background-color: #fff
 
 .search-date
@@ -327,21 +342,21 @@ body
 
 .static-btn
 	@extend %clearfix
-	+setPosition(absolute, bottom 0)
+	// +setPosition(absolute, bottom 0)
 
-.aside [class^="btn-"]
+.static-btn [class^="btn-"]
 	+setWH(129.6px, 34px)
 	float: left
 	border: 1px solid #e0e0e0
 	background-color: #e0e0e0
-.aside [class^="btn-"] > img
+.static-btn [class^="btn-"] > img
 	display: block
 	margin: 0 auto
 .btn-up
 	margin-right: 0.7px
 
-body
-	color: #fff
+#aside-btn-close
+	+setPosition(absolute, top 0 left -24px)
 
 
 /**-------------------------

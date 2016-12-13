@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Ssum: main</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style/main-style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style/common.css">
+	<script src="../js/jquery.min.js"></script>
+</head>
+<body class="">
+	<div class="grid-box base-line"></div>
+	<div class="outer container row">
+		<header class="header  xs-col-4">
+			<section class="logo">
+				<h1 class="readable-hidden">씀 로고(메인화면으로 바로가기)</h1>
+
+				<a class="logo-but-white" href="#">
+					벗 <span class="logo-text">Your writing Friend</span>
+				</a>
+			</section>
+
+			<!-- btn menu -->
+			<button id="btn-menu"><img src="../images/icon/ic_menu.svg"></button>
+
+			<!-- dim effect -->
+			<div id="mask"></div>
+
+			<!--  Menu displayed on the Desktop / Mobile -->
+			<nav class="navigation">
+				<h1 class="readable-hidden">씀 메뉴</h1>
+
+				<section class="menu">
+					<div class="profile-box">
+						<h2 class="readable-hidden">사용자 프로필</h2>
+
+						<a class="profile" href="#">
+							<img class="user-profile" src="../images/ann.png" alt="사용자 프로필 사진">
+							<p class="pen-name">궈는주</p>
+						</a>
+					</div>
+
+					<ul class="menu-list">
+						<!-- <li class="list"><a href="#">공개 씀</a></li> -->
+						<li class="list"><a href="#">공개 씀</a></li>
+						<li class="list"><a href="#">나의 씀</a></li>
+						<li class="list"><a href="#">책갈피</a></li>
+					</ul>
+
+					<!-- 검색 클릭 시, -->
+					<!-- <div class="search-bar">
+						<h1 class="readable-hidden">search</h1>
+
+						<form class="" action="" method="post">
+							<fieldset>
+								<label class="" for="search">search</label>
+								<input id="search" type="text">
+							</fieldset>
+							<button class="search" type="submit"><img src="" alt="검색"></button>
+						</form>
+					</div> -->
+					
+					<div class="option-box">
+						<button class="btn-option btn-logout" type="button">로그아웃</button>
+						<a class="btn-option btn-setting" href="#">설 정</a>
+					</div >
+					
+					<div class="footer">
+						<div class="sns-box">
+							<h2 class="readable-hidden">SSUM SNS</h2>
+
+							<a class="sns-twitter" href="#"><img src="../images/icon/sns_twitter-logo.svg" alt="트위터"></a>
+							<a class="sns-facebook" href="#"><img src="../images/icon/sns_facebook-logo.svg" alt="페이스북"></a>
+							<a class="sns-instagram" href="#"><img src="../images/icon/sns_instagram-logo.svg" alt="인스타그램"></a>
+						</div>
+						<p class="copyright">
+							<span>copyright But project,</span>
+							All right reserved.
+						</p>
+					</div>
+				</section>
+
+				<button id="nav-btn-close" class="btn-close" type="button">X</button>
+			</nav>
+			
+			<button id="btn-date" class="" type="button">
+				<img src="../images/icon/ic_date_range.svg" alt="date range">
+			</button>
+			<!-- Aside menu, 'diplay:none' on mobile -->
+			<aside class="aside">
+				<section class="search-date">
+					<h2 class="readable-hidden">날짜 필터 검색</h2>
+
+					<form action="">
+						<label for="">
+							<img src="../images/icon/ic_date_range.svg" alt="date range">
+						</label>
+						<div class="search">
+							<input id="" type="text" placeholder="2016.11.28 - 2016.12.22">
+						</div>
+					</form>
+				</section>
+
+				<section class="slide-box">
+					<div class="slide-content">
+						<h1 class="slide-day">06</h1>
+						<div class="slide-topic-box">
+							<p class="slide-day-topic">낮의 주제</p>
+							<a href="#" class="slide-topic">"TT"</a>
+						</div>
+						<div class="slide-topic-box">
+							<p class="slide-night-topic">밤의 주제</p>
+							<a href="#" class="slide-topic slide-last-topic">"대여"</a>
+						</div>
+					</div>
+					<div class="slide-content">
+						<h1 class="slide-day">05</h1>
+						<div class="slide-topic-box">
+							<p class="slide-day-topic">낮의 주제</p>
+							<a href="#" class="slide-topic">"도깨비"</a>
+						</div>
+						<div class="slide-topic-box">
+							<p class="slide-night-topic">밤의 주제</p>
+							<a href="#" class="slide-topic slide-last-topic">"저승사자"</a>
+						</div>
+					</div>
+					<!-- <div class="slide-content">
+						<h1>04</h1>
+						<div class="">
+							<p class="">낮의 주제</p>
+							<a href="#" class="">사장</a>
+						</div>
+						<div class="">
+							<p class="">밤의 주제</p>
+							<a href="#" class="">부장</a>
+						</div>
+					</div> -->
+				</section>
+				
+				<section class="static-btn-bottom-aside">
+					<div class="page-number">
+						<div class="line"></div>
+						<p class="number">1/4</p>
+						<div class="line"></div>
+					</div>
+
+					<div class="static-btn">
+						<button class="btn-up" type="button">
+							<img src="../images/icon/ic_arrow_up.svg" alt="arrow up">
+						</button>
+						<button class="btn-down" type="button">
+							<img src="../images/icon/ic_arrow_down.svg" alt="arrow down">
+						</button>
+					</div>
+				</section>
+					
+				<button id="aside-btn-close" class="btn-close" type="button">X</button>
+			</aside>
+		</header>
+
+		<main class="main">
+			<section>
+				<h1 class="readable-hidden">Main: Day Topic</h1>
+
+			</section>
+		</main>
+	</div>
+
+	<script src="../js/module.js"></script>
+</body>
+</html>
