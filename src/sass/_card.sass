@@ -1,0 +1,35 @@
+%card-normal
+    background-color: #ffffff
+    border-radius: 2px
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+    outline: none
+
+%card-hover
+    background-color: #ffffff
+    border-radius: 2px
+    z-index: 2
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+    outline: none
+
+%card-focus
+    background-color: #ffffff
+    border-radius: 2px
+    outline: thin dotted
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+
+
+.card-box
+    height: 370px
+    text-decoration: none
+    @extend %card-normal
+    &:hover
+        @extend %card-hover
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-hover
+    @media screen and (max-width: $md-container-width)
+        height: 71px

@@ -93,11 +93,11 @@
   @else if $container-width == $md-container-width
     $col: "md-"
 
-  @else if $container-width == $lg-container-width
-    $col: "lg-"
+  // @else if $container-width == $lg-container-width
+  //   $col: "lg-"
 
-  @else if $container-width == $xl-container-width
-    $col: "xl-"
+  // @else if $container-width == $xl-container-width
+  //   $col: "xl-"
 
   .#{$col}hidden
     display: none
@@ -233,10 +233,13 @@
     @media only screen and ( min-width: $mobile-max ) and ( max-width: $tablet-max )  {@content}
 
   @else if $media == $md-container-width
-    @media only screen and ( min-width: $md-container-width * 1px ) and ( max-width: ( $lg-container-width - 1 ) * 1px )  {@content}
+    @media only screen and ( min-width: $md-container-width * 1px ) {@content}
 
-  @else if $media == $lg-container-width
-    @media only screen and ( min-width: $lg-container-width * 1px ) and ( max-width: ( $xl-container-width - 1 ) * 1px )  {@content}
+// @else if $media == $md-container-width
+//     @media only screen and ( min-width: $md-container-width * 1px ) and ( max-width: ( $lg-container-width - 1 ) * 1px )  {@content}
 
-  @else if $media == $xl-container-width
-    @media only screen and ( min-width: $xl-container-width * 1px )  {@content}
+  // @else if $media == $lg-container-width
+  //   @media only screen and ( min-width: $lg-container-width * 1px ) and ( max-width: ( $xl-container-width - 1 ) * 1px )  {@content}
+
+  // @else if $media == $xl-container-width
+  //   @media only screen and ( min-width: $xl-container-width * 1px )  {@content}
