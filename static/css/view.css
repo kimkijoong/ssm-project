@@ -348,7 +348,8 @@ table {
 }
 
 .tab-list::after,
-.bookmark-section2::after {
+.bookmark-section2::after,
+.author-wrap::after {
   display: block;
   clear: both;
   content: "";
@@ -417,7 +418,7 @@ table {
 .txt-page-date,
 .txt-card-bookmark-writing-title,
 .txt-card-bookmark-writing-date,
-.txt-card-bookmark-usercaption,
+.txt-card-bookmark-usercaption+respond-to($md-container-width),
 .txt-card-topic-list-time,
 .txt-card-topic-list-info {
   font-family: 'NanumMyeongjo', serif;
@@ -577,12 +578,17 @@ table {
 }
 
 .txt-card-bookmark-username {
-  font-size: 20px;
   color: #424242;
+}
+
+.txt-card-bookmark-username,
+.txt-card-bookmark-username+respond-to($md-container-width) {
+  font-size: 20px;
   text-align: center;
 }
 
-.txt-card-bookmark-usercaption {
+.txt-card-bookmark-usercaption,
+.txt-card-bookmark-usercaption+respond-to($md-container-width) {
   font-size: 14px;
   color: #424242;
   text-align: center;
@@ -932,13 +938,18 @@ body {
   margin-bottom: 12px;
 }
 
-.card-content-heading {
+.card-content-heading,
+.card-content-heading+respond-to($xs-container-width) {
   display: block;
   margin-bottom: 41px;
 }
 
 .card-content-text {
   position: absolute;
+}
+
+.card-content-text,
+.card-content-text+respond-to($xs-container-width) {
   padding-left: 26px;
   padding-right: 26px;
   padding-bottom: 12px;
@@ -949,8 +960,14 @@ body {
 .card-info-date {
   display: block;
   position: absolute;
-  top: 14px;
-  right: 26px;
+}
+
+.card-info-date,
+.card-info-date+respond-to($xs-container-width) {
+  top: 0;
+  right: 0;
+  margin-top: 14px;
+  margin-right: 26px;
 }
 
 .book-mark-author {
@@ -962,6 +979,10 @@ body {
   display: block;
   overflow: hidden;
   border-radius: 100%;
+}
+
+.profile-img-author,
+.profile-img-author+respond-to($xs-container-width) {
   width: 110px;
   height: 110px;
   margin-top: 42px;
@@ -971,8 +992,12 @@ body {
 }
 
 .book-mark-author-username {
-  padding: 0 18px;
   text-decoration: none;
+}
+
+.book-mark-author-username,
+.book-mark-author-username+respond-to($xs-container-width) {
+  padding: 0 18px;
 }
 
 .book-mark-author-caption {
@@ -1000,6 +1025,10 @@ body {
 #section2>article:nth-child(3n+1),
 #section2+respond-to($sm-container-width)>article:nth-child(3n+1) {
   margin-left: 0;
+}
+
+.author-wrap {
+  width: 100%;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1190,6 +1219,11 @@ body {
     font-size: 12px;
   }
 
+  .txt-card-bookmark-username {
+    font-size: 14px;
+    text-align: left;
+  }
+
   .txt-card-setting-title {
     font-size: 12px;
   }
@@ -1246,6 +1280,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
+    width: 300px;
   }
 
   .profile-img {
@@ -1257,6 +1292,43 @@ body {
   }
 
   .username {
+    text-align: left;
+    float: left;
+    padding: 25px 0;
+  }
+
+  .card-content-heading {
+    display: inline-block;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+
+  .card-content-text {
+    top: 66px;
+    left: 0;
+    width: 300px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+
+  .card-info-date {
+    top: 0;
+    right: 0;
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+
+  .profile-img-author {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    margin: 16px;
+    float: left;
+  }
+
+  .book-mark-author-username {
     text-align: left;
     float: left;
     padding: 25px 0;

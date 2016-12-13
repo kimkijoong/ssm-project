@@ -109,6 +109,7 @@ body
         position: absolute
         left: 0
         top: 0
+        width: 300px
     +respond-to($xs-container-width), +respond-to($xs-container-width)
         width: percentage(706px / 844px)
         height: $card-height
@@ -151,23 +152,49 @@ body
             bottom: 12px
 
 .card-content-heading
-    display: block
-    margin-bottom: 41px
+    +respond-to($xs-container-width)
+        display: inline-block
+        padding:
+            top: 16px
+            left: 16px
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        display: block
+        margin-bottom: 41px
 
 .card-content-text
     position: absolute
-    padding:
-        left: 26px
-        right: 26px
-        bottom: 12px
-    bottom: 0
-    left: 0
+    +respond-to($xs-container-width)
+        top: 66px
+        left: 0
+        width: 300px
+        box-sizing: border-box
+        padding:
+            left: 16px
+            right: 16px
+            bottom: 16px
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        padding:
+            left: 26px
+            right: 26px
+            bottom: 12px
+        bottom: 0
+        left: 0
 
 .card-info-date
     display: block
     position: absolute
-    top: 14px
-    right: 26px
+    +respond-to($xs-container-width)
+        top: 0
+        right: 0
+        margin:
+            top: 16px
+            right: 16px
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        top: 0
+        right: 0
+        margin:
+            top: 14px
+            right: 26px
 
 .book-mark-author
     position: relative
@@ -177,17 +204,29 @@ body
     display: block
     overflow: hidden
     border-radius: 100%
-    width: 110px
-    height: 110px
-    margin:
-        top: 42px
-        left: 79px
-        right: 79px
-        bottom: 25px
+    +respond-to($xs-container-width)
+        display: inline-block
+        width: 39px
+        height: 39px
+        margin: 16px
+        float: left
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        width: 110px
+        height: 110px
+        margin:
+            top: 42px
+            left: 79px
+            right: 79px
+            bottom: 25px
 
 .book-mark-author-username
-    padding: 0 18px
     text-decoration: none
+    +respond-to($xs-container-width)
+        text-align: left
+        float: left
+        padding: 25px 0
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        padding: 0 18px
 
 .book-mark-author-caption
     margin-top: 24px
@@ -225,3 +264,8 @@ body
             margin-right: 0
         & > article:nth-child(3n+1)
             margin-left: 0
+
+.author-wrap
+    &::after
+        @extend %clear-fix
+    width: 100%

@@ -393,16 +393,23 @@
 
 .txt-card-bookmark-username
     @extend %nanum-extrabold
-    font-size: 20px
     color: $gray-800
-    text-align: center
+    +respond-to($xs-container-width)
+        font-size: 14px
+        text-align: left
+    +respond-to($sm-container-width), +respond-to($md-container-width)
+        font-size: 20px
+        text-align: center
+
+
+
 
 .txt-card-bookmark-usercaption
-    @extend %nanum-bold
-    font-size: 14px
-    color: $gray-800
-    text-align: center
-
+    +respond-to($sm-container-width), +respond-to($md-container-width)
+        @extend %nanum-bold
+        font-size: 14px
+        color: $gray-800
+        text-align: center
 /////////////////////////////////////////////////////////
 //  desktop-topic-list
 /////////////////////////////////////////////////////////
@@ -474,6 +481,8 @@
         font-size: 14px
     +respond-to($md-container-width)
         font-size: 14px
-        
+
+
+
 body
     line-height: 1.5
