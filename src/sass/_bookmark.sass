@@ -7,9 +7,17 @@ $card-height: 140px
 body
     background-color: $background-color
 
-h1
-    margin-top: 89px
-    margin-bottom: 33px
+.page-top-section
+    +respond-to($xs-container-width)
+        padding-top: 8px
+        padding-bottom: 8px
+        background-color: $basic-white
+        box-shadow: 0 2px 2px 0 $gray-400
+        margin-bottom: 18px
+    +respond-to($sm-container-width), +respond-to($md-container-width)
+        padding-top: 89px
+        padding-bottom: 33px
+
 /////////////////////////////////////////////////////////
 //  tab
 /////////////////////////////////////////////////////////
@@ -17,6 +25,10 @@ h1
     display: block
     &::after
         @extend %clear-fix
+    +respond-to($xs-container-width)
+        box-sizing: border-box
+        padding-left: 10px
+        padding-right: 10px
     li
         float: left
         list-style: none
@@ -27,29 +39,39 @@ h1
         display: block
         box-sizing: border-box
         background-color: $background-color
-        padding: 13px
         width: 50%
-        border-bottom: 3px solid $gray-500
         text-decoration: none
         &:focus
             border-color: $support-blue-3 !important
             color: $support-blue-3 !important
+        +respond-to($xs-container-width)
+            padding: 9px
+            border-bottom: 2px solid $gray-500
+        +respond-to($xs-container-width), +respond-to($xs-container-width)
+            padding: 13px
+            border-bottom: 3px solid $gray-500
+
 
 [aria-selected="true"]
     color: $basic-blue !important
-    border-bottom: 3px solid $basic-blue !important
+    +respond-to($xs-container-width)
+        border-bottom: 2px solid $basic-blue !important
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        border-bottom: 3px solid $basic-blue !important
 
 .unvisual
     display: none
 
 .tab-contnents
-    margin-top: 25px
+    +respond-to($xs-container-width)
+        margin-top: 18px
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        margin-top: 25px
 
 /////////////////////////////////////////////////////////
 //  txt default
 /////////////////////////////////////////////////////////
 .card-bookmark-writing
-    height: $card-height
     display: block
     box-sizing: border-box
     text-decoration: none
@@ -61,13 +83,24 @@ h1
         @extend %card-hover
     &:active
         @extend %card-normal
-
+    +respond-to($xs-container-width)
+        height: 219px
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        height: $card-height
 
 .bookmark-section1
-    width: percentage(136px / 844px)
-    height: $card-height
-    float: left
-    border-right: 1px solid $gray-400
+    +respond-to($xs-container-width)
+        width: 300px
+        position: absolute
+        left: 0
+        bottom: 0
+        height: 71px
+        border-top: 1px solid $gray-400
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        width: percentage(136px / 844px)
+        height: $card-height
+        float: left
+        border-right: 1px solid $gray-400
 
 .bookmark-section2
     width: percentage(706px / 844px)
@@ -83,9 +116,16 @@ h1
     display: block
     overflow: hidden
     border-radius: 100%
-    width: 68px
-    height: 68px
-    margin: 22px 34px 16px
+    +respond-to($xs-container-width)
+        display: inline-block
+        width: 39px
+        height: 39px
+        margin: 16px
+        float: left
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        width: 68px
+        height: 68px
+        margin: 22px 34px 16px
 
 
 
@@ -93,11 +133,16 @@ h1
 .username
     display: block
     text-align: center
-    margin:
-        top: 17px
-        left: 28px
-        right: 28px
-        bottom: 12px
+    +respond-to($xs-container-width)
+        text-align: left
+        float: left
+        padding: 25px 0
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        margin:
+            top: 17px
+            left: 28px
+            right: 28px
+            bottom: 12px
 
 .card-content-heading
     display: block
@@ -117,13 +162,6 @@ h1
     position: absolute
     top: 14px
     right: 26px
-
-
-.ex-slider
-    display: block
-    position: relative
-    height: 100vh
-    background-color: skyblue
 
 .book-mark-author
     position: relative
@@ -159,9 +197,25 @@ h1
 
 #section1 > article
     margin-left: 0
+    position: relative
+    +respond-to($xs-container-width)
+        box-sizing: border-box
+        padding-left: 10px
+        padding-right: 10px
+    +respond-to($sm-container-width)
+        margin-left: 0
+    +respond-to($md-container-width)
+        margin-left: 0
 
 #section2
-    & > article:nth-child(3n)
-        margin-right: 0
-    & > article:nth-child(3n+1)
-        margin-left: 0
+    +respond-to($xs-container-width)
+        & > article
+            box-sizing: border-box
+            padding-left: 10px
+            padding-right: 10px
+            margin-left: 0
+    +respond-to($md-container-width), +respond-to($sm-container-width)
+        & > article:nth-child(3n)
+            margin-right: 0
+        & > article:nth-child(3n+1)
+            margin-left: 0

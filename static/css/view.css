@@ -821,9 +821,10 @@ body {
   background-color: #e9ebee;
 }
 
-h1 {
-  margin-top: 89px;
-  margin-bottom: 33px;
+.page-top-section,
+.page-top-section+respond-to($md-container-width) {
+  padding-top: 89px;
+  padding-bottom: 33px;
 }
 
 .tab-list {
@@ -842,9 +843,7 @@ h1 {
   display: block;
   box-sizing: border-box;
   background-color: #e9ebee;
-  padding: 13px;
   width: 50%;
-  border-bottom: 3px solid #9e9e9e;
   text-decoration: none;
 }
 
@@ -853,8 +852,18 @@ h1 {
   color: #0e8cad !important;
 }
 
+.tab-list li,
+.tab-list li+respond-to($xs-container-width) {
+  padding: 13px;
+  border-bottom: 3px solid #9e9e9e;
+}
+
 [aria-selected="true"] {
   color: #51bcd8 !important;
+}
+
+[aria-selected="true"],
+[aria-selected="true"]+respond-to($xs-container-width) {
   border-bottom: 3px solid #51bcd8 !important;
 }
 
@@ -862,19 +871,25 @@ h1 {
   display: none;
 }
 
-.tab-contnents {
+.tab-contnents,
+.tab-contnents+respond-to($xs-container-width) {
   margin-top: 25px;
 }
 
 .card-bookmark-writing {
-  height: 140px;
   display: block;
   box-sizing: border-box;
   text-decoration: none;
   margin-bottom: 10px;
 }
 
-.bookmark-section1 {
+.card-bookmark-writing,
+.card-bookmark-writing+respond-to($xs-container-width) {
+  height: 140px;
+}
+
+.bookmark-section1,
+.bookmark-section1+respond-to($xs-container-width) {
   width: 16.1137%;
   height: 140px;
   float: left;
@@ -894,6 +909,10 @@ h1 {
   display: block;
   overflow: hidden;
   border-radius: 100%;
+}
+
+.profile-img,
+.profile-img+respond-to($xs-container-width) {
   width: 68px;
   height: 68px;
   margin: 22px 34px 16px;
@@ -902,6 +921,10 @@ h1 {
 .username {
   display: block;
   text-align: center;
+}
+
+.username,
+.username+respond-to($xs-container-width) {
   margin-top: 17px;
   margin-left: 28px;
   margin-right: 28px;
@@ -927,13 +950,6 @@ h1 {
   position: absolute;
   top: 14px;
   right: 26px;
-}
-
-.ex-slider {
-  display: block;
-  position: relative;
-  height: 100vh;
-  background-color: skyblue;
 }
 
 .book-mark-author {
@@ -972,13 +988,16 @@ h1 {
 
 #section1>article {
   margin-left: 0;
+  position: relative;
 }
 
-#section2>article:nth-child(3n) {
+#section2>article:nth-child(3n),
+#section2+respond-to($sm-container-width)>article:nth-child(3n) {
   margin-right: 0;
 }
 
-#section2>article:nth-child(3n+1) {
+#section2>article:nth-child(3n+1),
+#section2+respond-to($sm-container-width)>article:nth-child(3n+1) {
   margin-left: 0;
 }
 
@@ -1062,6 +1081,10 @@ h1 {
 
   .txt-card-setting-info {
     font-size: 14px;
+  }
+
+  #section1>article {
+    margin-left: 0;
   }
 }
 
@@ -1177,6 +1200,73 @@ h1 {
   .txt-card-setting-info {
     font-size: 12px;
   }
+
+  .page-top-section {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 #bdbdbd;
+    margin-bottom: 18px;
+  }
+
+  .tab-list {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tab-list li {
+    padding: 9px;
+    border-bottom: 2px solid #9e9e9e;
+  }
+
+  [aria-selected="true"] {
+    border-bottom: 2px solid #51bcd8 !important;
+  }
+
+  .tab-contnents {
+    margin-top: 18px;
+  }
+
+  .card-bookmark-writing {
+    height: 219px;
+  }
+
+  .bookmark-section1 {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 71px;
+    border-top: 1px solid #bdbdbd;
+  }
+
+  .profile-img {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    margin: 16px;
+    float: left;
+  }
+
+  .username {
+    text-align: left;
+    float: left;
+    padding: 25px 0;
+  }
+
+  #section1>article {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #section2>article {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -1263,6 +1353,10 @@ h1 {
 
   .card-box {
     height: 71px;
+  }
+
+  #section1>article {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=../maps/view.css.map */
