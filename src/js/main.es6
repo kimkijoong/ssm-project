@@ -5,7 +5,7 @@
 // ------------------------------------
 // 빌드 시에 아래 주석을 해제한 후, 빌드
 // ------------------------------------
-// require('jquery');
+require('jquery');
 let angular = require('angular');
 
 let bipan = angular.module('ButProjectApp', []);
