@@ -103,14 +103,20 @@ body
         border-right: 1px solid $gray-400
 
 .bookmark-section2
-    width: percentage(706px / 844px)
-    height: $card-height
-    position: relative
-    float: left
-    box-sizing: border-box
-    padding: 12px 26px 12px 26px
     &::after
         @extend %clear-fix
+    +respond-to($xs-container-width)
+        position: absolute
+        left: 0
+        top: 0
+    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        width: percentage(706px / 844px)
+        height: $card-height
+        position: relative
+        float: left
+        box-sizing: border-box
+        padding: 12px 26px 12px 26px
+
 
 .profile-img
     display: block

@@ -896,7 +896,8 @@ body {
   border-right: 1px solid #bdbdbd;
 }
 
-.bookmark-section2 {
+.bookmark-section2,
+.bookmark-section2+respond-to($xs-container-width) {
   width: 83.6493%;
   height: 140px;
   position: relative;
@@ -1239,6 +1240,12 @@ body {
     bottom: 0;
     height: 71px;
     border-top: 1px solid #bdbdbd;
+  }
+
+  .bookmark-section2 {
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .profile-img {
