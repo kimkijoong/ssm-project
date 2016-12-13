@@ -15,7 +15,7 @@ class Home extends CI_Controller {
             redirect('/Login');
         }*/
         $this->load->model('Boarder_model');
-        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic');
+        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList');
     }
     /**
      * Index Page for this controller.
@@ -61,8 +61,7 @@ class Home extends CI_Controller {
     }
     public function openSsmList()
     {
-        $data = $this->Boarder_model->topic_list_select();
-        $this->load->view('home/openSsumList', array('data'=>$data));
+        $this->load->view('home/openSsumList');
     }
     public function openSsmList_select()
     {
@@ -124,9 +123,7 @@ class Home extends CI_Controller {
     }
     public function mySsmList()
     {
-        $user_seq = $this->session->userdata('user_seq');
-        $data = $this->Boarder_model->my_ssm_list_select($user_seq);
-        $this->load->view('home/mySsumList', array('data' => $data));
+        $this->load->view('home/mySsumList');
     }
     public function mySsm_page($notebook_seq)
     {
@@ -165,6 +162,11 @@ class Home extends CI_Controller {
     public function TodayTopic(){
         //그날의 주제를 가져온다.
         $data = $this->Boarder_model->TodayTopic();
+        echo json_encode($data);
+    }
+    public function PostList(){
+        //그날의 주제를 가져온다.
+        $data = $this->Boarder_model->PostList();
         echo json_encode($data);
     }
 }

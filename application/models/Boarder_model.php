@@ -335,4 +335,9 @@ Class Boarder_model extends CI_Model {
         $result = $this->db->query('SELECT * FROM daily_topic ORDER BY public_date DESC LIMIT 1')->result();
         return $result;
     }
+    public function PostList(){
+        // 그날의 주제를 가져온다.
+        $result =$this->db->query('SELECT a.seq as seq, a.topic_seq, a.user_seq, a.daily_contant, a.open_post, a.text_align, a.bg_img_url, a.creat_date , b.seq as bseq, b.topic, b.category FROM notebook a left join daily_topic b on a.topic_seq = b.seq order by a.creat_date DESC')->result();
+        return $result;
+    }
 }
