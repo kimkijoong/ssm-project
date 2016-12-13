@@ -47,3 +47,6 @@
 		@return ( ( ( $width + $gutter-width ) * $i ) - $gutter-width ) * 1px
 	@else
 		@return ( ( ( $width + $gutter-width ) * $i ) - $gutter-width ) * 1px
+
+@function px2vw($font-size, $container-width)
+	@return ($font-size/($container-width/100))+vw

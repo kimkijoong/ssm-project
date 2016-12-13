@@ -1,0 +1,47 @@
+// /**-------------------------
+ * 	common mixin
+ ------------------------- */
+
+%a
+	display: block
+	text-decoration: none
+	color: #fff
+%box-sizing
+	box-sizing: border-box
+
+=setWH($width, $height)
+	width: $width
+	height: $height
+
+=setPosition($position, $args)
+	position: $position
+
+	@if $args != null
+		@each $dir in top, left, bottom, right, z-index
+			$i: index($args, $dir)
+
+			@if $i
+				#{ $dir }: nth($args, $i + 1)
+
+
+// 	flex-flow: direction, wrap
+//	flex-direction: row, row-reverse, column, column-reverse, initial, inherit
+//	flex-wrap: nowrap, wrap, wrap-reverse, initial, inherit
+ 
+=setFlexAlign($display, $args)
+	display: $display
+
+	@if $args != null
+		@each $dir in align-items, justify-content, flex-flow
+			$i: index($args, $dir)
+
+			@if $i
+				#{ $dir }: nth($args, $i + 1)
+
+=setFont($args)
+	@if $args != null
+		@each $dir in family, size, weight
+			$i: index($args, $dir)
+
+			@if $i
+				font-#{ $dir }: nth($args, $i + 1)

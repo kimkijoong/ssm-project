@@ -1,28 +1,41 @@
-@import "common"
+// import 
+@import "common-init"
+@import "libs/but_grid/_vars"
+@import "libs/but_grid/_functions"
+@import "common-mixin"
+@import "libs/but_grid/_mixins"
+@import "libs/but_grid/_placeholder"
 
 /* main */
 .main
-	/*+setWH(320px, 534px)*/
+	+setPosition(relative, left -11)
+	// +setWH(320px, 534px)
+
 	min-width: 320px
 	min-height: 534px
-	position: relative
-	left: -11px
+	height: 100vh
+.main-outer
+	&::after
+		@extend %clearfix
 
 .today-topic
-	+setWH(85px, 14px)	
+	@extend %box-sizing
+	+setWH(100%, auto)
+	font-size: px2vw(12, $xs-container-width)
+
 	color: #424242
-	+setFont(size 12px weight 800)
 	text-align: center
-	margin: 0 auto
-	margin-top: 90px
+	padding: px2vw(4, $xs-container-width)
+	padding-top: px2vw(94, $xs-container-width)
 
 .topic
-	+setWH(229px, 44px)
+	@extend %box-sizing
+	+setWH(100%, auto)
+	font-size: px2vw(38, $xs-container-width)
+
 	color: #424242
-	+setFont(size 38px)
 	text-align: center
-	margin: 0 auto
-	margin-top: 20px
+	padding-top: px2vw(20, $xs-container-width)
 
 .topic-text
 	display: none
@@ -30,14 +43,16 @@
 .btn-main
 	@extend %a
 	@extend %box-sizing
-
-	+setWH(128px, 36px)
-	display: block
+	+setWH(px2vw(128, $xs-container-width), px2vw(36, $xs-container-width))
 	+setPosition(absolute, left 96px right 96px z-index 9)
 	+setFont(size 12px weight 500)
+
+	font-size: px2vw(12, $xs-container-width)
+	font-weight: 500
+	display: block
 	color: #616161
 	text-align: center
-	padding: 9px 10px
+	padding: px2vw(9, $xs-container-width) px2vw(10, $xs-container-width)
 	margin: 0 auto
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07)
 	border: 1px solid #9e9e9e
@@ -45,8 +60,32 @@
 	background-color: #f5f5f5
 	
 .go-to-write
-	bottom: 120px
+	bottom: px2vw(120, $xs-container-width)
 .go-to-opench
-	bottom: 76px
+	bottom: px2vw(76, $xs-container-width)
 
+
+/**-------------------------
+ * 	Mobile & Tablet
+ ------------------------- */
+
+
+
+
+/**-----------------
+ * 	Desktop
+ ----------------- */
+ /* static */
+@media (min-width: 1024px)
+	/* main */
+body
+	+respond-to($md-container-width)
+		font-size: 16px
+
+@media (min-width: 1440px)
+	/* main */
+	.main
+		padding-right: 364px;
+
+	.btn-main
 
