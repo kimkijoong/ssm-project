@@ -2,75 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aec3329-5be6-485a-9527-3ed171bc2b7f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-AmericanExpress.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-AmericanExpress.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-AmericanExpress@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Arrow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Behance.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Behance.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Behance@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Dribbble.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Dribbble.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Dribbble@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Facebook.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Facebook.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Facebook@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Instagram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Instagram.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Instagram@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-MasterCard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-MasterCard.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-MasterCard@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-PayPal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-PayPal.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-PayPal@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Twitter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Twitter@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Visa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Visa.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-Visa@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-cart.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-cart.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-cart@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-clock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-clock.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-clock@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-comments.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-comments.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-comments@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-face.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-face.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-face@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-headset.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-headset.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-headset@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-lock.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-lock.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-lock@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-select.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-select.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-select@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-wishlist.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-wishlist.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/icons/Icon-wishlist@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sass/libs/but_grid/common.sass" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sass/libs/but_grid/main-style.sass" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.eot" afterPath="$PROJECT_DIR$/src/fonts/icons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.ttf" afterPath="$PROJECT_DIR$/src/fonts/icons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.woff" afterPath="$PROJECT_DIR$/src/fonts/icons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fonts/icons.woff2" afterPath="$PROJECT_DIR$/src/fonts/icons.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icons.eot" afterPath="$PROJECT_DIR$/static/fonts/icons.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icons.ttf" afterPath="$PROJECT_DIR$/static/fonts/icons.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icons.woff" afterPath="$PROJECT_DIR$/static/fonts/icons.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/icons.woff2" afterPath="$PROJECT_DIR$/static/fonts/icons.woff2" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/main.php" afterPath="$PROJECT_DIR$/application/views/home/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/include/navigation.php" afterPath="$PROJECT_DIR$/application/views/include/navigation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/libs/but_grid/_functions.sass" afterPath="$PROJECT_DIR$/src/sass/libs/but_grid/_functions.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/libs/but_grid/_placeholder.sass" afterPath="$PROJECT_DIR$/src/sass/libs/but_grid/_placeholder.sass" />
     </list>
     <ignored path="htdocs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -828,12 +763,12 @@
       <workItem from="1481385205748" duration="1000" />
       <workItem from="1481393662664" duration="34442000" />
       <workItem from="1481506828019" duration="9848000" />
-      <workItem from="1481611475294" duration="8076000" />
+      <workItem from="1481611475294" duration="8675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73936000" />
+    <option name="totallyTimeSpent" value="74535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
