@@ -436,24 +436,20 @@ table {
 }
 
 .txt-page-title {
-  font-size: 36px;
   text-align: center;
   color: #14a6cc;
 }
 
 .txt-card-title {
-  font-size: 22px;
   text-align: center;
   color: #616161;
 }
 
 .txt-card-contents {
-  font-size: 14px;
   color: #616161;
 }
 
 .txt-card-date {
-  font-size: 12px;
   text-align: center;
   color: #616161;
 }
@@ -487,7 +483,6 @@ table {
 
 .txt-btn-main,
 .txt-btn-main-disabled {
-  font-size: 18px;
   color: #616161;
   text-align: center;
 }
@@ -503,13 +498,11 @@ table {
 }
 
 .txt-main-date {
-  font-size: 24px;
   color: #424242;
   text-align: left;
 }
 
 .txt-main-title {
-  font-size: 90px;
   color: #9e9e9e;
 }
 
@@ -525,7 +518,6 @@ table {
 }
 
 .txt-nav-username {
-  font-size: 16px;
   text-align: center;
   color: #fff;
 }
@@ -539,28 +531,23 @@ table {
 .txt-nav-footer {
   text-align: center;
   color: #fff;
-  font-size: 12px;
 }
 
 .txt-slide-search-date {
-  font-size: 16px;
   color: #424242;
 }
 
 .txt-slide-date {
-  font-size: 52px;
   color: #51bcd8;
   text-align: right;
 }
 
 .txt-slide-time {
-  font-size: 16px;
   color: #616161;
   text-align: right;
 }
 
 .txt-slide-title {
-  font-size: 20px;
   color: #616161;
   text-align: right;
 }
@@ -573,7 +560,6 @@ table {
 
 .txt-tab-normal {
   text-align: center;
-  font-size: 18px;
   color: #9e9e9e;
 }
 
@@ -583,12 +569,10 @@ table {
 }
 
 .txt-card-bookmark-writing-content {
-  font-size: 14px;
   color: #424242;
 }
 
 .txt-card-bookmark-writing-date {
-  font-size: 14px;
   color: #757575;
 }
 
@@ -626,13 +610,11 @@ table {
 }
 
 .txt-card-setting-title {
-  font-size: 14px;
   color: #fe8b90;
   text-align: left;
 }
 
 .txt-card-setting-input {
-  font-size: 14px;
   color: #0e8cad;
   text-align: left;
 }
@@ -640,7 +622,6 @@ table {
 .txt-card-setting-info {
   color: #51bcd8;
   text-align: left;
-  font-size: 14px;
 }
 
 body {
@@ -1001,7 +982,90 @@ h1 {
   margin-left: 0;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+@media only screen and (min-width: 1440px) {
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date {
+    font-size: 12px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-content {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
   .txt-page-title {
     font-size: 12px;
   }
@@ -1058,7 +1122,6 @@ h1 {
 
   .txt-main-date {
     font-size: 12px;
-    text-align: center;
   }
 
   .txt-main-title {
@@ -1113,6 +1176,89 @@ h1 {
 
   .txt-card-setting-info {
     font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date {
+    font-size: 12px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-content {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
   }
 
   .card-box {
