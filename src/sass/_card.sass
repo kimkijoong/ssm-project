@@ -22,7 +22,6 @@
 
 
 .card-box
-    height: 370px
     text-decoration: none
     margin-bottom: 20px
     @extend %card-normal
@@ -32,5 +31,9 @@
         @extend %card-focus
     &:active
         @extend %card-normal
-    +respond-to($sm-container-width)
+    +respond-to($xs-container-width)
         height: 71px
+    +respond-to($md-container-width)
+        height: 370px
+    +respond-to($sm-container-width)
+        height: 370px

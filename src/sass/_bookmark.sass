@@ -14,7 +14,10 @@ body
         background-color: $basic-white
         box-shadow: 0 2px 2px 0 $gray-400
         margin-bottom: 18px
-    +respond-to($sm-container-width), +respond-to($md-container-width)
+    +respond-to($sm-container-width)
+        padding-top: 89px
+        padding-bottom: 33px
+    +respond-to($md-container-width)
         padding-top: 89px
         padding-bottom: 33px
 
@@ -47,7 +50,10 @@ body
         +respond-to($xs-container-width)
             padding: 9px
             border-bottom: 2px solid $gray-500
-        +respond-to($xs-container-width), +respond-to($xs-container-width)
+        +respond-to($sm-container-width)
+            padding: 13px
+            border-bottom: 3px solid $gray-500
+        +respond-to($md-container-width)
             padding: 13px
             border-bottom: 3px solid $gray-500
 
@@ -56,7 +62,9 @@ body
     color: $basic-blue !important
     +respond-to($xs-container-width)
         border-bottom: 2px solid $basic-blue !important
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        border-bottom: 3px solid $basic-blue !important
+    +respond-to($md-container-width)
         border-bottom: 3px solid $basic-blue !important
 
 .unvisual
@@ -65,7 +73,9 @@ body
 .tab-contnents
     +respond-to($xs-container-width)
         margin-top: 18px
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 25px
+    +respond-to($md-container-width)
         margin-top: 25px
 
 /////////////////////////////////////////////////////////
@@ -85,7 +95,9 @@ body
         @extend %card-normal
     +respond-to($xs-container-width)
         height: 219px
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width),
+        height: $card-height
+    +respond-to($md-container-width)
         height: $card-height
 
 .bookmark-section1
@@ -96,7 +108,12 @@ body
         bottom: 0
         height: 71px
         border-top: 1px solid $gray-400
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        width: percentage(136px / 844px)
+        height: $card-height
+        float: left
+        border-right: 1px solid $gray-400
+    +respond-to($md-container-width)
         width: percentage(136px / 844px)
         height: $card-height
         float: left
@@ -110,7 +127,14 @@ body
         left: 0
         top: 0
         width: 300px
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        width: percentage(706px / 844px)
+        height: $card-height
+        position: relative
+        float: left
+        box-sizing: border-box
+        padding: 12px 26px 12px 26px
+    +respond-to($md-container-width)
         width: percentage(706px / 844px)
         height: $card-height
         position: relative
@@ -129,7 +153,11 @@ body
         height: 39px
         margin: 16px
         float: left
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        width: 68px
+        height: 68px
+        margin: 22px 34px 16px
+    +respond-to($md-container-width)
         width: 68px
         height: 68px
         margin: 22px 34px 16px
@@ -144,7 +172,13 @@ body
         text-align: left
         float: left
         padding: 25px 0
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        margin:
+            top: 17px
+            left: 28px
+            right: 28px
+            bottom: 12px
+    +respond-to($md-container-width)
         margin:
             top: 17px
             left: 28px
@@ -157,7 +191,10 @@ body
         padding:
             top: 16px
             left: 16px
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        display: block
+        margin-bottom: 41px
+    +respond-to($md-container-width)
         display: block
         margin-bottom: 41px
 
@@ -172,7 +209,14 @@ body
             left: 16px
             right: 16px
             bottom: 16px
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        padding:
+            left: 26px
+            right: 26px
+            bottom: 12px
+        bottom: 0
+        left: 0
+    +respond-to($md-container-width)
         padding:
             left: 26px
             right: 26px
@@ -189,7 +233,13 @@ body
         margin:
             top: 16px
             right: 16px
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        top: 0
+        right: 0
+        margin:
+            top: 14px
+            right: 26px
+    +respond-to($md-container-width)
         top: 0
         right: 0
         margin:
@@ -210,7 +260,15 @@ body
         height: 39px
         margin: 16px
         float: left
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+    +respond-to($sm-container-width)
+        width: 110px
+        height: 110px
+        margin:
+            top: 42px
+            left: 79px
+            right: 79px
+            bottom: 25px
+    +respond-to($md-container-width)
         width: 110px
         height: 110px
         margin:
@@ -225,7 +283,10 @@ body
         text-align: left
         float: left
         padding: 25px 0
-    +respond-to($xs-container-width), +respond-to($xs-container-width)
+        width: 130px
+    +respond-to($sm-container-width)
+        padding: 0 18px
+    +respond-to($md-container-width)
         padding: 0 18px
 
 .book-mark-author-caption
@@ -259,13 +320,17 @@ body
             padding-left: 10px
             padding-right: 10px
             margin-left: 0
-    +respond-to($md-container-width), +respond-to($sm-container-width)
+    +respond-to($sm-container-width)
+        & > article:nth-child(3n)
+            margin-right: 0
+        & > article:nth-child(3n+1)
+            margin-left: 0
+    +respond-to($md-container-width)
         & > article:nth-child(3n)
             margin-right: 0
         & > article:nth-child(3n+1)
             margin-left: 0
 
 .author-wrap
-    &::after
-        @extend %clear-fix
-    width: 100%
+    +respond-to($xs-container-width)
+        width: 300px
