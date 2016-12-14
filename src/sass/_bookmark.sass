@@ -9,11 +9,11 @@ body
 
 .page-top-section
     +respond-to($xs-container-width)
-        padding-top: 8px
-        padding-bottom: 8px
+        padding-top: px2vw(8, $xs-container-width)
+        padding-bottom: px2vw(8, $xs-container-width)
         background-color: $basic-white
         box-shadow: 0 2px 2px 0 $gray-400
-        margin-bottom: 18px
+        margin-bottom: px2vw(18, $xs-container-width)
     +respond-to($sm-container-width)
         padding-top: 89px
         padding-bottom: 33px
@@ -30,8 +30,8 @@ body
         @extend %clear-fix
     +respond-to($xs-container-width)
         box-sizing: border-box
-        padding-left: 10px
-        padding-right: 10px
+        padding-left: px2vw(10, $xs-container-width)
+        padding-right: px2vw(10, $xs-container-width)
     li
         float: left
         list-style: none
@@ -48,7 +48,7 @@ body
             border-color: $support-blue-3 !important
             color: $support-blue-3 !important
         +respond-to($xs-container-width)
-            padding: 9px
+            padding: px2vw(9, $xs-container-width)
             border-bottom: 2px solid $gray-500
         +respond-to($sm-container-width)
             padding: 13px
@@ -72,7 +72,7 @@ body
 
 .tab-contnents
     +respond-to($xs-container-width)
-        margin-top: 18px
+        margin-top: px2vw(18, $xs-container-width)
     +respond-to($sm-container-width)
         margin-top: 25px
     +respond-to($md-container-width)
@@ -94,19 +94,20 @@ body
     &:active
         @extend %card-normal
     +respond-to($xs-container-width)
-        height: 219px
+        height: px2vw(219, $xs-container-width)
     +respond-to($sm-container-width),
         height: $card-height
     +respond-to($md-container-width)
         height: $card-height
 
 .bookmark-section1
+    box-sizing: border-box
     +respond-to($xs-container-width)
-        width: 300px
+        width: px2vw(300, $xs-container-width)
         position: absolute
         left: 0
         bottom: 0
-        height: 71px
+        height: px2vw(71, $xs-container-width)
         border-top: 1px solid $gray-400
     +respond-to($sm-container-width)
         width: percentage(136px / 844px)
@@ -126,7 +127,9 @@ body
         position: absolute
         left: 0
         top: 0
-        width: 300px
+        width: px2vw(300, $xs-container-width)
+        height: px2vw(146, $xs-container-width)
+        box-sizing: border-box
     +respond-to($sm-container-width)
         width: percentage(706px / 844px)
         height: $card-height
@@ -149,9 +152,9 @@ body
     border-radius: 100%
     +respond-to($xs-container-width)
         display: inline-block
-        width: 39px
-        height: 39px
-        margin: 16px
+        width: px2vw(39, $xs-container-width)
+        height: px2vw(39, $xs-container-width)
+        margin: px2vw(16, $xs-container-width)
         float: left
     +respond-to($sm-container-width)
         width: 68px
@@ -171,7 +174,11 @@ body
     +respond-to($xs-container-width)
         text-align: left
         float: left
-        padding: 25px 0
+        padding:
+            top: px2vw(25, $xs-container-width)
+            bottom: px2vw(25, $xs-container-width)
+            left: 0
+            right: 0
     +respond-to($sm-container-width)
         margin:
             top: 17px
@@ -189,8 +196,8 @@ body
     +respond-to($xs-container-width)
         display: inline-block
         padding:
-            top: 16px
-            left: 16px
+            top: px2vw(16, $xs-container-width)
+            left: px2vw(16, $xs-container-width)
     +respond-to($sm-container-width)
         display: block
         margin-bottom: 41px
@@ -201,14 +208,14 @@ body
 .card-content-text
     position: absolute
     +respond-to($xs-container-width)
-        top: 66px
+        top: px2vw(66, $xs-container-width)
         left: 0
-        width: 300px
+        width: px2vw(300, $xs-container-width)
         box-sizing: border-box
         padding:
-            left: 16px
-            right: 16px
-            bottom: 16px
+            left: px2vw(16, $xs-container-width)
+            right: px2vw(16, $xs-container-width)
+            bottom: px2vw(16, $xs-container-width)
     +respond-to($sm-container-width)
         padding:
             left: 26px
@@ -231,8 +238,8 @@ body
         top: 0
         right: 0
         margin:
-            top: 16px
-            right: 16px
+            top: px2vw(16, $xs-container-width)
+            right: px2vw(16, $xs-container-width)
     +respond-to($sm-container-width)
         top: 0
         right: 0
@@ -256,9 +263,9 @@ body
     border-radius: 100%
     +respond-to($xs-container-width)
         display: inline-block
-        width: 39px
-        height: 39px
-        margin: 16px
+        width: px2vw(39, $xs-container-width)
+        height: px2vw(39, $xs-container-width)
+        margin: px2vw(16, $xs-container-width)
         float: left
     +respond-to($sm-container-width)
         width: 110px
@@ -282,8 +289,12 @@ body
     +respond-to($xs-container-width)
         text-align: left
         float: left
-        padding: 25px 0
-        width: 130px
+        padding:
+            top: px2vw(26, $xs-container-width)
+            bottom: px2vw(25, $xs-container-width)
+            left: 0
+            right: 0
+        width: px2vw(130, $xs-container-width)
     +respond-to($sm-container-width)
         padding: 0 18px
     +respond-to($md-container-width)
@@ -300,26 +311,33 @@ body
         top: 39px
         left: auto
         right: auto
+    +respond-to($xs-container-width)
+        margin-top: px2vw(20, $xs-container-width)
+        margin-bottom: px2vw(21, $xs-container-width)
 
 #section1 > article
-    margin-left: 0
     position: relative
     +respond-to($xs-container-width)
         box-sizing: border-box
-        padding-left: 10px
-        padding-right: 10px
+        padding-left: px2vw(10, $xs-container-width)
+        padding-right: px2vw(10, $xs-container-width)
+        margin-left: 0
+        margin-right: 0
     +respond-to($sm-container-width)
         margin-left: 0
+        margin-right: 0
     +respond-to($md-container-width)
         margin-left: 0
+        margin-right: 0
 
 #section2
     +respond-to($xs-container-width)
         & > article
             box-sizing: border-box
-            padding-left: 10px
-            padding-right: 10px
+            padding-left: px2vw(10, $xs-container-width)
+            padding-right: px2vw(10, $xs-container-width)
             margin-left: 0
+            margin-right: 0
     +respond-to($sm-container-width)
         & > article:nth-child(3n)
             margin-right: 0
@@ -330,7 +348,3 @@ body
             margin-right: 0
         & > article:nth-child(3n+1)
             margin-left: 0
-
-.author-wrap
-    +respond-to($xs-container-width)
-        width: 300px

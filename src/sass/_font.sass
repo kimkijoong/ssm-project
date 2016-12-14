@@ -65,7 +65,7 @@
     text-align: center
     color: $support-blue-2
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 36px
     +respond-to($md-container-width)
@@ -76,7 +76,7 @@
     text-align: center
     color: $gray-700
     +respond-to($xs-container-width)
-        font-size: 14px
+        font-size: px2vw(14, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 22px
     +respond-to($md-container-width)
@@ -87,7 +87,7 @@
     @extend %nanum-bold
     color: $gray-700
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 14px
     +respond-to($md-container-width)
@@ -100,7 +100,7 @@
     +respond-to($xs-container-width)
         //나눔 레귤러로 바꾸기
         font-weight: 600
-        font-size: 10px
+        font-size: px2vw(10, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 12px
     +respond-to($md-container-width)
@@ -110,6 +110,10 @@
     @extend %nanum-bold
     font-size: 14px
     color: $gray-800
+    +respond-to($xs-container-width)
+        //나눔 레귤러로 바꾸기
+        font-weight: 600
+        font-size: px2vw(14, $xs-container-width)
 
 /////////////////////////////////////////////////////////
 //  button-txt
@@ -127,6 +131,7 @@
         font-family: 'NanumMyeongjo', serif
         font-style: normal
         font-weight: 700
+        font-size: px2vw(12, $xs-container-width)
 
 .txt-btn-default-disabled
     @extend .txt-btn-default
@@ -157,7 +162,7 @@
     color: $gray-700
     text-align: center
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 18px
     +respond-to($md-container-width)
@@ -167,7 +172,7 @@
     @extend .txt-btn-main
     color: $gray-400
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 18px
     +respond-to($md-container-width)
@@ -190,7 +195,7 @@
     color: $gray-800
     text-align: left
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 24px
     +respond-to($md-container-width)
@@ -200,7 +205,7 @@
     @extend %nanum-regular
     color: $gray-500
     +respond-to($xs-container-width)
-        font-size: 38px
+        font-size: px2vw(38, $xs-container-width)
         text-align: center
     +respond-to($sm-container-width)
         font-size: 90px
@@ -211,6 +216,8 @@
     @extend %nanum-bold
     font-size: 16px
     color: $gray-800
+    +respond-to($xs-container-width)
+        font-size: px2vw(16, $xs-container-width)
 
 /////////////////////////////////////////////////////////
 //  desktop-write
@@ -352,7 +359,7 @@
     text-align: center
     color: $gray-500
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 18px
     +respond-to($md-container-width)
@@ -365,13 +372,15 @@
     @extend %nanum-bold
     font-size: 20px
     color: $gray-800
+    +respond-to($xs-container-width)
+        font-size: px2vw(20, $xs-container-width)
 
 
 .txt-card-bookmark-writing-content
     @extend %nanum-regular
     color: $gray-800
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 14px
     +respond-to($md-container-width)
@@ -381,7 +390,7 @@
     @extend %nanum-bold
     color: $gray-600
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 14px
     +respond-to($md-container-width)
@@ -395,9 +404,12 @@
     @extend %nanum-extrabold
     color: $gray-800
     +respond-to($xs-container-width)
-        font-size: 14px
+        font-size: px2vw(12, $xs-container-width)
         text-align: left
-    +respond-to($sm-container-width), +respond-to($md-container-width)
+    +respond-to($sm-container-width)
+        font-size: 20px
+        text-align: center
+    +respond-to($md-container-width)
         font-size: 20px
         text-align: center
 
@@ -405,8 +417,12 @@
 
 
 .txt-card-bookmark-usercaption
-    +respond-to($sm-container-width), +respond-to($md-container-width)
-        @extend %nanum-bold
+    @extend %nanum-bold
+    +respond-to($sm-container-width)
+        font-size: 14px
+        color: $gray-800
+        text-align: center
+    +respond-to($md-container-width)
         font-size: 14px
         color: $gray-800
         text-align: center

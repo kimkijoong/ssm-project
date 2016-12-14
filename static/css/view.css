@@ -417,7 +417,7 @@ table {
 .txt-page-date,
 .txt-card-bookmark-writing-title,
 .txt-card-bookmark-writing-date,
-.txt-card-bookmark-usercaption+respond-to($md-container-width),
+.txt-card-bookmark-usercaption,
 .txt-card-topic-list-time,
 .txt-card-topic-list-info {
   font-family: 'NanumMyeongjo', serif;
@@ -578,19 +578,6 @@ table {
 
 .txt-card-bookmark-username {
   color: #424242;
-}
-
-.txt-card-bookmark-username,
-.txt-card-bookmark-username+respond-to($md-container-width) {
-  font-size: 20px;
-  text-align: center;
-}
-
-.txt-card-bookmark-usercaption,
-.txt-card-bookmark-usercaption+respond-to($md-container-width) {
-  font-size: 14px;
-  color: #424242;
-  text-align: center;
 }
 
 .txt-card-topic-list-time {
@@ -775,13 +762,10 @@ body {
 
 .card-box {
   text-decoration: none;
-  margin-bottom: 20px;
 }
 
 .btn-default {
   display: block;
-  min-width: 80px;
-  padding: 6px 18px 6px;
   border: 1px solid #616161;
   background-color: #fff;
   box-shadow: 0 1px 1px rgba(0,0,0,0.07);
@@ -869,6 +853,10 @@ body {
   height: 140px;
 }
 
+.bookmark-section1 {
+  box-sizing: border-box;
+}
+
 .profile-img {
   display: block;
   overflow: hidden;
@@ -917,7 +905,6 @@ body {
 }
 
 #section1>article {
-  margin-left: 0;
   position: relative;
 }
 
@@ -991,6 +978,17 @@ body {
     font-size: 14px;
   }
 
+  .txt-card-bookmark-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
   .txt-card-setting-title {
     font-size: 14px;
   }
@@ -1005,6 +1003,12 @@ body {
 
   .card-box {
     height: 370px;
+    margin-bottom: 20px;
+  }
+
+  .btn-default {
+    min-width: 80px;
+    padding: 6px 18px 6px;
   }
 
   .page-top-section {
@@ -1093,6 +1097,7 @@ body {
 
   #section1>article {
     margin-left: 0;
+    margin-right: 0;
   }
 
   #section2>article:nth-child(3n) {
@@ -1106,20 +1111,25 @@ body {
 
 @media only screen and (max-width: 1023px) {
   .txt-page-title {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-card-title {
-    font-size: 14px;
+    font-size: 4.375vw;
   }
 
   .txt-card-contents {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-card-date {
     font-weight: 600;
-    font-size: 10px;
+    font-size: 3.125vw;
+  }
+
+  .txt-card-username {
+    font-weight: 600;
+    font-size: 4.375vw;
   }
 
   .txt-btn-default,
@@ -1130,6 +1140,7 @@ body {
     font-family: 'NanumMyeongjo', serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 3.75vw;
   }
 
   .txt-btn-default-disabled {
@@ -1152,20 +1163,24 @@ body {
 
   .txt-btn-main,
   .txt-btn-main-disabled {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-btn-main-disabled {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-main-date {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-main-title {
-    font-size: 38px;
+    font-size: 11.875vw;
     text-align: center;
+  }
+
+  .txt-main-caption {
+    font-size: 5vw;
   }
 
   .txt-nav-username {
@@ -1194,19 +1209,23 @@ body {
   }
 
   .txt-tab-normal {
-    font-size: 12px;
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-title {
+    font-size: 6.25vw;
   }
 
   .txt-card-bookmark-writing-content {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-card-bookmark-writing-date {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-card-bookmark-username {
-    font-size: 14px;
+    font-size: 3.75vw;
     text-align: left;
   }
 
@@ -1223,25 +1242,32 @@ body {
   }
 
   .card-box {
-    height: 71px;
+    height: 22.1875vw;
+    margin-bottom: 10px;
+    width: 93.75vw;
+  }
+
+  .btn-default {
+    min-width: 25vw;
+    padding: 1.875vw 5.625vw 1.875vw;
   }
 
   .page-top-section {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
     background-color: #fff;
     box-shadow: 0 2px 2px 0 #bdbdbd;
-    margin-bottom: 18px;
+    margin-bottom: 5.625vw;
   }
 
   .tab-list {
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
   }
 
   .tab-list li {
-    padding: 9px;
+    padding: 2.8125vw;
     border-bottom: 2px solid #9e9e9e;
   }
 
@@ -1250,19 +1276,19 @@ body {
   }
 
   .tab-contnents {
-    margin-top: 18px;
+    margin-top: 5.625vw;
   }
 
   .card-bookmark-writing {
-    height: 219px;
+    height: 68.4375vw;
   }
 
   .bookmark-section1 {
-    width: 300px;
+    width: 93.75vw;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 71px;
+    height: 22.1875vw;
     border-top: 1px solid #bdbdbd;
   }
 
@@ -1270,76 +1296,88 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 300px;
+    width: 93.75vw;
+    height: 45.625vw;
+    box-sizing: border-box;
   }
 
   .profile-img {
     display: inline-block;
-    width: 39px;
-    height: 39px;
-    margin: 16px;
+    width: 12.1875vw;
+    height: 12.1875vw;
+    margin: 5vw;
     float: left;
   }
 
   .username {
     text-align: left;
     float: left;
-    padding: 25px 0;
+    padding-top: 7.8125vw;
+    padding-bottom: 7.8125vw;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .card-content-heading {
     display: inline-block;
-    padding-top: 16px;
-    padding-left: 16px;
+    padding-top: 5vw;
+    padding-left: 5vw;
   }
 
   .card-content-text {
-    top: 66px;
+    top: 20.625vw;
     left: 0;
-    width: 300px;
+    width: 93.75vw;
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vw;
   }
 
   .card-info-date {
     top: 0;
     right: 0;
-    margin-top: 16px;
-    margin-right: 16px;
+    margin-top: 5vw;
+    margin-right: 5vw;
   }
 
   .profile-img-author {
     display: inline-block;
-    width: 39px;
-    height: 39px;
-    margin: 16px;
+    width: 12.1875vw;
+    height: 12.1875vw;
+    margin: 5vw;
     float: left;
   }
 
   .book-mark-author-username {
     text-align: left;
     float: left;
-    padding: 25px 0;
-    width: 130px;
+    padding-top: 8.125vw;
+    padding-bottom: 7.8125vw;
+    padding-left: 0;
+    padding-right: 0;
+    width: 40.625vw;
+  }
+
+  .btn-bookmark-cancle {
+    margin-top: 6.25vw;
+    margin-bottom: 6.5625vw;
   }
 
   #section1>article {
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #section2>article {
     box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
     margin-left: 0;
-  }
-
-  .author-wrap {
-    width: 300px;
+    margin-right: 0;
   }
 }
 
@@ -1413,6 +1451,17 @@ body {
     font-size: 14px;
   }
 
+  .txt-card-bookmark-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
   .txt-card-setting-title {
     font-size: 14px;
   }
@@ -1427,6 +1476,12 @@ body {
 
   .card-box {
     height: 370px;
+    margin-bottom: 20px;
+  }
+
+  .btn-default {
+    min-width: 80px;
+    padding: 6px 18px 6px;
   }
 
   .page-top-section {
@@ -1511,6 +1566,7 @@ body {
 
   #section1>article {
     margin-left: 0;
+    margin-right: 0;
   }
 
   #section2>article:nth-child(3n) {

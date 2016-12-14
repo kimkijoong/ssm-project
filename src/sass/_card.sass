@@ -23,7 +23,6 @@
 
 .card-box
     text-decoration: none
-    margin-bottom: 20px
     @extend %card-normal
     &:hover
         @extend %card-hover
@@ -32,8 +31,12 @@
     &:active
         @extend %card-normal
     +respond-to($xs-container-width)
-        height: 71px
+        height: px2vw(71, $xs-container-width)
+        margin-bottom: 10px
+        width: px2vw(300, $xs-container-width)
     +respond-to($md-container-width)
         height: 370px
+        margin-bottom: 20px
     +respond-to($sm-container-width)
         height: 370px
+        margin-bottom: 20px

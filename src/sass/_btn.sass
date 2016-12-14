@@ -5,8 +5,6 @@
 .btn-default
     display: block
     @extend .txt-btn-default
-    min-width: 80px
-    padding: 6px 18px 6px
     border : 1px solid $gray-700
     background-color: $basic-white
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
@@ -38,3 +36,12 @@
         box-shadow: none
         outline: none
         transition: box-shadow 0.2s ease
+    +respond-to($xs-container-width)
+        min-width: px2vw(80, $xs-container-width)
+        padding: px2vw(6, $xs-container-width) px2vw(18, $xs-container-width) px2vw(6, $xs-container-width)
+    +respond-to($sm-container-width)
+        min-width: 80px
+        padding: 6px 18px 6px
+    +respond-to($md-container-width)
+        min-width: 80px
+        padding: 6px 18px 6px
