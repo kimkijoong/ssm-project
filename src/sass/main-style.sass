@@ -14,16 +14,41 @@
 	min-width: 320px
 	min-height: 534px
 	height: 100vh
+	+respond-to($md-container-width)
+		padding-right: 364px;
 
+.container
+	+respond-to($md-container-width)
+		width: 100%
+.main-content
+	+respond-to($md-container-width)
+		float: none
+.row
+	+respond-to($md-container-width)
+		+setWH(1066px, auto)
+		margin: 0 auto
+		
 .today-topic
 	@extend %box-sizing
 	+setWH(100%, auto)
 	font-size: px2vw(12, $xs-container-width)
-
 	color: #424242
 	text-align: center
 	padding: px2vw(4, $xs-container-width)
 	padding-top: 94px
+
+	+respond-to($sm-container-width)
+		font-size: px2vw(12, $sm-container-width)
+		padding: px2vw(4, $sm-container-width)
+		padding-top: px2vw(94, $sm-container-width)
+	+respond-to($md-container-width)
+		+setWH(200px, auto)	
+		text-align: center
+		font-size: font-size(24)
+		padding: 11px
+		padding-top: 260px
+		margin-left: 64px
+		border-bottom: 1px solid #979797
 
 .topic
 	@extend %box-sizing
@@ -33,9 +58,27 @@
 	color: #424242
 	text-align: center
 	padding-top: 20px
+	+respond-to($sm-container-width)
+		font-size: px2vw(38, $sm-container-width)
+		padding-top: px2vw(20, $sm-container-width)
+	+respond-to($md-container-width)
+		+setWH(50%, auto)
+		font-size: font-size(90)
+		text-align: left
+		padding: 17px
+		margin-top: 7px
+		margin-left: 58px
+		border-bottom: 1px solid #979797
+
 
 .topic-text
+	position: relative
 	display: none
+	+respond-to($md-container-width)
+		+setWH(50%, auto)
+		display: block
+		margin-left: 75px
+		margin-top: 33px
 
 .btn-main
 	@extend %a
@@ -55,55 +98,33 @@
 	border: 1px solid #9e9e9e
 	border-radius: 2px
 	background-color: #f5f5f5
-	
-.go-to-write
-	bottom: px2vw(120, $xs-container-width)
-	// bottom: 120px
-
-.go-to-opench
-	bottom: px2vw(76, $xs-container-width)
-	// bottom: 76px
-
-
-
-
-/**-----------------
- * 	Desktop
- ----------------- */
- /* static */
-@media (min-width: 1024px)
-	.today-topic
-		font-size: px2vw(12, $sm-container-width)
-		padding: px2vw(4, $sm-container-width)
-		padding-top: px2vw(94, $sm-container-width)
-
-	.topic
-		font-size: px2vw(38, $sm-container-width)
-		padding-top: px2vw(20, $sm-container-width)
-
-	.btn-main
+	+respond-to($sm-container-width)
 		+setWH(px2vw(128, $sm-container-width), px2vw(36, $sm-container-width))
 		font-size: px2vw(12, $sm-container-width)
 		padding: px2vw(9, $sm-container-width) px2vw(10, $sm-container-width)
 		text-align: center
-
-	.go-to-write
-		bottom: px2vw(120, $sm-container-width)
-	.go-to-opench
-		bottom: px2vw(76, $sm-container-width)
-
+	+respond-to($md-container-width)
+		+setWH(193px, 59px)
+		font-size: font-size(18)
+		padding: 16px 40px
 	
-@media (min-width: 1440px)
-	.main
-		padding-right: 364px;
+.go-to-write
+	bottom: px2vw(120, $xs-container-width)
+	// bottom: 120px
+	+respond-to($sm-container-width)
+		bottom: px2vw(120, $sm-container-width)
+	+respond-to($md-container-width)
+		position: static
+		+setPosition(absolute, left 75px right  bottom 321px)
 
-	.container
-		width: 100%
+.go-to-opench
+	bottom: px2vw(76, $xs-container-width)
+	// bottom: 76px
+	+respond-to($sm-container-width)
+		bottom: px2vw(76, $sm-container-width)
+	+respond-to($md-container-width)
+		position: static
+		+setPosition(absolute, left 282px right  bottom 321px)
 
-	.today-topic
-		+setWH(191px, auto)
-		
-		text-align: center
-		font-size(24)
-		padding: 11px
-		padding-top: 322px
+
+

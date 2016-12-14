@@ -75,6 +75,7 @@ input {
 }
 
 .topic-text {
+  position: relative;
   display: none;
 }
 
@@ -106,7 +107,80 @@ input {
   bottom: 23.75vw;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1440px) {
+  .main {
+    padding-right: 364px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .main-content {
+    float: none;
+  }
+
+  .row {
+    width: 1066px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .today-topic {
+    width: 200px;
+    height: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 11px;
+    padding-top: 260px;
+    margin-left: 64px;
+    border-bottom: 1px solid #979797;
+  }
+
+  .topic {
+    width: 50%;
+    height: auto;
+    font-size: 5.625rem;
+    text-align: left;
+    padding: 17px;
+    margin-top: 7px;
+    margin-left: 58px;
+    border-bottom: 1px solid #979797;
+  }
+
+  .topic-text {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: 75px;
+    margin-top: 33px;
+  }
+
+  .btn-main {
+    width: 193px;
+    height: 59px;
+    font-size: 1.125rem;
+    padding: 16px 40px;
+  }
+
+  .go-to-write {
+    position: static;
+    position: absolute;
+    left: 75px;
+    bottom: 321px;
+    right: bottom;
+  }
+
+  .go-to-opench {
+    position: static;
+    position: absolute;
+    left: 282px;
+    bottom: 321px;
+    right: bottom;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .today-topic {
     font-size: 1.1719vw;
     padding: .3906vw;
@@ -132,24 +206,6 @@ input {
 
   .go-to-opench {
     bottom: 7.4219vw;
-  }
-}
-
-@media (min-width: 1440px) {
-  .main {
-    padding-right: 364px;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  .today-topic {
-    width: 191px;
-    height: auto;
-    text-align: center;
-    padding: 11px;
-    padding-top: 322px;
   }
 }
 /*# sourceMappingURL=../maps/main-style.css.map */

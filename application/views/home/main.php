@@ -19,7 +19,7 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="xs-col-4 sm-col-11 md-col-11">
+				<div class="main-content xs-col-4 sm-col-11 md-col-11">
 					<h1 class="readable-hidden">Main: Day Topic</h1>
 
 					<p class="today-topic" ng-switch on="List.category">오늘의 주제 <span ng-switch-when="0">(낮)</span><span ng-switch-default>(밤)</span></p>
