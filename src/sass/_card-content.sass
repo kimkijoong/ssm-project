@@ -13,32 +13,33 @@
         @extend %card-normal
     +respond-to($xs-container-width)
         margin-bottom: 10px
-        padding:
-            left: px2vw(20, $xs-container-width)
-            right: px2vw(20, $xs-container-width)
     +respond-to($md-container-width)
         margin-bottom: 10px
-        padding:
-            left: 20px
-            right: 20px
     +respond-to($sm-container-width)
         margin-bottom: 10px
-        padding:
-            left: 20px
-            right: 20px
+
 
 
 .content-title
     @extend .txt-card-title
     text-align: center
     +respond-to($xs-container-width)
-        padding-top: px2vw(34, $xs-container-width)
+        padding:
+            top: px2vw(34, $xs-container-width)
+            left: px2vw(20, $xs-container-width)
+            right: px2vw(20, $xs-container-width)
         line-height: px2vw(20, $xs-container-width)
     +respond-to($md-container-width)
-        padding-top: 48px
+        padding:
+            top: 48px
+            left: 20px
+            right: 20px
         line-height: 30px
     +respond-to($sm-container-width)
-        padding-top: 48px
+        padding:
+            top: 48px
+            left: 20px
+            right: 20px
         line-height: 30px
 
 .content-contents
@@ -46,27 +47,53 @@
     text-align: center
 
     +respond-to($xs-container-width)
-        padding-top: px2vw(20, $xs-container-width)
+        padding:
+            top: px2vw(20, $xs-container-width)
+            left: px2vw(20, $xs-container-width)
+            right: px2vw(20, $xs-container-width)
         line-height: px2vw(20, $xs-container-width)
     +respond-to($md-container-width)
-        padding-top: 40px
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
         line-height: 20px
     +respond-to($sm-container-width)
-        padding-top: 40px
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
         line-height: 20px
 
 .content-info
     @extend .txt-card-date
     text-align: center
     +respond-to($xs-container-width)
-        padding-top: px2vw(20, $xs-container-width)
-        padding-bottom: px2vw(34, $xs-container-width)
+        padding:
+            top: px2vw(20, $xs-container-width)
+            left: px2vw(20, $xs-container-width)
+            right: px2vw(20, $xs-container-width)
+            bottom: px2vw(34, $xs-container-width)
         line-height: px2vw(20, $xs-container-width)
     +respond-to($md-container-width)
-        padding-top: 40px
-        padding-bottom: 48px
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
+            bottom: 48px
         line-height: 20px
     +respond-to($sm-container-width)
-        padding-top: 40px
-        padding-bottom: 48px
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
+            bottom: 48px
         line-height: 20px
+
+.line
+    +respond-to($xs-container-width)
+        border-top: 1px solid $gray-400
+.open-ch-content-wrap
+    +respond-to($xs-container-width)
+        padding:
+            top: px2vw(71, $xs-container-width)
