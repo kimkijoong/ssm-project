@@ -1,2 +1,72 @@
 @import "color"
 @import "font"
+
+.content-card
+    display: block
+    text-decoration: none
+    color: $gray-700
+    box-sizing: border-box
+    @extend %card-normal
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        margin-bottom: 10px
+        padding:
+            left: px2vw(20, $xs-container-width)
+            right: px2vw(20, $xs-container-width)
+    +respond-to($md-container-width)
+        margin-bottom: 10px
+        padding:
+            left: 20px
+            right: 20px
+    +respond-to($sm-container-width)
+        margin-bottom: 10px
+        padding:
+            left: 20px
+            right: 20px
+
+
+.content-title
+    @extend .txt-card-title
+    text-align: center
+    +respond-to($xs-container-width)
+        padding-top: px2vw(34, $xs-container-width)
+        line-height: px2vw(20, $xs-container-width)
+    +respond-to($md-container-width)
+        padding-top: 48px
+        line-height: 30px
+    +respond-to($sm-container-width)
+        padding-top: 48px
+        line-height: 30px
+
+.content-contents
+    @extend .txt-card-contents
+    text-align: center
+
+    +respond-to($xs-container-width)
+        padding-top: px2vw(20, $xs-container-width)
+        line-height: px2vw(20, $xs-container-width)
+    +respond-to($md-container-width)
+        padding-top: 40px
+        line-height: 20px
+    +respond-to($sm-container-width)
+        padding-top: 40px
+        line-height: 20px
+
+.content-info
+    @extend .txt-card-date
+    text-align: center
+    +respond-to($xs-container-width)
+        padding-top: px2vw(20, $xs-container-width)
+        padding-bottom: px2vw(34, $xs-container-width)
+        line-height: px2vw(20, $xs-container-width)
+    +respond-to($md-container-width)
+        padding-top: 40px
+        padding-bottom: 48px
+        line-height: 20px
+    +respond-to($sm-container-width)
+        padding-top: 40px
+        padding-bottom: 48px
+        line-height: 20px

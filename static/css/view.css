@@ -2,6 +2,8 @@
 
 @import url(../../static/css/libs/but_grid/grid_style.css);
 
+@import url(../../static/css/libs/but_grid/grid_style.css);
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -415,8 +417,11 @@ table {
 }
 
 .txt-card-title,
+.content-title,
 .txt-card-contents,
+.content-contents,
 .txt-card-date,
+.content-info,
 .txt-card-username,
 .username,
 .txt-main-caption,
@@ -453,23 +458,23 @@ table {
   color: #14a6cc;
 }
 
-.txt-card-title {
-  text-align: center;
+.txt-card-title,
+.content-title {
   color: #616161;
 }
 
-.txt-card-contents {
+.txt-card-contents,
+.content-contents {
   color: #616161;
 }
 
-.txt-card-date {
-  text-align: center;
+.txt-card-date,
+.content-info {
   color: #616161;
 }
 
 .txt-card-username,
 .username {
-  font-size: 14px;
   color: #424242;
 }
 
@@ -794,8 +799,11 @@ body {
 }
 
 .txt-card-title,
+.content-title,
 .txt-card-contents,
+.content-contents,
 .txt-card-date,
+.content-info,
 .txt-card-username,
 .username,
 .txt-main-caption,
@@ -832,23 +840,23 @@ body {
   color: #14a6cc;
 }
 
-.txt-card-title {
-  text-align: center;
+.txt-card-title,
+.content-title {
   color: #616161;
 }
 
-.txt-card-contents {
+.txt-card-contents,
+.content-contents {
   color: #616161;
 }
 
-.txt-card-date {
-  text-align: center;
+.txt-card-date,
+.content-info {
   color: #616161;
 }
 
 .txt-card-username,
 .username {
-  font-size: 14px;
   color: #424242;
 }
 
@@ -1084,10 +1092,305 @@ body {
   height: 0;
 }
 
+.txt-slide-date {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.txt-slide-search-date,
+.txt-slide-time {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default,
+.txt-btn-main,
+.txt-btn-main-disabled,
+.txt-btn-menu,
+.txt-nav-usercaption,
+.txt-slide-title,
+.txt-card-setting-input,
+.txt-card-setting-info {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.txt-nav-username,
+.txt-nav-footer,
+.txt-slide-pagination,
+.txt-card-my-ch-label,
+.txt-card-setting-title,
+.open-txt,
+.close-txt {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-main-title,
+.txt-card-bookmark-writing-content,
+.card-content-text {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-card-title,
+.content-title,
+.txt-card-contents,
+.content-contents,
+.txt-card-date,
+.content-info,
+.txt-card-username,
+.username,
+.txt-main-caption,
+.txt-page-date,
+.txt-card-bookmark-writing-title,
+.card-content-heading,
+.txt-card-bookmark-writing-date,
+.card-info-date,
+.txt-card-bookmark-usercaption,
+.book-mark-author-caption,
+.txt-card-topic-list-time,
+.topic-list-time,
+.txt-card-topic-list-info,
+.topic-list-info {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.txt-page-title,
+.txt-main-date,
+.txt-tab-normal,
+.txt-card-bookmark-username,
+.book-mark-author-username,
+.txt-card-topic-list-title,
+.topic-list-title {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-page-title {
+  text-align: center;
+  color: #14a6cc;
+}
+
+.txt-card-title,
+.content-title {
+  color: #616161;
+}
+
+.txt-card-contents,
+.content-contents {
+  color: #616161;
+}
+
+.txt-card-date,
+.content-info {
+  color: #616161;
+}
+
+.txt-card-username,
+.username {
+  color: #424242;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default {
+  font-size: 12px;
+  text-align: center;
+  color: #616161;
+}
+
+.txt-btn-default-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-solid {
+  color: #fff;
+}
+
+.txt-btn-danger {
+  color: #f44c52;
+}
+
+.txt-btn-main,
+.txt-btn-main-disabled {
+  color: #616161;
+  text-align: center;
+}
+
+.txt-btn-main-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-menu {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.txt-main-date {
+  color: #424242;
+  text-align: left;
+}
+
+.txt-main-title {
+  color: #9e9e9e;
+}
+
+.txt-main-caption {
+  font-size: 16px;
+  color: #424242;
+}
+
+.txt-page-date {
+  text-align: center;
+  color: #424242;
+}
+
+.txt-nav-username {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-usercaption {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-footer {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-slide-search-date {
+  color: #424242;
+}
+
+.txt-slide-date {
+  color: #51bcd8;
+  text-align: right;
+}
+
+.txt-slide-time {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-title {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-pagination {
+  color: #757575;
+  text-align: center;
+}
+
+.txt-tab-normal {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+.txt-card-bookmark-writing-title,
+.card-content-heading {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-content,
+.card-content-text {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-date,
+.card-info-date {
+  color: #757575;
+}
+
+.txt-card-bookmark-username,
+.book-mark-author-username {
+  color: #424242;
+}
+
+.txt-card-topic-list-time,
+.topic-list-time {
+  color: #616161;
+}
+
+.txt-card-topic-list-title,
+.topic-list-title {
+  color: #616161;
+}
+
+.txt-card-topic-list-info,
+.topic-list-info {
+  color: #616161;
+}
+
+.txt-card-my-ch-label {
+  text-align: right;
+  color: #fff;
+}
+
+.txt-card-setting-title {
+  color: #fe8b90;
+  text-align: left;
+}
+
+.txt-card-setting-input {
+  color: #0e8cad;
+  text-align: left;
+}
+
+.txt-card-setting-info {
+  color: #51bcd8;
+  text-align: left;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.content-card {
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.content-title {
+  text-align: center;
+}
+
+.content-contents {
+  text-align: center;
+}
+
+.content-info {
+  text-align: center;
+}
+
+.content-card,
+.content-card:active,
 .three-card,
 .motif-card,
 .three-card:active,
 .motif-card:active,
+.one-card,
+.one-card:active,
 .bk-wrting-card,
 .bk-wrting-card:active,
 .bk-author-card,
@@ -1101,6 +1404,7 @@ body {
 
 .three-card:hover,
 .motif-card:hover,
+.one-card:hover,
 .bk-wrting-card:hover,
 .bk-author-card:hover {
   background-color: #fff;
@@ -1111,8 +1415,10 @@ body {
   outline: none;
 }
 
+.content-card:focus,
 .three-card:focus,
 .motif-card:focus,
+.one-card:focus,
 .bk-wrting-card:focus,
 .bk-author-card:focus {
   background-color: #fff;
@@ -1124,6 +1430,13 @@ body {
 
 .three-card,
 .motif-card {
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.one-card {
   display: block;
   text-decoration: none;
   color: #616161;
@@ -1272,16 +1585,24 @@ body {
     font-size: 36px;
   }
 
-  .txt-card-title {
+  .txt-card-title,
+  .content-title {
     font-size: 22px;
   }
 
-  .txt-card-contents {
+  .txt-card-contents,
+  .content-contents {
     font-size: 14px;
   }
 
-  .txt-card-date {
+  .txt-card-date,
+  .content-info {
     font-size: 12px;
+  }
+
+  .txt-card-username,
+  .username {
+    font-size: 14px;
   }
 
   .txt-btn-main,
@@ -1346,7 +1667,7 @@ body {
   .txt-card-bookmark-writing-title,
   .card-content-heading {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .txt-card-bookmark-writing-content,
@@ -1410,16 +1731,24 @@ body {
     font-size: 36px;
   }
 
-  .txt-card-title {
+  .txt-card-title,
+  .content-title {
     font-size: 22px;
   }
 
-  .txt-card-contents {
+  .txt-card-contents,
+  .content-contents {
     font-size: 14px;
   }
 
-  .txt-card-date {
+  .txt-card-date,
+  .content-info {
     font-size: 12px;
+  }
+
+  .txt-card-username,
+  .username {
+    font-size: 14px;
   }
 
   .txt-btn-main,
@@ -1484,7 +1813,7 @@ body {
   .txt-card-bookmark-writing-title,
   .card-content-heading {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .txt-card-bookmark-writing-content,
@@ -1594,6 +1923,174 @@ body {
     border-bottom: 35px solid transparent;
   }
 
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .content-card {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-title {
+    padding-top: 48px;
+    line-height: 30px;
+  }
+
+  .content-contents {
+    padding-top: 40px;
+    line-height: 20px;
+  }
+
+  .content-info {
+    padding-top: 40px;
+    padding-bottom: 48px;
+    line-height: 20px;
+  }
+
   .three-card-align>article:nth-child(3n) {
     margin-right: 0;
   }
@@ -1606,6 +2103,11 @@ body {
   .motif-card {
     height: 370px;
     margin-bottom: 20px;
+  }
+
+  .one-card {
+    height: 370px;
+    margin-bottom: 10px;
   }
 
   .one-card-align>article {
@@ -1723,15 +2225,18 @@ body {
     font-size: 3.75vw;
   }
 
-  .txt-card-title {
+  .txt-card-title,
+  .content-title {
     font-size: 4.375vw;
   }
 
-  .txt-card-contents {
+  .txt-card-contents,
+  .content-contents {
     font-size: 3.75vw;
   }
 
-  .txt-card-date {
+  .txt-card-date,
+  .content-info {
     font-weight: 600;
     font-size: 3.125vw;
   }
@@ -1896,15 +2401,18 @@ body {
     font-size: 3.75vw;
   }
 
-  .txt-card-title {
+  .txt-card-title,
+  .content-title {
     font-size: 4.375vw;
   }
 
-  .txt-card-contents {
+  .txt-card-contents,
+  .content-contents {
     font-size: 3.75vw;
   }
 
-  .txt-card-date {
+  .txt-card-date,
+  .content-info {
     font-weight: 600;
     font-size: 3.125vw;
   }
@@ -2118,6 +2626,204 @@ body {
     border-bottom: 10.9375vw solid transparent;
   }
 
+  .txt-page-title {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-weight: 600;
+    font-size: 3.125vw;
+  }
+
+  .txt-card-username,
+  .username {
+    font-weight: 600;
+    font-size: 4.375vw;
+  }
+
+  .txt-btn-default,
+  .txt-btn-default-disabled,
+  .txt-btn-solid,
+  .txt-btn-danger,
+  .btn-default {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-default-disabled {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-solid {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-danger {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-title {
+    font-size: 11.875vw;
+    text-align: center;
+  }
+
+  .txt-main-caption {
+    font-size: 5vw;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .txt-nav-username {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-footer {
+    font-size: 3.125vw;
+  }
+
+  .txt-slide-search-date {
+    font-size: 3.4375vw;
+  }
+
+  .txt-slide-date {
+    font-size: 11.875vw;
+  }
+
+  .txt-slide-time {
+    font-size: 3.75vw;
+  }
+
+  .txt-slide-title {
+    font-size: 5vw;
+  }
+
+  .txt-slide-pagination {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-tab-normal {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 6.25vw;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 9.375vw;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 4.375vw;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-setting-title {
+    font-size: 12px;
+  }
+
+  .txt-card-setting-input {
+    font-size: 12px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 12px;
+  }
+
+  .content-card {
+    margin-bottom: 10px;
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+  }
+
+  .content-title {
+    padding-top: 10.625vw;
+    line-height: 6.25vw;
+  }
+
+  .content-contents {
+    padding-top: 6.25vw;
+    line-height: 6.25vw;
+  }
+
+  .content-info {
+    padding-top: 6.25vw;
+    padding-bottom: 10.625vw;
+    line-height: 6.25vw;
+  }
+
   .three-card-align>article {
     box-sizing: border-box;
     padding-left: 3.125vw;
@@ -2128,6 +2834,11 @@ body {
 
   .three-card,
   .motif-card {
+    height: 130vw;
+    margin-bottom: 10px;
+  }
+
+  .one-card {
     height: 130vw;
     margin-bottom: 10px;
   }
@@ -2281,16 +2992,24 @@ body {
     font-size: 36px;
   }
 
-  .txt-card-title {
+  .txt-card-title,
+  .content-title {
     font-size: 22px;
   }
 
-  .txt-card-contents {
+  .txt-card-contents,
+  .content-contents {
     font-size: 14px;
   }
 
-  .txt-card-date {
+  .txt-card-date,
+  .content-info {
     font-size: 12px;
+  }
+
+  .txt-card-username,
+  .username {
+    font-size: 14px;
   }
 
   .txt-btn-main,
@@ -2355,7 +3074,7 @@ body {
   .txt-card-bookmark-writing-title,
   .card-content-heading {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .txt-card-bookmark-writing-content,
@@ -2419,16 +3138,24 @@ body {
     font-size: 36px;
   }
 
-  .txt-card-title {
+  .txt-card-title,
+  .content-title {
     font-size: 22px;
   }
 
-  .txt-card-contents {
+  .txt-card-contents,
+  .content-contents {
     font-size: 14px;
   }
 
-  .txt-card-date {
+  .txt-card-date,
+  .content-info {
     font-size: 12px;
+  }
+
+  .txt-card-username,
+  .username {
+    font-size: 14px;
   }
 
   .txt-btn-main,
@@ -2493,7 +3220,7 @@ body {
   .txt-card-bookmark-writing-title,
   .card-content-heading {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .txt-card-bookmark-writing-content,
@@ -2603,6 +3330,174 @@ body {
     border-bottom: 35px solid transparent;
   }
 
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .content-card {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .content-title {
+    padding-top: 48px;
+    line-height: 30px;
+  }
+
+  .content-contents {
+    padding-top: 40px;
+    line-height: 20px;
+  }
+
+  .content-info {
+    padding-top: 40px;
+    padding-bottom: 48px;
+    line-height: 20px;
+  }
+
   .three-card-align>article:nth-child(3n) {
     margin-right: 0;
   }
@@ -2615,6 +3510,11 @@ body {
   .motif-card {
     height: 370px;
     margin-bottom: 20px;
+  }
+
+  .one-card {
+    height: 370px;
+    margin-bottom: 10px;
   }
 
   .one-card-align>article {

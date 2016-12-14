@@ -1,7 +1,7 @@
 @import "color"
 @import "font"
 @import "motifcard"
-
+@import "card-content"
 
 %card-normal
     background-color: $basic-white
@@ -91,6 +91,27 @@
         height: 370px
         margin-bottom: 20px
 
+.one-card
+    display: block
+    text-decoration: none
+    color: $gray-700
+    box-sizing: border-box
+    @extend %card-normal
+    &:hover
+        @extend %card-hover
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        height: px2vw(416, $xs-container-width)
+        margin-bottom: 10px
+    +respond-to($md-container-width)
+        height: 370px
+        margin-bottom: 10px
+    +respond-to($sm-container-width)
+        height: 370px
+        margin-bottom: 10px
 
 .one-card-align
     +respond-to($xs-container-width)
