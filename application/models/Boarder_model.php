@@ -332,7 +332,7 @@ Class Boarder_model extends CI_Model {
     }
     public function TodayTopic(){
         // 그날의 주제를 가져온다.
-        $result = $this->db->query('SELECT * FROM daily_topic ORDER BY public_date DESC LIMIT 1')->result();
+        $result = $this->db->query("SELECT DATE_FORMAT(public_date,'%Y-%m-%d') new_public_date, group_concat(topic), group_concat(seq), group_concat(category) FROM daily_topic GROUP BY new_public_date")->result();
         return $result;
     }
     public function PostList(){
