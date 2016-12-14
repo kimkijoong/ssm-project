@@ -15,6 +15,7 @@
 	min-height: 534px
 	height: 100vh
 	+respond-to($md-container-width)
+		min-height: 947px
 		padding-right: 364px;
 
 .container
@@ -115,7 +116,9 @@
 		bottom: px2vw(120, $sm-container-width)
 	+respond-to($md-container-width)
 		position: static
-		+setPosition(absolute, left 75px right  bottom 321px)
+		display: inline-block
+		margin-top: 41px
+		margin-left: 75px
 
 .go-to-opench
 	bottom: px2vw(76, $xs-container-width)
@@ -124,7 +127,9 @@
 		bottom: px2vw(76, $sm-container-width)
 	+respond-to($md-container-width)
 		position: static
-		+setPosition(absolute, left 282px right  bottom 321px)
+		display: inline-block
+		margin-top: 41px
+		margin-left: 14px
 
 
 
