@@ -13,43 +13,40 @@
  /* Fluid */
 /* header */
 .header
+	@extend %box-sizing
 	+setWH(100%, 34px)
 	+setPosition(fixed, top 0 left 0 z-index 999)
-	+setFont(size 12px)
+	+setFont(size 14px)
 
 	min-width: 320px
 	color: #fff
+	background-color: #51bcd8
+.nav-container
 	display: flex
 	align-items: center
 	justify-content: center
-	background-color: #51bcd8
+	height: 34px
 
 .logo
 	// +setWH(112px, 18px)
-	+setWH(130px, 18px)
-
-	+respond-to($md-container-width)
-		+setWH(450px, auto)
+	+setWH(150px, 20px)
 
 	display: inline-block
 
 .logo-but-white
 	@extend %a
-	+setFont(size 12px)
+	+setFont(size 14px)
 
 	color: #fff
 .logo-main
 	@extend %box-sizing
-	+setWH(18px, 18px)
+	+setWH(20px, 20px)
 	
 	display: inline-block
 	text-align: center
 	border: 1px solid #fff
 .logo-text
 	+setWH(94px,18px)
-
-	+respond-to($md-container-width)
-		display: block
 
 	
 
@@ -63,11 +60,12 @@
 	z-index: 99;
 
 
-[id^="btn-"]
+.header [id^="btn-"]
 	+setWH(16px, 16px)
 	+setPosition(absolute, top 9px)
 
-[id^="btn-"] > img
+	background-color: none
+.header [id^="btn-"] > img
 	+setWH(16px, 16px)
 
 	display: block
@@ -77,13 +75,12 @@
 #btn-menu
 	left: 15px
 	cursor: pointer
-	background-color: none
 	border: 0
 
 #btn-date
 	right: 16px
 	cursor: pointer
-	background-color: none
+	// background-color: none
 	border: 0
 
 	
@@ -218,9 +215,6 @@
 
 	min-height: 568px
 	background-color: #fff
-
-	+respond-to($md-container-width)
-		+setPosition(absolute, top 0 right 0 z-index 99999)
 
 .search-date
 	+setWH(100%, 42px)
@@ -360,26 +354,41 @@
 
 	
 @media (min-width: 1440px)
-	/* outer */
-	.outer
-		// +setWH(1440px, auto)
-		
-			// +setWH(100%, auto)
-
 	/* header */
 	.header
-		// +setWH(1066px, auto)
+		+setWH(100%, 62px)
+		padding-right: 364px;
+	.nav-container
+		+setWH(100%, 62px)
+		margin: 0 auto
 
+	/* logo */
 	.logo
-
-
+		+setWH(210px, 29px)
+	.logo-but-white
+		+setFont(size 16px)
+	.logo-main
+		+setWH(29px, 29px)
 	.logo-text
+		+setWH(160px,27px)
+		display: inline-block
 
+	.header [id^="btn-"]
+		+setWH(24px, 24px)
+		+setPosition(absolute, top 19px)
+
+	.header [id^="btn-"] > img
+		+setWH(24px, 24px)
+
+	#btn-menu
+		left: 25px
+	#btn-date
+		display: none
 
 	/* aside */
 	.aside
-		// +setWH(260px, 568px)
-		// +setWH(260px, 100vh)
+		+setWH(364px, 100vh)
+		+setPosition(absolute, top 0 right 0 z-index 99999)
 	
 
 	#aside-btn-close

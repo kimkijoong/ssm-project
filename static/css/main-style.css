@@ -39,12 +39,6 @@ input {
   box-sizing: border-box;
 }
 
-.main-outer::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
 .col-float {
   float: left;
 }
@@ -55,7 +49,7 @@ input {
 
 .main {
   position: relative;
-  left: -11;
+  left: 0;
   min-width: 320px;
   min-height: 534px;
   height: 100vh;
@@ -68,7 +62,7 @@ input {
   color: #424242;
   text-align: center;
   padding: 1.25vw;
-  padding-top: 29.375vw;
+  padding-top: 94px;
 }
 
 .topic {
@@ -77,7 +71,7 @@ input {
   font-size: 11.875vw;
   color: #424242;
   text-align: center;
-  padding-top: 6.25vw;
+  padding-top: 20px;
 }
 
 .topic-text {
@@ -91,8 +85,6 @@ input {
   left: 96px;
   right: 96px;
   z-index: 9;
-  font-size: 12px;
-  font-weight: 500;
   font-size: 3.75vw;
   font-weight: 500;
   display: block;
@@ -114,15 +106,50 @@ input {
   bottom: 23.75vw;
 }
 
-@media only screen and (min-width: 1440px) {
-  body {
-    font-size: 16px;
+@media (min-width: 1024px) {
+  .today-topic {
+    font-size: 1.1719vw;
+    padding: .3906vw;
+    padding-top: 9.1797vw;
+  }
+
+  .topic {
+    font-size: 3.7109vw;
+    padding-top: 1.9531vw;
+  }
+
+  .btn-main {
+    width: 12.5vw;
+    height: 3.5156vw;
+    font-size: 1.1719vw;
+    padding: .8789vw .9766vw;
+    text-align: center;
+  }
+
+  .go-to-write {
+    bottom: 11.7188vw;
+  }
+
+  .go-to-opench {
+    bottom: 7.4219vw;
   }
 }
 
 @media (min-width: 1440px) {
   .main {
     padding-right: 364px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .today-topic {
+    width: 191px;
+    height: auto;
+    text-align: center;
+    padding: 11px;
+    padding-top: 322px;
   }
 }
 /*# sourceMappingURL=../maps/main-style.css.map */
