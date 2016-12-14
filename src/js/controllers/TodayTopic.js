@@ -9,7 +9,7 @@ angular
 
     $scope.TopicList = TodayTopicservice;
 
-    console.log($scope.TopicList);
+    // console.log($scope.TopicList);
     // bipan 모델 데이터
 
   }]);
