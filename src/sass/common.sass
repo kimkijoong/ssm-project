@@ -18,26 +18,37 @@
 	+setPosition(fixed, top 0 left 0 z-index 999)
 	+setFont(size 14px)
 
+	line-height: line-height(14)
 	min-width: 320px
 	color: #fff
 	background-color: #51bcd8
+	+respond-to($md-container-width)
+		+setWH(100%, 62px)
+		padding-right: 374px;
 .nav-container
 	display: flex
 	align-items: center
 	justify-content: center
 	height: 34px
+	+respond-to($md-container-width)
+		+setWH(100%, 62px)
+		margin: 0 auto	
 
 .logo
 	// +setWH(112px, 18px)
 	+setWH(150px, 20px)
 
 	display: inline-block
-
+	+respond-to($md-container-width)
+		+setWH(210px, 29px)
 .logo-but-white
 	@extend %a
-	+setFont(size 14px)
-
+	// +setFont(size 14px)
+	
+	line-height: line-height(14)
 	color: #fff
+	+respond-to($md-container-width)
+		+setFont(size 16px)
 .logo-main
 	@extend %box-sizing
 	+setWH(20px, 20px)
@@ -45,19 +56,26 @@
 	display: inline-block
 	text-align: center
 	border: 1px solid #fff
+	+respond-to($md-container-width)
+		+setWH(29px, 29px)
 .logo-text
 	+setWH(94px,18px)
+	+respond-to($md-container-width)
+		+setWH(160px,27px)
+		display: inline-block
 
 	
 
 /* mask */
 #mask
-	position: absolute;
-	background-color: #000;
-	display: none;
-	left: 0;
-	top: 0;
-	z-index: 99;
+	position: absolute
+	background-color: #000
+	display: none
+	left: 0
+	top: 0
+	z-index: 99
+	+respond-to($md-container-width)
+		z-index: 999990
 
 
 .header [id^="btn-"]
@@ -65,31 +83,39 @@
 	+setPosition(absolute, top 9px)
 
 	background-color: none
+	+respond-to($md-container-width)
+		+setWH(24px, 24px)
+		+setPosition(absolute, top 19px)
 .header [id^="btn-"] > img
 	+setWH(16px, 16px)
 
 	display: block
 	background-color: #51bcd8
 	color: #fff
+	+respond-to($md-container-width)
+		+setWH(24px, 24px)
 
 #btn-menu
 	left: 15px
 	cursor: pointer
 	border: 0
+	+respond-to($md-container-width)
+		left: 25px
 
 #btn-date
 	right: 16px
 	cursor: pointer
 	// background-color: none
 	border: 0
-
+	+respond-to($md-container-width)
+		display: none
 	
 
 /* menu */
 .navigation
 	// +setWH(214px, 568px)
 	+setWH(214px, 100vh)
-	+setPosition(absolute, top 0 left -238px z-index 99999)
+	+setPosition(absolute, top 0 left -238px z-index 999999)
 
 	min-height: 568px
 	background-color: #51bcd8
@@ -115,14 +141,17 @@
 .pen-name
 	+setWH(110px, 20px)
 	+setFont(size 14px weight bold)
-
+	
+	// font-size: px2vw(14, $xs-container-width)
+	line-height: line-height(14)
 	float: left
 	color: #fff
 	margin: 25px 0
 	margin-right: 28px
 
 .menu-list
-	margin-top: 19px
+	// margin-top: 19px
+	margin-top: px2vw(19, $xs-container-width)
 .list:hover
 	background-color: #0e8cad
 .list
@@ -131,7 +160,9 @@
 	@extend %a
 	+setWH(182px, 24px)
 	+setFont(size 16px weight 500)
-
+	
+	// font-size: px2vw(16, $xs-container-width)
+	line-height: line-height(16)
 	display: block
 	text-align: center
 	padding: 12px 16px
@@ -149,6 +180,8 @@
 	+setWH(89px, 36px)
 	+setFont(size 12px weight 500)
 
+	// font-size: px2vw(12, $xs-container-width)
+	line-height: line-height(12)
 	color: #fff
 	text-align: center
 	margin: 15px 0
@@ -190,8 +223,9 @@
 	+setWH(110px, 32px)
 	+setFont(size 10px)
 
+	// font-size: px2vw(10, $xs-container-width)
+	line-height: line-height(10)
 	text-align: center
-	line-height: 16px
 	margin: 0 auto
 	margin-top: 7px
 
@@ -206,15 +240,18 @@
 #nav-btn-close
 	+setPosition(absolute, top 0 right -24px)
 
-
 /* aside */
 .aside
 	// +setWH(260px, 568px)
 	+setWH(260px, 100vh)
-	+setPosition(absolute, top 0 right -284px z-index 99999)
+	+setPosition(absolute, top 0 right -284px z-index 999)
 
-	min-height: 568px
+	min-height: 1024px
 	background-color: #fff
+	+respond-to($md-container-width)
+		+setWH(374px, 100vh)
+		+setPosition(absolute, top 0 right 0 z-index 99999)
+		min-height: 568px
 
 .search-date
 	+setWH(100%, 42px)
@@ -224,80 +261,129 @@
 
 	&::after
 		@extend %clearfix
+	+respond-to($md-container-width)
+		+setWH(100%, 62px)
 .search-date > form
 	+setWH(100%, 42px)
+	+respond-to($md-container-width)
+		+setWH(100%, 62px)
 .search-date label
 	@extend %box-sizing
 	+setWH(35px, 42px)
 
 	padding: 11.5px 9.8px 14.2px 8.8px
 	float: left
+	+respond-to($md-container-width)
+		+setWH(50px, 62px)
+		padding: 17px 13px 21px 13px
 .search-date label > img
 	+setWH(16.3px, 16.3px)
 
 	display: block
+	+respond-to($md-container-width)
+		+setWH(24px, 24px)
 
 .search
 	@extend %box-sizing
 	+setWH(216px, 42px)
 
-	padding: 12.2px 8.8px 13.5px 0
+	padding: 10.2px 8.8px 15.5px 0
 	float: left
-
 	&::after
 		+setWH(16.3px, 16.3px)
 		+setPosition(absolute, top 10.2px right 21px)
-
-		content: url(../../images/icon/ic_arrow_down.svg)
+		content: url(../images/icons/ic_arrow_down.svg)
 		display: block
+	+respond-to($md-container-width)
+		+setWH(320px, 62px)
+		padding: 19px 55px 23px 0
+		&::after
+			+setWH(24px, 24px)
+			+setPosition(absolute, top 18px right 12px)
 .search > input
-	+setWH(191px, 16.3px)
+	@extend %box-sizing
+	+setWH(85px, 16px)
 	+setFont(size 11px)
 
-	display: block
+	line-height: line-height(11)
+	display: inline-block
 	color: #424242
 	border: 0
+	border-bottom: 1px solid #9e9e9e
+	+respond-to($md-container-width)
+		+setWH(125px, 16px)
+		padding: 4px
+		padding-left: 3px
+.search > input:nth-child(2)
+	margin-left: 5px
+	+respond-to($md-container-width)
+		margin-left: 7px
 
 .slide-box
 	@extend %box-sizing
 	+setWH(100%, 412px)
-	+setPosition(absolute, top 42px)
+	+setPosition(absolute, top 42px index 999999)
 
 	padding: 0 24px
+	+respond-to($md-container-width)
+		+setWH(100%, 866px)
+		+setPosition(absolute, top 62px index 999999)
+		padding: 20px 38px 0 38px
 .slide-content
 	+setWH(100%, 184px)
 
 	margin-top: 22px
 	border-top: 1px solid #9e9e9e
+	+respond-to($md-container-width)
+		+setWH(100%, 236px)
+		margin-top: 26px
+
 .slide-day
 	+setWH(100%, 56px)
 	+setFont(size 38px weight 300)
-
+	
+	line-height: line-height(38)
 	color: #51bcd8
 	text-align: right
 	margin-bottom: 3px
+	+respond-to($md-container-width)
+		+setWH(100%, 77px)
+		font-size: font-size(52)
+		line-height: line-height(52)
+		margin-bottom: 8px
 .slide-topic-box
 	text-align: right
-.slide-day-topic, .slide-night-topic
+.slide-day-topic	// , .slide-night-topic
 	+setWH(100%, 18px)
 	+setFont(size 12px weight normal)
-
+	
+	line-height: line-height(12)
 	color: #616161
+	+respond-to($md-container-width)
+		font-size: font-size(16)
+		line-height: line-height(16)
 .slide-topic
 	@extend %a
 	+setWH(100%, 24px)
 	+setFont(size 16px weight 500)
-
+	
+	line-height: line-height(16)
 	color: #616161
 	margin-bottom: 14px
-.slide-last-topic
-	margin-bottom: 22px
+	+respond-to($md-container-width)
+		+setWH(100%, 29px)
+		font-size: font-size(20)
+		line-height: line-height(20)
+// .slide-last-topic
+// 	margin-bottom: 22px
 
 .static-btn-bottom-aside
 	+setPosition(absolute, bottom 0)
+	width: 100%
 .page-number
 	display: flex;
 	align-items: center;
+	justify-content: center
 	padding: 15px 30px;
 	box-sizing: border-box;
 .number
@@ -305,6 +391,7 @@
 	+setWH(69px, 18px)
 	+setFont(size 12px weight bold)
 	
+	line-height: line-height(12)
 	color: #757575
 	text-align: center
 	padding: 0 22px
@@ -323,11 +410,16 @@
 	float: left
 	border: 1px solid #e0e0e0
 	background-color: #e0e0e0
+	+respond-to($md-container-width)
+		+setWH(187px, 48px)
+
 .static-btn [class^="btn-"] > img
 	display: block
 	margin: 0 auto
 .btn-up
 	margin-right: 0.7px
+	+respond-to($md-container-width)
+		margin-right: 0
 
 #aside-btn-close
 	+setPosition(absolute, top 0 left -24px)
@@ -336,62 +428,8 @@
 		display: none
 
 
-/**-------------------------
- * 	Mobile & Tablet
- ------------------------- */
 
-
-
-
-/**-----------------
- * 	Desktop
- ----------------- */
- /* static */
-@media (min-width: 1024px)
-	/* outer */
-	// .outer
-	// 	+setWH(1024px, auto)
-
-	
-@media (min-width: 1440px)
-	/* header */
-	.header
-		+setWH(100%, 62px)
-		padding-right: 364px;
-	.nav-container
-		+setWH(100%, 62px)
-		margin: 0 auto
-
-	/* logo */
-	.logo
-		+setWH(210px, 29px)
-	.logo-but-white
-		+setFont(size 16px)
-	.logo-main
-		+setWH(29px, 29px)
-	.logo-text
-		+setWH(160px,27px)
-		display: inline-block
-
-	.header [id^="btn-"]
-		+setWH(24px, 24px)
-		+setPosition(absolute, top 19px)
-
-	.header [id^="btn-"] > img
-		+setWH(24px, 24px)
-
-	#btn-menu
-		left: 25px
-	#btn-date
-		display: none
-
-	/* aside */
-	.aside
-		+setWH(364px, 100vh)
-		+setPosition(absolute, top 0 right 0 z-index 99999)
-	
-
-	#aside-btn-close
-
+		
+		
 
 
