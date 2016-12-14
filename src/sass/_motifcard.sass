@@ -1,0 +1,165 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+//  motif-card
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+.motif-card
+    @extend .three-card
+    background-image: url(../../src/images/background/bg-pen-crop.jpg)
+    background-repeat: no-repeat
+    background-size: contain
+    text-align: center
+
+
+.topic-list-time
+    @extend .txt-card-topic-list-time
+    +respond-to($xs-container-width)
+        margin-top: px2vw(48, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 48px
+    +respond-to($md-container-width)
+        margin-top: 48px
+
+.topic-list-title
+    @extend .txt-card-topic-list-title
+    +respond-to($xs-container-width)
+        margin-top: px2vw(13, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 13px
+    +respond-to($md-container-width)
+        margin-top: 13px
+
+.topic-list-info
+    @extend .txt-card-topic-list-info
+    +respond-to($xs-container-width)
+        margin-top: px2vw(16, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 16px
+    +respond-to($md-container-width)
+        margin-top: 16px
+
+.motif-write-btn
+    border: none
+    background: none
+    & > img
+        vertical-align: top
+        +respond-to($xs-container-width)
+            width: px2vw(50, $xs-container-width)
+            height: px2vw(50, $xs-container-width)
+        +respond-to($sm-container-width)
+            width: 50px
+            height: 50px
+        +respond-to($md-container-width)
+            width: 50px
+            height: 50px
+    +respond-to($xs-container-width)
+        display: block
+        text-align: center
+        box-sizing: border-box
+        padding: 0
+        margin:
+            top: px2vw(173, $xs-container-width)
+            left: px2vw(125, $xs-container-width)
+            right: px2vw(125, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin:
+            top: 131px
+            right: 109px
+            left: 109px
+        padding: 0
+    +respond-to($md-container-width)
+        margin:
+            top: 131px
+            right: 109px
+            left: 109px
+        padding: 0
+
+
+.open-txt
+    @extend %noto-bold
+    color: $basic-white
+    position: absolute
+    z-index: 999
+    +respond-to($xs-container-width)
+        right: px2vw(11, $xs-container-width)
+        top: px2vw(12, $xs-container-width)
+        font-size: px2vw(12, $xs-container-width)
+    +respond-to($sm-container-width)
+        right: 11px
+        top: 12px
+        font-size: 12px
+    +respond-to($md-container-width)
+        right: 11px
+        top: 12px
+        font-size: 12px
+
+
+.close-txt
+    @extend %noto-bold
+    color: $basic-white
+    position: absolute
+    z-index: 999
+    +respond-to($xs-container-width)
+        right: px2vw(8, $xs-container-width)
+        top: px2vw(10, $xs-container-width)
+        font-size: px2vw(12, $xs-container-width)
+    +respond-to($sm-container-width)
+        right: 8px
+        top: 10px
+        font-size: 12px
+    +respond-to($md-container-width)
+        right: 8px
+        top: 10px
+        font-size: 12px
+
+
+.triangle-open
+    position: absolute
+    right: 0
+    top: 0
+    width: 0
+    height: 0
+    +respond-to($xs-container-width)
+        border:
+            top: px2vw(35, $xs-container-width) solid $basic-blue
+            right: px2vw(35, $xs-container-width) solid $basic-blue
+            left: px2vw(35, $xs-container-width) solid transparent
+            bottom: px2vw(35, $xs-container-width) solid transparent
+    +respond-to($sm-container-width)
+        border:
+            top: 35px solid $basic-blue
+            right: 35px solid $basic-blue
+            left: 35px solid transparent
+            bottom: 35px solid transparent
+    +respond-to($md-container-width)
+        border:
+            top: 35px solid $basic-blue
+            right: 35px solid $basic-blue
+            left: 35px solid transparent
+            bottom: 35px solid transparent
+
+
+.triangle-close
+    position: absolute
+    right: 0
+    top: 0
+    width: 0
+    height: 0
+    +respond-to($xs-container-width)
+        border:
+            top: px2vw(35, $xs-container-width) solid $warning-blush-pink
+            right: px2vw(35, $xs-container-width) solid $warning-blush-pink
+            left: px2vw(35, $xs-container-width) solid transparent
+            bottom: px2vw(35, $xs-container-width) solid transparent
+    +respond-to($sm-container-width)
+        border:
+            top: 35px solid $warning-blush-pink
+            right: 35px solid $warning-blush-pink
+            left: 35px solid transparent
+            bottom: 35px solid transparent
+    +respond-to($md-container-width)
+        border:
+            top: 35px solid $warning-blush-pink
+            right: 35px solid $warning-blush-pink
+            left: 35px solid transparent
+            bottom: 35px solid transparent

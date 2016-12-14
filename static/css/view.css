@@ -349,8 +349,8 @@ table {
   border-spacing: 0;
 }
 
-.bookmark-section2::after,
-.tab-list::after {
+.tab-list::after,
+.bookmark-section2::after {
   display: block;
   clear: both;
   content: "";
@@ -398,7 +398,9 @@ table {
 .txt-nav-footer,
 .txt-slide-pagination,
 .txt-card-my-ch-label,
-.txt-card-setting-title {
+.txt-card-setting-title,
+.open-txt,
+.close-txt {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -426,7 +428,9 @@ table {
 .txt-card-bookmark-usercaption,
 .book-mark-author-caption,
 .txt-card-topic-list-time,
-.txt-card-topic-list-info {
+.topic-list-time,
+.txt-card-topic-list-info,
+.topic-list-info {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 600;
@@ -437,7 +441,8 @@ table {
 .txt-tab-normal,
 .txt-card-bookmark-username,
 .book-mark-author-username,
-.txt-card-topic-list-title {
+.txt-card-topic-list-title,
+.topic-list-title {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -521,7 +526,6 @@ table {
 }
 
 .txt-page-date {
-  font-size: 14px;
   text-align: center;
   color: #424242;
 }
@@ -532,7 +536,6 @@ table {
 }
 
 .txt-nav-usercaption {
-  font-size: 14px;
   text-align: center;
   color: #fff;
 }
@@ -562,7 +565,6 @@ table {
 }
 
 .txt-slide-pagination {
-  font-size: 12px;
   color: #757575;
   text-align: center;
 }
@@ -574,7 +576,6 @@ table {
 
 .txt-card-bookmark-writing-title,
 .card-content-heading {
-  font-size: 20px;
   color: #424242;
 }
 
@@ -593,23 +594,22 @@ table {
   color: #424242;
 }
 
-.txt-card-topic-list-time {
-  font-size: 14px;
+.txt-card-topic-list-time,
+.topic-list-time {
   color: #616161;
 }
 
-.txt-card-topic-list-title {
-  font-size: 30px;
+.txt-card-topic-list-title,
+.topic-list-title {
   color: #616161;
 }
 
-.txt-card-topic-list-info {
-  font-size: 14px;
+.txt-card-topic-list-info,
+.topic-list-info {
   color: #616161;
 }
 
 .txt-card-my-ch-label {
-  font-size: 12px;
   text-align: right;
   color: #fff;
 }
@@ -777,7 +777,9 @@ body {
 .txt-nav-footer,
 .txt-slide-pagination,
 .txt-card-my-ch-label,
-.txt-card-setting-title {
+.txt-card-setting-title,
+.open-txt,
+.close-txt {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -805,7 +807,9 @@ body {
 .txt-card-bookmark-usercaption,
 .book-mark-author-caption,
 .txt-card-topic-list-time,
-.txt-card-topic-list-info {
+.topic-list-time,
+.txt-card-topic-list-info,
+.topic-list-info {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 600;
@@ -816,7 +820,8 @@ body {
 .txt-tab-normal,
 .txt-card-bookmark-username,
 .book-mark-author-username,
-.txt-card-topic-list-title {
+.txt-card-topic-list-title,
+.topic-list-title {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -900,7 +905,6 @@ body {
 }
 
 .txt-page-date {
-  font-size: 14px;
   text-align: center;
   color: #424242;
 }
@@ -911,7 +915,6 @@ body {
 }
 
 .txt-nav-usercaption {
-  font-size: 14px;
   text-align: center;
   color: #fff;
 }
@@ -941,7 +944,6 @@ body {
 }
 
 .txt-slide-pagination {
-  font-size: 12px;
   color: #757575;
   text-align: center;
 }
@@ -953,7 +955,6 @@ body {
 
 .txt-card-bookmark-writing-title,
 .card-content-heading {
-  font-size: 20px;
   color: #424242;
 }
 
@@ -972,23 +973,22 @@ body {
   color: #424242;
 }
 
-.txt-card-topic-list-time {
-  font-size: 14px;
+.txt-card-topic-list-time,
+.topic-list-time {
   color: #616161;
 }
 
-.txt-card-topic-list-title {
-  font-size: 30px;
+.txt-card-topic-list-title,
+.topic-list-title {
   color: #616161;
 }
 
-.txt-card-topic-list-info {
-  font-size: 14px;
+.txt-card-topic-list-info,
+.topic-list-info {
   color: #616161;
 }
 
 .txt-card-my-ch-label {
-  font-size: 12px;
   text-align: right;
   color: #fff;
 }
@@ -1010,6 +1010,50 @@ body {
 
 body {
   line-height: 1.5;
+}
+
+.motif-card {
+  background-image: url(../../src/images/background/bg-pen-crop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.motif-write-btn {
+  border: none;
+  background: none;
+}
+
+.motif-write-btn>img {
+  vertical-align: top;
+}
+
+.open-txt {
+  color: #fff;
+  position: absolute;
+  z-index: 999;
+}
+
+.close-txt {
+  color: #fff;
+  position: absolute;
+  z-index: 999;
+}
+
+.triangle-open {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.triangle-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
 }
 
 .three-card,
@@ -1056,65 +1100,6 @@ body {
   text-decoration: none;
   color: #616161;
   box-sizing: border-box;
-}
-
-.bk-wrting-card {
-  display: block;
-  box-sizing: border-box;
-  text-decoration: none;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.bk-wrting-card {
-  height: 140px;
-}
-
-#section1 {
-  position: relative;
-}
-
-.bookmark-section1 {
-  box-sizing: border-box;
-}
-
-.profile-img {
-  display: block;
-  overflow: hidden;
-  border-radius: 100%;
-}
-
-.username {
-  display: block;
-  text-align: center;
-}
-
-.card-info-date {
-  display: block;
-  position: absolute;
-}
-
-.bk-author-card {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  color: #616161;
-  box-sizing: border-box;
-}
-
-.profile-img-author {
-  display: block;
-  overflow: hidden;
-  border-radius: 100%;
-}
-
-.book-mark-author-username {
-  text-decoration: none;
-}
-
-.btn-bookmark-cancle {
-  display: block;
-  margin-top: 39px;
 }
 
 .btn-default {
@@ -1195,6 +1180,65 @@ body {
   display: none;
 }
 
+.bk-wrting-card {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bk-wrting-card {
+  height: 140px;
+}
+
+#section1 {
+  position: relative;
+}
+
+.bookmark-section1 {
+  box-sizing: border-box;
+}
+
+.profile-img {
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.username {
+  display: block;
+  text-align: center;
+}
+
+.card-info-date {
+  display: block;
+  position: absolute;
+}
+
+.bk-author-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.profile-img-author {
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.book-mark-author-username {
+  text-decoration: none;
+}
+
+.btn-bookmark-cancle {
+  display: block;
+  margin-top: 39px;
+}
+
 @media only screen and (min-width: 1440px) {
   .txt-page-title {
     font-size: 36px;
@@ -1229,8 +1273,17 @@ body {
     font-size: 90px;
   }
 
+  .txt-page-date {
+    font-size: 14px;
+  }
+
   .txt-nav-username {
     font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
   }
 
   .txt-nav-footer {
@@ -1253,8 +1306,19 @@ body {
     font-size: 20px;
   }
 
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
   .txt-tab-normal {
     font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: center;
   }
 
   .txt-card-bookmark-writing-content,
@@ -1277,6 +1341,28 @@ body {
   .book-mark-author-caption {
     font-size: 14px;
     color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
     text-align: center;
   }
 
@@ -1325,8 +1411,17 @@ body {
     font-size: 90px;
   }
 
+  .txt-page-date {
+    font-size: 14px;
+  }
+
   .txt-nav-username {
     font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
   }
 
   .txt-nav-footer {
@@ -1349,8 +1444,19 @@ body {
     font-size: 20px;
   }
 
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
   .txt-tab-normal {
     font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: center;
   }
 
   .txt-card-bookmark-writing-content,
@@ -1376,6 +1482,28 @@ body {
     text-align: center;
   }
 
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
   .txt-card-setting-title {
     font-size: 14px;
   }
@@ -1386,6 +1514,56 @@ body {
 
   .txt-card-setting-info {
     font-size: 14px;
+  }
+
+  .topic-list-time {
+    margin-top: 48px;
+  }
+
+  .topic-list-title {
+    margin-top: 13px;
+  }
+
+  .topic-list-info {
+    margin-top: 16px;
+  }
+
+  .motif-write-btn>img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .motif-write-btn {
+    margin-top: 131px;
+    margin-right: 109px;
+    margin-left: 109px;
+    padding: 0;
+  }
+
+  .open-txt {
+    right: 11px;
+    top: 12px;
+    font-size: 12px;
+  }
+
+  .close-txt {
+    right: 8px;
+    top: 10px;
+    font-size: 12px;
+  }
+
+  .triangle-open {
+    border-top: 35px solid #51bcd8;
+    border-right: 35px solid #51bcd8;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .triangle-close {
+    border-top: 35px solid #fe8b90;
+    border-right: 35px solid #fe8b90;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
   }
 
   .three-card-align>article:nth-child(3n) {
@@ -1404,6 +1582,29 @@ body {
 
   .one-card-align>article {
     margin-left: 0;
+  }
+
+  .btn-default {
+    min-width: 80px;
+    padding: 6px 18px 6px;
+  }
+
+  .page-top-section {
+    padding-top: 89px;
+    padding-bottom: 33px;
+  }
+
+  .tab-list li {
+    padding: 13px;
+    border-bottom: 3px solid #9e9e9e;
+  }
+
+  [aria-selected="true"] {
+    border-bottom: 3px solid #51bcd8 !important;
+  }
+
+  .tab-contnents {
+    margin-top: 25px;
   }
 
   .bk-wrting-card {
@@ -1487,29 +1688,6 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-
-  .btn-default {
-    min-width: 80px;
-    padding: 6px 18px 6px;
-  }
-
-  .page-top-section {
-    padding-top: 89px;
-    padding-bottom: 33px;
-  }
-
-  .tab-list li {
-    padding: 13px;
-    border-bottom: 3px solid #9e9e9e;
-  }
-
-  [aria-selected="true"] {
-    border-bottom: 3px solid #51bcd8 !important;
-  }
-
-  .tab-contnents {
-    margin-top: 25px;
-  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1587,29 +1765,44 @@ body {
     font-size: 5vw;
   }
 
-  .txt-nav-username {
+  .txt-page-date {
     font-size: 14px;
     text-align: left;
   }
 
+  .txt-nav-username {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
   .txt-nav-footer {
-    font-size: 10px;
+    font-size: 3.125vw;
   }
 
   .txt-slide-search-date {
-    font-size: 11px;
+    font-size: 3.4375vw;
   }
 
   .txt-slide-date {
-    font-size: 38px;
+    font-size: 11.875vw;
   }
 
   .txt-slide-time {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-slide-title {
-    font-size: 16px;
+    font-size: 5vw;
+  }
+
+  .txt-slide-pagination {
+    font-size: 3.75vw;
+    text-align: left;
   }
 
   .txt-tab-normal {
@@ -1633,6 +1826,28 @@ body {
 
   .txt-card-bookmark-username,
   .book-mark-author-username {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 9.375vw;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 4.375vw;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
     font-size: 3.75vw;
     text-align: left;
   }
@@ -1723,29 +1938,44 @@ body {
     font-size: 5vw;
   }
 
-  .txt-nav-username {
+  .txt-page-date {
     font-size: 14px;
     text-align: left;
   }
 
+  .txt-nav-username {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
   .txt-nav-footer {
-    font-size: 10px;
+    font-size: 3.125vw;
   }
 
   .txt-slide-search-date {
-    font-size: 11px;
+    font-size: 3.4375vw;
   }
 
   .txt-slide-date {
-    font-size: 38px;
+    font-size: 11.875vw;
   }
 
   .txt-slide-time {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-slide-title {
-    font-size: 16px;
+    font-size: 5vw;
+  }
+
+  .txt-slide-pagination {
+    font-size: 3.75vw;
+    text-align: left;
   }
 
   .txt-tab-normal {
@@ -1773,6 +2003,28 @@ body {
     text-align: left;
   }
 
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 9.375vw;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 4.375vw;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
   .txt-card-setting-title {
     font-size: 12px;
   }
@@ -1783,6 +2035,59 @@ body {
 
   .txt-card-setting-info {
     font-size: 12px;
+  }
+
+  .topic-list-time {
+    margin-top: 15vw;
+  }
+
+  .topic-list-title {
+    margin-top: 4.0625vw;
+  }
+
+  .topic-list-info {
+    margin-top: 5vw;
+  }
+
+  .motif-write-btn>img {
+    width: 15.625vw;
+    height: 15.625vw;
+  }
+
+  .motif-write-btn {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 54.0625vw;
+    margin-left: 39.0625vw;
+    margin-right: 39.0625vw;
+  }
+
+  .open-txt {
+    right: 3.4375vw;
+    top: 3.75vw;
+    font-size: 3.75vw;
+  }
+
+  .close-txt {
+    right: 2.5vw;
+    top: 3.125vw;
+    font-size: 3.75vw;
+  }
+
+  .triangle-open {
+    border-top: 10.9375vw solid #51bcd8;
+    border-right: 10.9375vw solid #51bcd8;
+    border-left: 10.9375vw solid transparent;
+    border-bottom: 10.9375vw solid transparent;
+  }
+
+  .triangle-close {
+    border-top: 10.9375vw solid #fe8b90;
+    border-right: 10.9375vw solid #fe8b90;
+    border-left: 10.9375vw solid transparent;
+    border-bottom: 10.9375vw solid transparent;
   }
 
   .three-card-align>article {
@@ -1805,6 +2110,38 @@ body {
     padding-right: 3.125vw;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .btn-default {
+    min-width: 25vw;
+    padding: 1.875vw 5.625vw 1.875vw;
+  }
+
+  .page-top-section {
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 #bdbdbd;
+    margin-bottom: 5.625vw;
+  }
+
+  .tab-list {
+    box-sizing: border-box;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+  }
+
+  .tab-list li {
+    padding: 2.8125vw;
+    border-bottom: 2px solid #9e9e9e;
+  }
+
+  [aria-selected="true"] {
+    border-bottom: 2px solid #51bcd8 !important;
+  }
+
+  .tab-contnents {
+    margin-top: 5.625vw;
   }
 
   .bk-wrting-card {
@@ -1909,38 +2246,6 @@ body {
     margin-top: 6.25vw;
     margin-bottom: 6.5625vw;
   }
-
-  .btn-default {
-    min-width: 25vw;
-    padding: 1.875vw 5.625vw 1.875vw;
-  }
-
-  .page-top-section {
-    padding-top: 2.5vw;
-    padding-bottom: 2.5vw;
-    background-color: #fff;
-    box-shadow: 0 2px 2px 0 #bdbdbd;
-    margin-bottom: 5.625vw;
-  }
-
-  .tab-list {
-    box-sizing: border-box;
-    padding-left: 3.125vw;
-    padding-right: 3.125vw;
-  }
-
-  .tab-list li {
-    padding: 2.8125vw;
-    border-bottom: 2px solid #9e9e9e;
-  }
-
-  [aria-selected="true"] {
-    border-bottom: 2px solid #51bcd8 !important;
-  }
-
-  .tab-contnents {
-    margin-top: 5.625vw;
-  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -1977,8 +2282,17 @@ body {
     font-size: 90px;
   }
 
+  .txt-page-date {
+    font-size: 14px;
+  }
+
   .txt-nav-username {
     font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
   }
 
   .txt-nav-footer {
@@ -2001,8 +2315,19 @@ body {
     font-size: 20px;
   }
 
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
   .txt-tab-normal {
     font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: center;
   }
 
   .txt-card-bookmark-writing-content,
@@ -2025,6 +2350,28 @@ body {
   .book-mark-author-caption {
     font-size: 14px;
     color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
     text-align: center;
   }
 
@@ -2073,8 +2420,17 @@ body {
     font-size: 90px;
   }
 
+  .txt-page-date {
+    font-size: 14px;
+  }
+
   .txt-nav-username {
     font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
   }
 
   .txt-nav-footer {
@@ -2097,8 +2453,19 @@ body {
     font-size: 20px;
   }
 
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
   .txt-tab-normal {
     font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: center;
   }
 
   .txt-card-bookmark-writing-content,
@@ -2124,6 +2491,28 @@ body {
     text-align: center;
   }
 
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
   .txt-card-setting-title {
     font-size: 14px;
   }
@@ -2134,6 +2523,56 @@ body {
 
   .txt-card-setting-info {
     font-size: 14px;
+  }
+
+  .topic-list-time {
+    margin-top: 48px;
+  }
+
+  .topic-list-title {
+    margin-top: 13px;
+  }
+
+  .topic-list-info {
+    margin-top: 16px;
+  }
+
+  .motif-write-btn>img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .motif-write-btn {
+    margin-top: 131px;
+    margin-right: 109px;
+    margin-left: 109px;
+    padding: 0;
+  }
+
+  .open-txt {
+    right: 11px;
+    top: 12px;
+    font-size: 12px;
+  }
+
+  .close-txt {
+    right: 8px;
+    top: 10px;
+    font-size: 12px;
+  }
+
+  .triangle-open {
+    border-top: 35px solid #51bcd8;
+    border-right: 35px solid #51bcd8;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .triangle-close {
+    border-top: 35px solid #fe8b90;
+    border-right: 35px solid #fe8b90;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
   }
 
   .three-card-align>article:nth-child(3n) {
@@ -2152,6 +2591,29 @@ body {
 
   .one-card-align>article {
     margin-left: 0;
+  }
+
+  .btn-default {
+    min-width: 80px;
+    padding: 6px 18px 6px;
+  }
+
+  .page-top-section {
+    padding-top: 89px;
+    padding-bottom: 33px;
+  }
+
+  .tab-list li {
+    padding: 13px;
+    border-bottom: 3px solid #9e9e9e;
+  }
+
+  [aria-selected="true"] {
+    border-bottom: 3px solid #51bcd8 !important;
+  }
+
+  .tab-contnents {
+    margin-top: 25px;
   }
 
   #section1>div>article {
@@ -2230,29 +2692,6 @@ body {
   .btn-bookmark-cancle {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .btn-default {
-    min-width: 80px;
-    padding: 6px 18px 6px;
-  }
-
-  .page-top-section {
-    padding-top: 89px;
-    padding-bottom: 33px;
-  }
-
-  .tab-list li {
-    padding: 13px;
-    border-bottom: 3px solid #9e9e9e;
-  }
-
-  [aria-selected="true"] {
-    border-bottom: 3px solid #51bcd8 !important;
-  }
-
-  .tab-contnents {
-    margin-top: 25px;
   }
 }
 /*# sourceMappingURL=../maps/view.css.map */
