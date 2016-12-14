@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../css/libs/but_grid/style.css"> -->
+    <link rel="stylesheet" href="../css/libs/yamoo9/y9_grid.css">
+    <link rel="stylesheet" href="../css/view.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../js/tab-ui.js"></script>
+    <title>But: book-mark</title>
+</head>
+
+<body>
+    <!-- <header class="header">
+        <div class="logo">
+            <h1 class="readable-hidden">씀 로고(메인화면으로 바로가기)</h1>
+
+            <a href="#">
+                <img src="" alt="씀 로고 - 메인화면으로 가기">씀
+            </a>
+        </div> -->
+
+        <!--  menu displayed on the Desktop / Mobile -->
+        <!-- <nav class="nav">
+            <h1 class="readable-hidden">씀 메뉴</h1>
+
+            <a href="#">
+                <img src="" alt="메뉴 아이콘">
+            </a>
+
+            <section class="box-menu">
+                <section>
+                    <h2 class="readable-hidden">사용자 프로필</h2>
+
+                    <a class="profile" href="#">
+                        <img class="user-profile" src="" alt="사용자 프로필 사진">
+                        <p class="pen-name">궈는주</p>
+                    </a>
+                </section>
+                <hr>
+                <ul class="menu">
+                    <li><a href="#">공개 씀</a></li>
+                    <li><a href="#">나의 씀</a></li>
+                    <li><a href="#">책갈피</a></li>
+                </ul>
+                <hr>
+                <section>
+                    <a class="setting" href="#">설정</a>
+                    <button class="logout" type="button">로그아웃</button>
+                </section>
+                <section>
+                    <h2 class="readable-hidden">SSUM SNS</h2>
+
+                    <a class="sns-facebook" href="#"><img src="" alt="페이스북"></a>
+                    <a class="sns-twitter" href="#"><img src="" alt="트위터"></a>
+                    <a class="sns-instagram" href="#"><img src="" alt="인스타그램"></a>
+                </section>
+                <button class="menu-close" type="button">X</button>
+            </section>
+        </nav> -->
+
+
+        <!-- <div class="search-bar">
+			<button class="search"><img src="" alt="검색"></button>
+		</div> -->
+        <!-- 검색 클릭 시, -->
+        <!-- <div class="search-bar">
+            <h1 class="readable-hidden">search</h1>
+
+            <form class="" action="" method="post">
+                <fieldset>
+                    <label class="" for="search">search</label>
+                    <input id="search" type="text">
+                </fieldset>
+                <button class="search" type="submit"><img src="" alt="검색"></button>
+            </form>
+        </div>
+    </header> -->
+    <main>
+        <section class="container guide">
+            <h1 class="h1-sample">구독 목록</h1>
+            <!-- 탭 인덱스 -->
+            <div class="row">
+                <ul class="tab-list col-9 push-1" role="tablist">
+                    <li id="tab1" role="tab" aria-controls="section1" aria-selected="true" tabindex="0" class="waves-effect waves-mint">담아온글</li>
+                    <li id="tab2" role="tab" aria-controls="section2" aria-selected="false" tabindex="0" class="waves-effect waves-mint">구독작가</li>
+                </ul>
+            </div>
+            <div class="tab-contents">
+                <section id="section1" role="tabpanel" aria-labelledby="tab1">
+                    <article>
+                        <a href="#" class="card-bookmark-writing waves-effect waves-mint">
+                            <div class="bookmark-section1">
+                                <img src="../../src/images/userprofile/user_0001.png" alt="" class="profile-img">
+                                <p class="username">gongyou</p>
+                            </div>
+                            <div class="bookmark-section2">
+                                <p class="card-content-heading">끌림에 대하여</p>
+                                <p class="card-content-text">
+                                    현실 보다 더 중요한 것이 이상이라며 고집하다가 이상만큼 중요한 것이 현실이라고 인정할 수밖에 없는 날. 난 그런 날에 살면서 살아야할 이유를 찾는다. 내 삶과 내 가슴이 남김없이 불타오를 거룩한 사랑 …
+                                </p>
+                                <p class="card-info-date">
+                                    16.11.23 (낮)
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="card-bookmark-writing waves-effect waves-mint">
+                            <div class="bookmark-section1">
+                                <img src="../../src/images/userprofile/user_0002.png" alt="" class="profile-img">
+                                <p class="username">uni</p>
+                            </div>
+                            <div class="bookmark-section2">
+                                <p class="card-content-heading">끌림에 대하여</p>
+                                <p class="card-content-text">
+                                    현실 보다 더 중요한 것이 이상이라며 고집하다가 이상만큼 중요한 것이 현실이라고 인정할 수밖에 없는 날. 난 그런 날에 살면서 살아야할 이유를 찾는다. 내 삶과 내 가슴이 남김없이 불타오를 거룩한 사랑 …
+                                </p>
+                                <p class="card-info-date">
+                                    16.11.23 (낮)
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="card-bookmark-writing waves-effect waves-mint">
+                            <div class="bookmark-section1">
+                                <img src="../../src/images/userprofile/user_0003.png" alt="" class="profile-img">
+                                <p class="username">Minatozaki</p>
+                            </div>
+                            <div class="bookmark-section2">
+                                <p class="card-content-heading">끌림에 대하여</p>
+                                <p class="card-content-text">
+                                    현실 보다 더 중요한 것이 이상이라며 고집하다가 이상만큼 중요한 것이 현실이라고 인정할 수밖에 없는 날. 난 그런 날에 살면서 살아야할 이유를 찾는다. 내 삶과 내 가슴이 남김없이 불타오를 거룩한 사랑 …
+                                </p>
+                                <p class="card-info-date">
+                                    16.11.23 (낮)
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <section id="section2" class="unvisual" role="tabpanel" aria-labelledby="tab2">
+                    <article>
+                        <a href="#" class="card-bookmark-writing waves-effect waves-mint">
+                            <div class="bookmark-section1">
+                                <img src="../../src/images/userprofile/user_0004.png" alt="" class="profile-img">
+                                <p class="username">seungyeon</p>
+                            </div>
+                            <div class="bookmark-section2">
+                                <p class="card-content-heading">끌림에 대하여</p>
+                                <p class="card-content-text">
+                                    내가 그의 이름을 불러주기 전에는 그는 다만 하나의 몸짓에 지나지 않았다. 내가 그의 이름을 불러주었을 때 그는 나에게로 와서 꽃이 되었다.
+                                </p>
+                                <p class="card-info-date">
+                                    16.11.23 (낮)
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="#" class="card-bookmark-writing waves-effect waves-mint">
+                            <div class="bookmark-section1">
+                                <img src="../../src/images/userprofile/user_0005.png" alt="" class="profile-img">
+                                <p class="username">tildaswinton</p>
+                            </div>
+                            <div class="bookmark-section2">
+                                <p class="card-content-heading">끌림에 대하여</p>
+                                <p class="card-content-text">
+                                    내가 그의 이름을 불러주기 전에는 그는 다만 하나의 몸짓에 지나지 않았다. 내가 그의 이름을 불러주었을 때 그는 나에게로 와서 꽃이 되었다.
+                                </p>
+                                <p class="card-info-date">
+                                    16.11.23 (낮)
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="footer">
+        <h1 class="readable-hidden">Footer</h1>
+    </footer> -->
+<script src="../js/waves.js" charset="utf-8"></script>
+</body>
+</html>

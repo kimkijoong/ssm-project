@@ -1,0 +1,510 @@
+/*! typography-grid-system-generator.sass @ yamoo9.net, 2016 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote,
+details,
+hr,
+fieldset,
+pre,
+table {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 62px;
+  line-height: 1.1796;
+}
+
+h2 {
+  font-size: 49px;
+  line-height: 1.4746;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 1.2288;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: .768;
+}
+
+h5 {
+  font-size: 25px;
+  line-height: .96;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+ul {
+  padding-left: 1em;
+  padding-left: 1rem;
+}
+
+ol {
+  padding-left: 1.6em;
+  padding-left: 1.6rem;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+hr {
+  margin: -1px 0;
+  border: 1px solid;
+}
+
+b,
+strong,
+em,
+small,
+code {
+  line-height: 1;
+}
+
+sup,
+sub {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-size: 100%;
+}
+
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid;
+  text-align: left;
+}
+
+thead th {
+  vertical-align: bottom;
+}
+
+.container,
+.grid {
+  position: relative;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:before,
+.container::before,
+.grid:before,
+.grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(180deg, transparent 95%, rgba(239,64,15,0.5) 95%),linear-gradient(90deg, transparent 10.4167%, rgba(239,64,15,0.25) 10.4167%, rgba(239,64,15,0.25) 89.5833%, transparent 89.5833%);
+  background-size: 24px 24px,96px 96px;
+  transition: height 0.2s ease-out;
+}
+
+.container.guide-10:before,
+.container.guide-10::before,
+.grid.guide-10:before,
+.grid.guide-10::before {
+  background-size: 10px 10px,96px 96px;
+}
+
+.container.guide:hover:before,
+.container.guide:hover::before,
+.container.show-guide:before,
+.container.show-guide::before,
+.grid.guide:hover:before,
+.grid.guide:hover::before,
+.grid.show-guide:before,
+.grid.show-guide::before {
+  height: 100vh;
+}
+
+.row:after,
+.row::after,
+.clearfix:after,
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.col-1 {
+  width: 76px;
+}
+
+.col-2 {
+  width: 172px;
+}
+
+.col-3 {
+  width: 268px;
+}
+
+.col-4 {
+  width: 364px;
+}
+
+.col-5 {
+  width: 460px;
+}
+
+.col-6 {
+  width: 556px;
+}
+
+.col-7 {
+  width: 652px;
+}
+
+.col-8 {
+  width: 748px;
+}
+
+.col-9 {
+  width: 844px;
+}
+
+.col-10 {
+  width: 940px;
+}
+
+.col-11 {
+  width: 1036px;
+}
+
+.col-12 {
+  width: 1132px;
+}
+
+.col-13 {
+  width: 1228px;
+}
+
+.col-14 {
+  width: 1324px;
+}
+
+.col-15 {
+  width: 1420px;
+}
+
+[class*="push-"],
+[class*="pull-"] {
+  position: relative;
+}
+
+.push-1 {
+  left: 96px;
+}
+
+.push-2 {
+  left: 192px;
+}
+
+.push-3 {
+  left: 288px;
+}
+
+.push-4 {
+  left: 384px;
+}
+
+.push-5 {
+  left: 480px;
+}
+
+.push-6 {
+  left: 576px;
+}
+
+.push-7 {
+  left: 672px;
+}
+
+.push-8 {
+  left: 768px;
+}
+
+.push-9 {
+  left: 864px;
+}
+
+.push-10 {
+  left: 960px;
+}
+
+.push-11 {
+  left: 1056px;
+}
+
+.push-12 {
+  left: 1152px;
+}
+
+.push-13 {
+  left: 1248px;
+}
+
+.push-14 {
+  left: 1344px;
+}
+
+.push-15 {
+  left: 1440px;
+}
+
+.pull-1 {
+  left: -96px;
+}
+
+.pull-2 {
+  left: -192px;
+}
+
+.pull-3 {
+  left: -288px;
+}
+
+.pull-4 {
+  left: -384px;
+}
+
+.pull-5 {
+  left: -480px;
+}
+
+.pull-6 {
+  left: -576px;
+}
+
+.pull-7 {
+  left: -672px;
+}
+
+.pull-8 {
+  left: -768px;
+}
+
+.pull-9 {
+  left: -864px;
+}
+
+.pull-10 {
+  left: -960px;
+}
+
+.pull-11 {
+  left: -1056px;
+}
+
+.pull-12 {
+  left: -1152px;
+}
+
+.pull-13 {
+  left: -1248px;
+}
+
+.pull-14 {
+  left: -1344px;
+}
+
+.pull-15 {
+  left: -1440px;
+}
+
+.prefix-1 {
+  padding-left: 96px;
+}
+
+.prefix-2 {
+  padding-left: 192px;
+}
+
+.prefix-3 {
+  padding-left: 288px;
+}
+
+.prefix-4 {
+  padding-left: 384px;
+}
+
+.prefix-5 {
+  padding-left: 480px;
+}
+
+.prefix-6 {
+  padding-left: 576px;
+}
+
+.prefix-7 {
+  padding-left: 672px;
+}
+
+.prefix-8 {
+  padding-left: 768px;
+}
+
+.prefix-9 {
+  padding-left: 864px;
+}
+
+.prefix-10 {
+  padding-left: 960px;
+}
+
+.prefix-11 {
+  padding-left: 1056px;
+}
+
+.prefix-12 {
+  padding-left: 1152px;
+}
+
+.prefix-13 {
+  padding-left: 1248px;
+}
+
+.prefix-14 {
+  padding-left: 1344px;
+}
+
+.prefix-15 {
+  padding-left: 1440px;
+}
+
+.suffix-1 {
+  padding-right: 96px;
+}
+
+.suffix-2 {
+  padding-right: 192px;
+}
+
+.suffix-3 {
+  padding-right: 288px;
+}
+
+.suffix-4 {
+  padding-right: 384px;
+}
+
+.suffix-5 {
+  padding-right: 480px;
+}
+
+.suffix-6 {
+  padding-right: 576px;
+}
+
+.suffix-7 {
+  padding-right: 672px;
+}
+
+.suffix-8 {
+  padding-right: 768px;
+}
+
+.suffix-9 {
+  padding-right: 864px;
+}
+
+.suffix-10 {
+  padding-right: 960px;
+}
+
+.suffix-11 {
+  padding-right: 1056px;
+}
+
+.suffix-12 {
+  padding-right: 1152px;
+}
+
+.suffix-13 {
+  padding-right: 1248px;
+}
+
+.suffix-14 {
+  padding-right: 1344px;
+}
+
+.suffix-15 {
+  padding-right: 1440px;
+}
+/*# sourceMappingURL=../../../maps/libs/yamoo9/y9_grid.css.map */
