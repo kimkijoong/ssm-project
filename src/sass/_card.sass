@@ -1,0 +1,42 @@
+%card-normal
+    background-color: $basic-white
+    border-radius: 2px
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+    outline: none
+
+%card-hover
+    background-color: $basic-white
+    border-radius: 2px
+    z-index: 2
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+    outline: none
+
+%card-focus
+    background-color: $basic-white
+    border-radius: 2px
+    outline: thin dotted
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+    transition: box-shadow 0.2s ease
+
+
+.card-box
+    text-decoration: none
+    @extend %card-normal
+    &:hover
+        @extend %card-hover
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        height: px2vw(71, $xs-container-width)
+        margin-bottom: 10px
+        width: px2vw(300, $xs-container-width)
+    +respond-to($md-container-width)
+        height: 370px
+        margin-bottom: 20px
+    +respond-to($sm-container-width)
+        height: 370px
+        margin-bottom: 20px
