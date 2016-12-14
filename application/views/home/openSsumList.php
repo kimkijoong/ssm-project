@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ssum: Open Ssum</title>
+	<?php include_once("./application/views/include/style/style.php") ?>
 </head>
 <body data-ng-app="ButProjectApp">
 	<?php include_once("./application/views/include/navigation.php") ?>
