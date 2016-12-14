@@ -1,3 +1,6 @@
+@import "color"
+@import "font"
+
 %card-normal
     background-color: $basic-white
     border-radius: 2px
@@ -22,7 +25,6 @@
 
 
 .card-box
-    text-decoration: none
     @extend %card-normal
     &:hover
         @extend %card-hover
@@ -40,3 +42,71 @@
     +respond-to($sm-container-width)
         height: 370px
         margin-bottom: 20px
+
+
+////////////////////////////////////////////////////////////////
+//  three-card
+////////////////////////////////////////////////////////////////
+
+// 데크스탑에서 3컬럼 쓰는 카드가 모바일에서는 4컬럼 쓰는 상황에서 사용
+// 사용 예시 코드
+// <section class="row">
+//     <div class="md-col-9 sm-col-9 xs-col-4 three-card-align">
+//         <article class="md-col-3 sm-col-3 xs-col-4">
+//             <a href="#" class="three-card">
+//                 <div>
+//                     contents
+//                 </div>
+//             </a>
+//         </article>
+//     </div>
+// </section>
+// .motif-card와 .waves-effect .waves-mint함께 사용하면 클릭시 ripple effect 사용가능
+
+.three-card-align
+    +respond-to($xs-container-width)
+        & > article
+            box-sizing: border-box
+            padding-left: px2vw(10, $xs-container-width)
+            padding-right: px2vw(10, $xs-container-width)
+            margin-left: 0
+            margin-right: 0
+    +respond-to($sm-container-width)
+        & > article:nth-child(3n)
+            margin-right: 0
+        & > article:nth-child(3n+1)
+            margin-left: 0
+    +respond-to($md-container-width)
+        & > article:nth-child(3n)
+            margin-right: 0
+        & > article:nth-child(3n+1)
+            margin-left: 0
+
+.three-card
+    display: block
+    text-decoration: none
+    color: $gray-700
+    @extend %card-normal
+    &:hover
+        @extend %card-hover
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        height: px2vw(416, $xs-container-width)
+        margin-bottom: 10px
+        width: px2vw(300, $xs-container-width)
+    +respond-to($md-container-width)
+        height: 370px
+        margin-bottom: 20px
+    +respond-to($sm-container-width)
+        height: 370px
+        margin-bottom: 20px
+
+////////////////////////////////////////////////////////////////
+//  motif-card
+////////////////////////////////////////////////////////////////
+
+.motif-card
+    @extend .three-card
