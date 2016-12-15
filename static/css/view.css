@@ -423,6 +423,7 @@ table {
 .txt-card-date,
 .content-info,
 .txt-card-username,
+.content-username,
 .username,
 .txt-main-caption,
 .txt-page-date,
@@ -474,6 +475,7 @@ table {
 }
 
 .txt-card-username,
+.content-username,
 .username {
   color: #424242;
 }
@@ -805,6 +807,7 @@ body {
 .txt-card-date,
 .content-info,
 .txt-card-username,
+.content-username,
 .username,
 .txt-main-caption,
 .txt-page-date,
@@ -856,6 +859,7 @@ body {
 }
 
 .txt-card-username,
+.content-username,
 .username {
   color: #424242;
 }
@@ -1149,6 +1153,7 @@ body {
 .txt-card-date,
 .content-info,
 .txt-card-username,
+.content-username,
 .username,
 .txt-main-caption,
 .txt-page-date,
@@ -1200,6 +1205,7 @@ body {
 }
 
 .txt-card-username,
+.content-username,
 .username {
   color: #424242;
 }
@@ -1381,6 +1387,24 @@ body {
 
 .content-info {
   text-align: center;
+}
+
+.profile-img-content {
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.content-username {
+  text-decoration: none;
+}
+
+.card-content-01 {
+  position: relative;
+}
+
+.btn-content-cancle {
+  display: block;
 }
 
 .content-card,
@@ -1601,6 +1625,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-size: 14px;
   }
@@ -1747,6 +1772,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-size: 14px;
   }
@@ -1943,6 +1969,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-size: 14px;
   }
@@ -2093,6 +2120,31 @@ body {
     padding-right: 20px;
     padding-bottom: 48px;
     line-height: 20px;
+  }
+
+  .profile-img-content {
+    width: 39px;
+    height: 39px;
+    margin: 16px;
+    float: left;
+  }
+
+  .content-username {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+
+  .btn-content-cancle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    margin-right: 16px;
+  }
+
+  .line {
+    border-top: 1px solid #bdbdbd;
   }
 
   .three-card-align>article:nth-child(3n) {
@@ -2246,6 +2298,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-weight: 600;
     font-size: 4.375vw;
@@ -2422,6 +2475,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-weight: 600;
     font-size: 4.375vw;
@@ -2651,6 +2705,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-weight: 600;
     font-size: 4.375vw;
@@ -2830,6 +2885,32 @@ body {
     padding-right: 6.25vw;
     padding-bottom: 10.625vw;
     line-height: 6.25vw;
+  }
+
+  .profile-img-content {
+    display: inline-block;
+    width: 12.1875vw;
+    height: 12.1875vw;
+    margin: 5vw;
+    float: left;
+  }
+
+  .content-username {
+    text-align: left;
+    float: left;
+    padding-top: 8.125vw;
+    padding-bottom: 8.4375vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-content-cancle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 6.25vw;
+    margin-bottom: 6.5625vw;
+    margin-right: 5vw;
   }
 
   .line {
@@ -3024,6 +3105,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-size: 14px;
   }
@@ -3170,6 +3252,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-size: 14px;
   }
@@ -3366,6 +3449,7 @@ body {
   }
 
   .txt-card-username,
+  .content-username,
   .username {
     font-size: 14px;
   }
@@ -3516,6 +3600,31 @@ body {
     padding-right: 20px;
     padding-bottom: 48px;
     line-height: 20px;
+  }
+
+  .profile-img-content {
+    width: 39px;
+    height: 39px;
+    margin: 16px;
+    float: left;
+  }
+
+  .content-username {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+
+  .btn-content-cancle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    margin-right: 16px;
+  }
+
+  .line {
+    border-top: 1px solid #bdbdbd;
   }
 
   .three-card-align>article:nth-child(3n) {
