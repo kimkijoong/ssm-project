@@ -43,7 +43,8 @@ input {
 .search,
 .search>input,
 .slide-box,
-.number {
+.number,
+section .main-content {
   box-sizing: border-box;
 }
 
@@ -369,7 +370,7 @@ input {
   width: 16.3px;
   height: 16.3px;
   position: absolute;
-  top: 10.2px;
+  top: 6.2px;
   right: 21px;
   content: url(../images/icons/ic_arrow_down.svg);
   display: block;
@@ -377,8 +378,8 @@ input {
 
 .search>input {
   width: 85px;
-  height: 16px;
-  font-size: 11px;
+  height: 18px;
+  font-size: 12px;
   line-height: 1.5;
   display: inline-block;
   color: #424242;
@@ -499,6 +500,10 @@ input {
   left: -24px;
 }
 
+section .main-content {
+  padding-top: 34px;
+}
+
 @media only screen and (min-width: 1440px) {
   .header {
     width: 100%;
@@ -603,7 +608,9 @@ input {
 
   .search>input {
     width: 125px;
-    height: 16px;
+    height: 25px;
+    font-size: 1rem;
+    line-height: 1.5;
     padding: 4px;
     padding-left: 3px;
   }
@@ -657,6 +664,15 @@ input {
 
   #aside-btn-close {
     display: none;
+  }
+
+  section .container {
+    width: 100%;
+  }
+
+  section .main-content {
+    float: none;
+    padding-top: 62px;
   }
 }
 /*# sourceMappingURL=../maps/common.css.map */

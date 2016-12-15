@@ -2143,7 +2143,7 @@ body {
     margin-right: 16px;
   }
 
-  .line {
+  .line-horizon {
     border-top: 1px solid #bdbdbd;
   }
 
@@ -2913,7 +2913,7 @@ body {
     margin-right: 5vw;
   }
 
-  .line {
+  .line-horizon {
     border-top: 1px solid #bdbdbd;
   }
 
@@ -2998,8 +2998,8 @@ body {
     left: 0;
     bottom: 0;
     height: 22.1875vw;
-    width: 93.75vw;
     border-top: 1px solid #bdbdbd;
+    width: 100%;
   }
 
   .profile-img {
@@ -3024,7 +3024,6 @@ body {
     left: 0;
     top: 0;
     box-sizing: border-box;
-    width: 93.75vw;
   }
 
   .card-content-heading {
@@ -3623,7 +3622,7 @@ body {
     margin-right: 16px;
   }
 
-  .line {
+  .line-horizon {
     border-top: 1px solid #bdbdbd;
   }
 

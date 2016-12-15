@@ -6,7 +6,9 @@
 body
     background-color: $background-color
 
-
+// .container
+//     +respond-to($md-container-width)
+//         width: 100%
 .page-top-section
     +respond-to($xs-container-width)
         padding-top: px2vw(8, $xs-container-width)
@@ -152,8 +154,8 @@ body
         left: 0
         bottom: 0
         height: px2vw(71, $xs-container-width)
-        width: px2vw(300, $xs-container-width)
         border-top: 1px solid $gray-400
+        width: 100%
     +respond-to($sm-container-width)
         width: 136px
         height: 140px
@@ -237,7 +239,6 @@ body
         left: 0
         top: 0
         box-sizing: border-box
-        width: px2vw(300, $xs-container-width)
     +respond-to($sm-container-width)
         width: 680px
         height: 140px

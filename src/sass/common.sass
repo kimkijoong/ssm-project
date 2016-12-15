@@ -291,7 +291,8 @@
 	float: left
 	&::after
 		+setWH(16.3px, 16.3px)
-		+setPosition(absolute, top 10.2px right 21px)
+		+setPosition(absolute, top 6.2px right 21px)
+
 		content: url(../images/icons/ic_arrow_down.svg)
 		display: block
 	+respond-to($md-container-width)
@@ -302,8 +303,8 @@
 			+setPosition(absolute, top 18px right 12px)
 .search > input
 	@extend %box-sizing
-	+setWH(85px, 16px)
-	+setFont(size 11px)
+	+setWH(85px, 18px)
+	+setFont(size 12px)
 
 	line-height: line-height(11)
 	display: inline-block
@@ -311,7 +312,9 @@
 	border: 0
 	border-bottom: 1px solid #9e9e9e
 	+respond-to($md-container-width)
-		+setWH(125px, 16px)
+		+setWH(125px, 25px)
+		font-size: font-size(14)
+		line-height: line-height(14)
 		padding: 4px
 		padding-left: 3px
 .search > input:nth-child(2)
@@ -428,8 +431,17 @@
 		display: none
 
 
-
-		
-		
+// 전체 공통 적용
+// container 'width: 1435px' 나오는 문제점 해결하기 위함
+section
+	.container
+		+respond-to($md-container-width)
+			width: 100%
+	.main-content
+		@extend %box-sizing
+		padding-top: 34px
+		+respond-to($md-container-width)
+			float: none
+			padding-top: 62px
 
 
