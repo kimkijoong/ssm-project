@@ -33,7 +33,6 @@ input {
   color: #fff;
 }
 
-.main-content,
 .today-topic,
 .topic,
 .btn-main {
@@ -54,10 +53,6 @@ input {
   min-width: 320px;
   min-height: 534px;
   height: 100vh;
-}
-
-.main-content {
-  padding-top: 34px;
 }
 
 .today-topic {
@@ -116,11 +111,6 @@ input {
   .main {
     min-height: 947px;
     padding-right: 364px;
-  }
-
-  .main-content {
-    float: none;
-    padding-top: 62px;
   }
 
   .row {

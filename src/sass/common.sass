@@ -437,6 +437,11 @@ section
 	.container
 		+respond-to($md-container-width)
 			width: 100%
-		
+	.main-content
+		@extend %box-sizing
+		padding-top: 34px
+		+respond-to($md-container-width)
+			float: none
+			padding-top: 62px
 
 

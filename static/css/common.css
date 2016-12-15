@@ -43,7 +43,8 @@ input {
 .search,
 .search>input,
 .slide-box,
-.number {
+.number,
+section .main-content {
   box-sizing: border-box;
 }
 
@@ -499,6 +500,10 @@ input {
   left: -24px;
 }
 
+section .main-content {
+  padding-top: 34px;
+}
+
 @media only screen and (min-width: 1440px) {
   .header {
     width: 100%;
@@ -663,6 +668,11 @@ input {
 
   section .container {
     width: 100%;
+  }
+
+  section .main-content {
+    float: none;
+    padding-top: 62px;
   }
 }
 /*# sourceMappingURL=../maps/common.css.map */
