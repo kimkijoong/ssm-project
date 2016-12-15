@@ -1,0 +1,352 @@
+/////////////////////////////////////////////////////////
+//  default
+/////////////////////////////////////////////////////////
+
+$card-height: 140px
+
+body
+    background-color: $background-color
+
+.page-top-section
+    +respond-to($xs-container-width)
+        padding-top: px2vw(8, $xs-container-width)
+        padding-bottom: px2vw(8, $xs-container-width)
+        background-color: $basic-white
+        box-shadow: 0 2px 2px 0 $gray-400
+        margin-bottom: px2vw(18, $xs-container-width)
+    +respond-to($sm-container-width)
+        padding-top: 89px
+        padding-bottom: 33px
+    +respond-to($md-container-width)
+        padding-top: 89px
+        padding-bottom: 33px
+
+/////////////////////////////////////////////////////////
+//  tab
+/////////////////////////////////////////////////////////
+.tab-list
+    display: block
+    &::after
+        @extend %clear-fix
+    +respond-to($xs-container-width)
+        box-sizing: border-box
+        padding-left: px2vw(10, $xs-container-width)
+        padding-right: px2vw(10, $xs-container-width)
+    li
+        float: left
+        list-style: none
+        cursor: pointer
+        position: relative
+        outline: none
+    li
+        display: block
+        box-sizing: border-box
+        background-color: $background-color
+        width: 50%
+        text-decoration: none
+        &:focus
+            border-color: $support-blue-3 !important
+            color: $support-blue-3 !important
+        +respond-to($xs-container-width)
+            padding: px2vw(9, $xs-container-width)
+            border-bottom: 2px solid $gray-500
+        +respond-to($sm-container-width)
+            padding: 13px
+            border-bottom: 3px solid $gray-500
+        +respond-to($md-container-width)
+            padding: 13px
+            border-bottom: 3px solid $gray-500
+
+
+[aria-selected="true"]
+    color: $basic-blue !important
+    +respond-to($xs-container-width)
+        border-bottom: 2px solid $basic-blue !important
+    +respond-to($sm-container-width)
+        border-bottom: 3px solid $basic-blue !important
+    +respond-to($md-container-width)
+        border-bottom: 3px solid $basic-blue !important
+
+.unvisual
+    display: none
+
+.tab-contnents
+    +respond-to($xs-container-width)
+        margin-top: px2vw(18, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 25px
+    +respond-to($md-container-width)
+        margin-top: 25px
+
+/////////////////////////////////////////////////////////
+//  txt default
+/////////////////////////////////////////////////////////
+.card-bookmark-writing
+    display: block
+    box-sizing: border-box
+    text-decoration: none
+    margin-bottom: 10px
+    @extend %card-normal
+    &:focus
+        @extend %card-focus
+    &:hover
+        @extend %card-hover
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        height: px2vw(219, $xs-container-width)
+    +respond-to($sm-container-width),
+        height: $card-height
+    +respond-to($md-container-width)
+        height: $card-height
+
+.bookmark-section1
+    box-sizing: border-box
+    +respond-to($xs-container-width)
+        width: px2vw(300, $xs-container-width)
+        position: absolute
+        left: 0
+        bottom: 0
+        height: px2vw(71, $xs-container-width)
+        border-top: 1px solid $gray-400
+    +respond-to($sm-container-width)
+        width: percentage(136px / 844px)
+        height: $card-height
+        float: left
+        border-right: 1px solid $gray-400
+    +respond-to($md-container-width)
+        width: percentage(136px / 844px)
+        height: $card-height
+        float: left
+        border-right: 1px solid $gray-400
+
+.bookmark-section2
+    &::after
+        @extend %clear-fix
+    +respond-to($xs-container-width)
+        position: absolute
+        left: 0
+        top: 0
+        width: px2vw(300, $xs-container-width)
+        height: px2vw(146, $xs-container-width)
+        box-sizing: border-box
+    +respond-to($sm-container-width)
+        width: percentage(706px / 844px)
+        height: $card-height
+        position: relative
+        float: left
+        box-sizing: border-box
+        padding: 12px 26px 12px 26px
+    +respond-to($md-container-width)
+        width: percentage(706px / 844px)
+        height: $card-height
+        position: relative
+        float: left
+        box-sizing: border-box
+        padding: 12px 26px 12px 26px
+
+
+.profile-img
+    display: block
+    overflow: hidden
+    border-radius: 100%
+    +respond-to($xs-container-width)
+        display: inline-block
+        width: px2vw(39, $xs-container-width)
+        height: px2vw(39, $xs-container-width)
+        margin: px2vw(16, $xs-container-width)
+        float: left
+    +respond-to($sm-container-width)
+        width: 68px
+        height: 68px
+        margin: 22px 34px 16px
+    +respond-to($md-container-width)
+        width: 68px
+        height: 68px
+        margin: 22px 34px 16px
+
+
+
+
+.username
+    display: block
+    text-align: center
+    +respond-to($xs-container-width)
+        text-align: left
+        float: left
+        padding:
+            top: px2vw(25, $xs-container-width)
+            bottom: px2vw(25, $xs-container-width)
+            left: 0
+            right: 0
+    +respond-to($sm-container-width)
+        margin:
+            top: 17px
+            left: 28px
+            right: 28px
+            bottom: 12px
+    +respond-to($md-container-width)
+        margin:
+            top: 17px
+            left: 28px
+            right: 28px
+            bottom: 12px
+
+
+
+.card-content-heading
+    +respond-to($xs-container-width)
+        display: inline-block
+        padding:
+            top: px2vw(16, $xs-container-width)
+            left: px2vw(16, $xs-container-width)
+    +respond-to($sm-container-width)
+        display: block
+        margin-bottom: 41px
+    +respond-to($md-container-width)
+        display: block
+        margin-bottom: 41px
+
+.card-content-text
+    position: absolute
+    +respond-to($xs-container-width)
+        top: px2vw(66, $xs-container-width)
+        left: 0
+        width: px2vw(300, $xs-container-width)
+        box-sizing: border-box
+        padding:
+            left: px2vw(16, $xs-container-width)
+            right: px2vw(16, $xs-container-width)
+            bottom: px2vw(16, $xs-container-width)
+    +respond-to($sm-container-width)
+        padding:
+            left: 26px
+            right: 26px
+            bottom: 12px
+        bottom: 0
+        left: 0
+    +respond-to($md-container-width)
+        padding:
+            left: 26px
+            right: 26px
+            bottom: 12px
+        bottom: 0
+        left: 0
+
+.card-info-date
+    display: block
+    position: absolute
+    +respond-to($xs-container-width)
+        top: 0
+        right: 0
+        margin:
+            top: px2vw(16, $xs-container-width)
+            right: px2vw(16, $xs-container-width)
+    +respond-to($sm-container-width)
+        top: 0
+        right: 0
+        margin:
+            top: 14px
+            right: 26px
+    +respond-to($md-container-width)
+        top: 0
+        right: 0
+        margin:
+            top: 14px
+            right: 26px
+
+.book-mark-author
+    position: relative
+    text-decoration: none
+
+.profile-img-author
+    display: block
+    overflow: hidden
+    border-radius: 100%
+    +respond-to($xs-container-width)
+        display: inline-block
+        width: px2vw(39, $xs-container-width)
+        height: px2vw(39, $xs-container-width)
+        margin: px2vw(16, $xs-container-width)
+        float: left
+    +respond-to($sm-container-width)
+        width: 110px
+        height: 110px
+        margin:
+            top: 42px
+            left: 79px
+            right: 79px
+            bottom: 25px
+    +respond-to($md-container-width)
+        width: 110px
+        height: 110px
+        margin:
+            top: 42px
+            left: 79px
+            right: 79px
+            bottom: 25px
+
+.book-mark-author-username
+    text-decoration: none
+    +respond-to($xs-container-width)
+        text-align: left
+        float: left
+        padding:
+            top: px2vw(26, $xs-container-width)
+            bottom: px2vw(25, $xs-container-width)
+            left: 0
+            right: 0
+        width: px2vw(130, $xs-container-width)
+    +respond-to($sm-container-width)
+        padding: 0 18px
+    +respond-to($md-container-width)
+        padding: 0 18px
+
+.book-mark-author-caption
+    margin-top: 24px
+    padding: 0 18px
+
+
+.btn-bookmark-cancle
+    display: block
+    margin:
+        top: 39px
+        left: auto
+        right: auto
+    +respond-to($xs-container-width)
+        margin-top: px2vw(20, $xs-container-width)
+        margin-bottom: px2vw(21, $xs-container-width)
+
+#section1 > article
+    position: relative
+    +respond-to($xs-container-width)
+        box-sizing: border-box
+        padding-left: px2vw(10, $xs-container-width)
+        padding-right: px2vw(10, $xs-container-width)
+        margin-left: 0
+        margin-right: 0
+    +respond-to($sm-container-width)
+        margin-left: 0
+        margin-right: 0
+    +respond-to($md-container-width)
+        margin-left: 0
+        margin-right: 0
+
+#section2
+    +respond-to($xs-container-width)
+        & > article
+            box-sizing: border-box
+            padding-left: px2vw(10, $xs-container-width)
+            padding-right: px2vw(10, $xs-container-width)
+            margin-left: 0
+            margin-right: 0
+    +respond-to($sm-container-width)
+        & > article:nth-child(3n)
+            margin-right: 0
+        & > article:nth-child(3n+1)
+            margin-left: 0
+    +respond-to($md-container-width)
+        & > article:nth-child(3n)
+            margin-right: 0
+        & > article:nth-child(3n+1)
+            margin-left: 0

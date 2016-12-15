@@ -1,0 +1,51 @@
+///////////////////////////////////////////////////////////////////////
+//  default btn - 특수한 상황아니면 대부분의 버튼을 이것으로 합니다.
+//////////////////////////////////////////////////////////////////////
+
+.btn-default
+    display: block
+    @extend .txt-btn-default
+    border : 1px solid $gray-700
+    background-color: $basic-white
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
+    cursor: pointer
+    border-radius: 2px
+    transition: box-shadow 0.2s ease
+    &:hover
+        // color: $gray-500
+        background-color: $gray-100
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
+        outline: none
+        transition: box-shadow 0.2s ease
+    &:active
+        // color: $gray-500
+        background-color: $gray-100
+        box-shadow: none
+        outline: none
+        transition: box-shadow 0.2s ease
+    &:disabled
+        color: $gray-400
+        border: 1px solid $gray-300
+        background-color: $gray-50
+        box-shadow: none
+        cursor: not-allowed
+        pointer-events: none
+        transition: box-shadow 0.2s ease
+    &:focus
+        background-color: $gray-100
+        box-shadow: none
+        outline: none
+        transition: box-shadow 0.2s ease
+    +respond-to($xs-container-width)
+        min-width: px2vw(80, $xs-container-width)
+        padding: px2vw(6, $xs-container-width) px2vw(18, $xs-container-width) px2vw(6, $xs-container-width)
+    +respond-to($sm-container-width)
+        min-width: 80px
+        padding: 6px 18px 6px
+    +respond-to($md-container-width)
+        min-width: 80px
+        padding: 6px 18px 6px
+
+///////////////////////////////////////////////////////////////////////
+//  default btn - 특수한 상황아니면 대부분의 버튼을 이것으로 합니다.
+//////////////////////////////////////////////////////////////////////

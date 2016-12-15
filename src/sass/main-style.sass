@@ -18,12 +18,13 @@
 		min-height: 947px
 		padding-right: 364px;
 
-.container
-	+respond-to($md-container-width)
-		width: 100%
 .main-content
+	@extend %box-sizing
+	padding-top: 34px
+
 	+respond-to($md-container-width)
 		float: none
+		padding-top: 62px
 .row
 	+respond-to($md-container-width)
 		+setWH(1066px, auto)
@@ -36,18 +37,18 @@
 	color: #424242
 	text-align: center
 	padding: px2vw(4, $xs-container-width)
-	padding-top: 94px
+	padding-top: 52px
 
 	+respond-to($sm-container-width)
-		font-size: px2vw(12, $sm-container-width)
-		padding: px2vw(4, $sm-container-width)
-		padding-top: px2vw(94, $sm-container-width)
+		font-size: font-size(12)
+		padding: 4px
+		padding-top: 94px
 	+respond-to($md-container-width)
-		+setWH(200px, auto)	
+		+setWH(230px, auto)	
 		text-align: center
 		font-size: font-size(24)
 		padding: 11px
-		padding-top: 260px
+		padding-top: 198px
 		margin-left: 64px
 		border-bottom: 1px solid #979797
 
@@ -60,8 +61,8 @@
 	text-align: center
 	padding-top: 20px
 	+respond-to($sm-container-width)
-		font-size: px2vw(38, $sm-container-width)
-		padding-top: px2vw(20, $sm-container-width)
+		font-size: font-size(38)
+		padding-top: 20px
 	+respond-to($md-container-width)
 		+setWH(50%, auto)
 		font-size: font-size(90)
@@ -100,9 +101,9 @@
 	border-radius: 2px
 	background-color: #f5f5f5
 	+respond-to($sm-container-width)
-		+setWH(px2vw(128, $sm-container-width), px2vw(36, $sm-container-width))
-		font-size: px2vw(12, $sm-container-width)
-		padding: px2vw(9, $sm-container-width) px2vw(10, $sm-container-width)
+		+setWH(128px, 36px)
+		font-size: font-size(12)
+		padding: 9px 10px
 		text-align: center
 	+respond-to($md-container-width)
 		+setWH(193px, 59px)
@@ -124,7 +125,7 @@
 	bottom: px2vw(76, $xs-container-width)
 	// bottom: 76px
 	+respond-to($sm-container-width)
-		bottom: px2vw(76, $sm-container-width)
+		bottom: 76px
 	+respond-to($md-container-width)
 		position: static
 		display: inline-block

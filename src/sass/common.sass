@@ -292,6 +292,7 @@
 	&::after
 		+setWH(16.3px, 16.3px)
 		+setPosition(absolute, top 6.2px right 21px)
+
 		content: url(../images/icons/ic_arrow_down.svg)
 		display: block
 	+respond-to($md-container-width)
@@ -304,7 +305,7 @@
 	@extend %box-sizing
 	+setWH(85px, 18px)
 	+setFont(size 12px)
-	
+
 	line-height: line-height(11)
 	display: inline-block
 	color: #424242
@@ -430,8 +431,12 @@
 		display: none
 
 
-
-		
+// 전체 공통 적용
+// container 'width: 1435px' 나오는 문제점 해결하기 위함
+section
+	.container
+		+respond-to($md-container-width)
+			width: 100%
 		
 
 

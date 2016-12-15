@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/libs/but_grid/grid_style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/common.css">
     <link rel="stylesheet" type="text/css" href="/static/css/main-style.css">
+    <?php include_once("./application/views/include/style/style.php") ?>
 </head>
 <body class="" data-ng-app="ButProjectApp">
 <div class="grid-box base-line"></div>
@@ -16,7 +17,7 @@
     <?php include_once("./application/views/include/navigation.php") ?>
     <main class="main">
 		<section  data-ng-cloak data-ng-repeat="List in TopicList.topicData track by $index" ng-show="$last">
-		
+
 		<div class="container">
 			<div class="row">
 				<div class="main-content xs-col-4 sm-col-11 md-col-11">

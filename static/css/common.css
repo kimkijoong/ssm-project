@@ -604,7 +604,7 @@ input {
   .search>input {
     width: 125px;
     height: 25px;
-    font-size: .875rem;
+    font-size: 1rem;
     line-height: 1.5;
     padding: 4px;
     padding-left: 3px;
@@ -631,20 +631,20 @@ input {
   .slide-day {
     width: 100%;
     height: 77px;
-    font-size: 3.25rem;
+    font-size: 3.7143rem;
     line-height: 1.5;
     margin-bottom: 8px;
   }
 
   .slide-day-topic {
-    font-size: 1rem;
+    font-size: 1.1429rem;
     line-height: 1.5;
   }
 
   .slide-topic {
     width: 100%;
     height: 29px;
-    font-size: 1.25rem;
+    font-size: 1.4286rem;
     line-height: 1.5;
   }
 
@@ -659,6 +659,10 @@ input {
 
   #aside-btn-close {
     display: none;
+  }
+
+  section .container {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=../maps/common.css.map */

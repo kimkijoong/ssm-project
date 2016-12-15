@@ -50,7 +50,7 @@
 						<button class="search" type="submit"><img src="" alt="검색"></button>
 					</form>
 				</div> -->
-				
+
 				<div class="option-box">
 					<?php if($this->session->userdata('is_login')) { ?>
 						<form action="/Member/logout" method="POST">
@@ -87,7 +87,7 @@
 			<img src="/static/images/icons/ic_date_range.svg" alt="date range">
 		</button>
 		<!-- Aside menu, 'diplay:none' on mobile -->
-		<aside class="aside" data-ng-controller="TopicListController">
+		<aside class="aside" data-ng-controller="TodayTopic">
 			<section class="search-date">
 				<h2 class="readable-hidden">날짜 필터 검색</h2>
 
@@ -103,39 +103,17 @@
 			</section>
 
 			<section class="slide-box">
-				<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate">
-					<h1 class="slide-day">06</h1>
-					<div class="slide-topic-box">
-						<p class="slide-day-topic" ng-switch on="List.category"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-						<a href="/Home/write_page/{{List.seq}}" class="slide-topic">"{{List.topic}}"</a>
-					</div>
-	<!--                <div class="slide-topic-box">-->
-	<!--                    <p class="slide-night-topic">밤의 주제</p>-->
-	<!--                    <a href="#" class="slide-topic slide-last-topic">"대여"</a>-->
-	<!--                </div>-->
-				</div>
-	<!--            <div class="slide-content">-->
-	<!--                <h1 class="slide-day">05</h1>-->
-	<!--                <div class="slide-topic-box">-->
-	<!--                    <p class="slide-day-topic">낮의 주제</p>-->
-	<!--                    <a href="#" class="slide-topic">"도깨비"</a>-->
-	<!--                </div>-->
-	<!--                <div class="slide-topic-box">-->
-	<!--                    <p class="slide-night-topic">밤의 주제</p>-->
-	<!--                    <a href="#" class="slide-topic slide-last-topic">"저승사자"</a>-->
-	<!--                </div>-->
-	<!--            </div>-->
-				<!-- <div class="slide-content">
-					<h1>04</h1>
-					<div class="">
-						<p class="">낮의 주제</p>
-						<a href="#" class="">사장</a>
-					</div>
-					<div class="">
-						<p class="">밤의 주제</p>
-						<a href="#" class="">부장</a>
-					</div>
-				</div> -->
+        <div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate">
+            <h1 class="slide-day">{{List.day}}</h1>
+            <div class="slide-topic-box">
+                <p class="slide-day-topic" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+                <a href="/Home/write_page/{{List.seq1}}" class="slide-topic">"{{List.topic1}}"</a>
+            </div>
+            <div class="slide-topic-box">
+                <p class="slide-day-topic" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+                <a href="/Home/write_page/{{List.seq2}}" class="slide-topic slide-last-topic">"{{List.topic2}}"</a>
+            </div>
+        </div>
 			</section>
 
 			<section class="static-btn-bottom-aside">

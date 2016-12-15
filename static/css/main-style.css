@@ -33,6 +33,7 @@ input {
   color: #fff;
 }
 
+.main-content,
 .today-topic,
 .topic,
 .btn-main {
@@ -55,6 +56,10 @@ input {
   height: 100vh;
 }
 
+.main-content {
+  padding-top: 34px;
+}
+
 .today-topic {
   width: 100%;
   height: auto;
@@ -62,7 +67,7 @@ input {
   color: #424242;
   text-align: center;
   padding: 1.25vw;
-  padding-top: 94px;
+  padding-top: 52px;
 }
 
 .topic {
@@ -113,12 +118,9 @@ input {
     padding-right: 364px;
   }
 
-  .container {
-    width: 100%;
-  }
-
   .main-content {
     float: none;
+    padding-top: 62px;
   }
 
   .row {
@@ -128,12 +130,12 @@ input {
   }
 
   .today-topic {
-    width: 200px;
+    width: 230px;
     height: auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7143rem;
     padding: 11px;
-    padding-top: 260px;
+    padding-top: 198px;
     margin-left: 64px;
     border-bottom: 1px solid #979797;
   }
@@ -141,7 +143,7 @@ input {
   .topic {
     width: 50%;
     height: auto;
-    font-size: 5.625rem;
+    font-size: 6.4286rem;
     text-align: left;
     padding: 17px;
     margin-top: 7px;
@@ -160,7 +162,7 @@ input {
   .btn-main {
     width: 193px;
     height: 59px;
-    font-size: 1.125rem;
+    font-size: 1.2857rem;
     padding: 16px 40px;
   }
 
@@ -181,21 +183,21 @@ input {
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .today-topic {
-    font-size: 1.1719vw;
-    padding: .3906vw;
-    padding-top: 9.1797vw;
+    font-size: .8571rem;
+    padding: 4px;
+    padding-top: 94px;
   }
 
   .topic {
-    font-size: 3.7109vw;
-    padding-top: 1.9531vw;
+    font-size: 2.7143rem;
+    padding-top: 20px;
   }
 
   .btn-main {
-    width: 12.5vw;
-    height: 3.5156vw;
-    font-size: 1.1719vw;
-    padding: .8789vw .9766vw;
+    width: 128px;
+    height: 36px;
+    font-size: .8571rem;
+    padding: 9px 10px;
     text-align: center;
   }
 
@@ -204,7 +206,7 @@ input {
   }
 
   .go-to-opench {
-    bottom: 7.4219vw;
+    bottom: 76px;
   }
 }
 /*# sourceMappingURL=../maps/main-style.css.map */
