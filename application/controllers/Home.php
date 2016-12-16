@@ -15,7 +15,7 @@ class Home extends CI_Controller {
             redirect('/Login');
         }*/
         $this->load->model('Boarder_model');
-        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList','bookmark','opench', 'mychdetail','topiclistview','mych', 'write');
+        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList','bookmark','opench', 'mychdetail','topiclistview','mych', 'write', 'setting');
     }
     /**
      * Index Page for this controller.
@@ -180,6 +180,11 @@ class Home extends CI_Controller {
     public function mych()
     {
         $this->load->view('home/myCh');
+    }
+
+    public function setting()
+    {
+        $this->load->view('home/setting');
     }
 
     //앵귤러 controller

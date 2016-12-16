@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
                         <section class="row">
-                            <div class="md-col-9 sm-col-9 xs-col-4 one-card-align">
+                            <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 one-card-align">
                                 <article class="md-col-9 sm-col-9 xs-col-4">
                                     <div class="setting-card">
                                         <h1 class="readable-hidden">Set Profile</h1>
@@ -29,7 +29,7 @@
                                         <form class="form-layout" action="" method="post">
                                             <filedset>
                                                 <div>
-                                                    <label for="pen-name" class="setting-title pen-name">작가명</label>
+                                                    <label for="pen-name" class="setting-title">작가명</label>
                                                     <input class="setting-input" type="text" id="pen-name" maxlength="8" placeholder="작가명을 지어주세요" required>
                                                 </div>
                                                 <div>
