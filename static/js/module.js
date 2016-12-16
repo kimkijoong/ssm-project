@@ -44,8 +44,8 @@ function wrapWindowByMask() {
 
 	// 마스크의 높이와 너비를 화면 것으로 만들어 전체 화면 채우기
 	mask.css({
-		'width' : maskWidth,
-		'height' : maskHeight
+		'width' : maskWidth + 'vw',
+		'height' : maskHeight + 'vh'
 	});
 
 	// 80% 불투명도
@@ -144,28 +144,63 @@ function wrapWindowByMask() {
  * 	@eunju.K
  * ------------------------------------ */
  function textAlignCss(align) {
- 	var textBox = $('.textBox');
+ 	var textBox = $('.write');
+ 	var img = $('#align-status > img');
 
- 	// console.log(align);
+ 	// text-align
  	textBox.css({
 		'text-align' : align
 	});
+
+ 	// change image
+	img.attr('src', '');
+	img.attr('src', '/static/images/icons/ic_align_' + align + '.svg');
  }
 
 (function(global, $) {
 	'use strict';
 
-	var left = $('.align-left');
-	var center = $('.align-center');
-	// var right = $('.align-right');
-	
-	left.on('click', function(){
-		textAlignCss('left');
+	var align_status = null;
+	var text_align = $('#align-status');	
+
+	text_align.on('click', function() {
+		if( text_align.hasClass('left') ) {
+			text_align.removeClass('left');
+			text_align.addClass('center');
+
+			align_status = text_align.attr('class');
+			textAlignCss(align_status);
+		} else {
+			text_align.removeClass('center');
+			text_align.addClass('left');
+
+			align_status = text_align.attr('class');
+			textAlignCss(align_status);
+		}
 	});
 
-	center.on('click', function() {
-		textAlignCss('center');
-	});	
+
+	// var left = $('.align-left');
+	// var center = $('.align-center');
+	// var right = $('.align-right');
+	
+	// text_align.on('click', function() {
+	// 	console.log("test2");
+	// 	// align_status = this.attr('class');
+	// 	// console.log(align_status);
+	// });
+
+	// left.on('click', function(){
+	// 	align_status = "left";
+	// 	textAlignCss('left');
+	// 	text-align.attr('src', '');
+	// });
+
+	// center.on('click', function() {
+	// 	align_status = "center";
+	// 	textAlignCss('center');
+	// 	text-align.attr('src', '');
+	// });	
 })(this, this.jQuery);
 
 

@@ -1,0 +1,179 @@
+// import 
+@import "common-init"
+@import "libs/but_grid/_vars"
+@import "libs/but_grid/_functions"
+@import "common-mixin"
+@import "libs/but_grid/_mixins"
+@import "libs/but_grid/_placeholder"
+
+.write-bar
+	@extend %box-sizing
+	+setWH(100%, 34px)
+	+setPosition(fixed, top 52px left 0)
+	background: #fff
+	
+	+respond-to($sm-container-width)
+		+setWH(100%, 52px)
+		top: 52px
+	+respond-to($md-container-width)
+		top: 62px
+		padding-right: 364px;
+		// write-bar 위에 고정 안됬을 때.
+		position: absolute
+		+setWH(100%, 234px)
+		background: none
+		// write-bar 위에 고정 될 때.
+		// +setWH(100%, 62px)
+
+
+.write-today-topic
+	@extend %box-sizing
+	font-size: 12px
+	font-weight: 800
+	color: #14a6cc
+	display: block
+	text-align: center
+	padding: 10px
+
+	+respond-to($sm-container-width)
+		font-size: font-size(24)
+		padding: 7px
+	+respond-to($md-container-width)
+		+setWH(100%, 70px)
+		font-size: font-size(36)
+		padding: 0
+
+
+.write-bar
+	.write-bar-wrap
+		position: relative
+		+setWH(100%, auto)
+		+respond-to($sm-container-width)
+			+setWH(1024px, auto)
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 auto
+		+respond-to($md-container-width)
+			// +setWH(1066px, auto)
+			// write-bar 위에 고정 안됬을 때.
+			+setWH(844px, 191px)
+			// height: 191px
+			display: flex
+			align-items: center
+			justify-content: center
+			background: #fff
+			margin: 0 auto
+			margin-top: 56px
+
+	[class^="btn-"]
+		@extend %box-sizing
+		+setWH(40px, 26px)
+		+setPosition(absolute, bottom 5px)
+		font-size: 10px
+		font-weight: 500
+		cursor: pointer
+		border-radius: 2px
+
+		+respond-to($sm-container-width)
+			+setWH(80px, 30px)
+			top: 11px
+			font-size: font-size(12)
+		+respond-to($md-container-width)
+			+setWH(80px, 30px)
+			font-size: font-size(12)
+			// top: 16px
+			// write-bar 위에 고정 안됬을 때
+			bottom: 12px
+	.btn-cancel
+		left: 14px
+		color: #616161
+		background-color: #fff
+		border: 1px solid #9e9e9e
+		+respond-to($sm-container-width)
+			left: 25px	
+		+respond-to($md-container-width)
+			// left: 25px
+			// write-bar 위에 고정 안됬을 때
+			left: 30px
+			// bottom: 12px
+	.btn-submit
+		right: 14px
+		color: #fff
+		background: #51bcd8
+		border: 1px solid #51bcd8
+		+respond-to($sm-container-width)
+			right: 25px
+		+respond-to($md-container-width)
+			// right: 25px
+			// write-bar 위에 고정 안됬을 때
+			right: 30px
+			// bottom: 12px
+
+.write-box-wrap
+	position: relative
+	
+.write-box
+	@extend %box-sizing
+	border: 0
+	padding-top: 53px
+	+respond-to($sm-container-width)
+		+setWH(817px, 100%)
+		padding-top: 73px
+		margin: 0 auto
+	+respond-to($md-container-width)
+		// padding-top: 15px
+		// write-bar 위에 고정 안됬을 때
+		+setWH(844px, 806px)
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+		padding-top: 191px
+		margin: 0 auto
+		margin-top: 55px
+	fieldset
+		@extend %box-sizing
+		// +setWH(300px, 445px)
+		border: 0
+		border-radius: 2px
+		background-color: #fff
+		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 2px 0 0 rgba(0, 0, 0, 0.12)
+		margin: 0 auto
+		+respond-to($md-container-width)
+			+setWH(844px, 615px)
+			padding: 0 30px
+			padding-top: 3px
+			box-shadow: 0
+	.write
+		@extend %box-sizing
+		// +setWH(300px, 445px)
+		min-width: 300px
+		min-height: 445px
+		font-size: 12px
+		line-height: line-height(12)
+		display: block
+		border: 0
+		border-radius: 2px
+		padding: 15px 10px
+		margin: 0
+		+respond-to($md-container-width)
+			width: 784px
+			font-size: font-size(14)
+			line-height: line-height(14)
+			min-height: 585px
+			border: 1px solid #979797
+			padding: 30px
+
+#align-status
+	+setWH(25px, 25px)
+	+setPosition(absolute, bottom 15px right 15px)
+	border: 0
+	background-color: #fff
+	+respond-to($md-container-width)
+		+setWH(36px, 36px)
+		bottom: 50px
+		right: 50px
+	> img
+		+setWH(25px, 25px)
+		+respond-to($md-container-width)
+			+setWH(36px, 36px)
+
+

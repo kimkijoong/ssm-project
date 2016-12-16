@@ -6,6 +6,7 @@
     <title>Ssum: main</title>
     <link rel="stylesheet" type="text/css" href="/static/css/libs/but_grid/grid_style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/write.css">
     <?php include_once("./application/views/include/style/style.php") ?>
 </head>
 <body class="" data-ng-app="ButProjectApp">
@@ -15,30 +16,38 @@
      data-ng-controller="TopicListController">
     <?php include_once("./application/views/include/navigation.php") ?>
     <main class="main">
-		<section  data-ng-cloak data-ng-repeat="List in TopicList.topicData track by $index" ng-show="$last">
+		<section>
 
 		<div class="container">
 			<div class="row">
-				<div class="main-content xs-col-4 sm-col-11 md-col-11">
+				<div class="main-content xs-col-4 sm-col11 md-col-11 row">
 					<h1 class="readable-hidden">Main: Write</h1>
 
-					<form class="" action="" method="post">
-						<fieldset>
-							<label for="content">글 작성</label>
-							<textarea name="" id="content" cols="50" rows="30"></textarea>
-						</fieldset>
-					</form>
+					<div class="write-box-wrap xs-col-4 sm-col-9 md-col-9">
+						<form class="write-box" action="" method="post">
+							<legend class="readable-hidden">write</legend>
+							<fieldset class="row">
+								<div class="xs-col-4 sm-col-9">
+									<label class="readable-hidden" for="content">글 작성</label>
+									<textarea class="write xs-col-4 sm-col-9" name="" id="content" placeholder="당신의 생각을 입력해주세요."></textarea>
+									<!-- cols="30" rows="30" -->
+									<!-- toggle 형식 : javascript로 제어 -->
+								</div>
+							</fieldset>
+						</form>
 
-					<!-- toggle 형식 : javascript로 제어 -->
-					<button class="text-align">
-						<img src="" alt="글 정렬">
-					</button>
+						<button id="align-status" class="left">
+							<img src="/static/images/icons/ic_align_left.svg" alt="글 정렬">
+						</button>
+					</div>
 
 					<!-- form 전송시: javacript로 제어 -->
-					<div class="">
-						<p class="today-topic">커피</p>
-						<button class="btn-cancel">취소</button>
-						<button class="btn-submit">완료</button>
+					<div class="write-bar">
+						<div class="write-bar-wrap">
+							<p class="write-today-topic">커피</p>
+							<button class="btn-cancel">취 소</button>
+							<button class="btn-submit">완 료</button>
+						</div>
 					</div>
 				</div>
 			</div>
