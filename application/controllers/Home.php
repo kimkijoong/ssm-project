@@ -177,6 +177,10 @@ class Home extends CI_Controller {
     {
         $this->load->view('home/myCh');
     }
+    public function setting()
+    {
+        $this->load->view('home/setting');
+    }
 
     //앵귤러 controller
     public function TopicList(){
@@ -192,6 +196,11 @@ class Home extends CI_Controller {
     public function PostList(){
         //그날의 주제를 가져온다.
         $data = $this->Boarder_model->PostList();
+        echo json_encode($data);
+    }
+    public function myTopicList(){
+        $user_seq = $this->session->userdata('is_login');
+        $data = $this->Boarder_model->myTopicList($user_seq);
         echo json_encode($data);
     }
 }
