@@ -1,0 +1,201 @@
+@import "color"
+@import "font"
+
+
+////////////////////////////////////////////////
+//  컨텐츠 카드 일반 스타일
+////////////////////////////////////////////////
+
+
+// 카드 스타일
+.content-card
+    display: block
+    text-decoration: none
+    color: $gray-700
+    box-sizing: border-box
+    @extend %card-normal
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        margin-bottom: 10px
+    +respond-to($md-container-width)
+        margin-bottom: 10px
+    +respond-to($sm-container-width)
+        margin-bottom: 10px
+
+
+// 주제 제목
+.content-title
+    @extend .txt-card-title
+    text-align: center
+    +respond-to($xs-container-width)
+        padding:
+            top: px2vw(34, $xs-container-width)
+            left: px2vw(20, $xs-container-width)
+            right: px2vw(20, $xs-container-width)
+        line-height: px2vw(20, $xs-container-width)
+    +respond-to($md-container-width)
+        padding:
+            top: 48px
+            left: 20px
+            right: 20px
+        line-height: 30px
+    +respond-to($sm-container-width)
+        padding:
+            top: 48px
+            left: 20px
+            right: 20px
+        line-height: 30px
+
+
+// 주제에 대한 내용
+.content-contents
+    @extend .txt-card-contents
+    text-align: center
+
+    +respond-to($xs-container-width)
+        padding:
+            top: px2vw(20, $xs-container-width)
+            left: px2vw(20, $xs-container-width)
+            right: px2vw(20, $xs-container-width)
+        line-height: px2vw(20, $xs-container-width)
+    +respond-to($md-container-width)
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
+        line-height: 20px
+    +respond-to($sm-container-width)
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
+        line-height: 20px
+
+
+// 유저명 및 날짜 (폰트와 위치)
+.content-info
+    @extend .txt-card-date
+    text-align: center
+    +respond-to($xs-container-width)
+        padding:
+            top: px2vw(20, $xs-container-width)
+            left: px2vw(20, $xs-container-width)
+            right: px2vw(20, $xs-container-width)
+            bottom: px2vw(34, $xs-container-width)
+        line-height: px2vw(20, $xs-container-width)
+    +respond-to($md-container-width)
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
+            bottom: 48px
+        line-height: 20px
+    +respond-to($sm-container-width)
+        padding:
+            top: 40px
+            left: 20px
+            right: 20px
+            bottom: 48px
+        line-height: 20px
+
+
+////////////////////////////////////////////////
+//  컨텐츠 카드 (공개씀 버전)
+////////////////////////////////////////////////
+
+
+// 유저 이미지
+.profile-img-content
+    display: block
+    overflow: hidden
+    border-radius: 100%
+    +respond-to($xs-container-width)
+        display: inline-block
+        width: px2vw(39, $xs-container-width)
+        height: px2vw(39, $xs-container-width)
+        margin: px2vw(16, $xs-container-width)
+        float: left
+    +respond-to($sm-container-width)
+        width: 39px
+        height: 39px
+        margin: 16px
+        float: left
+    +respond-to($md-container-width)
+        width: 39px
+        height: 39px
+        margin: 16px
+        float: left
+
+
+// 유저 이름
+.content-username
+    @extend .txt-card-username
+    text-decoration: none
+    +respond-to($xs-container-width)
+        text-align: left
+        float: left
+        padding:
+            top: px2vw(26, $xs-container-width)
+            bottom: px2vw(27, $xs-container-width)
+            left: 0
+            right: 0
+    +respond-to($sm-container-width)
+        padding:
+            top: 26px
+            bottom: 27px
+    +respond-to($md-container-width)
+        padding:
+            top: 26px
+            bottom: 27px
+
+
+// 버튼을 위한 포지션 relative
+.card-content-01
+    position: relative
+
+
+//버튼 위치
+.btn-content-cancle
+    display: block
+    +respond-to($xs-container-width)
+        position: absolute
+        top: 0
+        right: 0
+        margin-top: px2vw(20, $xs-container-width)
+        margin-bottom: px2vw(21, $xs-container-width)
+        margin-right: px2vw(16, $xs-container-width)
+    +respond-to($sm-container-width)
+        position: absolute
+        top: 0
+        right: 0
+        margin:
+            top: 20px
+            bottom: 21px
+            right: 16px
+    +respond-to($md-container-width)
+        position: absolute
+        top: 0
+        right: 0
+        margin:
+            top: 20px
+            bottom: 21px
+            right: 16px
+
+
+// 분기 라인
+.line-horizon
+    +respond-to($xs-container-width)
+        border-top: 1px solid $gray-400
+    +respond-to($sm-container-width)
+        border-top: 1px solid $gray-400
+    +respond-to($md-container-width)
+        border-top: 1px solid $gray-400
+
+// 컨텐츠의 겹침을 방지하귀 위한 패딩 탑 값
+.open-ch-content-wrap
+    +respond-to($xs-container-width)
+        padding:
+            top: px2vw(71, $xs-container-width)

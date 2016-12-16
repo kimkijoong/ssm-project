@@ -15,7 +15,7 @@ class Home extends CI_Controller {
             redirect('/Login');
         }*/
         $this->load->model('Boarder_model');
-        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList');
+        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList','bookmark','opench', 'mychdetail','topiclistview','mych');
     }
     /**
      * Index Page for this controller.
@@ -151,6 +151,31 @@ class Home extends CI_Controller {
     public function bringInSsm()
     {
         $this->load->view('home/bringInSsum');
+    }
+
+    public function bookmark()
+    {
+        $this->load->view('home/bookMark');
+    }
+
+    public function opench()
+    {
+        $this->load->view('home/openCh');
+    }
+
+    public function mychdetail()
+    {
+        $this->load->view('home/myChDetail');
+    }
+
+    public function topiclistview()
+    {
+        $this->load->view('home/topicList');
+    }
+
+    public function mych()
+    {
+        $this->load->view('home/myCh');
     }
 
     //앵귤러 controller

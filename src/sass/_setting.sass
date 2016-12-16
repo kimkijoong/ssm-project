@@ -1,0 +1,165 @@
+@import "color"
+@import "font"
+@import "card"
+
+////////////////////////////////////////////////
+//  setting 카드 일반 스타일
+////////////////////////////////////////////////
+
+
+// 카드 스타일
+.setting-card
+    display: block
+    text-decoration: none
+    color: $gray-700
+    box-sizing: border-box
+
+    @extend %card-normal
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        padding:
+            left: px2vw(16, $xs-container-width)
+            right: px2vw(16, $xs-container-width)
+            top: px2vw(24, $xs-container-width)
+            bottom: px2vw(24, $xs-container-width)
+    +respond-to($md-container-width)
+        padding:
+            left: 132px
+            right: 132px
+            top: 81px
+            bottom: 59px
+    +respond-to($sm-container-width)
+        padding:
+            left: 132px
+            right: 132px
+            top: 81px
+            bottom: 59px
+
+// 임의의 높이값
+.setting-card-height
+    height: 806px
+
+// 폼 레이아웃
+.form-layout
+    +respond-to($xs-container-width)
+        margin-top: px2vw(28, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 37px
+    +respond-to($md-container-width)
+        margin-top: 37px
+
+
+
+//////////////////////////////////////////////
+//  컨텐츠 내용
+//////////////////////////////////////////////
+
+
+// 프로필 이미지 버튼
+.setting-profile-btn
+    display: block
+    margin: 0 auto
+    overflow: hidden
+    border: 0
+    padding: 0
+    border-radius: 100%
+    +respond-to($xs-container-width)
+        width: px2vw(80, $xs-container-width)
+        height: px2vw(80, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 120px
+        height: 120px
+    +respond-to($md-container-width)
+        width: 120px
+        height: 120px
+
+// 프로필 이미지
+.setting-profile-img
+    +respond-to($xs-container-width)
+        display: inline-block
+        width: px2vw(80, $xs-container-width)
+        height: px2vw(80, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 120px
+        height: 120px
+    +respond-to($md-container-width)
+        width: 120px
+        height: 120px
+
+
+// 폼 타이틀
+.setting-title
+    @extend .txt-card-setting-title
+    display: block
+    +respond-to($xs-container-width)
+        margin-top: px2vw(16, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 22px
+    +respond-to($md-container-width)
+        margin-top: 22px
+
+
+// 인풋 텍스트
+.setting-input
+    @extend .txt-card-setting-input
+    border:
+        top: 0
+        left: 0
+        right: 0
+        bottom: 1px solid $warning-blush-pink
+    outline: 0
+    padding:
+        bottom: 5px
+    +respond-to($xs-container-width)
+        width: 100%
+        margin-top: px2vw(5, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 100%
+        margin-top: 18px
+    +respond-to($md-container-width)
+        width: 100%
+        margin-top: 18px
+
+
+// 이메일 커서 모양 초기화 클래스
+.setting-email
+    cursor: default
+
+
+// placeholder
+input[placeholder]
+    @extend %nanum-regular
+    +respond-to($xs-container-width)
+        font-size: px2vw(12, $xs-container-width)
+    +respond-to($sm-container-width)
+        font-size: 14px
+    +respond-to($md-container-width)
+        font-size: 14px
+
+
+// 버튼
+.setting-btn-wrap
+    &:after
+        @extend %clear-fix
+    +respond-to($xs-container-width)
+        margin-top: px2vw(24, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 28px
+    +respond-to($md-container-width)
+        margin-top: 28px
+
+
+.modified
+    float: left
+    +respond-to($xs-container-width)
+        margin-left: px2vw(12, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-left: 12px
+    +respond-to($md-container-width)
+        margin-left: 12px
+
+.secession
+    float: left
