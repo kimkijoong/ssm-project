@@ -4,6 +4,12 @@
 
 @import url(../../static/css/libs/but_grid/grid_style.css);
 
+@import url(../../static/css/libs/but_grid/grid_style.css);
+
+@import url(../../static/css/libs/but_grid/grid_style.css);
+
+@import url(../../static/css/libs/but_grid/grid_style.css);
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -352,7 +358,8 @@ table {
 }
 
 .tab-list::after,
-.bookmark-section2::after {
+.bookmark-section2::after,
+.setting-btn-wrap:after {
   display: block;
   clear: both;
   content: "";
@@ -390,7 +397,9 @@ table {
 .txt-nav-usercaption,
 .txt-slide-title,
 .txt-card-setting-input,
-.txt-card-setting-info {
+.setting-input,
+.txt-card-setting-info,
+.btn-danger {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -401,6 +410,7 @@ table {
 .txt-slide-pagination,
 .txt-card-my-ch-label,
 .txt-card-setting-title,
+.setting-title,
 .open-txt,
 .close-txt {
   font-family: 'Noto Sans KR', sans-serif;
@@ -410,7 +420,8 @@ table {
 
 .txt-main-title,
 .txt-card-bookmark-writing-content,
-.card-content-text {
+.card-content-text,
+input[placeholder] {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 400;
@@ -621,12 +632,14 @@ table {
   color: #fff;
 }
 
-.txt-card-setting-title {
+.txt-card-setting-title,
+.setting-title {
   color: #fe8b90;
   text-align: left;
 }
 
-.txt-card-setting-input {
+.txt-card-setting-input,
+.setting-input {
   color: #0e8cad;
   text-align: left;
 }
@@ -774,7 +787,9 @@ body {
 .txt-nav-usercaption,
 .txt-slide-title,
 .txt-card-setting-input,
-.txt-card-setting-info {
+.setting-input,
+.txt-card-setting-info,
+.btn-danger {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -785,6 +800,7 @@ body {
 .txt-slide-pagination,
 .txt-card-my-ch-label,
 .txt-card-setting-title,
+.setting-title,
 .open-txt,
 .close-txt {
   font-family: 'Noto Sans KR', sans-serif;
@@ -794,7 +810,8 @@ body {
 
 .txt-main-title,
 .txt-card-bookmark-writing-content,
-.card-content-text {
+.card-content-text,
+input[placeholder] {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 400;
@@ -1005,12 +1022,14 @@ body {
   color: #fff;
 }
 
-.txt-card-setting-title {
+.txt-card-setting-title,
+.setting-title {
   color: #fe8b90;
   text-align: left;
 }
 
-.txt-card-setting-input {
+.txt-card-setting-input,
+.setting-input {
   color: #0e8cad;
   text-align: left;
 }
@@ -1120,7 +1139,9 @@ body {
 .txt-nav-usercaption,
 .txt-slide-title,
 .txt-card-setting-input,
-.txt-card-setting-info {
+.setting-input,
+.txt-card-setting-info,
+.btn-danger {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1131,6 +1152,7 @@ body {
 .txt-slide-pagination,
 .txt-card-my-ch-label,
 .txt-card-setting-title,
+.setting-title,
 .open-txt,
 .close-txt {
   font-family: 'Noto Sans KR', sans-serif;
@@ -1140,7 +1162,8 @@ body {
 
 .txt-main-title,
 .txt-card-bookmark-writing-content,
-.card-content-text {
+.card-content-text,
+input[placeholder] {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 400;
@@ -1351,12 +1374,14 @@ body {
   color: #fff;
 }
 
-.txt-card-setting-title {
+.txt-card-setting-title,
+.setting-title {
   color: #fe8b90;
   text-align: left;
 }
 
-.txt-card-setting-input {
+.txt-card-setting-input,
+.setting-input {
   color: #0e8cad;
   text-align: left;
 }
@@ -1418,7 +1443,9 @@ body {
 .bk-wrting-card,
 .bk-wrting-card:active,
 .bk-author-card,
-.bk-author-card:active {
+.bk-author-card:active,
+.setting-card,
+.setting-card:active {
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 0 0 rgba(0,0,0,0.12);
@@ -1444,7 +1471,8 @@ body {
 .motif-card:focus,
 .one-card:focus,
 .bk-wrting-card:focus,
-.bk-author-card:focus {
+.bk-author-card:focus,
+.setting-card:focus {
   background-color: #fff;
   border-radius: 2px;
   outline: thin dotted;
@@ -1503,6 +1531,54 @@ body {
 
 .btn-default:focus {
   background-color: #f5f5f5;
+  box-shadow: none;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-danger {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  color: #616161;
+  border: 1px solid #616161;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-danger:hover {
+  border: 1px solid #fe8b90;
+  background-color: #fff5f5;
+  color: #f44c52;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-danger:active {
+  background-color: #fff5f5;
+  color: #f44c52;
+  border: 1px solid #fe8b90;
+  box-shadow: none;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-danger:disabled {
+  color: #bdbdbd;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn-danger:focus {
+  background-color: #fff5f5;
   box-shadow: none;
   outline: none;
   transition: box-shadow 0.2s ease;
@@ -1602,6 +1678,1063 @@ body {
 .btn-bookmark-cancle {
   display: block;
   margin-top: 39px;
+}
+
+.txt-slide-date {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.txt-slide-search-date,
+.txt-slide-time {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default,
+.txt-btn-main,
+.txt-btn-main-disabled,
+.txt-btn-menu,
+.txt-nav-usercaption,
+.txt-slide-title,
+.txt-card-setting-input,
+.setting-input,
+.txt-card-setting-info,
+.btn-danger {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.txt-nav-username,
+.txt-nav-footer,
+.txt-slide-pagination,
+.txt-card-my-ch-label,
+.txt-card-setting-title,
+.setting-title,
+.open-txt,
+.close-txt {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-main-title,
+.txt-card-bookmark-writing-content,
+.card-content-text,
+input[placeholder] {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-card-title,
+.content-title,
+.txt-card-contents,
+.content-contents,
+.txt-card-date,
+.content-info,
+.txt-card-username,
+.content-username,
+.username,
+.txt-main-caption,
+.txt-page-date,
+.txt-card-bookmark-writing-title,
+.card-content-heading,
+.txt-card-bookmark-writing-date,
+.card-info-date,
+.txt-card-bookmark-usercaption,
+.book-mark-author-caption,
+.txt-card-topic-list-time,
+.topic-list-time,
+.txt-card-topic-list-info,
+.topic-list-info {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.txt-page-title,
+.txt-main-date,
+.txt-tab-normal,
+.txt-card-bookmark-username,
+.book-mark-author-username,
+.txt-card-topic-list-title,
+.topic-list-title {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-page-title {
+  text-align: center;
+  color: #14a6cc;
+}
+
+.txt-card-title,
+.content-title {
+  color: #616161;
+}
+
+.txt-card-contents,
+.content-contents {
+  color: #616161;
+}
+
+.txt-card-date,
+.content-info {
+  color: #616161;
+}
+
+.txt-card-username,
+.content-username,
+.username {
+  color: #424242;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default {
+  font-size: 12px;
+  text-align: center;
+  color: #616161;
+}
+
+.txt-btn-default-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-solid {
+  color: #fff;
+}
+
+.txt-btn-danger {
+  color: #f44c52;
+}
+
+.txt-btn-main,
+.txt-btn-main-disabled {
+  color: #616161;
+  text-align: center;
+}
+
+.txt-btn-main-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-menu {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.txt-main-date {
+  color: #424242;
+  text-align: left;
+}
+
+.txt-main-title {
+  color: #9e9e9e;
+}
+
+.txt-main-caption {
+  font-size: 16px;
+  color: #424242;
+}
+
+.txt-page-date {
+  text-align: center;
+  color: #424242;
+}
+
+.txt-nav-username {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-usercaption {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-footer {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-slide-search-date {
+  color: #424242;
+}
+
+.txt-slide-date {
+  color: #51bcd8;
+  text-align: right;
+}
+
+.txt-slide-time {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-title {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-pagination {
+  color: #757575;
+  text-align: center;
+}
+
+.txt-tab-normal {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+.txt-card-bookmark-writing-title,
+.card-content-heading {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-content,
+.card-content-text {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-date,
+.card-info-date {
+  color: #757575;
+}
+
+.txt-card-bookmark-username,
+.book-mark-author-username {
+  color: #424242;
+}
+
+.txt-card-topic-list-time,
+.topic-list-time {
+  color: #616161;
+}
+
+.txt-card-topic-list-title,
+.topic-list-title {
+  color: #616161;
+}
+
+.txt-card-topic-list-info,
+.topic-list-info {
+  color: #616161;
+}
+
+.txt-card-my-ch-label {
+  text-align: right;
+  color: #fff;
+}
+
+.txt-card-setting-title,
+.setting-title {
+  color: #fe8b90;
+  text-align: left;
+}
+
+.txt-card-setting-input,
+.setting-input {
+  color: #0e8cad;
+  text-align: left;
+}
+
+.txt-card-setting-info {
+  color: #51bcd8;
+  text-align: left;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.txt-slide-date {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.txt-slide-search-date,
+.txt-slide-time {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default,
+.txt-btn-main,
+.txt-btn-main-disabled,
+.txt-btn-menu,
+.txt-nav-usercaption,
+.txt-slide-title,
+.txt-card-setting-input,
+.setting-input,
+.txt-card-setting-info,
+.btn-danger {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.txt-nav-username,
+.txt-nav-footer,
+.txt-slide-pagination,
+.txt-card-my-ch-label,
+.txt-card-setting-title,
+.setting-title,
+.open-txt,
+.close-txt {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-main-title,
+.txt-card-bookmark-writing-content,
+.card-content-text,
+input[placeholder] {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-card-title,
+.content-title,
+.txt-card-contents,
+.content-contents,
+.txt-card-date,
+.content-info,
+.txt-card-username,
+.content-username,
+.username,
+.txt-main-caption,
+.txt-page-date,
+.txt-card-bookmark-writing-title,
+.card-content-heading,
+.txt-card-bookmark-writing-date,
+.card-info-date,
+.txt-card-bookmark-usercaption,
+.book-mark-author-caption,
+.txt-card-topic-list-time,
+.topic-list-time,
+.txt-card-topic-list-info,
+.topic-list-info {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.txt-page-title,
+.txt-main-date,
+.txt-tab-normal,
+.txt-card-bookmark-username,
+.book-mark-author-username,
+.txt-card-topic-list-title,
+.topic-list-title {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-page-title {
+  text-align: center;
+  color: #14a6cc;
+}
+
+.txt-card-title,
+.content-title {
+  color: #616161;
+}
+
+.txt-card-contents,
+.content-contents {
+  color: #616161;
+}
+
+.txt-card-date,
+.content-info {
+  color: #616161;
+}
+
+.txt-card-username,
+.content-username,
+.username {
+  color: #424242;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default {
+  font-size: 12px;
+  text-align: center;
+  color: #616161;
+}
+
+.txt-btn-default-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-solid {
+  color: #fff;
+}
+
+.txt-btn-danger {
+  color: #f44c52;
+}
+
+.txt-btn-main,
+.txt-btn-main-disabled {
+  color: #616161;
+  text-align: center;
+}
+
+.txt-btn-main-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-menu {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.txt-main-date {
+  color: #424242;
+  text-align: left;
+}
+
+.txt-main-title {
+  color: #9e9e9e;
+}
+
+.txt-main-caption {
+  font-size: 16px;
+  color: #424242;
+}
+
+.txt-page-date {
+  text-align: center;
+  color: #424242;
+}
+
+.txt-nav-username {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-usercaption {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-footer {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-slide-search-date {
+  color: #424242;
+}
+
+.txt-slide-date {
+  color: #51bcd8;
+  text-align: right;
+}
+
+.txt-slide-time {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-title {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-pagination {
+  color: #757575;
+  text-align: center;
+}
+
+.txt-tab-normal {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+.txt-card-bookmark-writing-title,
+.card-content-heading {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-content,
+.card-content-text {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-date,
+.card-info-date {
+  color: #757575;
+}
+
+.txt-card-bookmark-username,
+.book-mark-author-username {
+  color: #424242;
+}
+
+.txt-card-topic-list-time,
+.topic-list-time {
+  color: #616161;
+}
+
+.txt-card-topic-list-title,
+.topic-list-title {
+  color: #616161;
+}
+
+.txt-card-topic-list-info,
+.topic-list-info {
+  color: #616161;
+}
+
+.txt-card-my-ch-label {
+  text-align: right;
+  color: #fff;
+}
+
+.txt-card-setting-title,
+.setting-title {
+  color: #fe8b90;
+  text-align: left;
+}
+
+.txt-card-setting-input,
+.setting-input {
+  color: #0e8cad;
+  text-align: left;
+}
+
+.txt-card-setting-info {
+  color: #51bcd8;
+  text-align: left;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.motif-card {
+  background-image: url(../../src/images/background/bg-pen-crop.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+
+.motif-write-btn {
+  border: none;
+  background: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.motif-write-btn:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.motif-write-btn:active {
+  box-shadow: none;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.motif-write-btn:disabled {
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.motif-write-btn:focus {
+  box-shadow: none;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.motif-write-btn>img {
+  vertical-align: top;
+}
+
+.open-txt {
+  color: #fff;
+  position: absolute;
+  z-index: 999;
+}
+
+.close-txt {
+  color: #fff;
+  position: absolute;
+  z-index: 999;
+}
+
+.triangle-open {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.triangle-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.txt-slide-date {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.txt-slide-search-date,
+.txt-slide-time {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default,
+.txt-btn-main,
+.txt-btn-main-disabled,
+.txt-btn-menu,
+.txt-nav-usercaption,
+.txt-slide-title,
+.txt-card-setting-input,
+.setting-input,
+.txt-card-setting-info,
+.btn-danger {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.txt-nav-username,
+.txt-nav-footer,
+.txt-slide-pagination,
+.txt-card-my-ch-label,
+.txt-card-setting-title,
+.setting-title,
+.open-txt,
+.close-txt {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-main-title,
+.txt-card-bookmark-writing-content,
+.card-content-text,
+input[placeholder] {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.txt-card-title,
+.content-title,
+.txt-card-contents,
+.content-contents,
+.txt-card-date,
+.content-info,
+.txt-card-username,
+.content-username,
+.username,
+.txt-main-caption,
+.txt-page-date,
+.txt-card-bookmark-writing-title,
+.card-content-heading,
+.txt-card-bookmark-writing-date,
+.card-info-date,
+.txt-card-bookmark-usercaption,
+.book-mark-author-caption,
+.txt-card-topic-list-time,
+.topic-list-time,
+.txt-card-topic-list-info,
+.topic-list-info {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.txt-page-title,
+.txt-main-date,
+.txt-tab-normal,
+.txt-card-bookmark-username,
+.book-mark-author-username,
+.txt-card-topic-list-title,
+.topic-list-title {
+  font-family: 'NanumMyeongjo', serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.txt-page-title {
+  text-align: center;
+  color: #14a6cc;
+}
+
+.txt-card-title,
+.content-title {
+  color: #616161;
+}
+
+.txt-card-contents,
+.content-contents {
+  color: #616161;
+}
+
+.txt-card-date,
+.content-info {
+  color: #616161;
+}
+
+.txt-card-username,
+.content-username,
+.username {
+  color: #424242;
+}
+
+.txt-btn-default,
+.txt-btn-default-disabled,
+.txt-btn-solid,
+.txt-btn-danger,
+.btn-default {
+  font-size: 12px;
+  text-align: center;
+  color: #616161;
+}
+
+.txt-btn-default-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-solid {
+  color: #fff;
+}
+
+.txt-btn-danger {
+  color: #f44c52;
+}
+
+.txt-btn-main,
+.txt-btn-main-disabled {
+  color: #616161;
+  text-align: center;
+}
+
+.txt-btn-main-disabled {
+  color: #bdbdbd;
+}
+
+.txt-btn-menu {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.txt-main-date {
+  color: #424242;
+  text-align: left;
+}
+
+.txt-main-title {
+  color: #9e9e9e;
+}
+
+.txt-main-caption {
+  font-size: 16px;
+  color: #424242;
+}
+
+.txt-page-date {
+  text-align: center;
+  color: #424242;
+}
+
+.txt-nav-username {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-usercaption {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-nav-footer {
+  text-align: center;
+  color: #fff;
+}
+
+.txt-slide-search-date {
+  color: #424242;
+}
+
+.txt-slide-date {
+  color: #51bcd8;
+  text-align: right;
+}
+
+.txt-slide-time {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-title {
+  color: #616161;
+  text-align: right;
+}
+
+.txt-slide-pagination {
+  color: #757575;
+  text-align: center;
+}
+
+.txt-tab-normal {
+  text-align: center;
+  color: #9e9e9e;
+}
+
+.txt-card-bookmark-writing-title,
+.card-content-heading {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-content,
+.card-content-text {
+  color: #424242;
+}
+
+.txt-card-bookmark-writing-date,
+.card-info-date {
+  color: #757575;
+}
+
+.txt-card-bookmark-username,
+.book-mark-author-username {
+  color: #424242;
+}
+
+.txt-card-topic-list-time,
+.topic-list-time {
+  color: #616161;
+}
+
+.txt-card-topic-list-title,
+.topic-list-title {
+  color: #616161;
+}
+
+.txt-card-topic-list-info,
+.topic-list-info {
+  color: #616161;
+}
+
+.txt-card-my-ch-label {
+  text-align: right;
+  color: #fff;
+}
+
+.txt-card-setting-title,
+.setting-title {
+  color: #fe8b90;
+  text-align: left;
+}
+
+.txt-card-setting-input,
+.setting-input {
+  color: #0e8cad;
+  text-align: left;
+}
+
+.txt-card-setting-info {
+  color: #51bcd8;
+  text-align: left;
+}
+
+body {
+  line-height: 1.5;
+}
+
+.content-card {
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.content-title {
+  text-align: center;
+}
+
+.content-contents {
+  text-align: center;
+}
+
+.content-info {
+  text-align: center;
+}
+
+.profile-img-content {
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.content-username {
+  text-decoration: none;
+}
+
+.card-content-01 {
+  position: relative;
+}
+
+.btn-content-cancle {
+  display: block;
+}
+
+.content-card,
+.content-card:active,
+.three-card,
+.motif-card,
+.three-card:active,
+.motif-card:active,
+.one-card,
+.one-card:active,
+.bk-wrting-card,
+.bk-wrting-card:active,
+.bk-author-card,
+.bk-author-card:active,
+.setting-card,
+.setting-card:active {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 0 0 rgba(0,0,0,0.12);
+  transition: box-shadow 0.2s ease;
+  outline: none;
+}
+
+.three-card:hover,
+.motif-card:hover,
+.one-card:hover,
+.bk-wrting-card:hover,
+.bk-author-card:hover {
+  background-color: #fff;
+  border-radius: 2px;
+  z-index: 2;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24),0 0 8px 0 rgba(0,0,0,0.12);
+  transition: box-shadow 0.2s ease;
+  outline: none;
+}
+
+.content-card:focus,
+.three-card:focus,
+.motif-card:focus,
+.one-card:focus,
+.bk-wrting-card:focus,
+.bk-author-card:focus,
+.setting-card:focus {
+  background-color: #fff;
+  border-radius: 2px;
+  outline: thin dotted;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 0 0 rgba(0,0,0,0.12);
+  transition: box-shadow 0.2s ease;
+}
+
+.three-card,
+.motif-card {
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.one-card {
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.setting-card {
+  display: block;
+  text-decoration: none;
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.setting-card-height {
+  height: 806px;
+}
+
+.setting-profile-btn {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.setting-title {
+  display: block;
+}
+
+.setting-input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #fe8b90;
+  outline: 0;
+  padding-bottom: 5px;
+}
+
+.setting-email {
+  cursor: default;
+}
+
+.modified {
+  float: left;
+}
+
+.secession {
+  float: left;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1740,11 +2873,13 @@ body {
     text-align: center;
   }
 
-  .txt-card-setting-title {
+  .txt-card-setting-title,
+  .setting-title {
     font-size: 14px;
   }
 
-  .txt-card-setting-input {
+  .txt-card-setting-input,
+  .setting-input {
     font-size: 14px;
   }
 
@@ -1887,11 +3022,13 @@ body {
     text-align: center;
   }
 
-  .txt-card-setting-title {
+  .txt-card-setting-title,
+  .setting-title {
     font-size: 14px;
   }
 
-  .txt-card-setting-input {
+  .txt-card-setting-input,
+  .setting-input {
     font-size: 14px;
   }
 
@@ -2084,11 +3221,13 @@ body {
     text-align: center;
   }
 
-  .txt-card-setting-title {
+  .txt-card-setting-title,
+  .setting-title {
     font-size: 14px;
   }
 
-  .txt-card-setting-input {
+  .txt-card-setting-input,
+  .setting-input {
     font-size: 14px;
   }
 
@@ -2175,6 +3314,11 @@ body {
     padding: 6px 18px 6px;
   }
 
+  .btn-danger {
+    min-width: 80px;
+    padding: 6px 18px 6px;
+  }
+
   .page-top-section {
     padding-top: 89px;
     padding-bottom: 33px;
@@ -2222,7 +3366,7 @@ body {
   }
 
   .bookmark-section2 {
-    width: 707px;
+    width: 716px;
     height: 140px;
     position: relative;
     float: left;
@@ -2273,6 +3417,619 @@ body {
   .btn-bookmark-cancle {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .topic-list-time {
+    margin-top: 48px;
+  }
+
+  .topic-list-title {
+    margin-top: 13px;
+  }
+
+  .topic-list-info {
+    margin-top: 16px;
+  }
+
+  .motif-write-btn>img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .motif-write-btn {
+    margin-top: 131px;
+    margin-right: 109px;
+    margin-left: 109px;
+    padding: 0;
+  }
+
+  .open-txt {
+    right: 11px;
+    top: 12px;
+    font-size: 12px;
+  }
+
+  .close-txt {
+    right: 8px;
+    top: 10px;
+    font-size: 12px;
+  }
+
+  .triangle-open {
+    border-top: 35px solid #51bcd8;
+    border-right: 35px solid #51bcd8;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .triangle-close {
+    border-top: 35px solid #fe8b90;
+    border-right: 35px solid #fe8b90;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .content-card {
+    margin-bottom: 10px;
+  }
+
+  .content-title {
+    padding-top: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+  }
+
+  .content-contents {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 20px;
+  }
+
+  .content-info {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 48px;
+    line-height: 20px;
+  }
+
+  .profile-img-content {
+    width: 39px;
+    height: 39px;
+    margin: 16px;
+    float: left;
+  }
+
+  .content-username {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+
+  .btn-content-cancle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    margin-right: 16px;
+  }
+
+  .line-horizon {
+    border-top: 1px solid #bdbdbd;
+  }
+
+  .three-card-align>article:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .three-card-align>article:nth-child(3n+1) {
+    margin-left: 0;
+  }
+
+  .three-card,
+  .motif-card {
+    height: 370px;
+    margin-bottom: 20px;
+  }
+
+  .one-card {
+    height: 370px;
+    margin-bottom: 10px;
+  }
+
+  .one-card-align>article {
+    margin-left: 0;
+  }
+
+  .setting-card {
+    padding-left: 132px;
+    padding-right: 132px;
+    padding-top: 81px;
+    padding-bottom: 59px;
+  }
+
+  .form-layout {
+    margin-top: 37px;
+  }
+
+  .setting-profile-btn {
+    width: 120px;
+    height: 120px;
+  }
+
+  .setting-profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .setting-title {
+    margin-top: 22px;
+  }
+
+  .setting-input {
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  input[placeholder] {
+    font-size: 14px;
+  }
+
+  .setting-btn-wrap {
+    margin-top: 28px;
+  }
+
+  .modified {
+    margin-left: 12px;
   }
 }
 
@@ -2442,16 +4199,18 @@ body {
     text-align: left;
   }
 
-  .txt-card-setting-title {
-    font-size: 12px;
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 2.8125vw;
   }
 
-  .txt-card-setting-input {
-    font-size: 12px;
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 3.75vw;
   }
 
   .txt-card-setting-info {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .txt-page-title {
@@ -2619,16 +4378,18 @@ body {
     text-align: left;
   }
 
-  .txt-card-setting-title {
-    font-size: 12px;
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 2.8125vw;
   }
 
-  .txt-card-setting-input {
-    font-size: 12px;
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 3.75vw;
   }
 
   .txt-card-setting-info {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .topic-list-time {
@@ -2849,16 +4610,18 @@ body {
     text-align: left;
   }
 
-  .txt-card-setting-title {
-    font-size: 12px;
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 2.8125vw;
   }
 
-  .txt-card-setting-input {
-    font-size: 12px;
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 3.75vw;
   }
 
   .txt-card-setting-info {
-    font-size: 12px;
+    font-size: 3.75vw;
   }
 
   .content-card {
@@ -2953,6 +4716,18 @@ body {
     padding: 1.875vw 5.625vw 1.875vw;
   }
 
+  .btn-danger {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75vw;
+  }
+
+  .btn-danger {
+    min-width: 25vw;
+    padding: 1.875vw 5.625vw 1.875vw;
+  }
+
   .page-top-section {
     padding-top: 2.5vw;
     padding-bottom: 2.5vw;
@@ -3027,7 +4802,7 @@ body {
   }
 
   .card-content-heading {
-    display: block;
+    display: inblock;
     padding-top: 5vw;
     padding-left: 5vw;
     padding-left: 5vw;
@@ -3080,6 +4855,726 @@ body {
     right: 5vw;
     margin-top: 6.25vw;
     margin-bottom: 6.5625vw;
+  }
+
+  .txt-page-title {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-weight: 600;
+    font-size: 3.125vw;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-weight: 600;
+    font-size: 4.375vw;
+  }
+
+  .txt-btn-default,
+  .txt-btn-default-disabled,
+  .txt-btn-solid,
+  .txt-btn-danger,
+  .btn-default {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-default-disabled {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-solid {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-danger {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-title {
+    font-size: 11.875vw;
+    text-align: center;
+  }
+
+  .txt-main-caption {
+    font-size: 5vw;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .txt-nav-username {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-footer {
+    font-size: 3.125vw;
+  }
+
+  .txt-slide-search-date {
+    font-size: 3.4375vw;
+  }
+
+  .txt-slide-date {
+    font-size: 11.875vw;
+  }
+
+  .txt-slide-time {
+    font-size: 3.75vw;
+  }
+
+  .txt-slide-title {
+    font-size: 5vw;
+  }
+
+  .txt-slide-pagination {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-tab-normal {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 6.25vw;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 9.375vw;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 4.375vw;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 2.8125vw;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-setting-info {
+    font-size: 3.75vw;
+  }
+
+  .txt-page-title {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-weight: 600;
+    font-size: 3.125vw;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-weight: 600;
+    font-size: 4.375vw;
+  }
+
+  .txt-btn-default,
+  .txt-btn-default-disabled,
+  .txt-btn-solid,
+  .txt-btn-danger,
+  .btn-default {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-default-disabled {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-solid {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-danger {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-title {
+    font-size: 11.875vw;
+    text-align: center;
+  }
+
+  .txt-main-caption {
+    font-size: 5vw;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .txt-nav-username {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-footer {
+    font-size: 3.125vw;
+  }
+
+  .txt-slide-search-date {
+    font-size: 3.4375vw;
+  }
+
+  .txt-slide-date {
+    font-size: 11.875vw;
+  }
+
+  .txt-slide-time {
+    font-size: 3.75vw;
+  }
+
+  .txt-slide-title {
+    font-size: 5vw;
+  }
+
+  .txt-slide-pagination {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-tab-normal {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 6.25vw;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 9.375vw;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 4.375vw;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 2.8125vw;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-setting-info {
+    font-size: 3.75vw;
+  }
+
+  .topic-list-time {
+    margin-top: 15vw;
+  }
+
+  .topic-list-title {
+    margin-top: 4.0625vw;
+  }
+
+  .topic-list-info {
+    margin-top: 5vw;
+  }
+
+  .motif-write-btn>img {
+    width: 15.625vw;
+    height: 15.625vw;
+  }
+
+  .motif-write-btn {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 54.0625vw;
+    margin-left: 39.0625vw;
+    margin-right: 39.0625vw;
+  }
+
+  .open-txt {
+    right: 3.4375vw;
+    top: 3.75vw;
+    font-size: 3.75vw;
+  }
+
+  .close-txt {
+    right: 2.5vw;
+    top: 3.125vw;
+    font-size: 3.75vw;
+  }
+
+  .triangle-open {
+    border-top: 10.9375vw solid #51bcd8;
+    border-right: 10.9375vw solid #51bcd8;
+    border-left: 10.9375vw solid transparent;
+    border-bottom: 10.9375vw solid transparent;
+  }
+
+  .triangle-close {
+    border-top: 10.9375vw solid #fe8b90;
+    border-right: 10.9375vw solid #fe8b90;
+    border-left: 10.9375vw solid transparent;
+    border-bottom: 10.9375vw solid transparent;
+  }
+
+  .txt-page-title {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-weight: 600;
+    font-size: 3.125vw;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-weight: 600;
+    font-size: 4.375vw;
+  }
+
+  .txt-btn-default,
+  .txt-btn-default-disabled,
+  .txt-btn-solid,
+  .txt-btn-danger,
+  .btn-default {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-default-disabled {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-solid {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-danger {
+    font-family: 'NanumMyeongjo', serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-main-title {
+    font-size: 11.875vw;
+    text-align: center;
+  }
+
+  .txt-main-caption {
+    font-size: 5vw;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .txt-nav-username {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 4.375vw;
+    text-align: left;
+  }
+
+  .txt-nav-footer {
+    font-size: 3.125vw;
+  }
+
+  .txt-slide-search-date {
+    font-size: 3.4375vw;
+  }
+
+  .txt-slide-date {
+    font-size: 11.875vw;
+  }
+
+  .txt-slide-time {
+    font-size: 3.75vw;
+  }
+
+  .txt-slide-title {
+    font-size: 5vw;
+  }
+
+  .txt-slide-pagination {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-tab-normal {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 6.25vw;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 4.375vw;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 9.375vw;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 4.375vw;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 3.75vw;
+    text-align: left;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 2.8125vw;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 3.75vw;
+  }
+
+  .txt-card-setting-info {
+    font-size: 3.75vw;
+  }
+
+  .content-card {
+    margin-bottom: 10px;
+  }
+
+  .content-title {
+    padding-top: 10.625vw;
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+    line-height: 6.25vw;
+  }
+
+  .content-contents {
+    padding-top: 6.25vw;
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+    line-height: 6.25vw;
+  }
+
+  .content-info {
+    padding-top: 6.25vw;
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+    padding-bottom: 10.625vw;
+    line-height: 6.25vw;
+  }
+
+  .profile-img-content {
+    display: inline-block;
+    width: 12.1875vw;
+    height: 12.1875vw;
+    margin: 5vw;
+    float: left;
+  }
+
+  .content-username {
+    text-align: left;
+    float: left;
+    padding-top: 8.125vw;
+    padding-bottom: 8.4375vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-content-cancle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 6.25vw;
+    margin-bottom: 6.5625vw;
+    margin-right: 5vw;
+  }
+
+  .line-horizon {
+    border-top: 1px solid #bdbdbd;
+  }
+
+  .open-ch-content-wrap {
+    padding-top: 22.1875vw;
+  }
+
+  .three-card-align>article {
+    box-sizing: border-box;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .three-card,
+  .motif-card {
+    height: 130vw;
+    margin-bottom: 10px;
+  }
+
+  .one-card {
+    height: 130vw;
+    margin-bottom: 10px;
+  }
+
+  .one-card-align>article {
+    box-sizing: border-box;
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .setting-card {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 7.5vw;
+    padding-bottom: 7.5vw;
+  }
+
+  .form-layout {
+    margin-top: 8.75vw;
+  }
+
+  .setting-profile-btn {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .setting-profile-img {
+    display: inline-block;
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .setting-title {
+    margin-top: 5vw;
+  }
+
+  .setting-input {
+    width: 100%;
+    margin-top: 1.5625vw;
+  }
+
+  input[placeholder] {
+    font-size: 3.75vw;
+  }
+
+  .setting-btn-wrap {
+    margin-top: 7.5vw;
+  }
+
+  .modified {
+    margin-left: 3.75vw;
   }
 }
 
@@ -3219,11 +5714,13 @@ body {
     text-align: center;
   }
 
-  .txt-card-setting-title {
+  .txt-card-setting-title,
+  .setting-title {
     font-size: 14px;
   }
 
-  .txt-card-setting-input {
+  .txt-card-setting-input,
+  .setting-input {
     font-size: 14px;
   }
 
@@ -3366,11 +5863,13 @@ body {
     text-align: center;
   }
 
-  .txt-card-setting-title {
+  .txt-card-setting-title,
+  .setting-title {
     font-size: 14px;
   }
 
-  .txt-card-setting-input {
+  .txt-card-setting-input,
+  .setting-input {
     font-size: 14px;
   }
 
@@ -3563,11 +6062,13 @@ body {
     text-align: center;
   }
 
-  .txt-card-setting-title {
+  .txt-card-setting-title,
+  .setting-title {
     font-size: 14px;
   }
 
-  .txt-card-setting-input {
+  .txt-card-setting-input,
+  .setting-input {
     font-size: 14px;
   }
 
@@ -3650,6 +6151,11 @@ body {
   }
 
   .btn-default {
+    min-width: 80px;
+    padding: 6px 18px 6px;
+  }
+
+  .btn-danger {
     min-width: 80px;
     padding: 6px 18px 6px;
   }
@@ -3748,6 +6254,619 @@ body {
   .btn-bookmark-cancle {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .topic-list-time {
+    margin-top: 48px;
+  }
+
+  .topic-list-title {
+    margin-top: 13px;
+  }
+
+  .topic-list-info {
+    margin-top: 16px;
+  }
+
+  .motif-write-btn>img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .motif-write-btn {
+    margin-top: 131px;
+    margin-right: 104.5px;
+    margin-left: 104.5px;
+    padding: 0;
+  }
+
+  .open-txt {
+    right: 11px;
+    top: 12px;
+    font-size: 12px;
+  }
+
+  .close-txt {
+    right: 8px;
+    top: 10px;
+    font-size: 12px;
+  }
+
+  .triangle-open {
+    border-top: 35px solid #51bcd8;
+    border-right: 35px solid #51bcd8;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .triangle-close {
+    border-top: 35px solid #fe8b90;
+    border-right: 35px solid #fe8b90;
+    border-left: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+  }
+
+  .txt-page-title {
+    font-size: 36px;
+  }
+
+  .txt-card-title,
+  .content-title {
+    font-size: 22px;
+  }
+
+  .txt-card-contents,
+  .content-contents {
+    font-size: 14px;
+  }
+
+  .txt-card-date,
+  .content-info {
+    font-size: 12px;
+  }
+
+  .txt-card-username,
+  .content-username,
+  .username {
+    font-size: 14px;
+  }
+
+  .txt-btn-main,
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-btn-main-disabled {
+    font-size: 18px;
+  }
+
+  .txt-main-date {
+    font-size: 24px;
+  }
+
+  .txt-main-title {
+    font-size: 90px;
+  }
+
+  .txt-page-date {
+    font-size: 14px;
+  }
+
+  .txt-nav-username {
+    font-size: 16px;
+  }
+
+  .txt-nav-usercaption {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-nav-footer {
+    font-size: 12px;
+  }
+
+  .txt-slide-search-date {
+    font-size: 16px;
+  }
+
+  .txt-slide-date {
+    font-size: 52px;
+  }
+
+  .txt-slide-time {
+    font-size: 16px;
+  }
+
+  .txt-slide-title {
+    font-size: 20px;
+  }
+
+  .txt-slide-pagination {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-tab-normal {
+    font-size: 18px;
+  }
+
+  .txt-card-bookmark-writing-title,
+  .card-content-heading {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .txt-card-bookmark-writing-content,
+  .card-content-text {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-writing-date,
+  .card-info-date {
+    font-size: 14px;
+  }
+
+  .txt-card-bookmark-username,
+  .book-mark-author-username {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .txt-card-bookmark-usercaption,
+  .book-mark-author-caption {
+    font-size: 14px;
+    color: #424242;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-time,
+  .topic-list-time {
+    font-size: 14px;
+  }
+
+  .txt-card-topic-list-title,
+  .topic-list-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .txt-card-topic-list-info,
+  .topic-list-info {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .txt-card-my-ch-label {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .txt-card-setting-title,
+  .setting-title {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-input,
+  .setting-input {
+    font-size: 14px;
+  }
+
+  .txt-card-setting-info {
+    font-size: 14px;
+  }
+
+  .content-card {
+    margin-bottom: 10px;
+  }
+
+  .content-title {
+    padding-top: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+  }
+
+  .content-contents {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 20px;
+  }
+
+  .content-info {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 48px;
+    line-height: 20px;
+  }
+
+  .profile-img-content {
+    width: 39px;
+    height: 39px;
+    margin: 16px;
+    float: left;
+  }
+
+  .content-username {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+
+  .btn-content-cancle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    margin-right: 16px;
+  }
+
+  .line-horizon {
+    border-top: 1px solid #bdbdbd;
+  }
+
+  .three-card-align>article:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .three-card-align>article:nth-child(3n+1) {
+    margin-left: 0;
+  }
+
+  .three-card,
+  .motif-card {
+    height: 370px;
+    margin-bottom: 20px;
+  }
+
+  .one-card {
+    height: 370px;
+    margin-bottom: 10px;
+  }
+
+  .one-card-align>article {
+    margin-left: 0;
+  }
+
+  .setting-card {
+    padding-left: 132px;
+    padding-right: 132px;
+    padding-top: 81px;
+    padding-bottom: 59px;
+  }
+
+  .form-layout {
+    margin-top: 37px;
+  }
+
+  .setting-profile-btn {
+    width: 120px;
+    height: 120px;
+  }
+
+  .setting-profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .setting-title {
+    margin-top: 22px;
+  }
+
+  .setting-input {
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  input[placeholder] {
+    font-size: 14px;
+  }
+
+  .setting-btn-wrap {
+    margin-top: 28px;
+  }
+
+  .modified {
+    margin-left: 12px;
   }
 }
 /*# sourceMappingURL=../maps/view.css.map */
