@@ -11,7 +11,7 @@
  // 		var documentHeight = $(document).height();
  // 		var currentScroll = $(window).scrollTop() + $(window).height();
 
- // 		// currentScroll 값과 documentHeight 값이 같아졌을 때, 
+ // 		// currentScroll 값과 documentHeight 값이 같아졌을 때,
  // 		// 즉, scroll의 top 높이와 window의 높이값을 더한 값이 html 문서 높이와 같아졌을 때,
  // 		// if(currentScroll == documentHeight) {
  // 		// documentHeight 값이 현재 scroll 위치값에 100을 더한 값보다 작을 때 아래 코드 실행
@@ -26,7 +26,7 @@
  // 		}
  // 	});
  // }
- 
+
 
 // 공통 변수 mask
 var mask = $('#mask');
@@ -44,9 +44,14 @@ function wrapWindowByMask() {
 
 	// 마스크의 높이와 너비를 화면 것으로 만들어 전체 화면 채우기
 	mask.css({
-		'width' : maskWidth,
-		'height' : maskHeight
+		'width' : maskWidth + 'vw',
+		'height' : maskHeight + 'vh'
 	});
+
+	if(maskWidth >= 1440) {
+		mask.css('z-index', '999990');
+		$('.aside').css('z-index', '999999')
+	}
 
 	// 80% 불투명도
 	mask.fadeTo("slow", 0.8);
@@ -60,7 +65,7 @@ function wrapWindowByMask() {
  * 	@eunju.K
  * ------------------------------------ */
 // 함수형
-// function menuSlide($direction) {	
+// function menuSlide($direction) {
 // 	if(direction == "left") {
 // 		$("#btn_open").on('click', function(){
 // 				if( $("#effect").hasClass('menu-active') ){
@@ -72,7 +77,7 @@ function wrapWindowByMask() {
 // 					console.log($(".navigation").hasClass('menu-active'));
 // 				} else {
 // 					console.log($(".navigation").hasClass('menu-active'));
-					
+
 // 					$(".navigation").addClass('menu-active');
 // 					$(".navigation").animate({left: 0}, 500);
 // 					$("#button").css({"background" : "url(images/btn_left.gif"});
@@ -80,7 +85,7 @@ function wrapWindowByMask() {
 // 				}
 // 			}
 // 		);
-// 	}	
+// 	}
 // }
 
 
@@ -144,28 +149,61 @@ function wrapWindowByMask() {
  * 	@eunju.K
  * ------------------------------------ */
  function textAlignCss(align) {
- 	var textBox = $('.textBox');
+ 	var textBox = $('.write');
+ 	var img = $('#align-status > img');
 
- 	// console.log(align);
+ 	// text-align
  	textBox.css({
 		'text-align' : align
 	});
+
+ 	// change image
+	img.attr('src', '');
+	img.attr('src', '/static/images/icons/ic_align_' + align + '.svg');
  }
 
 (function(global, $) {
 	'use strict';
+	var align_status = null;
+	var text_align = $('#align-status');
+	text_align.on('click', function() {
+		if( text_align.hasClass('left') ) {
+			text_align.removeClass('left');
+			text_align.addClass('center');
 
-	var left = $('.align-left');
-	var center = $('.align-center');
-	// var right = $('.align-right');
-	
-	left.on('click', function(){
-		textAlignCss('left');
+			align_status = text_align.attr('class');
+			textAlignCss(align_status);
+		} else {
+			text_align.removeClass('center');
+			text_align.addClass('left');
+
+			align_status = text_align.attr('class');
+			textAlignCss(align_status);
+		}
 	});
 
-	center.on('click', function() {
-		textAlignCss('center');
-	});	
+
+	// var left = $('.align-left');
+	// var center = $('.align-center');
+	// var right = $('.align-right');
+
+	// text_align.on('click', function() {
+	// 	console.log("test2");
+	// 	// align_status = this.attr('class');
+	// 	// console.log(align_status);
+	// });
+
+	// left.on('click', function(){
+	// 	align_status = "left";
+	// 	textAlignCss('left');
+	// 	text-align.attr('src', '');
+	// });
+
+	// center.on('click', function() {
+	// 	align_status = "center";
+	// 	textAlignCss('center');
+	// 	text-align.attr('src', '');
+	// });
 })(this, this.jQuery);
 
 

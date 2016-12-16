@@ -15,7 +15,7 @@ class Home extends CI_Controller {
             redirect('/Login');
         }*/
         $this->load->model('Boarder_model');
-        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList','bookmark','opench', 'mychdetail','topiclistview','mych');
+        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList','bookmark','opench', 'mychdetail','topiclistview','mych', 'write');
     }
     /**
      * Index Page for this controller.
@@ -152,6 +152,11 @@ class Home extends CI_Controller {
     {
         $this->load->view('home/bringInSsum');
     }
+    public function write($post_seq)
+    {
+        $data = $this->Boarder_model->one_topic_select($post_seq);
+        $this->load->view('home/write', array('data' => $data));
+    }
 
     public function bookmark()
     {
@@ -199,7 +204,7 @@ class Home extends CI_Controller {
         echo json_encode($data);
     }
     public function myTopicList(){
-        $user_seq = $this->session->userdata('is_login');
+        $user_seq = $this->session->userdata('user_seq');
         $data = $this->Boarder_model->myTopicList($user_seq);
         echo json_encode($data);
     }

@@ -12,7 +12,7 @@
 		</section>
 
 		<!-- btn menu -->
-		<button id="btn-menu"><img src="/static/images/icons/ic_menu.svg"></button>
+		<button id="btn-menu"><img src="/static/images/icons/ic_menu_white.svg"></button>
 
 		<!-- dim effect -->
 		<div id="mask"></div>
@@ -24,11 +24,17 @@
 			<section class="menu">
 				<div class="profile-box">
 					<h2 class="readable-hidden">사용자 프로필</h2>
-
-					<a class="profile" href="#">
-						<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
-						<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
-					</a>
+					<?php if($this->session->userdata('is_login')) { ?>
+						<a class="profile" href="#">
+							<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
+							<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
+						</a>
+					<?php  } else { ?>
+						<a class="profile" href="#">
+							<img class="user-profile" src="/static/img/profile.png" alt="사용자 프로필 사진">
+							<p class="pen-name">손님</p>
+						</a>
+					<?php } ?>
 				</div>
 
 				<ul class="menu-list">
@@ -84,7 +90,7 @@
 		</nav>
 
 		<button id="btn-date" class="" type="button">
-			<img src="/static/images/icons/ic_date_range.svg" alt="date range">
+			<img src="/static/images/icons/ic_date_range_white.svg" alt="date range">
 		</button>
 		<!-- Aside menu, 'diplay:none' on mobile -->
 		<aside class="aside" data-ng-controller="TodayTopic">
@@ -96,8 +102,8 @@
 						<img src="/static/images/icons/ic_date_range.svg" alt="date range">
 					</label>
 					<div class="search">
-						<input id="datepicker" type="text" data-ng-model="range.startDate">
-						<input id="datepicker2" type="text" data-ng-model="range.endDate">
+						<input id="datepicker" type="text" data-ng-model="range.startDate" placeholder="2016-11-22">
+						<input id="datepicker2" type="text" data-ng-model="range.endDate" placeholder="2016-11-30">
 					</div>
 				</form>
 			</section>

@@ -14,7 +14,7 @@
 /* header */
 .header
 	@extend %box-sizing
-	+setWH(100%, 34px)
+	+setWH(100%, 52px)
 	+setPosition(fixed, top 0 left 0 z-index 999)
 	+setFont(size 14px)
 
@@ -29,14 +29,14 @@
 	display: flex
 	align-items: center
 	justify-content: center
-	height: 34px
+	height: 52px
 	+respond-to($md-container-width)
 		+setWH(100%, 62px)
 		margin: 0 auto	
 
 .logo
 	// +setWH(112px, 18px)
-	+setWH(150px, 20px)
+	+setWH(160px, 24px)
 
 	display: inline-block
 	+respond-to($md-container-width)
@@ -51,7 +51,7 @@
 		+setFont(size 16px)
 .logo-main
 	@extend %box-sizing
-	+setWH(20px, 20px)
+	+setWH(24px, 24px)
 	
 	display: inline-block
 	text-align: center
@@ -59,7 +59,7 @@
 	+respond-to($md-container-width)
 		+setWH(29px, 29px)
 .logo-text
-	+setWH(94px,18px)
+	+setWH(120px,24px)
 	+respond-to($md-container-width)
 		+setWH(160px,27px)
 		display: inline-block
@@ -75,32 +75,32 @@
 	top: 0
 	z-index: 99
 	+respond-to($md-container-width)
-		z-index: 999990
+		// z-index: 999990
 
 
 .header [id^="btn-"]
-	+setWH(16px, 16px)
-	+setPosition(absolute, top 9px)
+	+setWH(24px, 24px)
+	+setPosition(absolute, top 14px)
 
 	background-color: none
 	+respond-to($md-container-width)
-		+setWH(24px, 24px)
-		+setPosition(absolute, top 19px)
+		+setWH(35px, 35px)
+		+setPosition(absolute, top 13px)
 .header [id^="btn-"] > img
-	+setWH(16px, 16px)
+	+setWH(24px, 24px)
 
 	display: block
 	background-color: #51bcd8
 	color: #fff
 	+respond-to($md-container-width)
-		+setWH(24px, 24px)
+		+setWH(35px, 35px)
 
 #btn-menu
 	left: 15px
 	cursor: pointer
 	border: 0
 	+respond-to($md-container-width)
-		left: 25px
+		left: 20px
 
 #btn-date
 	right: 16px
@@ -114,11 +114,14 @@
 /* menu */
 .navigation
 	// +setWH(214px, 568px)
-	+setWH(214px, 100vh)
-	+setPosition(absolute, top 0 left -238px z-index 999999)
+	+setWH(260px, 100vh)
+	+setPosition(absolute, top 0 left -284px z-index 999999)
 
 	min-height: 568px
 	background-color: #51bcd8
+	+respond-to($md-container-width)
+		+setWH(364px, 100vh)
+		min-height: 568px
 
 .profile-box
 	+setWH(100%, auto)
@@ -139,7 +142,7 @@
 	border-radius: 50%
 	margin: 10px 14px 10px 12px
 .pen-name
-	+setWH(110px, 20px)
+	+setWH(156px, 20px)
 	+setFont(size 14px weight bold)
 	
 	// font-size: px2vw(14, $xs-container-width)
@@ -249,8 +252,8 @@
 	min-height: 1024px
 	background-color: #fff
 	+respond-to($md-container-width)
-		+setWH(374px, 100vh)
-		+setPosition(absolute, top 0 right 0 z-index 99999)
+		+setWH(364px, 100vh)
+		+setPosition(absolute, top 0 right 0)
 		min-height: 568px
 
 .search-date
@@ -291,36 +294,37 @@
 	float: left
 	&::after
 		+setWH(16.3px, 16.3px)
-		+setPosition(absolute, top 6.2px right 21px)
+		+setPosition(absolute, top 12.2px right 21px)
 
 		content: url(../images/icons/ic_arrow_down.svg)
 		display: block
 	+respond-to($md-container-width)
-		+setWH(320px, 62px)
+		+setWH(310px, 62px)
 		padding: 19px 55px 23px 0
 		&::after
 			+setWH(24px, 24px)
 			+setPosition(absolute, top 18px right 12px)
-.search > input
-	@extend %box-sizing
-	+setWH(85px, 18px)
-	+setFont(size 12px)
+	> input
+		@extend %box-sizing
+		+setWH(85px, 18px)
+		+setFont(size 12px)
 
-	line-height: line-height(11)
-	display: inline-block
-	color: #424242
-	border: 0
-	border-bottom: 1px solid #9e9e9e
-	+respond-to($md-container-width)
-		+setWH(125px, 25px)
-		font-size: font-size(14)
-		line-height: line-height(14)
-		padding: 4px
-		padding-left: 3px
-.search > input:nth-child(2)
-	margin-left: 5px
-	+respond-to($md-container-width)
-		margin-left: 7px
+		display: inline-block
+		line-height: line-height(11)
+		text-align: center
+		color: #424242
+		border: 0
+		border-bottom: 1px solid #9e9e9e
+		+respond-to($md-container-width)
+			+setWH(115px, 25px)
+			font-size: font-size(14)
+			line-height: line-height(14)
+			padding: 4px
+			padding-left: 3px
+	> input:nth-child(2)
+		margin-left: 5px
+		+respond-to($md-container-width)
+			margin-left: 7px
 
 .slide-box
 	@extend %box-sizing
@@ -381,7 +385,7 @@
 // 	margin-bottom: 22px
 
 .static-btn-bottom-aside
-	+setPosition(absolute, bottom 0)
+	+setPosition(absolute, bottom 0 index 9999)
 	width: 100%
 .page-number
 	display: flex;
@@ -414,7 +418,7 @@
 	border: 1px solid #e0e0e0
 	background-color: #e0e0e0
 	+respond-to($md-container-width)
-		+setWH(187px, 48px)
+		+setWH(182px, 48px)
 
 .static-btn [class^="btn-"] > img
 	display: block
@@ -439,9 +443,18 @@ section
 			width: 100%
 	.main-content
 		@extend %box-sizing
-		padding-top: 34px
+		width: 100%
+		padding-top: 52px
 		+respond-to($md-container-width)
 			float: none
 			padding-top: 62px
+	.write-box-wrap
+		margin: 0
+		+respond-to($sm-container-width)
+			float: none
+			margin: 0 auto
+		+respond-to($md-container-width)
+			float: none
+			margin: 0 auto
 
 
