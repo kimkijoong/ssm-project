@@ -155,11 +155,11 @@ section .main-content {
 }
 
 .navigation {
-  width: 214px;
+  width: 260px;
   height: 100vh;
   position: absolute;
   top: 0;
-  left: -238px;
+  left: -284px;
   z-index: 999999;
   min-height: 568px;
   background-color: #51bcd8;
@@ -188,7 +188,7 @@ section .main-content {
 }
 
 .pen-name {
-  width: 110px;
+  width: 156px;
   height: 20px;
   font-size: 14px;
   font-weight: bold;
@@ -543,10 +543,6 @@ section .write-box-wrap {
     display: inline-block;
   }
 
-  #mask {
-    z-index: 999990;
-  }
-
   .header [id^="btn-"] {
     width: 35px;
     height: 35px;
@@ -567,13 +563,18 @@ section .write-box-wrap {
     display: none;
   }
 
+  .navigation {
+    width: 364px;
+    height: 100vh;
+    min-height: 568px;
+  }
+
   .aside {
     width: 364px;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 99999;
     min-height: 568px;
   }
 

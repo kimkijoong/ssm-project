@@ -75,7 +75,7 @@
 	top: 0
 	z-index: 99
 	+respond-to($md-container-width)
-		z-index: 999990
+		// z-index: 999990
 
 
 .header [id^="btn-"]
@@ -114,11 +114,14 @@
 /* menu */
 .navigation
 	// +setWH(214px, 568px)
-	+setWH(214px, 100vh)
-	+setPosition(absolute, top 0 left -238px z-index 999999)
+	+setWH(260px, 100vh)
+	+setPosition(absolute, top 0 left -284px z-index 999999)
 
 	min-height: 568px
 	background-color: #51bcd8
+	+respond-to($md-container-width)
+		+setWH(364px, 100vh)
+		min-height: 568px
 
 .profile-box
 	+setWH(100%, auto)
@@ -139,7 +142,7 @@
 	border-radius: 50%
 	margin: 10px 14px 10px 12px
 .pen-name
-	+setWH(110px, 20px)
+	+setWH(156px, 20px)
 	+setFont(size 14px weight bold)
 	
 	// font-size: px2vw(14, $xs-container-width)
@@ -250,7 +253,7 @@
 	background-color: #fff
 	+respond-to($md-container-width)
 		+setWH(364px, 100vh)
-		+setPosition(absolute, top 0 right 0 z-index 99999)
+		+setPosition(absolute, top 0 right 0)
 		min-height: 568px
 
 .search-date

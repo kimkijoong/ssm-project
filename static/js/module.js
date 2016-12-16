@@ -48,6 +48,11 @@ function wrapWindowByMask() {
 		'height' : maskHeight + 'vh'
 	});
 
+	if(maskWidth >= 1440) {
+		mask.css('z-index', '999990');
+		$('.aside').css('z-index', '999999')
+	}
+
 	// 80% 불투명도
 	mask.fadeTo("slow", 0.8);
 }
