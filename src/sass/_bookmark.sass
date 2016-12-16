@@ -2,11 +2,13 @@
 //  default
 /////////////////////////////////////////////////////////
 
-$card-height: 140px
 
 body
     background-color: $background-color
 
+// .container
+//     +respond-to($md-container-width)
+//         width: 100%
 .page-top-section
     +respond-to($xs-container-width)
         padding-top: px2vw(8, $xs-container-width)
@@ -21,9 +23,12 @@ body
         padding-top: 89px
         padding-bottom: 33px
 
+
 /////////////////////////////////////////////////////////
 //  tab
 /////////////////////////////////////////////////////////
+
+
 .tab-list
     display: block
     &::after
@@ -78,14 +83,24 @@ body
     +respond-to($md-container-width)
         margin-top: 25px
 
-/////////////////////////////////////////////////////////
-//  txt default
-/////////////////////////////////////////////////////////
-.card-bookmark-writing
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//  bookmark-wrting-card
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////
+//  카드 틀
+/////////////////////////////////////
+
+
+// 카드 스타일
+.bk-wrting-card
     display: block
     box-sizing: border-box
     text-decoration: none
     margin-bottom: 10px
+    position: relative
     @extend %card-normal
     &:focus
         @extend %card-focus
@@ -96,56 +111,69 @@ body
     +respond-to($xs-container-width)
         height: px2vw(219, $xs-container-width)
     +respond-to($sm-container-width),
-        height: $card-height
+        height: 140px
     +respond-to($md-container-width)
-        height: $card-height
+        height: 140px
+
+
+// 모바일에서 양쪽패딩 10주는 코드
+#section1
+    position: relative
+    +respond-to($xs-container-width)
+        & > div > article
+            box-sizing: border-box
+            padding-left: px2vw(10, $xs-container-width)
+            padding-right: px2vw(10, $xs-container-width)
+            margin-left: 0
+            margin-right: 0
+    +respond-to($sm-container-width)
+        & > div > article
+            margin-left: 0
+    +respond-to($md-container-width)
+        & > div > article
+            margin-left: 0
+
+
+
+
+
+/////////////////////////////////////
+/// 섹션 1
+/////////////////////////////////////
+
+/////////////////////////
+/// 북마크 섹션 1 영역
+/////////////////////////
+
 
 .bookmark-section1
     box-sizing: border-box
     +respond-to($xs-container-width)
-        width: px2vw(300, $xs-container-width)
         position: absolute
+        box-sizing: border-box
         left: 0
         bottom: 0
         height: px2vw(71, $xs-container-width)
         border-top: 1px solid $gray-400
+        width: 100%
     +respond-to($sm-container-width)
-        width: percentage(136px / 844px)
-        height: $card-height
+        width: 136px
+        height: 140px
         float: left
         border-right: 1px solid $gray-400
     +respond-to($md-container-width)
-        width: percentage(136px / 844px)
-        height: $card-height
+        width: 136px
+        height: 140px
         float: left
         border-right: 1px solid $gray-400
 
-.bookmark-section2
-    &::after
-        @extend %clear-fix
-    +respond-to($xs-container-width)
-        position: absolute
-        left: 0
-        top: 0
-        width: px2vw(300, $xs-container-width)
-        height: px2vw(146, $xs-container-width)
-        box-sizing: border-box
-    +respond-to($sm-container-width)
-        width: percentage(706px / 844px)
-        height: $card-height
-        position: relative
-        float: left
-        box-sizing: border-box
-        padding: 12px 26px 12px 26px
-    +respond-to($md-container-width)
-        width: percentage(706px / 844px)
-        height: $card-height
-        position: relative
-        float: left
-        box-sizing: border-box
-        padding: 12px 26px 12px 26px
+
+/////////////////////////
+/// 섹션 1 : 유저 정보
+/////////////////////////
 
 
+// 프로필 이미지
 .profile-img
     display: block
     overflow: hidden
@@ -166,9 +194,9 @@ body
         margin: 22px 34px 16px
 
 
-
-
+// 유저 이름
 .username
+    @extend .txt-card-username
     display: block
     text-align: center
     +respond-to($xs-container-width)
@@ -193,12 +221,48 @@ body
             bottom: 12px
 
 
+/////////////////////////////////////
+/// 섹션 2
+/////////////////////////////////////
 
-.card-content-heading
+
+/////////////////////////
+/// 북마크 섹션 2 영역
+/////////////////////////
+
+
+.bookmark-section2
+    &::after
+        @extend %clear-fix
     +respond-to($xs-container-width)
-        display: inline-block
+        position: absolute
+        left: 0
+        top: 0
+        box-sizing: border-box
+    +respond-to($sm-container-width)
+        width: 680px
+        height: 140px
+        position: relative
+        float: left
+        box-sizing: border-box
+        padding: 12px 26px 12px 26px
+    +respond-to($md-container-width)
+        width: 716px
+        height: 140px
+        position: relative
+        float: left
+        box-sizing: border-box
+        padding: 12px 26px 12px 26px
+
+
+// 담아온 글 주제
+.card-content-heading
+    @extend .txt-card-bookmark-writing-title
+    +respond-to($xs-container-width)
+        display: inblock
         padding:
             top: px2vw(16, $xs-container-width)
+            left: px2vw(16, $xs-container-width)
             left: px2vw(16, $xs-container-width)
     +respond-to($sm-container-width)
         display: block
@@ -207,33 +271,29 @@ body
         display: block
         margin-bottom: 41px
 
+
+// 담아온 글 간략한 내용
 .card-content-text
-    position: absolute
+    @extend .txt-card-bookmark-writing-content
     +respond-to($xs-container-width)
-        top: px2vw(66, $xs-container-width)
-        left: 0
-        width: px2vw(300, $xs-container-width)
         box-sizing: border-box
+        display: blocks
         padding:
             left: px2vw(16, $xs-container-width)
             right: px2vw(16, $xs-container-width)
             bottom: px2vw(16, $xs-container-width)
+            top: px2vw(16, $xs-container-width)
     +respond-to($sm-container-width)
-        padding:
-            left: 26px
-            right: 26px
-            bottom: 12px
         bottom: 0
         left: 0
     +respond-to($md-container-width)
-        padding:
-            left: 26px
-            right: 26px
-            bottom: 12px
         bottom: 0
         left: 0
 
+
+// 담아온 글 날짜 및 시간
 .card-info-date
+    @extend .txt-card-bookmark-writing-date
     display: block
     position: absolute
     +respond-to($xs-container-width)
@@ -255,10 +315,47 @@ body
             top: 14px
             right: 26px
 
-.book-mark-author
-    position: relative
-    text-decoration: none
 
+///////////////////////////////////////////////////////////////////////////////////////////
+//  bookmark-author-card
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////
+//  카드 틀
+/////////////////////////////////////
+
+
+.bk-author-card
+    position: relative
+    display: block
+    text-decoration: none
+    color: $gray-700
+    box-sizing: border-box
+    @extend %card-normal
+    &:hover
+        @extend %card-hover
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        height: px2vw(71, $xs-container-width)
+        margin-bottom: 10px
+    +respond-to($md-container-width)
+        height: 370px
+        margin-bottom: 20px
+    +respond-to($sm-container-width)
+        height: 370px
+        margin-bottom: 20px
+
+
+/////////////////////////
+//  유저 정보
+/////////////////////////
+
+
+// 유저 이미지
 .profile-img-author
     display: block
     overflow: hidden
@@ -286,67 +383,52 @@ body
             right: 79px
             bottom: 25px
 
+
+// 유저 이름
 .book-mark-author-username
+    @extend .txt-card-bookmark-username
     text-decoration: none
     +respond-to($xs-container-width)
         text-align: left
         float: left
         padding:
             top: px2vw(26, $xs-container-width)
-            bottom: px2vw(25, $xs-container-width)
+            bottom: px2vw(27, $xs-container-width)
             left: 0
             right: 0
-        width: px2vw(130, $xs-container-width)
     +respond-to($sm-container-width)
         padding: 0 18px
     +respond-to($md-container-width)
         padding: 0 18px
 
+
+// 유저 좌우명 (모바일에선 안보임)
 .book-mark-author-caption
-    margin-top: 24px
-    padding: 0 18px
+    @extend .txt-card-bookmark-usercaption
+    +respond-to($xs-container-width)
+        display: none
+    +respond-to($sm-container-width)
+        margin-top: 24px
+        padding: 0 18px
+    +respond-to($md-container-width)
+        margin-top: 24px
+        padding: 0 18px
 
 
+
+//버튼 위치
 .btn-bookmark-cancle
     display: block
     margin:
         top: 39px
-        left: auto
-        right: auto
     +respond-to($xs-container-width)
+        position: absolute
+        right: px2vw(16, $xs-container-width)
         margin-top: px2vw(20, $xs-container-width)
         margin-bottom: px2vw(21, $xs-container-width)
-
-#section1 > article
-    position: relative
-    +respond-to($xs-container-width)
-        box-sizing: border-box
-        padding-left: px2vw(10, $xs-container-width)
-        padding-right: px2vw(10, $xs-container-width)
-        margin-left: 0
-        margin-right: 0
     +respond-to($sm-container-width)
-        margin-left: 0
-        margin-right: 0
+        margin-left: auto
+        margin-right: auto
     +respond-to($md-container-width)
-        margin-left: 0
-        margin-right: 0
-
-#section2
-    +respond-to($xs-container-width)
-        & > article
-            box-sizing: border-box
-            padding-left: px2vw(10, $xs-container-width)
-            padding-right: px2vw(10, $xs-container-width)
-            margin-left: 0
-            margin-right: 0
-    +respond-to($sm-container-width)
-        & > article:nth-child(3n)
-            margin-right: 0
-        & > article:nth-child(3n+1)
-            margin-left: 0
-    +respond-to($md-container-width)
-        & > article:nth-child(3n)
-            margin-right: 0
-        & > article:nth-child(3n+1)
-            margin-left: 0
+        margin-left: auto
+        margin-right: auto

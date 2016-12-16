@@ -184,8 +184,8 @@ h6 {
 .error .container {
   box-sizing: border-box;
   width: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .error .hidden {
@@ -193,33 +193,33 @@ h6 {
 }
 
 .error .col-1 {
-  width: -20px;
+  width: 0px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 .error .prefix-1 {
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .error .suffix-1 {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 .error .push-1 {
-  left: 0px;
+  left: 20px;
 }
 
 .error .pull-1 {
-  right: 0px;
+  right: 20px;
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
     box-sizing: border-box;
-    width: 1440px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 1435px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .grid-box {
@@ -231,9 +231,9 @@ h6 {
 
   .grid-box.guide-line::before {
     box-sizing: border-box;
-    width: 1440px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 1435px;
+    padding-left: 0px;
+    padding-right: 0px;
     content: "";
     height: 100vh;
     z-index: 1000;
@@ -247,9 +247,9 @@ h6 {
 
   .grid-box.base-line::after {
     box-sizing: border-box;
-    width: 1440px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 1435px;
+    padding-left: 0px;
+    padding-right: 0px;
     content: "";
     height: 100vh;
     z-index: 1000;
@@ -257,8 +257,8 @@ h6 {
     margin: 0 auto;
     display: block;
     background-origin: content-box;
-    background-image: linear-gradient(90deg, rgba(135,105,81,0.5) 0px, rgba(135,105,81,0.5) 76px, transparent 76px, transparent 96px);
-    background-size: 96px 1px;
+    background-image: linear-gradient(90deg, rgba(135,105,81,0.5) 0px, rgba(135,105,81,0.5) 77px, transparent 77px, transparent 97px);
+    background-size: 97px 1px;
   }
 
   .md-hidden {
@@ -266,408 +266,408 @@ h6 {
   }
 
   .md-col-1 {
-    width: 76px;
+    width: 77px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-2 {
-    width: 172px;
+    width: 174px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-3 {
-    width: 268px;
+    width: 271px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-4 {
-    width: 364px;
+    width: 368px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-5 {
-    width: 460px;
+    width: 465px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-6 {
-    width: 556px;
+    width: 562px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-7 {
-    width: 652px;
+    width: 659px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-8 {
-    width: 748px;
+    width: 756px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-9 {
-    width: 844px;
+    width: 853px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-10 {
-    width: 940px;
+    width: 950px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-11 {
-    width: 1036px;
+    width: 1047px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-12 {
-    width: 1132px;
+    width: 1144px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-13 {
-    width: 1228px;
+    width: 1241px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-14 {
-    width: 1324px;
+    width: 1338px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-col-15 {
-    width: 1420px;
+    width: 1435px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .md-prefix-1 {
-    margin-left: 106px;
+    margin-left: 107px;
   }
 
   .md-prefix-2 {
-    margin-left: 202px;
+    margin-left: 204px;
   }
 
   .md-prefix-3 {
-    margin-left: 298px;
+    margin-left: 301px;
   }
 
   .md-prefix-4 {
-    margin-left: 394px;
+    margin-left: 398px;
   }
 
   .md-prefix-5 {
-    margin-left: 490px;
+    margin-left: 495px;
   }
 
   .md-prefix-6 {
-    margin-left: 586px;
+    margin-left: 592px;
   }
 
   .md-prefix-7 {
-    margin-left: 682px;
+    margin-left: 689px;
   }
 
   .md-prefix-8 {
-    margin-left: 778px;
+    margin-left: 786px;
   }
 
   .md-prefix-9 {
-    margin-left: 874px;
+    margin-left: 883px;
   }
 
   .md-prefix-10 {
-    margin-left: 970px;
+    margin-left: 980px;
   }
 
   .md-prefix-11 {
-    margin-left: 1066px;
+    margin-left: 1077px;
   }
 
   .md-prefix-12 {
-    margin-left: 1162px;
+    margin-left: 1174px;
   }
 
   .md-prefix-13 {
-    margin-left: 1258px;
+    margin-left: 1271px;
   }
 
   .md-prefix-14 {
-    margin-left: 1354px;
+    margin-left: 1368px;
   }
 
   .md-prefix-15 {
-    margin-left: 1450px;
+    margin-left: 1465px;
   }
 
   .md-suffix-1 {
-    margin-right: 106px;
+    margin-right: 107px;
   }
 
   .md-suffix-2 {
-    margin-right: 202px;
+    margin-right: 204px;
   }
 
   .md-suffix-3 {
-    margin-right: 298px;
+    margin-right: 301px;
   }
 
   .md-suffix-4 {
-    margin-right: 394px;
+    margin-right: 398px;
   }
 
   .md-suffix-5 {
-    margin-right: 490px;
+    margin-right: 495px;
   }
 
   .md-suffix-6 {
-    margin-right: 586px;
+    margin-right: 592px;
   }
 
   .md-suffix-7 {
-    margin-right: 682px;
+    margin-right: 689px;
   }
 
   .md-suffix-8 {
-    margin-right: 778px;
+    margin-right: 786px;
   }
 
   .md-suffix-9 {
-    margin-right: 874px;
+    margin-right: 883px;
   }
 
   .md-suffix-10 {
-    margin-right: 970px;
+    margin-right: 980px;
   }
 
   .md-suffix-11 {
-    margin-right: 1066px;
+    margin-right: 1077px;
   }
 
   .md-suffix-12 {
-    margin-right: 1162px;
+    margin-right: 1174px;
   }
 
   .md-suffix-13 {
-    margin-right: 1258px;
+    margin-right: 1271px;
   }
 
   .md-suffix-14 {
-    margin-right: 1354px;
+    margin-right: 1368px;
   }
 
   .md-suffix-15 {
-    margin-right: 1450px;
+    margin-right: 1465px;
   }
 
   .md-push-1 {
-    left: 96px;
+    left: 97px;
   }
 
   .md-push-2 {
-    left: 192px;
+    left: 194px;
   }
 
   .md-push-3 {
-    left: 288px;
+    left: 291px;
   }
 
   .md-push-4 {
-    left: 384px;
+    left: 388px;
   }
 
   .md-push-5 {
-    left: 480px;
+    left: 485px;
   }
 
   .md-push-6 {
-    left: 576px;
+    left: 582px;
   }
 
   .md-push-7 {
-    left: 672px;
+    left: 679px;
   }
 
   .md-push-8 {
-    left: 768px;
+    left: 776px;
   }
 
   .md-push-9 {
-    left: 864px;
+    left: 873px;
   }
 
   .md-push-10 {
-    left: 960px;
+    left: 970px;
   }
 
   .md-push-11 {
-    left: 1056px;
+    left: 1067px;
   }
 
   .md-push-12 {
-    left: 1152px;
+    left: 1164px;
   }
 
   .md-push-13 {
-    left: 1248px;
+    left: 1261px;
   }
 
   .md-push-14 {
-    left: 1344px;
+    left: 1358px;
   }
 
   .md-push-15 {
-    left: 1440px;
+    left: 1455px;
   }
 
   .md-pull-1 {
-    right: 96px;
+    right: 97px;
   }
 
   .md-pull-2 {
-    right: 192px;
+    right: 194px;
   }
 
   .md-pull-3 {
-    right: 288px;
+    right: 291px;
   }
 
   .md-pull-4 {
-    right: 384px;
+    right: 388px;
   }
 
   .md-pull-5 {
-    right: 480px;
+    right: 485px;
   }
 
   .md-pull-6 {
-    right: 576px;
+    right: 582px;
   }
 
   .md-pull-7 {
-    right: 672px;
+    right: 679px;
   }
 
   .md-pull-8 {
-    right: 768px;
+    right: 776px;
   }
 
   .md-pull-9 {
-    right: 864px;
+    right: 873px;
   }
 
   .md-pull-10 {
-    right: 960px;
+    right: 970px;
   }
 
   .md-pull-11 {
-    right: 1056px;
+    right: 1067px;
   }
 
   .md-pull-12 {
-    right: 1152px;
+    right: 1164px;
   }
 
   .md-pull-13 {
-    right: 1248px;
+    right: 1261px;
   }
 
   .md-pull-14 {
-    right: 1344px;
+    right: 1358px;
   }
 
   .md-pull-15 {
-    right: 1440px;
+    right: 1455px;
   }
 
   .row.isolate .md-order-1,
   .row.isolate .md-o-1 {
-    margin-left: 96px;
+    margin-left: 97px;
   }
 
   .row.isolate .md-order-2,
   .row.isolate .md-o-2 {
-    margin-left: 192px;
+    margin-left: 194px;
   }
 
   .row.isolate .md-order-3,
   .row.isolate .md-o-3 {
-    margin-left: 288px;
+    margin-left: 291px;
   }
 
   .row.isolate .md-order-4,
   .row.isolate .md-o-4 {
-    margin-left: 384px;
+    margin-left: 388px;
   }
 
   .row.isolate .md-order-5,
   .row.isolate .md-o-5 {
-    margin-left: 480px;
+    margin-left: 485px;
   }
 
   .row.isolate .md-order-6,
   .row.isolate .md-o-6 {
-    margin-left: 576px;
+    margin-left: 582px;
   }
 
   .row.isolate .md-order-7,
   .row.isolate .md-o-7 {
-    margin-left: 672px;
+    margin-left: 679px;
   }
 
   .row.isolate .md-order-8,
   .row.isolate .md-o-8 {
-    margin-left: 768px;
+    margin-left: 776px;
   }
 
   .row.isolate .md-order-9,
   .row.isolate .md-o-9 {
-    margin-left: 864px;
+    margin-left: 873px;
   }
 
   .row.isolate .md-order-10,
   .row.isolate .md-o-10 {
-    margin-left: 960px;
+    margin-left: 970px;
   }
 
   .row.isolate .md-order-11,
   .row.isolate .md-o-11 {
-    margin-left: 1056px;
+    margin-left: 1067px;
   }
 
   .row.isolate .md-order-12,
   .row.isolate .md-o-12 {
-    margin-left: 1152px;
+    margin-left: 1164px;
   }
 
   .row.isolate .md-order-13,
   .row.isolate .md-o-13 {
-    margin-left: 1248px;
+    margin-left: 1261px;
   }
 
   .row.isolate .md-order-14,
   .row.isolate .md-o-14 {
-    margin-left: 1344px;
+    margin-left: 1358px;
   }
 
   .row.isolate .md-order-15,
   .row.isolate .md-o-15 {
-    margin-left: 1440px;
+    margin-left: 1455px;
   }
 }
 
@@ -675,8 +675,8 @@ h6 {
   .container {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .grid-box {
@@ -689,8 +689,8 @@ h6 {
   .grid-box.guide-line::before {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     content: "";
     height: 100vh;
     z-index: 1000;
@@ -705,8 +705,8 @@ h6 {
   .grid-box.base-line::after {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     content: "";
     height: 100vh;
     z-index: 1000;
@@ -834,9 +834,9 @@ h6 {
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   .container {
     box-sizing: border-box;
-    width: 1023px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 1014px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .grid-box {
@@ -848,9 +848,9 @@ h6 {
 
   .grid-box.guide-line::before {
     box-sizing: border-box;
-    width: 1023px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 1014px;
+    padding-left: 0px;
+    padding-right: 0px;
     content: "";
     height: 100vh;
     z-index: 1000;
@@ -864,9 +864,9 @@ h6 {
 
   .grid-box.base-line::after {
     box-sizing: border-box;
-    width: 1023px;
-    padding-left: 10px;
-    padding-right: 10px;
+    width: 1014px;
+    padding-left: 0px;
+    padding-right: 0px;
     content: "";
     height: 100vh;
     z-index: 1000;
@@ -874,8 +874,8 @@ h6 {
     margin: 0 auto;
     display: block;
     background-origin: content-box;
-    background-image: linear-gradient(90deg, rgba(135,105,81,0.5) 0px, rgba(135,105,81,0.5) 73px, transparent 73px, transparent 93px);
-    background-size: 93px 1px;
+    background-image: linear-gradient(90deg, rgba(135,105,81,0.5) 0px, rgba(135,105,81,0.5) 74px, transparent 74px, transparent 94px);
+    background-size: 94px 1px;
   }
 
   .sm-hidden {
@@ -883,300 +883,300 @@ h6 {
   }
 
   .sm-col-1 {
-    width: 73px;
+    width: 74px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-2 {
-    width: 166px;
+    width: 168px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-3 {
-    width: 259px;
+    width: 262px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-4 {
-    width: 352px;
+    width: 356px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-5 {
-    width: 445px;
+    width: 450px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-6 {
-    width: 538px;
+    width: 544px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-7 {
-    width: 631px;
+    width: 638px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-8 {
-    width: 724px;
+    width: 732px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-9 {
-    width: 817px;
+    width: 826px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-10 {
-    width: 910px;
+    width: 920px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-col-11 {
-    width: 1003px;
+    width: 1014px;
     margin-right: 10px;
     margin-left: 10px;
   }
 
   .sm-prefix-1 {
-    margin-left: 103px;
+    margin-left: 104px;
   }
 
   .sm-prefix-2 {
-    margin-left: 196px;
+    margin-left: 198px;
   }
 
   .sm-prefix-3 {
-    margin-left: 289px;
+    margin-left: 292px;
   }
 
   .sm-prefix-4 {
-    margin-left: 382px;
+    margin-left: 386px;
   }
 
   .sm-prefix-5 {
-    margin-left: 475px;
+    margin-left: 480px;
   }
 
   .sm-prefix-6 {
-    margin-left: 568px;
+    margin-left: 574px;
   }
 
   .sm-prefix-7 {
-    margin-left: 661px;
+    margin-left: 668px;
   }
 
   .sm-prefix-8 {
-    margin-left: 754px;
+    margin-left: 762px;
   }
 
   .sm-prefix-9 {
-    margin-left: 847px;
+    margin-left: 856px;
   }
 
   .sm-prefix-10 {
-    margin-left: 940px;
+    margin-left: 950px;
   }
 
   .sm-prefix-11 {
-    margin-left: 1033px;
+    margin-left: 1044px;
   }
 
   .sm-suffix-1 {
-    margin-right: 103px;
+    margin-right: 104px;
   }
 
   .sm-suffix-2 {
-    margin-right: 196px;
+    margin-right: 198px;
   }
 
   .sm-suffix-3 {
-    margin-right: 289px;
+    margin-right: 292px;
   }
 
   .sm-suffix-4 {
-    margin-right: 382px;
+    margin-right: 386px;
   }
 
   .sm-suffix-5 {
-    margin-right: 475px;
+    margin-right: 480px;
   }
 
   .sm-suffix-6 {
-    margin-right: 568px;
+    margin-right: 574px;
   }
 
   .sm-suffix-7 {
-    margin-right: 661px;
+    margin-right: 668px;
   }
 
   .sm-suffix-8 {
-    margin-right: 754px;
+    margin-right: 762px;
   }
 
   .sm-suffix-9 {
-    margin-right: 847px;
+    margin-right: 856px;
   }
 
   .sm-suffix-10 {
-    margin-right: 940px;
+    margin-right: 950px;
   }
 
   .sm-suffix-11 {
-    margin-right: 1033px;
+    margin-right: 1044px;
   }
 
   .sm-push-1 {
-    left: 93px;
+    left: 94px;
   }
 
   .sm-push-2 {
-    left: 186px;
+    left: 188px;
   }
 
   .sm-push-3 {
-    left: 279px;
+    left: 282px;
   }
 
   .sm-push-4 {
-    left: 372px;
+    left: 376px;
   }
 
   .sm-push-5 {
-    left: 465px;
+    left: 470px;
   }
 
   .sm-push-6 {
-    left: 558px;
+    left: 564px;
   }
 
   .sm-push-7 {
-    left: 651px;
+    left: 658px;
   }
 
   .sm-push-8 {
-    left: 744px;
+    left: 752px;
   }
 
   .sm-push-9 {
-    left: 837px;
+    left: 846px;
   }
 
   .sm-push-10 {
-    left: 930px;
+    left: 940px;
   }
 
   .sm-push-11 {
-    left: 1023px;
+    left: 1034px;
   }
 
   .sm-pull-1 {
-    right: 93px;
+    right: 94px;
   }
 
   .sm-pull-2 {
-    right: 186px;
+    right: 188px;
   }
 
   .sm-pull-3 {
-    right: 279px;
+    right: 282px;
   }
 
   .sm-pull-4 {
-    right: 372px;
+    right: 376px;
   }
 
   .sm-pull-5 {
-    right: 465px;
+    right: 470px;
   }
 
   .sm-pull-6 {
-    right: 558px;
+    right: 564px;
   }
 
   .sm-pull-7 {
-    right: 651px;
+    right: 658px;
   }
 
   .sm-pull-8 {
-    right: 744px;
+    right: 752px;
   }
 
   .sm-pull-9 {
-    right: 837px;
+    right: 846px;
   }
 
   .sm-pull-10 {
-    right: 930px;
+    right: 940px;
   }
 
   .sm-pull-11 {
-    right: 1023px;
+    right: 1034px;
   }
 
   .row.isolate .sm-order-1,
   .row.isolate .sm-o-1 {
-    margin-left: 93px;
+    margin-left: 94px;
   }
 
   .row.isolate .sm-order-2,
   .row.isolate .sm-o-2 {
-    margin-left: 186px;
+    margin-left: 188px;
   }
 
   .row.isolate .sm-order-3,
   .row.isolate .sm-o-3 {
-    margin-left: 279px;
+    margin-left: 282px;
   }
 
   .row.isolate .sm-order-4,
   .row.isolate .sm-o-4 {
-    margin-left: 372px;
+    margin-left: 376px;
   }
 
   .row.isolate .sm-order-5,
   .row.isolate .sm-o-5 {
-    margin-left: 465px;
+    margin-left: 470px;
   }
 
   .row.isolate .sm-order-6,
   .row.isolate .sm-o-6 {
-    margin-left: 558px;
+    margin-left: 564px;
   }
 
   .row.isolate .sm-order-7,
   .row.isolate .sm-o-7 {
-    margin-left: 651px;
+    margin-left: 658px;
   }
 
   .row.isolate .sm-order-8,
   .row.isolate .sm-o-8 {
-    margin-left: 744px;
+    margin-left: 752px;
   }
 
   .row.isolate .sm-order-9,
   .row.isolate .sm-o-9 {
-    margin-left: 837px;
+    margin-left: 846px;
   }
 
   .row.isolate .sm-order-10,
   .row.isolate .sm-o-10 {
-    margin-left: 930px;
+    margin-left: 940px;
   }
 
   .row.isolate .sm-order-11,
   .row.isolate .sm-o-11 {
-    margin-left: 1023px;
+    margin-left: 1034px;
   }
 }
 /*# sourceMappingURL=../../../maps/libs/but_grid/grid_style.css.map */

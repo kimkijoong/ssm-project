@@ -1,5 +1,8 @@
 @import "color"
 @import "font"
+@import "motifcard"
+@import "card-content"
+
 
 %card-normal
     background-color: $basic-white
@@ -24,24 +27,8 @@
     transition: box-shadow 0.2s ease
 
 
-.card-box
-    @extend %card-normal
-    &:hover
-        @extend %card-hover
-    &:focus
-        @extend %card-focus
-    &:active
-        @extend %card-normal
-    +respond-to($xs-container-width)
-        height: px2vw(71, $xs-container-width)
-        margin-bottom: 10px
-        width: px2vw(300, $xs-container-width)
-    +respond-to($md-container-width)
-        height: 370px
-        margin-bottom: 20px
-    +respond-to($sm-container-width)
-        height: 370px
-        margin-bottom: 20px
+
+
 
 
 ////////////////////////////////////////////////////////////////
@@ -82,10 +69,12 @@
         & > article:nth-child(3n+1)
             margin-left: 0
 
+
 .three-card
     display: block
     text-decoration: none
     color: $gray-700
+    box-sizing: border-box
     @extend %card-normal
     &:hover
         @extend %card-hover
@@ -96,7 +85,6 @@
     +respond-to($xs-container-width)
         height: px2vw(416, $xs-container-width)
         margin-bottom: 10px
-        width: px2vw(300, $xs-container-width)
     +respond-to($md-container-width)
         height: 370px
         margin-bottom: 20px
@@ -104,9 +92,39 @@
         height: 370px
         margin-bottom: 20px
 
-////////////////////////////////////////////////////////////////
-//  motif-card
-////////////////////////////////////////////////////////////////
+.one-card
+    display: block
+    text-decoration: none
+    color: $gray-700
+    box-sizing: border-box
+    @extend %card-normal
+    &:hover
+        @extend %card-hover
+    &:focus
+        @extend %card-focus
+    &:active
+        @extend %card-normal
+    +respond-to($xs-container-width)
+        height: px2vw(416, $xs-container-width)
+        margin-bottom: 10px
+    +respond-to($md-container-width)
+        height: 370px
+        margin-bottom: 10px
+    +respond-to($sm-container-width)
+        height: 370px
+        margin-bottom: 10px
 
-.motif-card
-    @extend .three-card
+.one-card-align
+    +respond-to($xs-container-width)
+        & > article
+            box-sizing: border-box
+            padding-left: px2vw(10, $xs-container-width)
+            padding-right: px2vw(10, $xs-container-width)
+            margin-left: 0
+            margin-right: 0
+    +respond-to($sm-container-width)
+        & > article
+            margin-left: 0
+    +respond-to($md-container-width)
+        & > article
+            margin-left: 0

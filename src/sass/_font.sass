@@ -73,7 +73,6 @@
 
 .txt-card-title
     @extend %nanum-bold
-    text-align: center
     color: $gray-700
     +respond-to($xs-container-width)
         font-size: px2vw(14, $xs-container-width)
@@ -81,7 +80,6 @@
         font-size: 22px
     +respond-to($md-container-width)
         font-size: 22px
-
 
 .txt-card-contents
     @extend %nanum-bold
@@ -95,10 +93,8 @@
 
 .txt-card-date
     @extend %nanum-bold
-    text-align: center
     color: $gray-700
     +respond-to($xs-container-width)
-        //나눔 레귤러로 바꾸기
         font-weight: 600
         font-size: px2vw(10, $xs-container-width)
     +respond-to($sm-container-width)
@@ -108,12 +104,16 @@
 
 .txt-card-username
     @extend %nanum-bold
-    font-size: 14px
     color: $gray-800
     +respond-to($xs-container-width)
         //나눔 레귤러로 바꾸기
         font-weight: 600
         font-size: px2vw(14, $xs-container-width)
+    +respond-to($sm-container-width)
+        font-size: 14px
+    +respond-to($md-container-width)
+        font-size: 14px
+
 
 /////////////////////////////////////////////////////////
 //  button-txt
@@ -237,9 +237,15 @@
 // open-ch 날짜
 .txt-page-date
     @extend %nanum-bold
-    font-size: 14px
     text-align: center
     color: $gray-800
+    +respond-to($xs-container-width)
+        font-size: 14px
+        text-align: left
+    +respond-to($sm-container-width)
+        font-size: 14px
+    +respond-to($md-container-width)
+        font-size: 14px
 
 // txt-page-title
 // txt-card-contents
@@ -272,7 +278,7 @@
     text-align: center
     color: $basic-white
     +respond-to($xs-container-width)
-        font-size: 14px
+        font-size: px2vw(14, $xs-container-width)
         text-align: left
     +respond-to($sm-container-width)
         font-size: 16px
@@ -282,16 +288,24 @@
 
 .txt-nav-usercaption
     @extend %noto-medium
-    font-size: 14px
     text-align: center
     color: $basic-white
+    +respond-to($xs-container-width)
+        font-size: px2vw(14, $xs-container-width)
+        text-align: left
+    +respond-to($sm-container-width)
+        font-size: 14px
+        text-align: center
+    +respond-to($md-container-width)
+        font-size: 14px
+        text-align: center
 
 .txt-nav-footer
     @extend %noto-bold
     text-align: center
     color: $basic-white
     +respond-to($xs-container-width)
-        font-size: 10px
+        font-size: px2vw(10, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 12px
     +respond-to($md-container-width)
@@ -301,11 +315,12 @@
 //  desktop-slide (menu-right)
 /////////////////////////////////////////////////////////
 
+
 .txt-slide-search-date
     @extend %noto-regular
     color: $gray-800
     +respond-to($xs-container-width)
-        font-size: 11px
+        font-size: px2vw(11, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 16px
     +respond-to($md-container-width)
@@ -316,38 +331,51 @@
     color: $basic-blue
     text-align: right
     +respond-to($xs-container-width)
-        font-size: 38px
+        font-size: px2vw(38, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 52px
     +respond-to($md-container-width)
         font-size: 52px
+
 
 .txt-slide-time
     @extend %noto-regular
     color: $gray-700
     text-align: right
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 16px
     +respond-to($md-container-width)
         font-size: 16px
+
 
 .txt-slide-title
     @extend %noto-medium
     color: $gray-700
     text-align: right
     +respond-to($xs-container-width)
-        font-size: 16px
+        font-size: px2vw(16, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 20px
     +respond-to($md-container-width)
         font-size: 20px
+
+
 .txt-slide-pagination
     @extend %noto-bold
-    font-size: 12px
     color: $gray-600
     text-align: center
+    +respond-to($xs-container-width)
+        font-size: px2vw(12, $xs-container-width)
+        text-align: left
+    +respond-to($sm-container-width)
+        font-size: 12px
+        text-align: center
+    +respond-to($md-container-width)
+        font-size: 12px
+        text-align: center
+
 
 /////////////////////////////////////////////////////////
 //  desktop-bookmark-writing
@@ -370,11 +398,15 @@
 
 .txt-card-bookmark-writing-title
     @extend %nanum-bold
-    font-size: 20px
     color: $gray-800
     +respond-to($xs-container-width)
         font-size: px2vw(20, $xs-container-width)
-
+    +respond-to($sm-container-width)
+        font-size: 20px
+        text-align: left
+    +respond-to($md-container-width)
+        font-size: 20px
+        text-align: left
 
 .txt-card-bookmark-writing-content
     @extend %nanum-regular
@@ -432,28 +464,60 @@
 
 .txt-card-topic-list-time
     @extend %nanum-bold
-    font-size: 14px
     color: $gray-700
+    +respond-to($xs-container-width)
+        font-size: px2vw(14, $xs-container-width)
+    +respond-to($sm-container-width)
+        font-size: 14px
+    +respond-to($md-container-width)
+        font-size: 14px
 
 .txt-card-topic-list-title
     @extend %nanum-extrabold
-    font-size: 30px
     color: $gray-700
+    +respond-to($xs-container-width)
+        font-size: px2vw(30, $xs-container-width)
+        text-align: center
+    +respond-to($sm-container-width)
+        font-size: 30px
+        text-align: center
+    +respond-to($md-container-width)
+        font-size: 30px
+        text-align: center
 
 .txt-card-topic-list-info
     @extend %nanum-bold
-    font-size: 14px
     color: $gray-700
+    +respond-to($xs-container-width)
+        font-size: px2vw(14, $xs-container-width)
+        text-align: center
+    +respond-to($sm-container-width)
+        font-size: 14px
+        text-align: center
+    +respond-to($md-container-width)
+        font-size: 14px
+        text-align: center
+
 
 /////////////////////////////////////////////////////////
 //  desktop-my-ch
 /////////////////////////////////////////////////////////
 
+
 .txt-card-my-ch-label
     @extend %noto-bold
-    font-size: 12px
     text-align: right
     color: $basic-white
+    +respond-to($xs-container-width)
+        font-size: px2vw(12, $xs-container-width)
+        text-align: left
+    +respond-to($sm-container-width)
+        font-size: 12px
+        text-align: center
+    +respond-to($md-container-width)
+        font-size: 12px
+        text-align: center
+
 
 /////////////////////////////////////////////////////////
 //  desktop-my-ch-detail
@@ -470,7 +534,7 @@
     color: $warning-blush-pink
     text-align: left
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(9, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 14px
     +respond-to($md-container-width)
@@ -481,7 +545,7 @@
     color: $support-blue-3
     text-align: left
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 14px
     +respond-to($md-container-width)
@@ -492,7 +556,7 @@
     color: $basic-blue
     text-align: left
     +respond-to($xs-container-width)
-        font-size: 12px
+        font-size: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 14px
     +respond-to($md-container-width)
