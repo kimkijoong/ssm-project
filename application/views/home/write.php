@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Ssum: main</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/libs/but_grid/grid_style.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/common.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/write.css">
     <?php include_once("./application/views/include/style/style.php") ?>
+    <link rel="stylesheet" type="text/css" href="/static/css/write.css">
 </head>
 <body class="" data-ng-app="ButProjectApp">
 <div class="grid-box base-line"></div>

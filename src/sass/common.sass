@@ -115,13 +115,15 @@
 .navigation
 	// +setWH(214px, 568px)
 	+setWH(260px, 100vh)
-	+setPosition(absolute, top 0 left -284px z-index 999999)
-
+	+setPosition(absolute, top 0 left -310px z-index 999999)
+	// left: 0
 	min-height: 568px
+	box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.25);
 	background-color: #51bcd8
 	+respond-to($md-container-width)
 		+setWH(364px, 100vh)
 		min-height: 568px
+		left: -414px
 
 .profile-box
 	+setWH(100%, auto)
@@ -134,6 +136,8 @@
 
 	display: block
 	background-color: #14a6cc
+	+respond-to($md-container-width)
+		+setWH(100%, 100px)
 .user-profile
 	+setWH(50px, 50px)
 
@@ -141,6 +145,8 @@
 	float: left
 	border-radius: 50%
 	margin: 10px 14px 10px 12px
+	+respond-to($md-container-width)
+		+setWH(80px, 80px)
 .pen-name
 	+setWH(156px, 20px)
 	+setFont(size 14px weight bold)
@@ -149,8 +155,13 @@
 	line-height: line-height(14)
 	float: left
 	color: #fff
+	text-align: center
 	margin: 25px 0
 	margin-right: 28px
+	+respond-to($md-container-width)
+		+setWH(240px, 40px)
+		+font-rule(18)
+		margin: 30px 0
 
 .menu-list
 	// margin-top: 19px
@@ -158,25 +169,37 @@
 .list:hover
 	background-color: #0e8cad
 .list
-	+setWH(214px, 48px)
+	+setWH(100%, 48px)
+	+respond-to($md-container-width)
+		+setWH(100%, 78px)
 .list > a
 	@extend %a
-	+setWH(182px, 24px)
-	+setFont(size 16px weight 500)
+	+setWH(auto, 24px)
 	
 	// font-size: px2vw(16, $xs-container-width)
-	line-height: line-height(16)
-	display: block
+	+font-rule(16)
+	font-weight: 500
 	text-align: center
 	padding: 12px 16px
+	+respond-to($md-container-width)
+		+setWH(auto, 44px)
+		+font-rule(20)
+		padding: 17px 16px
 
 .option-box
+	@extend %box-sizing
 	@extend %clearfix
 	+setWH(100%, 66px)
 	+setPosition(absolute, bottom 113px)
-
+	
+	display: flex
+	align-items: center
+	justify-content: center
 	border-top: 1px solid #fff
 	border-bottom: 1px solid #fff
+	+respond-to($md-container-width)
+		+setWH(100%, 76px)
+		+setPosition(absolute, bottom 133px)
 .btn-option
 	@extend %box-sizing
 	@extend %a
@@ -190,6 +213,10 @@
 	margin: 15px 0
 	border: 0
 	background-color: #0e8cad
+	+respond-to($md-container-width)
+		+setWH(124px, 46px)
+		font-size: font-size(16)
+		line-height: line-height(16)
 .btn-logout, .btn-login
 	float: left
 	margin-left: 17px
@@ -203,7 +230,12 @@
 	margin-right: 17px
 
 .footer
+	+setWH(100%, auto)
 	+setPosition(absolute, bottom 26px)
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
 .sns-box
 	@extend %clearfix
 
@@ -215,12 +247,20 @@
 	float: left
 .sns-box > a > img
 	+setWH(24px, 24px)
+	+respond-to($md-container-width)
+		+setWH(30px, 30px)
 .sns-twitter
 	margin-left: 46px
+	+respond-to($md-container-width)
+		margin-left: 26px
 .sns-facebook
 	margin: 0 25px
+	+respond-to($md-container-width)
+		margin: 0 45px
 .sns-instagram
 	margin-right: 46px
+	+respond-to($md-container-width)
+		margin-right: 26px
 
 .copyright
 	+setWH(110px, 32px)
@@ -231,23 +271,31 @@
 	text-align: center
 	margin: 0 auto
 	margin-top: 7px
+	+respond-to($md-container-width)
+		+setWH(160px, 42px)
+		+font-rule(12)
+		margin-top: 15px
 
 .btn-close
-	+setWH(24px, 24px)
-
+	+setWH(50px, 50px)
+	
+	+font-rule(24)
 	color: #fff
 	cursor: pointer
-	border: 1px solid #14a6cc
-	background-color: #14a6cc
+	border: 0
+	background: none
+	// border: 1px solid #51bcd8
+	// background-color: #51bcd8
 
 #nav-btn-close
-	+setPosition(absolute, top 0 right -24px)
+	+setPosition(absolute, top 0 right -50px)
+	// +setPosition(absolute, top 0 right 0)
 
 /* aside */
 .aside
 	// +setWH(260px, 568px)
 	+setWH(260px, 100vh)
-	+setPosition(absolute, top 0 right -284px z-index 999)
+	+setPosition(absolute, top 0 right -310px z-index 999)
 
 	min-height: 1024px
 	background-color: #fff
@@ -429,7 +477,7 @@
 		margin-right: 0
 
 #aside-btn-close
-	+setPosition(absolute, top 0 left -24px)
+	+setPosition(absolute, top 0 left -50px)
 	
 	+respond-to($md-container-width)
 		display: none
