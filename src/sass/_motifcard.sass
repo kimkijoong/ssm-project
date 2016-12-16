@@ -9,16 +9,17 @@
     background-repeat: no-repeat
     background-size: contain
     text-align: center
-
+    position: relative
+    +respond-to($xs-container-width)
+        padding-top: px2vw(48, $xs-container-width)
+    +respond-to($sm-container-width)
+        padding-top: 48px
+    +respond-to($md-container-width)
+        padding-top: 48px
 
 .topic-list-time
     @extend .txt-card-topic-list-time
-    +respond-to($xs-container-width)
-        margin-top: px2vw(48, $xs-container-width)
-    +respond-to($sm-container-width)
-        margin-top: 48px
-    +respond-to($md-container-width)
-        margin-top: 48px
+
 
 .topic-list-title
     @extend .txt-card-topic-list-title

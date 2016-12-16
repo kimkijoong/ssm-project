@@ -1048,6 +1048,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
+  position: relative;
 }
 
 .motif-write-btn {
@@ -2245,6 +2246,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
+  position: relative;
 }
 
 .motif-write-btn {
@@ -3036,8 +3038,8 @@ body {
     font-size: 14px;
   }
 
-  .topic-list-time {
-    margin-top: 48px;
+  .motif-card {
+    padding-top: 48px;
   }
 
   .topic-list-title {
@@ -3394,14 +3396,14 @@ body {
   .bk-author-card {
     height: 370px;
     margin-bottom: 20px;
+    padding-top: 42px;
   }
 
   .profile-img-author {
     width: 110px;
     height: 110px;
-    margin-top: 42px;
-    margin-left: 79px;
-    margin-right: 79px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
   }
 
@@ -3717,8 +3719,8 @@ body {
     font-size: 14px;
   }
 
-  .topic-list-time {
-    margin-top: 48px;
+  .motif-card {
+    padding-top: 48px;
   }
 
   .topic-list-title {
@@ -4392,8 +4394,8 @@ body {
     font-size: 3.75vw;
   }
 
-  .topic-list-time {
-    margin-top: 15vw;
+  .motif-card {
+    padding-top: 15vw;
   }
 
   .topic-list-title {
@@ -4833,8 +4835,11 @@ body {
     display: inline-block;
     width: 12.1875vw;
     height: 12.1875vw;
-    margin: 5vw;
     float: left;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
   .book-mark-author-username {
@@ -5215,8 +5220,8 @@ body {
     font-size: 3.75vw;
   }
 
-  .topic-list-time {
-    margin-top: 15vw;
+  .motif-card {
+    padding-top: 15vw;
   }
 
   .topic-list-title {
@@ -5877,8 +5882,8 @@ body {
     font-size: 14px;
   }
 
-  .topic-list-time {
-    margin-top: 48px;
+  .motif-card {
+    padding-top: 48px;
   }
 
   .topic-list-title {
@@ -6231,14 +6236,14 @@ body {
   .bk-author-card {
     height: 370px;
     margin-bottom: 20px;
+    padding-top: 42px;
   }
 
   .profile-img-author {
     width: 110px;
     height: 110px;
-    margin-top: 42px;
-    margin-left: 79px;
-    margin-right: 79px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
   }
 
@@ -6554,8 +6559,8 @@ body {
     font-size: 14px;
   }
 
-  .topic-list-time {
-    margin-top: 48px;
+  .motif-card {
+    padding-top: 48px;
   }
 
   .topic-list-title {
