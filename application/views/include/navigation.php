@@ -12,7 +12,7 @@
 		</section>
 
 		<!-- btn menu -->
-		<button id="btn-menu"><img src="/static/images/icons/ic_menu.svg"></button>
+		<button id="btn-menu"><img src="/static/images/icons/ic_menu_white.svg"></button>
 
 		<!-- dim effect -->
 		<div id="mask"></div>
@@ -84,7 +84,7 @@
 		</nav>
 
 		<button id="btn-date" class="" type="button">
-			<img src="/static/images/icons/ic_date_range.svg" alt="date range">
+			<img src="/static/images/icons/ic_date_range_white.svg" alt="date range">
 		</button>
 		<!-- Aside menu, 'diplay:none' on mobile -->
 		<aside class="aside" data-ng-controller="TodayTopic">
@@ -96,8 +96,8 @@
 						<img src="/static/images/icons/ic_date_range.svg" alt="date range">
 					</label>
 					<div class="search">
-						<input id="datepicker" type="text" data-ng-model="range.startDate">
-						<input id="datepicker2" type="text" data-ng-model="range.endDate">
+						<input id="datepicker" type="text" data-ng-model="range.startDate" placeholder="2016-11-22">
+						<input id="datepicker2" type="text" data-ng-model="range.endDate" placeholder="2016-11-30">
 					</div>
 				</form>
 			</section>

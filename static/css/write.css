@@ -1,0 +1,277 @@
+html,
+body,
+header,
+main,
+section,
+aside,
+img,
+div,
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+form,
+fieldset,
+label,
+textarea,
+span,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+.write-bar,
+.write-today-topic,
+.write-bar [class^="btn-"],
+.write-box,
+.write-box fieldset,
+.write-box .write {
+  box-sizing: border-box;
+}
+
+.col-float {
+  float: left;
+}
+
+.col-postion-r {
+  position: relative;
+}
+
+.write-bar {
+  width: 100%;
+  height: 34px;
+  position: fixed;
+  top: 52px;
+  left: 0;
+  background: #fff;
+}
+
+.write-today-topic {
+  font-size: 12px;
+  font-weight: 800;
+  color: #14a6cc;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.write-bar .write-bar-wrap {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.write-bar [class^="btn-"] {
+  width: 40px;
+  height: 26px;
+  position: absolute;
+  bottom: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.write-bar .btn-cancel {
+  left: 14px;
+  color: #616161;
+  background-color: #fff;
+  border: 1px solid #9e9e9e;
+}
+
+.write-bar .btn-submit {
+  right: 14px;
+  color: #fff;
+  background: #51bcd8;
+  border: 1px solid #51bcd8;
+}
+
+.write-box-wrap {
+  position: relative;
+}
+
+.write-box {
+  border: 0;
+  padding-top: 53px;
+}
+
+.write-box fieldset {
+  border: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 0 0 rgba(0,0,0,0.12);
+  margin: 0 auto;
+}
+
+.write-box .write {
+  min-width: 300px;
+  min-height: 445px;
+  font-size: 12px;
+  line-height: 1.5;
+  display: block;
+  border: 0;
+  border-radius: 2px;
+  padding: 15px 10px;
+  margin: 0;
+}
+
+#align-status {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: 0;
+  background-color: #fff;
+}
+
+#align-status>img {
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .write-bar {
+    top: 62px;
+    padding-right: 364px;
+    position: absolute;
+    width: 100%;
+    height: 234px;
+    background: none;
+  }
+
+  .write-today-topic {
+    width: 100%;
+    height: 70px;
+    font-size: 2.5714rem;
+    padding: 0;
+  }
+
+  .write-bar .write-bar-wrap {
+    width: 844px;
+    height: 191px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 56px;
+  }
+
+  .write-bar [class^="btn-"] {
+    width: 80px;
+    height: 30px;
+    font-size: .8571rem;
+    bottom: 12px;
+  }
+
+  .write-bar .btn-cancel {
+    left: 30px;
+  }
+
+  .write-bar .btn-submit {
+    right: 30px;
+  }
+
+  .write-box {
+    width: 844px;
+    height: 806px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24),0 2px 0 0 rgba(0,0,0,0.12);
+    padding-top: 191px;
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+
+  .write-box fieldset {
+    width: 844px;
+    height: 615px;
+    padding: 0 30px;
+    padding-top: 3px;
+    box-shadow: 0;
+  }
+
+  .write-box .write {
+    width: 784px;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 585px;
+    border: 1px solid #979797;
+    padding: 30px;
+  }
+
+  #align-status {
+    width: 36px;
+    height: 36px;
+    bottom: 50px;
+    right: 50px;
+  }
+
+  #align-status>img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .write-bar {
+    width: 100%;
+    height: 52px;
+    top: 52px;
+  }
+
+  .write-today-topic {
+    font-size: 1.7143rem;
+    padding: 7px;
+  }
+
+  .write-bar .write-bar-wrap {
+    width: 1024px;
+    height: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .write-bar [class^="btn-"] {
+    width: 80px;
+    height: 30px;
+    top: 11px;
+    font-size: .8571rem;
+  }
+
+  .write-bar .btn-cancel {
+    left: 25px;
+  }
+
+  .write-bar .btn-submit {
+    right: 25px;
+  }
+
+  .write-box {
+    width: 817px;
+    height: 100%;
+    padding-top: 73px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=../maps/write.css.map */

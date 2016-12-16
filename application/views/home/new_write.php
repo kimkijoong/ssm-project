@@ -39,9 +39,6 @@
 		</section>
 	</main>
 
-	<footer class="footer">
-		<h1 class="readable-hidden">Footer</h1>
-	</footer>
 	<script type="text/javascript" src="/static/lib/js/jquery-1.11.1.min.js"></script>
 	<?php include_once("./application/views/include/script/script.php") ?>
 	<script type="text/javascript" src="/static/lib/js/jquery.form.min.js"></script>
