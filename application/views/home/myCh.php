@@ -21,7 +21,7 @@
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
                                 <article class="md-col-3 sm-col-3 xs-col-4">
-                                    <a href="#" class="waves-effect waves-mint motif-card">
+                                    <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
                                         </p>
@@ -33,7 +33,7 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
+                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="open-txt">공개</div>
                                             <div class="triangle-open"></div>
@@ -41,7 +41,7 @@
                                     </a>
                                 </article>
                                 <article class="md-col-3 sm-col-3 xs-col-4">
-                                    <a href="#" class="waves-effect waves-mint motif-card">
+                                    <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
                                         </p>
@@ -53,7 +53,7 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
+                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="close-txt">비공개</div>
                                             <div class="triangle-close"></div>
@@ -61,7 +61,7 @@
                                     </a>
                                 </article>
                                 <article class="md-col-3 sm-col-3 xs-col-4">
-                                    <a href="#" class="waves-effect waves-mint motif-card">
+                                    <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
                                         </p>
@@ -73,7 +73,7 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
+                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="open-txt">공개</div>
                                             <div class="triangle-open"></div>
@@ -81,7 +81,7 @@
                                     </a>
                                 </article>
                                 <article class="md-col-3 sm-col-3 xs-col-4">
-                                    <a href="#" class="waves-effect waves-mint motif-card">
+                                    <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
                                         </p>
@@ -93,7 +93,7 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
+                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="close-txt">비공개</div>
                                             <div class="triangle-close"></div>
@@ -101,7 +101,7 @@
                                     </a>
                                 </article>
                                 <article class="md-col-3 sm-col-3 xs-col-4">
-                                    <a href="#" class="waves-effect waves-mint motif-card">
+                                    <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
                                         </p>
@@ -113,7 +113,7 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
+                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="open-txt">공개</div>
                                             <div class="triangle-open"></div>
@@ -121,7 +121,7 @@
                                     </a>
                                 </article>
                                 <article class="md-col-3 sm-col-3 xs-col-4">
-                                    <a href="#" class="waves-effect waves-mint motif-card">
+                                    <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
                                         </p>
@@ -133,7 +133,7 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
+                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="close-txt">비공개</div>
                                             <div class="triangle-close"></div>
