@@ -57,7 +57,6 @@ var aside = $(".aside");
 			aside.css('right', 0);
 		}
 		else {
-			console.log("not 1440:" + width);
 			// navigation
 			if(nav.hasClass('off')) {
 				nav.css('left', '-310px');
