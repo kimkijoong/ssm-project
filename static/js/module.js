@@ -1,3 +1,7 @@
+// 공통 변수
+var mask = $('#mask');
+
+
 /* ---------------------------------------
  * 	Infinite Scroll(무한 스크롤)
  *
@@ -28,9 +32,6 @@
  // }
  
 
-// 공통 변수 mask
-var mask = $('#mask');
-
 /* ---------------------------------------
  * 	dim 처리
  *
@@ -57,88 +58,76 @@ function wrapWindowByMask() {
 	mask.fadeTo("slow", 0.8);
 }
 
-
 /* ---------------------------------------
  * 	menu slide (메뉴 on/off)
  *
  * 	2016.11.30
  * 	@eunju.K
  * ------------------------------------ */
-// 함수형
-// function menuSlide($direction) {	
-// 	if(direction == "left") {
-// 		$("#btn_open").on('click', function(){
-// 				if( $("#effect").hasClass('menu-active') ){
-// 					console.log($(".navigation").hasClass('menu-active'));
+function closeBox($direction) {
+	var width = $(window).width();
+	var closeLeft = $("#nav-btn-close");
+	var closeRight = $("#aside-btn-close");
+	
+	// 버튼 눌렀을 때
+	if($direction == "left") {
+		closeLeft.on('click', function(e) {
+			e.preventDefault();
+			// 메뉴 숨김
+			if(width >= 1440)
+				$(".navigation").animate({left: '-414px'}, 500);
+			else
+				$(".navigation").animate({left: '-310px'}, 500);
+			// 검은막 제거
+			mask.hide();
+		});
+	} else {
+		closeRight.on('click', function(e) {
+			e.preventDefault();
+			$(".aside").animate({right: '-310px'}, 500);
+			mask.hide();
+		});
+	}
 
-// 					$(".navigation").removeClass('menu-active');
-// 					$(".navigation").animate({left: '-200px'}, 500);
-// 					$(".navigation").css({"background" : "url(images/btn_right.gif)"});
-// 					console.log($(".navigation").hasClass('menu-active'));
-// 				} else {
-// 					console.log($(".navigation").hasClass('menu-active'));
-					
-// 					$(".navigation").addClass('menu-active');
-// 					$(".navigation").animate({left: 0}, 500);
-// 					$("#button").css({"background" : "url(images/btn_left.gif"});
-// 					console.log($(".navigation").hasClass('menu-active'));
-// 				}
-// 			}
-// 		);
-// 	}	
-// }
+	// 검은 막 눌렀을 때
+	mask.click(function() {
+		if($direction == "left") {
+			if(width >= 1440)
+				$(".navigation").animate({left: '-414px'}, 500);
+			else
+				$(".navigation").animate({left: '-310px'}, 500);
+		} else {
+			if(width >= 1440)
+				$(".aside").animate({right: '0'}, 500);
+			else
+				$(".aside").animate({right: '-310px'}, 500);
+		}
+		mask.hide();
+	});
 
+	
+}
 
 // menuSlide();
 (function(global, $) {
 	'use strict';
 
 	$("#btn-menu").on('click', function(e) {
-		$("#btn-menu").on('click', function(e) {
-			// 링크 기본동작은 작동하지 않도록 함
-			e.preventDefault();
-			// 검은 막 띄우기
-			wrapWindowByMask();
-			// 메뉴 펼치기
-			$(".navigation").animate({left: 0}, 500);
-		});
-
-		// 닫기 버튼 눌렀을 때
-		$("#nav-btn-close").on("click", function(e) {
-			e.preventDefault();
-			// 검은막 제거
-			mask.hide();
-			// 메뉴 숨김
-			$(".navigation").animate({left: '-238px'}, 500);
-		});
-
-		// 검은 막 눌렀을 때
-		mask.click(function() {
-			$(this).hide();
-			$(".navigation").animate({left: '-238px'}, 500);
-		});
+		// 링크 기본동작은 작동하지 않도록 함
+		e.preventDefault();
+		// 검은 막 띄우기
+		wrapWindowByMask();
+		// 메뉴 펼치기
+		$(".navigation").animate({left: 0}, 500);
 	});
+	closeBox('left');
 
 	$("#btn-date").on('click', function(e) {
-		$("#btn-date").on('click', function(e) {
-			e.preventDefault();
-			wrapWindowByMask();
-			$(".aside").animate({right: 0}, 500);
-		});
-
-		// 닫기 버튼 눌렀을 때
-		$("#aside-btn-close").on("click", function(e) {
-			e.preventDefault();
-			mask.hide();
-			$(".aside").animate({right: '-284px'}, 500);
-		});
-
-		// 검은 막 눌렀을 때
-		mask.click(function() {
-			$(this).hide();
-			$(".aside").animate({right: '-284px'}, 500);
-		});
+		e.preventDefault();
+		wrapWindowByMask();
+		$(".aside").animate({right: 0}, 500);
 	});
+	closeBox('right');
 })(this, this.jQuery);
 
 
@@ -183,29 +172,6 @@ function wrapWindowByMask() {
 			textAlignCss(align_status);
 		}
 	});
-
-
-	// var left = $('.align-left');
-	// var center = $('.align-center');
-	// var right = $('.align-right');
-	
-	// text_align.on('click', function() {
-	// 	console.log("test2");
-	// 	// align_status = this.attr('class');
-	// 	// console.log(align_status);
-	// });
-
-	// left.on('click', function(){
-	// 	align_status = "left";
-	// 	textAlignCss('left');
-	// 	text-align.attr('src', '');
-	// });
-
-	// center.on('click', function() {
-	// 	align_status = "center";
-	// 	textAlignCss('center');
-	// 	text-align.attr('src', '');
-	// });	
 })(this, this.jQuery);
 
 
@@ -216,28 +182,28 @@ function wrapWindowByMask() {
  * 	@eunju.K
  * ------------------------------------ */
 
-(function(global, $) {
-	'use strict';
+// (function(global, $) {
+// 	'use strict';
 
-	// our project setting value
-	var slideBoxHeight = $('.slideBox').height();
-	// console.log(slideBoxHeight);
+// 	// our project setting value
+// 	var slideBoxHeight = $('.slideBox').height();
+// 	// console.log(slideBoxHeight);
 
-	// var slide = Object(function(){
-	// 	content_cnt = 3;
-	// });
-	// console.log(slide);
-	// console.log(slide.content_cnt.value);
+// 	// var slide = Object(function(){
+// 	// 	content_cnt = 3;
+// 	// });
+// 	// console.log(slide);
+// 	// console.log(slide.content_cnt.value);
 
-	// setting outer box (class = slideBox)
-	$(".slideBox").css({
-		'width' : '100%',
-		'hegiht' : 'auto',
-		'padding' : 0
-	});
+// 	// setting outer box (class = slideBox)
+// 	$(".slideBox").css({
+// 		'width' : '100%',
+// 		'hegiht' : 'auto',
+// 		'padding' : 0
+// 	});
 
-	// setting column box css (class = slide-content)
-	$(".slide-content").css({
+// 	// setting column box css (class = slide-content)
+// 	$(".slide-content").css({
 
-	});
-})(this, this.jQuery);
+// 	});
+// })(this, this.jQuery);
