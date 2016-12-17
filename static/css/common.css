@@ -27,6 +27,10 @@ input {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .logo-but-white,
 .list>a,
 .btn-option,
