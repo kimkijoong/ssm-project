@@ -152,9 +152,10 @@ class Home extends CI_Controller {
     {
         $this->load->view('home/bringInSsum');
     }
-    public function write()
+    public function write($post_seq)
     {
-        $this->load->view('home/write');
+        $data = $this->Boarder_model->one_topic_select($post_seq);
+        $this->load->view('home/write', array('data' => $data));
     }
 
     public function bookmark()
@@ -181,7 +182,6 @@ class Home extends CI_Controller {
     {
         $this->load->view('home/myCh');
     }
-
     public function setting()
     {
         $this->load->view('home/setting');
@@ -201,6 +201,15 @@ class Home extends CI_Controller {
     public function PostList(){
         //그날의 주제를 가져온다.
         $data = $this->Boarder_model->PostList();
+        echo json_encode($data);
+    }
+    public function myTopicList(){
+        $user_seq = $this->session->userdata('user_seq');
+        $data = $this->Boarder_model->myTopicList($user_seq);
+        echo json_encode($data);
+    }
+    public function myTopicOne(){
+        $data = $this->Boarder_model->myTopicOne();
         echo json_encode($data);
     }
 }
