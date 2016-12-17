@@ -40,9 +40,9 @@
 
 				<ul class="menu-list">
 					<!-- <li class="list"><a href="#">공개 씀</a></li> -->
-					<li class="list"><a href="/Home/openSsmList">공개 씀</a></li>
-					<li class="list"><a href="/Home/mySsmList">나의 씀</a></li>
-					<li class="list"><a href="/Home/bringInSsm">책갈피</a></li>
+					<li class="list"><a href="/Home/topiclistview">공개 씀</a></li>
+					<li class="list"><a href="/Home/mych">나의 씀</a></li>
+					<li class="list"><a href="/Home/bookmark">책갈피</a></li>
 				</ul>
 
 				<!-- 검색 클릭 시, -->

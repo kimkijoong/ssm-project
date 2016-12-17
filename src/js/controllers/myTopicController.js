@@ -8,7 +8,7 @@ angular
   .controller('myTopicController', ['$scope', 'myTopicService', function ($scope, myTopicService) {
 
     $scope.PostList = myTopicService;
-    console.log(myTopicService);
+    console.log($scope.PostList);
 
 
   }]);

@@ -33,9 +33,8 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="waves-effect waves-mint motif-write-btn" type="button" name="button"><img src="/static/images/icons/write-btn-normal@2x.png" alt=""></button>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
                                             <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>

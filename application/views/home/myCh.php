@@ -21,7 +21,7 @@
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
-                                <article class="md-col-3 sm-col-3 xs-col-4" data-ng-repeat="List in PostList">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position" data-ng-repeat="List in PostList.postData">
                                     <a href="/Home/myChDetail/{{List.seq}}" class="motif-card">
                                         <p class="topic-list-time" ng-switch on="List.category">
                                             <span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제
@@ -43,7 +43,7 @@
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                       <a href="/Home/write/{{List.topic_seq}}" class="motif-write-btn waves-effect waves-mint">
                                           <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                       </a>
