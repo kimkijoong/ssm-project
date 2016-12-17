@@ -20,7 +20,7 @@
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -33,14 +33,18 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="open-txt">공개</div>
                                             <div class="triangle-open"></div>
                                         </div>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -53,14 +57,18 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="close-txt">비공개</div>
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -73,14 +81,18 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="open-txt">공개</div>
                                             <div class="triangle-open"></div>
                                         </div>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -93,14 +105,18 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="close-txt">비공개</div>
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -113,14 +129,18 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="open-txt">공개</div>
                                             <div class="triangle-open"></div>
                                         </div>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -133,12 +153,64 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="motif-write-btn waves-effect waves-mint" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                         <div>
                                             <div class="close-txt">비공개</div>
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
+                                    <a href="#" class="motif-card">
+                                        <p class="topic-list-time">
+                                            낮의 주제
+                                        </p>
+                                        <p class="topic-list-title">
+                                            끌림에 대하여
+                                        </p>
+                                        <div class="topic-list-info">
+                                            <span>#257</span>
+                                            <span>/</span>
+                                            <span>16.11.29</span>
+                                        </div>
+                                        <div>
+                                            <div class="open-txt">공개</div>
+                                            <div class="triangle-open"></div>
+                                        </div>
+                                    </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
+                                </article>
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
+                                    <a href="#" class="motif-card">
+                                        <p class="topic-list-time">
+                                            낮의 주제
+                                        </p>
+                                        <p class="topic-list-title">
+                                            끌림에 대하여
+                                        </p>
+                                        <div class="topic-list-info">
+                                            <span>#257</span>
+                                            <span>/</span>
+                                            <span>16.11.29</span>
+                                        </div>
+                                        <div>
+                                            <div class="close-txt">비공개</div>
+                                            <div class="triangle-close"></div>
+                                        </div>
+                                    </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
                             </div>
                         </section>
