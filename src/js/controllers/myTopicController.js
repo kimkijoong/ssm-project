@@ -5,10 +5,11 @@ let angular = require('angular');
 
 angular
   .module('ButProjectApp')
-  .controller('myTopicController', ['$scope', 'myTopicService', function ($scope, myTopicService) {
+  .controller('myTopicController', ['$scope', 'myTopicService', 'oneTopicService', function ($scope, myTopicService, oneTopicService) {
 
-    $scope.PostList = myTopicService;
-    console.log(myTopicService);
+    $scope.PostList = myTopicService.postData;
+    $scope.topicDetail = oneTopicService.oneTopicData;
+    console.log($scope.PostList);
 
 
   }]);

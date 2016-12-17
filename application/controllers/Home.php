@@ -208,4 +208,8 @@ class Home extends CI_Controller {
         $data = $this->Boarder_model->myTopicList($user_seq);
         echo json_encode($data);
     }
+    public function myTopicOne(){
+        $data = $this->Boarder_model->myTopicOne($user_seq);
+        echo json_encode($data);
+    }
 }

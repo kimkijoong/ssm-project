@@ -9,7 +9,6 @@ angular.module('ButProjectApp').service('myTopicService', ['$http' , function($h
   }, function errorCallback(response){
 
   });
-
   var _service = {
     'postData' : []
   }

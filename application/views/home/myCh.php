@@ -21,7 +21,7 @@
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
-                                <article class="md-col-3 sm-col-3 xs-col-4" data-ng-repeat="List in PostList.postData">
+                                <article class="md-col-3 sm-col-3 xs-col-4" data-ng-repeat="List in PostList">
                                     <a href="/Home/myChDetail/{{List.seq}}" class="motif-card">
                                         <p class="topic-list-time" ng-switch on="List.category">
                                             <span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제
