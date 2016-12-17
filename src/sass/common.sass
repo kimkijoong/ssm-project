@@ -433,10 +433,8 @@
 // 	margin-bottom: 22px
 
 .static-btn-bottom-aside
-	+setPosition(absolute, bottom 50 index 9999)
-	width: 100%
-	+respond-to($md-container-width)
-		+setPosition(absolute, bottom 0 index 9999)
+	+setWH(100%, auto)
+	+setPosition(absolute, bottom 0 index 9999)
 .page-number
 	display: flex;
 	align-items: center;
