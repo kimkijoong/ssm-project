@@ -63,6 +63,15 @@
 	var write_box = $('.write-box');
 	write_box.attr("action", "/Home/new_write");
 	$('.btn-submit').on('click',function(){
+		var content = document.querySelector(".write").value;
+
+		function replaceAll(str, target, replacement) {
+			return str.split(target).join(replacement);
+		};
+
+		var replacement = replaceAll(content, '\n', '<br/>');
+		$(".write").val(replacement);
+
 		write_box[0].submit();
 	})
 	$(".btn-cancel").on("click",function(){

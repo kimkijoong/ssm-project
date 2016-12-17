@@ -327,12 +327,12 @@ Class Boarder_model extends CI_Model {
     //앵귤러 모델
     public function TopicList(){
         //주제들을 모두 가져온다.
-        $result = $this->db->query('SELECT * FROM daily_topic')->result();
+        $result = $this->db->query('SELECT *, DATE_FORMAT(public_date,\'%Y-%m-%d\') new_public_date FROM daily_topic order by new_public_date DESC')->result();
         return $result;
     }
     public function TodayTopic(){
         // 그날의 주제를 가져온다.
-        $result = $this->db->query("SELECT DATE_FORMAT(public_date,'%Y-%m-%d') new_public_date, group_concat(topic), group_concat(seq), group_concat(category) FROM daily_topic GROUP BY new_public_date")->result();
+        $result = $this->db->query("SELECT DATE_FORMAT(public_date,'%Y-%m-%d') new_public_date, group_concat(topic), group_concat(seq), group_concat(category) FROM daily_topic GROUP BY new_public_date order by new_public_date DESC")->result();
         return $result;
     }
     public function PostList(){
@@ -345,9 +345,15 @@ Class Boarder_model extends CI_Model {
         $result =$this->db->query('SELECT  DATE_FORMAT(creat_date,\'%Y-%m-%d\') new_creat_date, a.seq as seq, a.topic_seq, a.user_seq, a.daily_contant, a.open_post, a.text_align, a.bg_img_url , b.seq as bseq, b.topic, b.category FROM notebook a left join daily_topic b on a.topic_seq = b.seq WHERE user_seq =  '.$user_seq.' order by new_creat_date DESC')->result();
         return $result;
     }
+    public function myTopicOne($topic_seq){
+        /*상세페이지 글 불러오기*/
+        $result =$this->db->query('SELECT  a.*, b.seq as bseq, b.topic, b.category, d.seq as user_seq, d.user_name FROM notebook a left join daily_topic b on a.topic_seq = b.seq left join member d on a.user_seq = d.seq WHERE a.seq = '.$topic_seq)->result();
+        return $result;
+    }
     public function one_topic_select($post_seq){
         /*상세페이지 글 불러오기*/
         $result =$this->db->query('SELECT * FROM daily_topic where seq = '.$post_seq)->result();
         return $result;
     }
 }
+
