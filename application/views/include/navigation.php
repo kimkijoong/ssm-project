@@ -24,17 +24,11 @@
 			<section class="menu">
 				<div class="profile-box">
 					<h2 class="readable-hidden">사용자 프로필</h2>
-					<?php if($this->session->userdata('is_login')) { ?>
-						<a class="profile" href="#">
-							<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
-							<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
-						</a>
-					<?php  } else { ?>
-						<a class="profile" href="#">
-							<img class="user-profile" src="/static/img/profile.png" alt="사용자 프로필 사진">
-							<p class="pen-name">손님</p>
-						</a>
-					<?php } ?>
+
+					<a class="profile" href="#">
+						<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
+						<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
+					</a>
 				</div>
 
 				<ul class="menu-list">
@@ -109,7 +103,7 @@
 			</section>
 
 			<section class="slide-box">
-        <div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate">
+        <div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
             <h1 class="slide-day">{{List.day}}</h1>
             <div class="slide-topic-box">
                 <p class="slide-day-topic" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>

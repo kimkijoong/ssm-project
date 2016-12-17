@@ -187,11 +187,6 @@ class Home extends CI_Controller {
         $this->load->view('home/setting');
     }
 
-    public function setting()
-    {
-        $this->load->view('home/setting');
-    }
-
     //앵귤러 controller
     public function TopicList(){
         //주제들을 모두 가져온다.
