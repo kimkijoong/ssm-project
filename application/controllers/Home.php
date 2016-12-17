@@ -103,7 +103,7 @@ class Home extends CI_Controller {
         if(!$data["insert_success"]){
             echo  json_encode($data["insert_success"]);
         } else {
-            redirect('/Home/mySsm_page/'.$new_post_seq);
+            redirect('/Home/mychdetail/'.$new_post_seq);
         }
     }
     public function update_write()
@@ -118,7 +118,7 @@ class Home extends CI_Controller {
         if(!$data["insert_success"]){
             echo  json_encode($data["insert_success"]);
         } else {
-            redirect('/Home/mySsm_page/'.$seq);
+            redirect('/Home/mychdetail/'.$seq);
         }
     }
     public function mySsmList()
@@ -168,9 +168,10 @@ class Home extends CI_Controller {
         $this->load->view('home/openCh');
     }
 
-    public function mychdetail()
+    public function mychdetail($topic_seq)
     {
-        $this->load->view('home/myChDetail');
+        $data = $this->Boarder_model->myTopicOne($topic_seq);
+        $this->load->view('home/myChDetail', array('data' => $data));
     }
 
     public function topiclistview()
@@ -208,8 +209,8 @@ class Home extends CI_Controller {
         $data = $this->Boarder_model->myTopicList($user_seq);
         echo json_encode($data);
     }
-    public function myTopicOne(){
-        $data = $this->Boarder_model->myTopicOne();
+    public function myTopicOne($topic_seq){
+        $data = $this->Boarder_model->myTopicOne($topic_seq);
         echo json_encode($data);
     }
 }

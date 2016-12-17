@@ -14,28 +14,28 @@
      data-ng-controller="TopicListController">
     <?php include_once("./application/views/include/navigation.php") ?>
     <main class="main">
-        <section  data-ng-cloak data-ng-repeat="List in TopicList.topicData track by $index" ng-show="$last">
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
-                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position" data-ng-cloak data-ng-repeat="List in TopicList.topicData">
                                     <a href="#" class="motif-card">
-                                        <p class="topic-list-time">
-                                            낮의 주제
+                                        <p class="topic-list-time" ng-switch on="List.category">
+                                            <span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제
                                         </p>
                                         <p class="topic-list-title">
-                                            끌림에 대하여
+                                            {{List.topic}}
                                         </p>
                                         <div class="topic-list-info">
-                                            <span>#257</span>
+                                            <span>#{{List.seq}}</span>
                                             <span>/</span>
-                                            <span>16.11.29</span>
+                                            <span>{{List.new_public_date}}</span>
                                         </div>
                                     </a>
                                     <div class="motif-btn-position">
-                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                        <a href="/Home/write/{{List.seq}}" class="motif-write-btn waves-effect waves-mint">
                                             <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>

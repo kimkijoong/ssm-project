@@ -14,40 +14,30 @@
      data-ng-controller="TopicListController">
     <?php include_once("./application/views/include/navigation.php") ?>
     <main class="main">
-        <section  data-ng-cloak data-ng-repeat="List in TopicList.topicData track by $index" ng-show="$last">
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
+                        <?php foreach ( $data as $item ) {?>
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 one-card-align">
                                 <article class="md-col-9 sm-col-9 xs-col-4">
-                                    <a href="#" class="content-card">
+                                    <div class="content-card">
                                         <div class="content-title">
-                                            " 생각의 경계 "
+                                            " <?=$item->topic?> "
                                         </div>
                                         <div class="content-contents">
-                                            <p>
-                                                당신의 내면 작업 일지를 펴서 두 개의 리스트를<br>
-                                                <br>
-                                                만들어 보라. 첫째로 어른이 되어서 당신이 시작<br>
-                                                <br>
-                                                끝내지 못한 중요한<br>
-                                                <br>
-                                                프로젝트의 리스트를 만들어 보라.<br>
-                                                <br>
-                                                그러고 나서 당신이 완성한<br>
-                                                <br>
-                                                프로젝트의 리스트를 만들어 보라.
-                                            </p>
+                                            <?=$item->daily_contant?>
                                         </div>
                                         <div class="content-info">
-                                            <div>username</div>
-                                            <div>16년 11월 24일 20시</div>
+                                            <div><?=$item->user_name?></div>
+                                            <div><?=$item->creat_date?></div>
                                         </div>
-                                    </a>
+                                    </div>
                                 </article>
                             </div>
                         </section>
+                        <?php }?>
                     </div>
                 </div>
             </div>
