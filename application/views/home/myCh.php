@@ -43,7 +43,11 @@
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
-                                    <a href="/Home/write/{{List.topic_seq}}" class="motif-write-btn waves-effect waves-mint" name="button" type="button"><img src="/static/images/icons/write-btn-normal@2x.png" alt=""></a>
+                                    <div class="motif-btn-postion">
+                                      <a href="/Home/write/{{List.topic_seq}}" class="motif-write-btn waves-effect waves-mint">
+                                          <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
+                                      </a>
+                                    </div>
                                 </article>
                             </div>
                         </section>

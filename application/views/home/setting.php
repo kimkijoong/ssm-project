@@ -23,9 +23,28 @@
                                 <article class="md-col-9 sm-col-9 xs-col-4">
                                     <div class="setting-card">
                                         <h1 class="readable-hidden">Set Profile</h1>
-                                        <button class="setting-profile-btn" type="button">
-                                            <img class="setting-profile-img" src="/src/images/userprofile/user_0005.png" alt="사용자 사진">
-                                        </button>
+                                        <div>
+                                            <button class="setting-profile-btn" type="button">
+                                                <img class="setting-profile-img" src="/src/images/userprofile/user_0005.png" alt="사용자 사진">
+                                            </button>
+                                            <div class="layer-area" id="profile-layer" aria-hidden="true" role="dialog" aria-labelledby="dialogTitle">
+                                                <h1 id="dialogTitle" tabindex="0">레이어 팝업</h1>
+                                                <div class="">
+                                                    <button type="button" name="button">
+                                                        <img src="" alt="사진 등록하기">
+                                                    </button>
+                                                </div>
+                                                <div class="">
+                                                    <p>작가님의 사진을 올려주세요</p>
+                                                    <p>사진 파일은 4mb 이하,</p>
+                                                    <p>jpg, png로 올려주시길 바랍니다.</p>
+                                                </div>
+                                                <div class="">
+                                                    <button type="button" name="button">확인</button>
+                                                    <button type="button" name="button">취소</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <form class="form-layout" action="" method="post">
                                             <filedset>
                                                 <div>
