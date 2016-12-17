@@ -24,11 +24,18 @@
 			<section class="menu">
 				<div class="profile-box">
 					<h2 class="readable-hidden">사용자 프로필</h2>
+					<?php if($this->session->userdata('is_login')) { ?>
+						<a class="profile" href="#">
+							<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
+							<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
+						</a>
+					<?php  } else { ?>
+						<a class="profile" href="#">
+							<img class="user-profile" src="/static/img/profile.png" alt="사용자 프로필 사진">
+							<p class="pen-name">손님</p>
+						</a>
+					<?php } ?>
 
-					<a class="profile" href="#">
-						<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
-						<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
-					</a>
 				</div>
 
 				<ul class="menu-list">
@@ -107,11 +114,11 @@
             <h1 class="slide-day">{{List.day}}</h1>
             <div class="slide-topic-box">
                 <p class="slide-day-topic" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-                <a href="/Home/write_page/{{List.seq1}}" class="slide-topic">"{{List.topic1}}"</a>
+                <a href="/Home/write/{{List.seq1}}" class="slide-topic">"{{List.topic1}}"</a>
             </div>
             <div class="slide-topic-box">
                 <p class="slide-day-topic" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-                <a href="/Home/write_page/{{List.seq2}}" class="slide-topic slide-last-topic">"{{List.topic2}}"</a>
+                <a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic">"{{List.topic2}}"</a>
             </div>
         </div>
 			</section>
