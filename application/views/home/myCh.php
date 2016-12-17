@@ -38,9 +38,9 @@
                                             <div class="triangle-open"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
@@ -62,9 +62,9 @@
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
@@ -86,9 +86,9 @@
                                             <div class="triangle-open"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
@@ -110,9 +110,9 @@
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
@@ -134,9 +134,9 @@
                                             <div class="triangle-open"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
@@ -158,9 +158,9 @@
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
@@ -182,9 +182,9 @@
                                             <div class="triangle-open"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
@@ -206,9 +206,9 @@
                                             <div class="triangle-close"></div>
                                         </div>
                                     </a>
-                                    <div class="motif-btn-postion">
+                                    <div class="motif-btn-position">
                                         <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
-                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                            <img src="/static/images/icons/write-btn-normal@2x.png" alt="">
                                         </a>
                                     </div>
                                 </article>
