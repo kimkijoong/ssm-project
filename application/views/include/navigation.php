@@ -103,7 +103,7 @@
 			</section>
 
 			<section class="slide-box">
-        <div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate">
+        <div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
             <h1 class="slide-day">{{List.day}}</h1>
             <div class="slide-topic-box">
                 <p class="slide-day-topic" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
