@@ -1,4 +1,4 @@
-// import 
+// import
 @import "common-init"
 @import "libs/but_grid/_vars"
 @import "libs/but_grid/_functions"
@@ -32,7 +32,7 @@
 	height: 52px
 	+respond-to($md-container-width)
 		+setWH(100%, 62px)
-		margin: 0 auto	
+		margin: 0 auto
 
 .logo
 	// +setWH(112px, 18px)
@@ -44,7 +44,7 @@
 .logo-but-white
 	@extend %a
 	// +setFont(size 14px)
-	
+
 	line-height: line-height(14)
 	color: #fff
 	+respond-to($md-container-width)
@@ -52,7 +52,7 @@
 .logo-main
 	@extend %box-sizing
 	+setWH(24px, 24px)
-	
+
 	display: inline-block
 	text-align: center
 	border: 1px solid #fff
@@ -64,7 +64,7 @@
 		+setWH(160px,27px)
 		display: inline-block
 
-	
+
 
 /* mask */
 #mask
@@ -109,7 +109,7 @@
 	border: 0
 	+respond-to($md-container-width)
 		display: none
-	
+
 
 /* menu */
 .navigation
@@ -129,7 +129,7 @@
 	+setWH(100%, auto)
 
 	margin-top: 50px
-	
+
 .profile
 	@extend %clearfix
 	+setWH(100%, 70px)
@@ -150,7 +150,7 @@
 .pen-name
 	+setWH(156px, 20px)
 	+setFont(size 14px weight bold)
-	
+
 	// font-size: px2vw(14, $xs-container-width)
 	line-height: line-height(14)
 	float: left
@@ -175,7 +175,7 @@
 .list > a
 	@extend %a
 	+setWH(auto, 24px)
-	
+
 	// font-size: px2vw(16, $xs-container-width)
 	+font-rule(16)
 	font-weight: 500
@@ -191,7 +191,7 @@
 	@extend %clearfix
 	+setWH(100%, 66px)
 	+setPosition(absolute, bottom 113px)
-	
+
 	display: flex
 	align-items: center
 	justify-content: center
@@ -278,7 +278,7 @@
 
 .btn-close
 	+setWH(50px, 50px)
-	
+
 	+font-rule(24)
 	color: #fff
 	cursor: pointer
@@ -396,7 +396,7 @@
 .slide-day
 	+setWH(100%, 56px)
 	+setFont(size 38px weight 300)
-	
+
 	line-height: line-height(38)
 	color: #51bcd8
 	text-align: right
@@ -411,7 +411,7 @@
 .slide-day-topic	// , .slide-night-topic
 	+setWH(100%, 18px)
 	+setFont(size 12px weight normal)
-	
+
 	line-height: line-height(12)
 	color: #616161
 	+respond-to($md-container-width)
@@ -421,7 +421,7 @@
 	@extend %a
 	+setWH(100%, 24px)
 	+setFont(size 16px weight 500)
-	
+
 	line-height: line-height(16)
 	color: #616161
 	margin-bottom: 14px
@@ -445,7 +445,7 @@
 	@extend %box-sizing
 	+setWH(69px, 18px)
 	+setFont(size 12px weight bold)
-	
+
 	line-height: line-height(12)
 	color: #757575
 	text-align: center
@@ -478,7 +478,6 @@
 
 #aside-btn-close
 	+setPosition(absolute, top 0 left -50px)
-	
 	+respond-to($md-container-width)
 		display: none
 
@@ -504,5 +503,3 @@ section
 		+respond-to($md-container-width)
 			float: none
 			margin: 0 auto
-
-

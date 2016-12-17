@@ -31,7 +31,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum a inventore rem, voluptatem repellendus quam accusantium labore ullam rerum enim.
 						</p>
 
-						<a class="btn-main go-to-write" href="/Home/write_page/{{List.seq}}">글쓰러 가기</a>
+						<a class="btn-main go-to-write" href="/Home/write/{{List.seq}}">글쓰러 가기</a>
 						<a class="btn-main go-to-opench .md-pull-2" href="#">공개씀 보기</a>
 					</div>
 				</div>

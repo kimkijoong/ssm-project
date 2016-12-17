@@ -340,4 +340,14 @@ Class Boarder_model extends CI_Model {
         $result =$this->db->query('SELECT a.seq as seq, a.topic_seq, a.user_seq, a.daily_contant, a.open_post, a.text_align, a.bg_img_url, a.creat_date , b.seq as bseq, b.topic, b.category FROM notebook a left join daily_topic b on a.topic_seq = b.seq order by a.creat_date DESC')->result();
         return $result;
     }
+    public function myTopicList($user_seq){
+        // 그날의 주제를 가져온다.
+        $result =$this->db->query('SELECT  DATE_FORMAT(creat_date,\'%Y-%m-%d\') new_creat_date, a.seq as seq, a.topic_seq, a.user_seq, a.daily_contant, a.open_post, a.text_align, a.bg_img_url , b.seq as bseq, b.topic, b.category FROM notebook a left join daily_topic b on a.topic_seq = b.seq WHERE user_seq =  '.$user_seq.' order by new_creat_date DESC')->result();
+        return $result;
+    }
+    public function one_topic_select($post_seq){
+        /*상세페이지 글 불러오기*/
+        $result =$this->db->query('SELECT * FROM daily_topic where seq = '.$post_seq)->result();
+        return $result;
+    }
 }
