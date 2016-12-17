@@ -24,7 +24,7 @@
                                     <a href="#" class="content-card">
                                         <div class="card-content-01">
                                             <div>
-                                                <img class="profile-img-content" src="/src/images/userprofile/user_0003.png" alt="">
+                                                <img class="profile-img-content" src="/static/images/userprofile/user_0003.png" alt="">
                                                 <p class="content-username">Username</p>
                                             </div>
                                             <button class="btn-default btn-content-cancle">구독취소</button>

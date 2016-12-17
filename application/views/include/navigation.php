@@ -18,7 +18,7 @@
 		<div id="mask"></div>
 
 		<!--  Menu displayed on the Desktop / Mobile -->
-		<nav class="navigation">
+		<nav class="navigation off">
 			<h1 class="readable-hidden">씀 메뉴</h1>
 
 			<section class="menu">
@@ -94,7 +94,7 @@
 			<img src="/static/images/icons/ic_date_range_white.svg" alt="date range">
 		</button>
 		<!-- Aside menu, 'diplay:none' on mobile -->
-		<aside class="aside" data-ng-controller="TodayTopic">
+		<aside class="aside off" data-ng-controller="TodayTopic">
 			<section class="search-date">
 				<h2 class="readable-hidden">날짜 필터 검색</h2>
 
