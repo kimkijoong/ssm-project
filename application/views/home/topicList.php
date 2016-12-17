@@ -20,7 +20,7 @@
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -33,10 +33,14 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="waves-effect waves-mint motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -49,10 +53,14 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="waves-effect waves-mint motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -65,10 +73,14 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="waves-effect waves-mint motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -81,10 +93,14 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="waves-effect waves-mint motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
-                                <article class="md-col-3 sm-col-3 xs-col-4">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position">
                                     <a href="#" class="motif-card">
                                         <p class="topic-list-time">
                                             낮의 주제
@@ -97,8 +113,12 @@
                                             <span>/</span>
                                             <span>16.11.29</span>
                                         </div>
-                                        <button class="waves-effect waves-mint motif-write-btn" type="button" name="button"><img src="../../../../src/images/icons/write-btn-normal@2x.png" alt=""></button>
                                     </a>
+                                    <div class="motif-btn-postion">
+                                        <a class="motif-write-btn waves-effect waves-mint" type="button" name="button">
+                                            <img src="../../../../src/images/icons/write-btn-normal@2x.png" alt="">
+                                        </a>
+                                    </div>
                                 </article>
                             </div>
                         </section>

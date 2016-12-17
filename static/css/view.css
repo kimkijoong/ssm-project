@@ -1054,50 +1054,50 @@ body {
 .motif-write-btn {
   border: none;
   background: none;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
   cursor: pointer;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:hover {
+.motif-write-btn>img {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  vertical-align: top;
+}
+
+.motif-write-btn>img:hover {
   box-shadow: 0 1px 1px rgba(0,0,0,0.07);
   outline: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:active {
+.motif-write-btn>img:active {
   box-shadow: none;
   outline: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:disabled {
+.motif-write-btn>img:disabled {
   box-shadow: none;
   cursor: not-allowed;
   pointer-events: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:focus {
+.motif-write-btn>img:focus {
   box-shadow: none;
   outline: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn>img {
-  vertical-align: top;
-}
-
 .open-txt {
   color: #fff;
   position: absolute;
-  z-index: 999;
+  z-index: 10;
 }
 
 .close-txt {
   color: #fff;
   position: absolute;
-  z-index: 999;
+  z-index: 10;
 }
 
 .triangle-open {
@@ -1114,6 +1114,19 @@ body {
   top: 0;
   width: 0;
   height: 0;
+}
+
+.motif-position {
+  position: relative;
+}
+
+.motif-btn-postion {
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  display: block;
+  text-align: center;
 }
 
 .txt-slide-date {
@@ -2252,50 +2265,50 @@ body {
 .motif-write-btn {
   border: none;
   background: none;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
   cursor: pointer;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:hover {
+.motif-write-btn>img {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07);
+  vertical-align: top;
+}
+
+.motif-write-btn>img:hover {
   box-shadow: 0 1px 1px rgba(0,0,0,0.07);
   outline: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:active {
+.motif-write-btn>img:active {
   box-shadow: none;
   outline: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:disabled {
+.motif-write-btn>img:disabled {
   box-shadow: none;
   cursor: not-allowed;
   pointer-events: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn:focus {
+.motif-write-btn>img:focus {
   box-shadow: none;
   outline: none;
   transition: box-shadow 0.2s ease;
 }
 
-.motif-write-btn>img {
-  vertical-align: top;
-}
-
 .open-txt {
   color: #fff;
   position: absolute;
-  z-index: 999;
+  z-index: 10;
 }
 
 .close-txt {
   color: #fff;
   position: absolute;
-  z-index: 999;
+  z-index: 10;
 }
 
 .triangle-open {
@@ -2312,6 +2325,19 @@ body {
   top: 0;
   width: 0;
   height: 0;
+}
+
+.motif-position {
+  position: relative;
+}
+
+.motif-btn-postion {
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  display: block;
+  text-align: center;
 }
 
 .txt-slide-date {
@@ -3055,13 +3081,6 @@ body {
     height: 50px;
   }
 
-  .motif-write-btn {
-    margin-top: 131px;
-    margin-right: 109px;
-    margin-left: 109px;
-    padding: 0;
-  }
-
   .open-txt {
     right: 11px;
     top: 12px;
@@ -3086,6 +3105,12 @@ body {
     border-right: 35px solid #fe8b90;
     border-left: 35px solid transparent;
     border-bottom: 35px solid transparent;
+  }
+
+  .motif-btn-postion {
+    margin-top: 294px;
+    margin-right: 109px;
+    margin-left: 109px;
   }
 
   .txt-page-title {
@@ -3736,13 +3761,6 @@ body {
     height: 50px;
   }
 
-  .motif-write-btn {
-    margin-top: 131px;
-    margin-right: 109px;
-    margin-left: 109px;
-    padding: 0;
-  }
-
   .open-txt {
     right: 11px;
     top: 12px;
@@ -3767,6 +3785,12 @@ body {
     border-right: 35px solid #fe8b90;
     border-left: 35px solid transparent;
     border-bottom: 35px solid transparent;
+  }
+
+  .motif-btn-postion {
+    margin-top: 294px;
+    margin-right: 109px;
+    margin-left: 109px;
   }
 
   .txt-page-title {
@@ -4411,16 +4435,6 @@ body {
     height: 15.625vw;
   }
 
-  .motif-write-btn {
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0;
-    margin-top: 54.0625vw;
-    margin-left: 39.0625vw;
-    margin-right: 39.0625vw;
-  }
-
   .open-txt {
     right: 3.4375vw;
     top: 3.75vw;
@@ -4445,6 +4459,13 @@ body {
     border-right: 10.9375vw solid #fe8b90;
     border-left: 10.9375vw solid transparent;
     border-bottom: 10.9375vw solid transparent;
+  }
+
+  .motif-btn-postion {
+    width: 100%;
+    margin-top: 105vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .txt-page-title {
@@ -5237,16 +5258,6 @@ body {
     height: 15.625vw;
   }
 
-  .motif-write-btn {
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 0;
-    margin-top: 54.0625vw;
-    margin-left: 39.0625vw;
-    margin-right: 39.0625vw;
-  }
-
   .open-txt {
     right: 3.4375vw;
     top: 3.75vw;
@@ -5271,6 +5282,13 @@ body {
     border-right: 10.9375vw solid #fe8b90;
     border-left: 10.9375vw solid transparent;
     border-bottom: 10.9375vw solid transparent;
+  }
+
+  .motif-btn-postion {
+    width: 100%;
+    margin-top: 105vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .txt-page-title {
@@ -5899,13 +5917,6 @@ body {
     height: 50px;
   }
 
-  .motif-write-btn {
-    margin-top: 131px;
-    margin-right: 104.5px;
-    margin-left: 104.5px;
-    padding: 0;
-  }
-
   .open-txt {
     right: 11px;
     top: 12px;
@@ -5930,6 +5941,13 @@ body {
     border-right: 35px solid #fe8b90;
     border-left: 35px solid transparent;
     border-bottom: 35px solid transparent;
+  }
+
+  .motif-btn-postion {
+    margin-top: 294px;
+    margin-right: 104.5px;
+    margin-left: 104.5px;
+    padding: 0;
   }
 
   .txt-page-title {
@@ -6576,13 +6594,6 @@ body {
     height: 50px;
   }
 
-  .motif-write-btn {
-    margin-top: 131px;
-    margin-right: 104.5px;
-    margin-left: 104.5px;
-    padding: 0;
-  }
-
   .open-txt {
     right: 11px;
     top: 12px;
@@ -6607,6 +6618,13 @@ body {
     border-right: 35px solid #fe8b90;
     border-left: 35px solid transparent;
     border-bottom: 35px solid transparent;
+  }
+
+  .motif-btn-postion {
+    margin-top: 294px;
+    margin-right: 104.5px;
+    margin-left: 104.5px;
+    padding: 0;
   }
 
   .txt-page-title {
