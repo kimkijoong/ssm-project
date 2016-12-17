@@ -25,7 +25,7 @@
                                         <h1 class="readable-hidden">Set Profile</h1>
                                         <div>
                                             <button class="setting-profile-btn" type="button">
-                                                <img class="setting-profile-img" src="/src/images/userprofile/user_0005.png" alt="사용자 사진">
+                                                <img class="setting-profile-img" src="/static/images/userprofile/user_0005.png" alt="사용자 사진">
                                             </button>
                                             <div class="layer-area" id="profile-layer" aria-hidden="true" role="dialog" aria-labelledby="dialogTitle">
                                                 <h1 id="dialogTitle" tabindex="0">레이어 팝업</h1>
