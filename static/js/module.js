@@ -75,9 +75,9 @@ function closeBox($direction) {
 			e.preventDefault();
 			// 메뉴 숨김
 			if(width >= 1440)
-				$(".navigation").animate({left: '-310px'}, 500);
-			else
 				$(".navigation").animate({left: '-414px'}, 500);
+			else
+				$(".navigation").animate({left: '-310px'}, 500);
 			// 검은막 제거
 			mask.hide();
 		});
@@ -94,9 +94,13 @@ function closeBox($direction) {
 		if($direction == "left") {
 			if(width >= 1440)
 				$(".navigation").animate({left: '-414px'}, 500);
-			$(".navigation").animate({left: '-310px'}, 500);
+			else
+				$(".navigation").animate({left: '-310px'}, 500);
 		} else {
-			$(".aside").animate({right: '-310px'}, 500);
+			if(width >= 1440)
+				$(".aside").animate({right: '0'}, 500);
+			else
+				$(".aside").animate({right: '-310px'}, 500);
 		}
 		mask.hide();
 	});
