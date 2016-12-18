@@ -14,13 +14,13 @@
 <body>
     <main>
         <section class="row">
-            <div class="md-col-9 sm-col-9 xs-col-4 one-card-align">
-                <article class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4">
+            <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 one-card-align">
+                <article class="md-col-9 sm-col-9 xs-col-4">
                     <div class="setting-card">
                         <h1 class="readable-hidden">Set Profile</h1>
                         <div class="setting-profileimg-wrap">
                             <div class="setting-tooltip setting-aria">
-                                <button class="setting-profileimg-btn" type="button">
+                                <button class="setting-profileimg-btn" id="profile-layer-open" type="button">
                                     <img class="setting-profileimg-img tooltip-btn" aria-describedby="notice-tip" src="../../../src/images/userprofile/user_0005.png" alt="사용자 사진">
                                 </button>
                                 <div id="notice-tip" class="setting-tooltip-content" role="tooltip" aria-hidden="true">
@@ -59,8 +59,38 @@
                     <div>
                 </article>
             </div>
+            <div class="add-photo-position" id="setting-layer" aria-hidden="true" role="dialog" aria-labelledby="dialogTitle">
+                <div class="profile-popup-dim" alt="해당 창에서 나가실 수 있습니다"></div>
+                <div class="photo-popup-layer">
+                    <h1 class="readable-hidden" >Set profile image</h1>
+                    <form class="" action="" method="post">
+                        <fieldset>
+                            <div class="file-box">
+                                <label for="profile-image-edit">
+                                    <img src="../../../src/images/icons/ic_add_a_photo_black_48px.svg" alt="프로필 사진 편집 기능">
+                                </label>
+                                <input type="file" id="profile-image-edit" required>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="profile-popup-text">
+                        <p class="profile-popup-title">
+                            작가님의 사진을 올려주세요
+                        </p>
+                        <p class="profile-popup-caption">
+                            사진 파일은 4mb 이하,<br>
+                            jpg, png로 올려주시길 바랍니다.
+                        </p>
+                    </div>
+                    <div class="profile-popup-btns">
+                        <button type="button" name="button" class="btn-default">확인</button>
+                        <button type="button" name="button" id="setting-layer-close" class="btn-default">취소</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-<script src="../../../static/js/tooltip.js"></script>
+    <script src="../../../static/js/tooltip.js"></script>
+    <script src="../../../static/js/setting-popup.js" charset="utf-8"></script>
 </body>
 </html>

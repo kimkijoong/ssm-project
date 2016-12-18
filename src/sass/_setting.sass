@@ -245,3 +245,163 @@ input[placeholder]
     +respond-to($md-container-width)
         width: 120px
         height: 120px
+
+
+////////////////////////////////////////////////
+//  dim popup add profile photo
+////////////////////////////////////////////////
+
+// 딤 처리를 위한 포지션
+.add-photo-position
+    position: relative
+
+// 딤 배경
+.profile-popup-dim
+    position: absolute
+    z-index: 50
+    background-color: rgba(0, 0, 0, 0.46)
+    width: 100vw
+    height: 100vh
+
+
+// 사진 등록 팝업 레이어
+.photo-popup-layer
+    position: absolute
+    z-index: 60
+    background-color: $basic-white
+    +respond-to($xs-container-width)
+        width: px2vw(252, $xs-container-width)
+        height: px2vw(374, $xs-container-width)
+        top: px2vw(128, $xs-container-width)
+        left: px2vw(34, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 370px
+        height: 516px
+        top: 245px
+        left: 343px
+    +respond-to($md-container-width)
+        width: 370px
+        height: 516px
+        top: 245px
+        left: 343px
+
+
+
+// file-box position
+.file-box
+    text-align: center
+    +respond-to($xs-container-width)
+        margin-top: px2vw(45, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 60px
+    +respond-to($md-container-width)
+        margin-top: 60px
+
+
+// 파일 필드 숨기기
+.file-box input[type="file"]
+    position: absolute
+    width: 1px
+    height: 1px
+    padding: 0
+    margin: -1px
+    overflow: hidden
+    clip:rect(0,0,0,0)
+    border: 0
+
+
+// lable
+.file-box label
+    display: inline-block
+    padding: 0
+    vertical-align: top
+    background-color: $gray-300
+    cursor: pointer
+    border: solid 3px $gray-500
+    border-radius: 100%
+    &:hover
+        background-color: $gray-400
+        border: solid 3px $gray-600
+    +respond-to($xs-container-width)
+        width: px2vw(120, $xs-container-width)
+        height: px2vw(120, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 170px
+        height: 170px
+    +respond-to($md-container-width)
+        width: 170px
+        height: 170px
+    & img
+        display: block
+        +respond-to($xs-container-width)
+            width: px2vw(74, $xs-container-width)
+            height: px2vw(74, $xs-container-width)
+            margin:
+                top: px2vw(21, $xs-container-width)
+                left: px2vw(21, $xs-container-width)
+        +respond-to($sm-container-width)
+            width: 108px
+            height: 108px
+            margin:
+                top: 30px
+                left: 30px
+        +respond-to($md-container-width)
+            width: 108px
+            height: 108px
+            margin:
+                top: 30px
+                left: 30px
+
+
+// profile-popup-text
+.profile-popup-text
+    text-align: center
+    color: $gray-700
+    @extend %nanum-extrabold
+    & .profile-popup-title
+        +respond-to($xs-container-width)
+            font-size: px2vw(16, $xs-container-width)
+            margin-top: px2vw(30, $xs-container-width)
+        +respond-to($sm-container-width)
+            margin-top: 53px
+            font-size: 22px
+            line-height: 30px
+        +respond-to($md-container-width)
+            margin-top: 53px
+            font-size: 22px
+            line-height: 30px
+    & .profile-popup-caption
+        +respond-to($xs-container-width)
+            font-size: px2vw(12, $xs-container-width)
+            margin-top: px2vw(16, $xs-container-width)
+        +respond-to($sm-container-width)
+            margin-top: 20px
+            font-size: 16px
+        +respond-to($md-container-width)
+            margin-top: 20px
+            font-size: 16px
+
+
+// buttons
+.profile-popup-btns
+    text-align: center
+    +respond-to($xs-container-width)
+        margin-top: px2vw(32, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 45px
+    +respond-to($md-container-width)
+        margin-top: 45px
+    & button
+        display: inline-block
+    & button:last-child
+        +respond-to($xs-container-width)
+            margin-left: px2vw(20, $xs-container-width)
+        +respond-to($sm-container-width)
+            margin-left: 46px
+        +respond-to($md-container-width)
+            margin-left: 46px
+
+
+// popup hidden
+#setting-layer[aria-hidden="true"]
+    display: none
