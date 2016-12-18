@@ -36,8 +36,8 @@
                                         <form class="form-layout" action="" method="post">
                                             <filedset>
                                                 <div>
-                                                    <label for="pen-name" class="setting-title pen-name">작가명</label>
-                                                    <input class="setting-input" type="text" id="pen-name" maxlength="8" placeholder="작가명을 지어주세요" required>
+                                                    <label for="pen-name" class="setting-title author-name">작가명</label>
+                                                    <input class="setting-input" type="text" id="author-name" maxlength="8" placeholder="작가명을 지어주세요" required>
                                                 </div>
                                                 <div>
                                                     <label for="my-introduction" class="setting-title">내 소개</label>
