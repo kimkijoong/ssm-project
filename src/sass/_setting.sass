@@ -58,36 +58,36 @@
 //////////////////////////////////////////////
 
 
-// 프로필 이미지 버튼
-.setting-profile-btn
-    display: block
-    margin: 0 auto
-    overflow: hidden
-    border: 0
-    padding: 0
-    border-radius: 100%
-    +respond-to($xs-container-width)
-        width: px2vw(80, $xs-container-width)
-        height: px2vw(80, $xs-container-width)
-    +respond-to($sm-container-width)
-        width: 120px
-        height: 120px
-    +respond-to($md-container-width)
-        width: 120px
-        height: 120px
-
-// 프로필 이미지
-.setting-profile-img
-    +respond-to($xs-container-width)
-        display: inline-block
-        width: px2vw(80, $xs-container-width)
-        height: px2vw(80, $xs-container-width)
-    +respond-to($sm-container-width)
-        width: 120px
-        height: 120px
-    +respond-to($md-container-width)
-        width: 120px
-        height: 120px
+// // 프로필 이미지 버튼
+// .setting-profile-btn
+//     display: block
+//     margin: 0 auto
+//     overflow: hidden
+//     border: 0
+//     padding: 0
+//     border-radius: 100%
+//     +respond-to($xs-container-width)
+//         width: px2vw(80, $xs-container-width)
+//         height: px2vw(80, $xs-container-width)
+//     +respond-to($sm-container-width)
+//         width: 120px
+//         height: 120px
+//     +respond-to($md-container-width)
+//         width: 120px
+//         height: 120px
+//
+// // 프로필 이미지
+// .setting-profile-img
+//     +respond-to($xs-container-width)
+//         display: inline-block
+//         width: px2vw(80, $xs-container-width)
+//         height: px2vw(80, $xs-container-width)
+//     +respond-to($sm-container-width)
+//         width: 120px
+//         height: 120px
+//     +respond-to($md-container-width)
+//         width: 120px
+//         height: 120px
 
 
 // 폼 타이틀
@@ -163,3 +163,85 @@ input[placeholder]
 
 .secession
     float: left
+
+
+////////////////////////////////////////////////
+//  tooltip
+////////////////////////////////////////////////
+
+
+// 툴팁 wrap
+.setting-profileimg-wrap
+    position: relative
+    display: block
+    text-align: center
+    z-index: 20
+
+
+// 툴팁 보여주기
+.setting-tooltip-content[data-hidden="true"], .setting-tooltip-content[aria-hidden="true"]
+    display: none
+
+
+.setting-tooltip-content[data-hidden="false"], .setting-tooltip-content[aria-hidden="false"]
+    display: block
+
+
+.setting-tooltip .setting-tooltip-content
+    @extend %noto-medium
+    position: absolute
+    box-sizing: border-box
+    background: $basic-white
+    color: $basic-blue
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, .25)
+    +respond-to($xs-container-width)
+        font-size: px2vw(9, $xs-container-width)
+        border: px2vw(2, $xs-container-width) solid $basic-blue
+        padding: px2vw(6, $xs-container-width) px2vw(6, $xs-container-width)
+        top: px2vw(20, $xs-container-width)
+        left: px2vw(184, $xs-container-width)
+    +respond-to($sm-container-width)
+        font-size: 14px
+        top: 132px
+        left: 151px
+        width: 260px
+        border: 6px solid $basic-blue
+        padding: 8px 10px
+    +respond-to($md-container-width)
+        font-size: 14px
+        top: 132px
+        left: 165px
+        width: 259px
+        border: 6px solid $basic-blue
+        padding: 8px 10px
+
+// 버튼
+.setting-profileimg-btn
+    overflow: hidden
+    border: 0
+    padding: 0
+    border-radius: 100%
+    &:focus
+        outline: thin dotted
+    +respond-to($xs-container-width)
+        width: px2vw(80, $xs-container-width)
+        height: px2vw(80, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 120px
+        height: 120px
+    +respond-to($md-container-width)
+        width: 120px
+        height: 120px
+
+// 프로필 이미지
+.setting-profileimg-img
+    +respond-to($xs-container-width)
+        display: inline-block
+        width: px2vw(80, $xs-container-width)
+        height: px2vw(80, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 120px
+        height: 120px
+    +respond-to($md-container-width)
+        width: 120px
+        height: 120px
