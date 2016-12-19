@@ -23,33 +23,21 @@
                                 <article class="md-col-9 sm-col-9 xs-col-4">
                                     <div class="setting-card">
                                         <h1 class="readable-hidden">Set Profile</h1>
-                                        <div>
-                                            <button class="setting-profile-btn" type="button">
-                                                <img class="setting-profile-img" src="/static/images/userprofile/user_0005.png" alt="사용자 사진">
-                                            </button>
-                                            <div class="layer-area" id="profile-layer" aria-hidden="true" role="dialog" aria-labelledby="dialogTitle">
-                                                <h1 id="dialogTitle" tabindex="0">레이어 팝업</h1>
-                                                <div class="">
-                                                    <button type="button" name="button">
-                                                        <img src="" alt="사진 등록하기">
-                                                    </button>
-                                                </div>
-                                                <div class="">
+                                        <div class="setting-profileimg-wrap">
+                                            <div class="setting-tooltip setting-aria">
+                                                <button class="setting-profileimg-btn" id="profile-layer-open" type="button">
+                                                    <img class="setting-profileimg-img tooltip-btn" aria-describedby="notice-tip" src="/static/images/userprofile/user_0005.png" alt="사용자 사진">
+                                                </button>
+                                                <div id="notice-tip" class="setting-tooltip-content" role="tooltip" aria-hidden="true">
                                                     <p>작가님의 사진을 올려주세요</p>
-                                                    <p>사진 파일은 4mb 이하,</p>
-                                                    <p>jpg, png로 올려주시길 바랍니다.</p>
-                                                </div>
-                                                <div class="">
-                                                    <button type="button" name="button">확인</button>
-                                                    <button type="button" name="button">취소</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <form class="form-layout" action="" method="post">
                                             <filedset>
                                                 <div>
-                                                    <label for="pen-name" class="setting-title">작가명</label>
-                                                    <input class="setting-input" type="text" id="pen-name" maxlength="8" placeholder="작가명을 지어주세요" required>
+                                                    <label for="pen-name" class="setting-title author-name">작가명</label>
+                                                    <input class="setting-input" type="text" id="author-name" maxlength="8" placeholder="작가명을 지어주세요" required>
                                                 </div>
                                                 <div>
                                                     <label for="my-introduction" class="setting-title">내 소개</label>
@@ -76,6 +64,35 @@
                                     <div>
                                 </article>
                             </div>
+                            <div class="add-photo-position" id="setting-layer" aria-hidden="true" role="dialog" aria-labelledby="dialogTitle">
+                                <div class="profile-popup-dim" alt="해당 창에서 나가실 수 있습니다"></div>
+                                <div class="photo-popup-layer">
+                                    <h1 class="readable-hidden" >Set profile image</h1>
+                                    <form class="" action="" method="post">
+                                        <fieldset>
+                                            <div class="file-box">
+                                                <label for="profile-image-edit">
+                                                    <img src="/static/images/icons/ic_add_a_photo_black_48px.svg" alt="프로필 사진 편집 기능">
+                                                </label>
+                                                <input type="file" id="profile-image-edit" required>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div class="profile-popup-text">
+                                        <p class="profile-popup-title">
+                                            작가님의 사진을 올려주세요
+                                        </p>
+                                        <p class="profile-popup-caption">
+                                            사진 파일은 4mb 이하,<br>
+                                            jpg, png로 올려주시길 바랍니다.
+                                        </p>
+                                    </div>
+                                    <div class="profile-popup-btns">
+                                        <button type="button" name="button" class="btn-default">확인</button>
+                                        <button type="button" name="button" id="setting-layer-close" class="btn-default">취소</button>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -85,5 +102,7 @@
 </div>
 <?php include_once("./application/views/include/script/script.php") ?>
 <script src="/static/js/module.js"></script>
+<script src="/static/js/tooltip.js"></script>
+<script src="/static/js/setting-popup.js" charset="utf-8"></script>
 </body>
 </html>

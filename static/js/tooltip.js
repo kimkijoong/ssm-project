@@ -1,18 +1,20 @@
 (function(global, $){
     var setAria = $(".setting-aria");
-    var toolTipBtn = setAria.find(".tooltip-btn");
-    var toopTipContent = setAria.find(".setting-tooltip-content");
+    var toolTipBtn = setAria.find(".setting-profileimg-btn");
+    var toolTipContent = setAria.find(".setting-tooltip-content");
 
-    function action(status){
+    function action(status)
+    {
         var ariaHiddenStatus;
-        switch(status.type){
+        switch (status.type)
+        {
             case "mouseenter":
             case "focus":
                 ariaHiddenStatus = false;
                 break;
             case "mouseleave":
             case "blur":
-                ariaHiddenStatus = ture;
+                ariaHiddenStatus = true;
                 break;
             case "keydown":
             // 27 = esc
@@ -20,10 +22,10 @@
                     ariaHiddenStatus = true;
                 }
         }
-        tooltipContent.attr({
-            "aria-hidden": ariaHiddenStatus;
+        toolTipContent.attr({
+            "aria-hidden": ariaHiddenStatus
         });
     }
-    setAria.on("mouseenter mouseleave keydown", action);
+    toolTipBtn.on("mouseenter mouseleave keydown", action);
     toolTipBtn.on("focus blur", action);
 })(this, this.jQuery);
