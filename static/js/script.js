@@ -80,6 +80,7 @@ function ajax_select_id(ajax){
 
 function ajax_select_name(ajax){
     var ajax_val = ajax;
+    var name_chk = null;
     if(ajax_val != "1"){
         ajax_val = true;
     } else {
@@ -88,7 +89,7 @@ function ajax_select_name(ajax){
     var select_name = jQuery(".user-name").val();
     if(select_name == ""){
         jQuery(".user-name-text").text("닉네임을 입력하세요.").css("color","black");
-        id_chk = "0";
+        name_chk = "0";
     } else {
         jQuery.ajax({
             url: '/Member/join_name_select',
@@ -99,15 +100,15 @@ function ajax_select_name(ajax){
             success: function(data){
                 if(data =="0"){
                     jQuery(".user-name-text").text("사용가능한 닉네임 입니다.").css("color","blue");
-                    id_chk = "1";
+                    name_chk = "2";
                 } else if(data =="1"){
                     jQuery(".user-name-text").text("중복된 닉네임 입니다.").css("color","red");
-                    id_chk = "0";
+                    name_chk = "1";
                 }
             }
         });
     }
-    return id_chk
+    return name_chk;
 }
 
 function ajax_comparison_pw(){

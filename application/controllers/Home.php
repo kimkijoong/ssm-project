@@ -59,6 +59,10 @@ class Home extends CI_Controller {
         $data = $this->Boarder_model->daily_topic_select();
         $this->load->view('home/main',array('data' => $data));
     }
+    public function phpinfo()
+    {
+        $this->load->view('home/mySsum');
+    }
     public function openSsmList()
     {
         $this->load->view('home/openSsumList');

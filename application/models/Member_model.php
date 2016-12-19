@@ -79,14 +79,23 @@ Class Member_model extends CI_Model {
         $insert_data = $this->db->insert('member', $data);
         return $insert_data;
     }
+    public function member_select($seq){
+        $data =  $this->db->query('SELECT * FROM member WHERE seq ='.$seq)->result();
+        return $data;
+    }
 
     public function user_profile_update($seq, $member_about, $member_level, $member_name, $member_profile_img){
         $this->db->query('UPDATE member SET member_about= "'.$member_about.'", member_level= "'.$member_level.'", member_name= "'.$member_name.'", member_profile_img= "'.$member_profile_img.'" WHERE seq = "'.$seq.'"');
         $data = $this->db->affected_rows();
         return $data;
     }
-    public function member_user_profile_update($seq, $member_about, $member_name, $member_profile_img){
-        $this->db->query('UPDATE member SET member_about= "'.$member_about.'", member_name= "'.$member_name.'", member_profile_img= "'.$member_profile_img.'" WHERE seq = "'.$seq.'"');
+    public function member_user_profile_update($seq, $user_about, $user_name, $user_profile, $user_pw){
+        if($user_pw == 0){
+            $this->db->query('UPDATE member SET user_about= "'.$user_about.'", user_name= "'.$user_name.'", user_profile= "'.$user_profile.'" WHERE seq = "'.$seq.'"');
+        } else {
+            $this->db->query('UPDATE member SET user_about= "'.$user_about.'", user_name= "'.$user_name.'", user_profile= "'.$user_profile.'", user_pw= "'.$user_pw.'" WHERE seq = "'.$seq.'"');
+        }
+
         $data = $this->db->affected_rows();
         return $data;
     }
