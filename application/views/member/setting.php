@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/view.css">
 </head>
 <body class="" data-ng-app="ButProjectApp">
-<div class="grid-box base-line"></div>
+<!--<div class="grid-box base-line"></div>-->
 <div class="outer"
      data-ng-cloak
      data-ng-controller="TopicListController">
@@ -49,11 +49,11 @@
                                             <filedset>
                                                 <div>
                                                     <label for="pen-name" class="setting-title">작가명</label>
-                                                    <input class="setting-input" type="text" id="pen-name" maxlength="8" placeholder="작가명을 지어주세요" required>
+                                                    <input class="setting-input" type="text" id="pen-name" maxlength="8" name="user_name" placeholder="작가명을 지어주세요" required>
                                                 </div>
                                                 <div>
                                                     <label for="my-introduction" class="setting-title">내 소개</label>
-                                                    <input class="setting-input" type="text" id="my-introduction" maxlength="32" placeholder="소개글을 입력해주세요" required>
+                                                    <input class="setting-input" type="text" id="my-introduction" maxlength="32" name="user_about" placeholder="소개글을 입력해주세요" required>
                                                 </div>
                                                 <div>
                                                     <label for="email" class="setting-title">이메일 주소</label>
@@ -61,19 +61,19 @@
                                                 </div>
                                                 <div>
                                                     <label for="password" class="setting-title">비밀번호 변경</label>
-                                                    <input class="setting-input" type="password" id="password" maxlength="16" placeholder="비밀번호를 입력해주세요" required>
+                                                    <input class="setting-input setting-pw" type="password" id="password" maxlength="16" placeholder="비밀번호를 입력해주세요" required>
                                                 </div>
                                                 <div>
                                                     <label for="password" class="setting-title">비밀번호 확인</label>
-                                                    <input class="setting-input" type="password" id="password" maxlength="16" placeholder="비밀번호를 확인해주세요" required>
-                                                </div>
-                                                <div class="setting-btn-wrap">
-                                                    <button class="secession btn-danger" type="submit">탈퇴하기</button>
-                                                    <button class="modified btn-default" type="submit">수정하기</button>
+                                                    <input class="setting-input setting-pw2" type="password" id="password2" maxlength="16" placeholder="비밀번호를 확인해주세요" required>
                                                 </div>
                                             </filedset>
                                         </form>
-                                    <div>
+                                        <div class="setting-btn-wrap">
+                                            <button class="secession btn-danger" type="button">탈퇴하기</button>
+                                            <button class="modified btn-default" type="button">수정하기</button>
+                                        </div>
+                                        <div>
                                 </article>
                             </div>
                         </section>
@@ -85,5 +85,15 @@
 </div>
 <?php include_once("./application/views/include/script/script.php") ?>
 <script src="/static/js/module.js"></script>
+<script>
+    (function(global, $) {
+        'use strict';
+        var change_pw = $(".setting-pw").val();
+        if(change_pw){
+
+        }
+
+    })(this, this.jQuery);
+</script>
 </body>
 </html>

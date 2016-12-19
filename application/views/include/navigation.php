@@ -69,7 +69,7 @@
 					<?php  } else { ?>
 					<a href="/Member/login_page" class="btn-option btn-login">로그인</a>
 					<?php } ?>
-					<a class="btn-option btn-setting" href="/Member/my_page">설 정</a>
+					<a class="btn-option btn-setting" href="/Member/setting">설 정</a>
 				</div >
 
 				<div class="footer">

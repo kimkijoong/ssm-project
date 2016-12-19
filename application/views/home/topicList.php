@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/view.css">
 </head>
 <body class="" data-ng-app="ButProjectApp">
-<div class="grid-box base-line"></div>
+<!--<div class="grid-box base-line"></div>-->
 <div class="outer"
      data-ng-cloak
      data-ng-controller="TopicListController">
@@ -29,7 +29,7 @@
                                             {{List.topic}}
                                         </p>
                                         <div class="topic-list-info">
-                                            <span>#{{List.seq}}</span>
+                                            <span>#{{$index +1}}</span>
                                             <span>/</span>
                                             <span>{{List.new_public_date}}</span>
                                         </div>

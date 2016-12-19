@@ -158,4 +158,9 @@ class Member extends CI_Controller {
             echo json_encode($data);
         }
     }
+
+    function setting()
+    {
+        $this->load->view('member/setting');
+    }
 }
