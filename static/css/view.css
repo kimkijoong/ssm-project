@@ -1659,6 +1659,10 @@ body {
   text-align: center;
 }
 
+.openclosebtn[aria-hidden="true"] {
+  display: none;
+}
+
 .row::after {
   content: '';
   display: block;
@@ -3522,6 +3526,10 @@ body {
   left: 0;
   display: block;
   text-align: center;
+}
+
+.openclosebtn[aria-hidden="true"] {
+  display: none;
 }
 
 .row::after {
