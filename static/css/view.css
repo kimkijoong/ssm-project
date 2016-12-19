@@ -1576,7 +1576,7 @@ body {
 .motif-card {
   background-image: url(../../src/images/background/bg-pen-crop.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   position: relative;
 }
@@ -3441,7 +3441,7 @@ body {
 .motif-card {
   background-image: url(../../src/images/background/bg-pen-crop.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   position: relative;
 }
