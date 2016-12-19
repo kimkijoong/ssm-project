@@ -7,5 +7,5 @@ $(document).ready(function() {
     });
     $('.profile-popup-dim').mousedown(function(e){
         $('#setting-layer').hide();
-    });ㅈ
+    });
 });
