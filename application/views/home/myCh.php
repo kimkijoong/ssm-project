@@ -34,14 +34,6 @@
                                             <span>/</span>
                                             <span>{{List.new_creat_date}}</span>
                                         </div>
-                                        <div data-ng-show="{{List.open_post}}">
-                                            <div class="open-txt">공개</div>
-                                            <div class="triangle-open"></div>
-                                        </div>
-                                        <div data-ng-hide="{{List.open_post}}">
-                                            <div class="close-txt">비공개</div>
-                                            <div class="triangle-close"></div>
-                                        </div>
                                     </a>
                                     <div class="motif-btn-position">
                                       <a href="/Home/write/{{List.topic_seq}}" class="motif-write-btn waves-effect waves-mint">
