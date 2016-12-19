@@ -1252,6 +1252,7 @@ input {
   }
 
   .input-group label {
+    font-size: 14px;
     margin-bottom: 4px;
   }
 
@@ -1302,7 +1303,7 @@ input {
   }
 
   .findpw {
-    top: 344px;
+    top: 338px;
     font-size: 11px;
   }
 }
@@ -1666,6 +1667,7 @@ input {
   }
 
   .input-group label {
+    font-size: 4.375vw;
     margin-bottom: 1.25vw;
   }
 
@@ -1716,7 +1718,7 @@ input {
   }
 
   .findpw {
-    top: 107.5vw;
+    top: 105.625vw;
     font-size: 3.4375vw;
   }
 }
@@ -2229,6 +2231,7 @@ input {
   }
 
   .input-group label {
+    font-size: 14px;
     margin-bottom: 4px;
   }
 
@@ -2279,7 +2282,7 @@ input {
   }
 
   .findpw {
-    top: 344px;
+    top: 338px;
     font-size: 11px;
   }
 }

@@ -20,11 +20,11 @@
                 </div>
                 <div class="input-position">
                     <div class="input-group">
-                        <label for="login-user-email">E-mail</label>
+                        <label for="login-user-email">이메일</label>
                         <input id="login-user-email" name="user_email" type="email" required placeholder="이메일을 입력해주세요">
                     </div>
                     <div class="input-group">
-                        <label for="login-user-pw">Password</label>
+                        <label for="login-user-pw">비밀번호</label>
                         <input id="login-user-pw" name="user_pw" type="password" required placeholder="비밀번호를 입력해주세요">
                     </div>
                 </div>

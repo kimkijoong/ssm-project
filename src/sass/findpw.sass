@@ -5,11 +5,11 @@
 @import "clear-fix"
 
 //////////////////////////////////////
-// login bg
+// password bg
 //////////////////////////////////////
 
 
-.login-bg
+.password-bg
     background-image: url(/static/images/background/loginbg.jpg)
     background-size: cover
     height: 100vh
@@ -18,14 +18,14 @@
 
 
 //////////////////////////////////////
-// login position
+// pw position
 //////////////////////////////////////
 
-.form-wrap
+.form-pw-wrap
     position: relative
     height: 100vh
 
-.form-position
+.form-pw-position
     position: absolute
     +respond-to($xs-container-width)
         width: px2vw(246, $xs-container-width)
@@ -53,18 +53,17 @@
         margin-top: 43px
 
 
-
 //////////////////////////////////////
-// login text
+// pw text
 //////////////////////////////////////
 
 
-.login-text
+.pw-text
     @extend %nanum-extrabold
     color: $basic-white
     text-align: center
 
-.input-group
+.pw-input-group
     color: $basic-white
     // display: inline-block
     & label
@@ -81,11 +80,11 @@
             font-size: 14px
             margin-bottom: 4px
     +respond-to($xs-container-width)
-        margin-top: px2vw(18, $xs-container-width)
+        margin-top: px2vw(25, $xs-container-width)
     +respond-to($sm-container-width)
-        margin-top: 15px
+        margin-top: 25px
     +respond-to($md-container-width)
-        margin-top: 15px
+        margin-top: 25px
 
 input[placeholder]
     @extend %nanum-regular
@@ -110,7 +109,7 @@ input
         height: 32px
         padding-left: 5px
 
-.login-subtitle
+.pw-subtitle
     @extend %nanum-regular
     +respond-to($xs-container-width)
         font-size: px2vw(18, $xs-container-width)
@@ -120,31 +119,17 @@ input
         font-size: 18px
 
 
-.login-title
+.pw-title
     @extend %nanum-extrabold
     +respond-to($xs-container-width)
-        font-size: px2vw(40, $xs-container-width)
+        font-size: px2vw(32, $xs-container-width)
     +respond-to($sm-container-width)
         font-size: 40px
     +respond-to($md-container-width)
         font-size: 40px
 
 
-.login-caption
-    @extend %nanum-regular
-    +respond-to($xs-container-width)
-        margin-top: px2vw(15, $xs-container-width)
-        font-size: px2vw(16, $xs-container-width)
-    +respond-to($sm-container-width)
-        margin-top: 15px
-        font-size: 16px
-    +respond-to($md-container-width)
-        margin-top: 15px
-        font-size: 16px
-
-
-
-#login-user-email
+.input-width
     +respond-to($xs-container-width)
         width: px2vw(240, $xs-container-width)
     +respond-to($sm-container-width)
@@ -152,35 +137,20 @@ input
     +respond-to($md-container-width)
         width: 304px
 
-#login-user-pw
+.find-pw-btn
+    @extend .btn-default
+    box-sizing: border-box
+    display: inline-block
+    text-decoration: none
+    float: center
     +respond-to($xs-container-width)
-        width: px2vw(240, $xs-container-width)
+        width: px2vw(246, $xs-container-width)
     +respond-to($sm-container-width)
-        width: 304px
+        width: 310px
     +respond-to($md-container-width)
-        width: 304px
+        width: 310px
 
-
-
-//////////////////////////////////////
-// btn
-//////////////////////////////////////
-
-
-.login-btn-wrap
-    // text-align: center
-    &::after
-        @extend %clear-fix
-    +respond-to($xs-container-width)
-        margin-top: px2vw(42, $xs-container-width)
-    +respond-to($sm-container-width)
-        margin-top: 42px
-    +respond-to($md-container-width)
-        margin-top: 42px
-
-
-
-.btn-join
+.fw-btn-join
     @extend .btn-default
     box-sizing: border-box
     display: inline-block
@@ -194,10 +164,11 @@ input
         width: 150px
 
 
-.btn-login
+.fw-btn-login
     @extend .btn-default
+    box-sizing: border-box
     display: inline-block
-    margin: 0
+    text-decoration: none
     float: left
     +respond-to($xs-container-width)
         width: px2vw(120, $xs-container-width)
@@ -207,19 +178,24 @@ input
         width: 150px
 
 
-.findpw
-    @extend %nanum-regular
-    color: $gray-400
-    cursor: pointer
-    text-decoration: none
-    position: absolute
-    right: 0
+.btn-fw-wrap
+    // text-align: center
+    &::after
+        @extend %clear-fix
     +respond-to($xs-container-width)
-        top: px2vw(338, $xs-container-width)
-        font-size: px2vw(11, $xs-container-width)
+        margin-top: px2vw(12, $xs-container-width)
     +respond-to($sm-container-width)
-        top: 338px
-        font-size: 11px
+        margin-top: 12px
     +respond-to($md-container-width)
-        top: 338px
-        font-size: 11px
+        margin-top: 12px
+
+.fwfind-wrap
+    // text-align: center
+    &::after
+        @extend %clear-fix
+    +respond-to($xs-container-width)
+        margin-top: px2vw(30, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 35px
+    +respond-to($md-container-width)
+        margin-top: 35px

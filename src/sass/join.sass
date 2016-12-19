@@ -5,7 +5,7 @@
 @import "clear-fix"
 
 //////////////////////////////////////
-// login bg
+// join bg
 //////////////////////////////////////
 
 
@@ -18,7 +18,7 @@
 
 
 //////////////////////////////////////
-// login position
+// join position
 //////////////////////////////////////
 
 .form-join-wrap
@@ -53,7 +53,7 @@
         margin-top: 43px
 
 //////////////////////////////////////
-// login text
+// join text
 //////////////////////////////////////
 
 
@@ -70,10 +70,13 @@
         text-align: left
         @extend %nanum-regular
         +respond-to($xs-container-width)
+            font-size: px2vw(14, $xs-container-width)
             margin-bottom: px2vw(4, $xs-container-width)
         +respond-to($sm-container-width)
+            font-size: 14px
             margin-bottom: 4px
         +respond-to($md-container-width)
+            font-size: 14px
             margin-bottom: 4px
     +respond-to($xs-container-width)
         margin-top: px2vw(18, $xs-container-width)
@@ -181,11 +184,11 @@ input
     position: absolute
     right: 0
     +respond-to($xs-container-width)
-        top: px2vw(420, $xs-container-width)
+        top: px2vw(406, $xs-container-width)
         font-size: px2vw(11, $xs-container-width)
     +respond-to($sm-container-width)
-        top: 404px
+        top: 394px
         font-size: 11px
     +respond-to($md-container-width)
-        top: 404px
+        top: 394px
         font-size: 11px

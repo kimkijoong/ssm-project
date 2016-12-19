@@ -232,8 +232,9 @@ h6 {
 .txt-btn-solid,
 .txt-btn-danger,
 .btn-default,
-.join-btn-join,
-.join-btn-login,
+.find-pw-btn,
+.fw-btn-join,
+.fw-btn-login,
 .txt-btn-main,
 .txt-btn-main-disabled,
 .txt-btn-menu,
@@ -259,10 +260,9 @@ h6 {
 
 .txt-main-title,
 .txt-card-bookmark-writing-content,
-.join-input-group label,
+.pw-input-group label,
 input[placeholder],
-.join-subtitle,
-.join-findpw {
+.pw-subtitle {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 400;
@@ -289,8 +289,8 @@ input[placeholder],
 .txt-tab-normal,
 .txt-card-bookmark-username,
 .txt-card-topic-list-title,
-.join-text,
-.join-title {
+.pw-text,
+.pw-title {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -322,8 +322,9 @@ input[placeholder],
 .txt-btn-solid,
 .txt-btn-danger,
 .btn-default,
-.join-btn-join,
-.join-btn-login {
+.find-pw-btn,
+.fw-btn-join,
+.fw-btn-login {
   font-size: 12px;
   text-align: center;
   color: #616161;
@@ -473,8 +474,9 @@ body {
 }
 
 .btn-default,
-.join-btn-join,
-.join-btn-login {
+.find-pw-btn,
+.fw-btn-join,
+.fw-btn-login {
   display: block;
   border: 1px solid #616161;
   background-color: #fff;
@@ -485,8 +487,9 @@ body {
 }
 
 .btn-default:hover,
-.join-btn-join:hover,
-.join-btn-login:hover {
+.find-pw-btn:hover,
+.fw-btn-join:hover,
+.fw-btn-login:hover {
   background-color: #f5f5f5;
   box-shadow: 0 1px 1px rgba(0,0,0,0.07);
   outline: none;
@@ -494,8 +497,9 @@ body {
 }
 
 .btn-default:active,
-.join-btn-join:active,
-.join-btn-login:active {
+.find-pw-btn:active,
+.fw-btn-join:active,
+.fw-btn-login:active {
   background-color: #f5f5f5;
   box-shadow: none;
   outline: none;
@@ -503,8 +507,9 @@ body {
 }
 
 .btn-default:disabled,
-.join-btn-join:disabled,
-.join-btn-login:disabled {
+.find-pw-btn:disabled,
+.fw-btn-join:disabled,
+.fw-btn-login:disabled {
   color: #bdbdbd;
   border: 1px solid #e0e0e0;
   background-color: #fafafa;
@@ -515,8 +520,9 @@ body {
 }
 
 .btn-default:focus,
-.join-btn-join:focus,
-.join-btn-login:focus {
+.find-pw-btn:focus,
+.fw-btn-join:focus,
+.fw-btn-login:focus {
   background-color: #f5f5f5;
   box-shadow: none;
   outline: none;
@@ -571,13 +577,14 @@ body {
   transition: box-shadow 0.2s ease;
 }
 
-.join-btn-wrap::after {
+.btn-fw-wrap::after,
+.fwfind-wrap::after {
   display: block;
   clear: both;
   content: "";
 }
 
-.login-bg {
+.password-bg {
   background-image: url(/static/images/background/loginbg.jpg);
   background-size: cover;
   height: 100vh;
@@ -585,25 +592,25 @@ body {
   background-repeat: no-repeat;
 }
 
-.form-join-wrap {
+.form-pw-wrap {
   position: relative;
   height: 100vh;
 }
 
-.form-join-position {
+.form-pw-position {
   position: absolute;
 }
 
-.join-text {
+.pw-text {
   color: #fff;
   text-align: center;
 }
 
-.join-input-group {
+.pw-input-group {
   color: #fff;
 }
 
-.join-input-group label {
+.pw-input-group label {
   display: block;
   text-align: left;
 }
@@ -614,25 +621,25 @@ input {
   color: #424242;
 }
 
-.join-btn-join {
+.find-pw-btn {
+  box-sizing: border-box;
   display: inline-block;
-  margin: 0;
-  float: left;
+  text-decoration: none;
+  float: center;
 }
 
-.join-btn-login {
+.fw-btn-join {
   box-sizing: border-box;
   display: inline-block;
   text-decoration: none;
   float: right;
 }
 
-.join-findpw {
-  color: #bdbdbd;
-  cursor: pointer;
+.fw-btn-login {
+  box-sizing: border-box;
+  display: inline-block;
   text-decoration: none;
-  position: absolute;
-  right: 0;
+  float: left;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -1226,8 +1233,9 @@ input {
   }
 
   .btn-default,
-  .join-btn-join,
-  .join-btn-login {
+  .find-pw-btn,
+  .fw-btn-join,
+  .fw-btn-login {
     min-width: 80px;
     padding: 6px 18px 6px;
   }
@@ -1237,7 +1245,7 @@ input {
     padding: 6px 18px 6px;
   }
 
-  .form-join-position {
+  .form-pw-position {
     width: 310px;
     top: 50%;
     left: 50%;
@@ -1250,13 +1258,13 @@ input {
     margin-top: 43px;
   }
 
-  .join-input-group label {
+  .pw-input-group label {
     font-size: 14px;
     margin-bottom: 4px;
   }
 
-  .join-input-group {
-    margin-top: 15px;
+  .pw-input-group {
+    margin-top: 25px;
   }
 
   input[placeholder] {
@@ -1268,11 +1276,11 @@ input {
     padding-left: 5px;
   }
 
-  .join-subtitle {
+  .pw-subtitle {
     font-size: 18px;
   }
 
-  .join-title {
+  .pw-title {
     font-size: 40px;
   }
 
@@ -1280,21 +1288,24 @@ input {
     width: 304px;
   }
 
-  .join-btn-wrap {
-    margin-top: 42px;
+  .find-pw-btn {
+    width: 310px;
   }
 
-  .join-btn-join {
+  .fw-btn-join {
     width: 150px;
   }
 
-  .join-btn-login {
+  .fw-btn-login {
     width: 150px;
   }
 
-  .join-findpw {
-    top: 394px;
-    font-size: 11px;
+  .btn-fw-wrap {
+    margin-top: 12px;
+  }
+
+  .fwfind-wrap {
+    margin-top: 35px;
   }
 }
 
@@ -1484,8 +1495,9 @@ input {
   .txt-btn-solid,
   .txt-btn-danger,
   .btn-default,
-  .join-btn-join,
-  .join-btn-login {
+  .find-pw-btn,
+  .fw-btn-join,
+  .fw-btn-login {
     font-family: 'NanumMyeongjo', serif;
     font-style: normal;
     font-weight: 700;
@@ -1625,8 +1637,9 @@ input {
   }
 
   .btn-default,
-  .join-btn-join,
-  .join-btn-login {
+  .find-pw-btn,
+  .fw-btn-join,
+  .fw-btn-login {
     min-width: 25vw;
     padding: 1.875vw 5.625vw 1.875vw;
   }
@@ -1643,7 +1656,7 @@ input {
     padding: 1.875vw 5.625vw 1.875vw;
   }
 
-  .form-join-position {
+  .form-pw-position {
     width: 76.875vw;
     top: 50%;
     left: 50%;
@@ -1656,13 +1669,13 @@ input {
     margin-top: 13.4375vw;
   }
 
-  .join-input-group label {
+  .pw-input-group label {
     font-size: 4.375vw;
     margin-bottom: 1.25vw;
   }
 
-  .join-input-group {
-    margin-top: 5.625vw;
+  .pw-input-group {
+    margin-top: 7.8125vw;
   }
 
   input[placeholder] {
@@ -1674,33 +1687,36 @@ input {
     padding-left: 1.5625vw;
   }
 
-  .join-subtitle {
+  .pw-subtitle {
     font-size: 5.625vw;
   }
 
-  .join-title {
-    font-size: 12.5vw;
+  .pw-title {
+    font-size: 10vw;
   }
 
   .input-width {
     width: 75vw;
   }
 
-  .join-btn-wrap {
-    margin-top: 13.125vw;
+  .find-pw-btn {
+    width: 76.875vw;
   }
 
-  .join-btn-join {
+  .fw-btn-join {
     width: 37.5vw;
   }
 
-  .join-btn-login {
+  .fw-btn-login {
     width: 37.5vw;
   }
 
-  .join-findpw {
-    top: 126.875vw;
-    font-size: 3.4375vw;
+  .btn-fw-wrap {
+    margin-top: 3.75vw;
+  }
+
+  .fwfind-wrap {
+    margin-top: 9.375vw;
   }
 }
 
@@ -2187,8 +2203,9 @@ input {
   }
 
   .btn-default,
-  .join-btn-join,
-  .join-btn-login {
+  .find-pw-btn,
+  .fw-btn-join,
+  .fw-btn-login {
     min-width: 80px;
     padding: 6px 18px 6px;
   }
@@ -2198,7 +2215,7 @@ input {
     padding: 6px 18px 6px;
   }
 
-  .form-join-position {
+  .form-pw-position {
     width: 310px;
     top: 50%;
     left: 50%;
@@ -2211,13 +2228,13 @@ input {
     margin-top: 43px;
   }
 
-  .join-input-group label {
+  .pw-input-group label {
     font-size: 14px;
     margin-bottom: 4px;
   }
 
-  .join-input-group {
-    margin-top: 15px;
+  .pw-input-group {
+    margin-top: 25px;
   }
 
   input[placeholder] {
@@ -2229,11 +2246,11 @@ input {
     padding-left: 5px;
   }
 
-  .join-subtitle {
+  .pw-subtitle {
     font-size: 18px;
   }
 
-  .join-title {
+  .pw-title {
     font-size: 40px;
   }
 
@@ -2241,21 +2258,24 @@ input {
     width: 304px;
   }
 
-  .join-btn-wrap {
-    margin-top: 42px;
+  .find-pw-btn {
+    width: 310px;
   }
 
-  .join-btn-join {
+  .fw-btn-join {
     width: 150px;
   }
 
-  .join-btn-login {
+  .fw-btn-login {
     width: 150px;
   }
 
-  .join-findpw {
-    top: 394px;
-    font-size: 11px;
+  .btn-fw-wrap {
+    margin-top: 12px;
+  }
+
+  .fwfind-wrap {
+    margin-top: 35px;
   }
 }
-/*# sourceMappingURL=../maps/join.css.map */
+/*# sourceMappingURL=../maps/findpw.css.map */
