@@ -232,8 +232,8 @@ h6 {
 .txt-btn-solid,
 .txt-btn-danger,
 .btn-default,
-.btn-join,
-.btn-login,
+.join-btn-join,
+.join-btn-login,
 .txt-btn-main,
 .txt-btn-main-disabled,
 .txt-btn-menu,
@@ -259,11 +259,10 @@ h6 {
 
 .txt-main-title,
 .txt-card-bookmark-writing-content,
-.input-group label,
+.join-input-group label,
 input[placeholder],
-.login-subtitle,
-.login-caption,
-.findpw {
+.join-subtitle,
+.join-findpw {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 400;
@@ -290,8 +289,8 @@ input[placeholder],
 .txt-tab-normal,
 .txt-card-bookmark-username,
 .txt-card-topic-list-title,
-.login-text,
-.login-title {
+.join-text,
+.join-title {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -323,8 +322,8 @@ input[placeholder],
 .txt-btn-solid,
 .txt-btn-danger,
 .btn-default,
-.btn-join,
-.btn-login {
+.join-btn-join,
+.join-btn-login {
   font-size: 12px;
   text-align: center;
   color: #616161;
@@ -474,8 +473,8 @@ body {
 }
 
 .btn-default,
-.btn-join,
-.btn-login {
+.join-btn-join,
+.join-btn-login {
   display: block;
   border: 1px solid #616161;
   background-color: #fff;
@@ -486,8 +485,8 @@ body {
 }
 
 .btn-default:hover,
-.btn-join:hover,
-.btn-login:hover {
+.join-btn-join:hover,
+.join-btn-login:hover {
   background-color: #f5f5f5;
   box-shadow: 0 1px 1px rgba(0,0,0,0.07);
   outline: none;
@@ -495,8 +494,8 @@ body {
 }
 
 .btn-default:active,
-.btn-join:active,
-.btn-login:active {
+.join-btn-join:active,
+.join-btn-login:active {
   background-color: #f5f5f5;
   box-shadow: none;
   outline: none;
@@ -504,8 +503,8 @@ body {
 }
 
 .btn-default:disabled,
-.btn-join:disabled,
-.btn-login:disabled {
+.join-btn-join:disabled,
+.join-btn-login:disabled {
   color: #bdbdbd;
   border: 1px solid #e0e0e0;
   background-color: #fafafa;
@@ -516,8 +515,8 @@ body {
 }
 
 .btn-default:focus,
-.btn-join:focus,
-.btn-login:focus {
+.join-btn-join:focus,
+.join-btn-login:focus {
   background-color: #f5f5f5;
   box-shadow: none;
   outline: none;
@@ -572,7 +571,7 @@ body {
   transition: box-shadow 0.2s ease;
 }
 
-.login-btn-wrap::after {
+.join-btn-wrap::after {
   display: block;
   clear: both;
   content: "";
@@ -586,25 +585,25 @@ body {
   background-repeat: no-repeat;
 }
 
-.form-wrap {
+.form-join-wrap {
   position: relative;
   height: 100vh;
 }
 
-.form-position {
+.form-join-position {
   position: absolute;
 }
 
-.login-text {
+.join-text {
   color: #fff;
   text-align: center;
 }
 
-.input-group {
+.join-input-group {
   color: #fff;
 }
 
-.input-group label {
+.join-input-group label {
   display: block;
   text-align: left;
 }
@@ -615,20 +614,20 @@ input {
   color: #424242;
 }
 
-.btn-join {
+.join-btn-join {
+  display: inline-block;
+  margin: 0;
+  float: left;
+}
+
+.join-btn-login {
   box-sizing: border-box;
   display: inline-block;
   text-decoration: none;
   float: right;
 }
 
-.btn-login {
-  display: inline-block;
-  margin: 0;
-  float: left;
-}
-
-.findpw {
+.join-findpw {
   color: #bdbdbd;
   cursor: pointer;
   text-decoration: none;
@@ -1227,8 +1226,8 @@ input {
   }
 
   .btn-default,
-  .btn-join,
-  .btn-login {
+  .join-btn-join,
+  .join-btn-login {
     min-width: 80px;
     padding: 6px 18px 6px;
   }
@@ -1238,7 +1237,7 @@ input {
     padding: 6px 18px 6px;
   }
 
-  .form-position {
+  .form-join-position {
     width: 310px;
     top: 50%;
     left: 50%;
@@ -1251,11 +1250,11 @@ input {
     margin-top: 43px;
   }
 
-  .input-group label {
+  .join-input-group label {
     margin-bottom: 4px;
   }
 
-  .input-group {
+  .join-input-group {
     margin-top: 15px;
   }
 
@@ -1268,41 +1267,32 @@ input {
     padding-left: 5px;
   }
 
-  .login-subtitle {
+  .join-subtitle {
     font-size: 18px;
   }
 
-  .login-title {
+  .join-title {
     font-size: 40px;
   }
 
-  .login-caption {
-    margin-top: 15px;
-    font-size: 16px;
-  }
-
-  #login-user-email {
+  .input-width {
     width: 304px;
   }
 
-  #login-user-pw {
-    width: 304px;
-  }
-
-  .login-btn-wrap {
+  .join-btn-wrap {
     margin-top: 42px;
   }
 
-  .btn-join {
+  .join-btn-join {
     width: 150px;
   }
 
-  .btn-login {
+  .join-btn-login {
     width: 150px;
   }
 
-  .findpw {
-    top: 344px;
+  .join-findpw {
+    top: 404px;
     font-size: 11px;
   }
 }
@@ -1493,8 +1483,8 @@ input {
   .txt-btn-solid,
   .txt-btn-danger,
   .btn-default,
-  .btn-join,
-  .btn-login {
+  .join-btn-join,
+  .join-btn-login {
     font-family: 'NanumMyeongjo', serif;
     font-style: normal;
     font-weight: 700;
@@ -1634,8 +1624,8 @@ input {
   }
 
   .btn-default,
-  .btn-join,
-  .btn-login {
+  .join-btn-join,
+  .join-btn-login {
     min-width: 25vw;
     padding: 1.875vw 5.625vw 1.875vw;
   }
@@ -1652,7 +1642,7 @@ input {
     padding: 1.875vw 5.625vw 1.875vw;
   }
 
-  .form-position {
+  .form-join-position {
     width: 76.875vw;
     top: 50%;
     left: 50%;
@@ -1665,11 +1655,11 @@ input {
     margin-top: 13.4375vw;
   }
 
-  .input-group label {
+  .join-input-group label {
     margin-bottom: 1.25vw;
   }
 
-  .input-group {
+  .join-input-group {
     margin-top: 5.625vw;
   }
 
@@ -1682,41 +1672,32 @@ input {
     padding-left: 1.5625vw;
   }
 
-  .login-subtitle {
+  .join-subtitle {
     font-size: 5.625vw;
   }
 
-  .login-title {
+  .join-title {
     font-size: 12.5vw;
   }
 
-  .login-caption {
-    margin-top: 4.6875vw;
-    font-size: 5vw;
-  }
-
-  #login-user-email {
+  .input-width {
     width: 75vw;
   }
 
-  #login-user-pw {
-    width: 75vw;
-  }
-
-  .login-btn-wrap {
+  .join-btn-wrap {
     margin-top: 13.125vw;
   }
 
-  .btn-join {
+  .join-btn-join {
     width: 37.5vw;
   }
 
-  .btn-login {
+  .join-btn-login {
     width: 37.5vw;
   }
 
-  .findpw {
-    top: 107.5vw;
+  .join-findpw {
+    top: 131.25vw;
     font-size: 3.4375vw;
   }
 }
@@ -2204,8 +2185,8 @@ input {
   }
 
   .btn-default,
-  .btn-join,
-  .btn-login {
+  .join-btn-join,
+  .join-btn-login {
     min-width: 80px;
     padding: 6px 18px 6px;
   }
@@ -2215,7 +2196,7 @@ input {
     padding: 6px 18px 6px;
   }
 
-  .form-position {
+  .form-join-position {
     width: 310px;
     top: 50%;
     left: 50%;
@@ -2228,11 +2209,11 @@ input {
     margin-top: 43px;
   }
 
-  .input-group label {
+  .join-input-group label {
     margin-bottom: 4px;
   }
 
-  .input-group {
+  .join-input-group {
     margin-top: 15px;
   }
 
@@ -2245,42 +2226,33 @@ input {
     padding-left: 5px;
   }
 
-  .login-subtitle {
+  .join-subtitle {
     font-size: 18px;
   }
 
-  .login-title {
+  .join-title {
     font-size: 40px;
   }
 
-  .login-caption {
-    margin-top: 15px;
-    font-size: 16px;
-  }
-
-  #login-user-email {
+  .input-width {
     width: 304px;
   }
 
-  #login-user-pw {
-    width: 304px;
-  }
-
-  .login-btn-wrap {
+  .join-btn-wrap {
     margin-top: 42px;
   }
 
-  .btn-join {
+  .join-btn-join {
     width: 150px;
   }
 
-  .btn-login {
+  .join-btn-login {
     width: 150px;
   }
 
-  .findpw {
-    top: 344px;
+  .join-findpw {
+    top: 404px;
     font-size: 11px;
   }
 }
-/*# sourceMappingURL=../maps/login.css.map */
+/*# sourceMappingURL=../maps/join.css.map */
