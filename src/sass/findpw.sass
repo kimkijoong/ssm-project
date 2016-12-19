@@ -1,0 +1,201 @@
+@import "color"
+@import "font"
+@import "./libs/but_grid/_mixins.sass"
+@import "btn"
+@import "clear-fix"
+
+//////////////////////////////////////
+// password bg
+//////////////////////////////////////
+
+
+.password-bg
+    background-image: url(/static/images/background/loginbg.jpg)
+    background-size: cover
+    height: 100vh
+    background-position: center
+    background-repeat: no-repeat
+
+
+//////////////////////////////////////
+// pw position
+//////////////////////////////////////
+
+.form-pw-wrap
+    position: relative
+    height: 100vh
+
+.form-pw-position
+    position: absolute
+    +respond-to($xs-container-width)
+        width: px2vw(246, $xs-container-width)
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    +respond-to($sm-container-width)
+        width: 310px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    +respond-to($md-container-width)
+        width: 310px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+
+.input-position
+    +respond-to($xs-container-width)
+        margin-top: px2vw(43, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 43px
+    +respond-to($md-container-width)
+        margin-top: 43px
+
+
+//////////////////////////////////////
+// pw text
+//////////////////////////////////////
+
+
+.pw-text
+    @extend %nanum-extrabold
+    color: $basic-white
+    text-align: center
+
+.pw-input-group
+    color: $basic-white
+    // display: inline-block
+    & label
+        display: block
+        text-align: left
+        @extend %nanum-regular
+        +respond-to($xs-container-width)
+            font-size: px2vw(14, $xs-container-width)
+            margin-bottom: px2vw(4, $xs-container-width)
+        +respond-to($sm-container-width)
+            font-size: 14px
+            margin-bottom: 4px
+        +respond-to($md-container-width)
+            font-size: 14px
+            margin-bottom: 4px
+    +respond-to($xs-container-width)
+        margin-top: px2vw(25, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 25px
+    +respond-to($md-container-width)
+        margin-top: 25px
+
+input[placeholder]
+    @extend %nanum-regular
+    +respond-to($xs-container-width)
+        font-size: px2vw(10, $xs-container-width)
+    +respond-to($sm-container-width)
+        font-size: 12px
+    +respond-to($md-container-width)
+        font-size: 12px
+
+input
+    border: 0
+    border-radius: 2px
+    color: $gray-800
+    +respond-to($xs-container-width)
+        height: px2vw(32, $xs-container-width)
+        padding-left: px2vw(5, $xs-container-width)
+    +respond-to($sm-container-width)
+        height: 32px
+        padding-left: 5px
+    +respond-to($md-container-width)
+        height: 32px
+        padding-left: 5px
+
+.pw-subtitle
+    @extend %nanum-regular
+    +respond-to($xs-container-width)
+        font-size: px2vw(18, $xs-container-width)
+    +respond-to($sm-container-width)
+        font-size: 18px
+    +respond-to($md-container-width)
+        font-size: 18px
+
+
+.pw-title
+    @extend %nanum-extrabold
+    +respond-to($xs-container-width)
+        font-size: px2vw(32, $xs-container-width)
+    +respond-to($sm-container-width)
+        font-size: 40px
+    +respond-to($md-container-width)
+        font-size: 40px
+
+
+.input-width
+    +respond-to($xs-container-width)
+        width: px2vw(240, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 304px
+    +respond-to($md-container-width)
+        width: 304px
+
+.find-pw-btn
+    @extend .btn-default
+    box-sizing: border-box
+    display: inline-block
+    text-decoration: none
+    float: center
+    +respond-to($xs-container-width)
+        width: px2vw(246, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 310px
+    +respond-to($md-container-width)
+        width: 310px
+
+.fw-btn-join
+    @extend .btn-default
+    box-sizing: border-box
+    display: inline-block
+    text-decoration: none
+    float: right
+    +respond-to($xs-container-width)
+        width: px2vw(120, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 150px
+    +respond-to($md-container-width)
+        width: 150px
+
+
+.fw-btn-login
+    @extend .btn-default
+    box-sizing: border-box
+    display: inline-block
+    text-decoration: none
+    float: left
+    +respond-to($xs-container-width)
+        width: px2vw(120, $xs-container-width)
+    +respond-to($sm-container-width)
+        width: 150px
+    +respond-to($md-container-width)
+        width: 150px
+
+
+.btn-fw-wrap
+    // text-align: center
+    &::after
+        @extend %clear-fix
+    +respond-to($xs-container-width)
+        margin-top: px2vw(12, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 12px
+    +respond-to($md-container-width)
+        margin-top: 12px
+
+.fwfind-wrap
+    // text-align: center
+    &::after
+        @extend %clear-fix
+    +respond-to($xs-container-width)
+        margin-top: px2vw(30, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 35px
+    +respond-to($md-container-width)
+        margin-top: 35px
