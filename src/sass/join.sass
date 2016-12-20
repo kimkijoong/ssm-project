@@ -175,6 +175,9 @@ input
     +respond-to($md-container-width)
         width: 150px
 
+.join-btn-position
+    position: relative
+
 
 .join-findpw
     @extend %nanum-regular
@@ -184,11 +187,11 @@ input
     position: absolute
     right: 0
     +respond-to($xs-container-width)
-        top: px2vw(406, $xs-container-width)
+        top: px2vw(-30, $xs-container-width)
         font-size: px2vw(11, $xs-container-width)
     +respond-to($sm-container-width)
-        top: 394px
+        top: -30px
         font-size: 11px
     +respond-to($md-container-width)
-        top: 394px
+        top: -30px
         font-size: 11px

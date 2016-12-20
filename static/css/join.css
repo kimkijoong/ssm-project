@@ -627,6 +627,10 @@ input {
   float: right;
 }
 
+.join-btn-position {
+  position: relative;
+}
+
 .join-findpw {
   color: #bdbdbd;
   cursor: pointer;
@@ -1293,7 +1297,7 @@ input {
   }
 
   .join-findpw {
-    top: 394px;
+    top: -30px;
     font-size: 11px;
   }
 }
@@ -1699,7 +1703,7 @@ input {
   }
 
   .join-findpw {
-    top: 126.875vw;
+    top: -9.375vw;
     font-size: 3.4375vw;
   }
 }
@@ -2254,7 +2258,7 @@ input {
   }
 
   .join-findpw {
-    top: 394px;
+    top: -30px;
     font-size: 11px;
   }
 }

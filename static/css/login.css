@@ -628,11 +628,15 @@ input {
   float: left;
 }
 
+.login-btns-position {
+  position: relative;
+}
+
 .findpw {
+  position: absolute;
   color: #bdbdbd;
   cursor: pointer;
   text-decoration: none;
-  position: absolute;
   right: 0;
 }
 
@@ -1303,7 +1307,7 @@ input {
   }
 
   .findpw {
-    top: 338px;
+    top: -30px;
     font-size: 11px;
   }
 }
@@ -1718,7 +1722,7 @@ input {
   }
 
   .findpw {
-    top: 105.625vw;
+    top: -9.375vw;
     font-size: 3.4375vw;
   }
 }
@@ -2282,7 +2286,7 @@ input {
   }
 
   .findpw {
-    top: 338px;
+    top: -30px;
     font-size: 11px;
   }
 }

@@ -2350,6 +2350,14 @@ body {
   transition: box-shadow 0.2s ease;
 }
 
+.tab-list::after,
+.bookmark-section2::after,
+.setting-btn-wrap:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 body {
   background-color: #e9ebee;
 }
