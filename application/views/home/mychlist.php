@@ -14,7 +14,7 @@
      data-ng-controller="TopicListController">
     <?php include_once("./application/views/include/navigation.php") ?>
     <main class="main">
-        <section  data-ng-cloak data-ng-repeat="List in TopicList.topicData track by $index" ng-show="$last">
+        <section  data-ng-cloak data-ng-repeat="List in TopicList.topicData">
             <div class="container">
                 <div class="row">
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
