@@ -34,7 +34,7 @@
                                             </div>
                                         </div>
                                         <form class="form-layout update-form" action="/Member/user_edit_profile" method="post">
-                                          <input type="hidden" class="member-profile-img" name="user_profile" value="">
+                                          <input type="hidden" class="member-profile-img" name="user_profile" value="<?=$this->session->userdata('user_profile')?>">
                                             <input type="hidden" name="seq" value="<?=$this->session->userdata('user_seq')?>">
                                             <filedset>
                                                 <div>
@@ -48,7 +48,7 @@
                                                 </div>
                                                 <div>
                                                     <label for="email" class="setting-title">이메일 주소</label>
-                                                    <input class="setting-input setting-email" type="email" id="email" placeholder="butmanager@gmali.com" readonly required <?=$this->session->userdata('user_email')?>>
+                                                    <input class="setting-input setting-email" type="email" id="email" placeholder="butmanager@gmali.com" readonly required value="<?=$this->session->userdata('user_email')?>">
                                                 </div>
                                                 <div>
                                                     <label for="password" class="setting-title">비밀번호 변경</label>
@@ -110,6 +110,24 @@
 <script src="/static/js/setting-popup.js" charset="utf-8"></script>
 <script src="/static/js/script.js"></script>
 <script>
+    setTimeout(function(){
+        var comparison_pw = ajax_comparison_pw();
+        $(".update_btn").on("click", function(){
+            if(comparison_pw == 1){
+                $(".user-pw").attr("name", "user_pw");
+            }
+            var insert_name = jQuery(".user-name").val();
+            var select_name = ajax_select_name("1");
+            console.log(select_name);
+            if(insert_name == ""){
+                alert("닉네임을 입력하세요.");
+            } else if(!insert_name == 1) {
+                alert("다른 닉네임을 사용하세요.");
+            } else {
+                jQuery(".update-form")[0].submit();
+            }
+        })
+    }, 2000);
     (function(global, $){
         //ajax form submit
 //        $(".profile-img-sumit-btn").on("click", function(){
@@ -137,22 +155,6 @@
             }
         });
     })(this, this.jQuery);
-    var comparison_pw = ajax_comparison_pw();
-    $(".update_btn").on("click", function(){
-        if(comparison_pw == 1){
-            $(".user-pw").attr("name", "user_pw");
-        }
-        var insert_name = jQuery(".user-name").val();
-        var select_name = ajax_select_name("1");
-        console.log(select_name);
-        if(insert_name == ""){
-            alert("닉네임을 입력하세요.");
-        } else if(!insert_name == 1) {
-            alert("다른 닉네임을 사용하세요.");
-        } else {
-            jQuery(".update-form")[0].submit();
-        }
-    })
 </script>
 </body>
 </html>
