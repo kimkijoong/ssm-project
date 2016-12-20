@@ -8,12 +8,11 @@
     <link rel="stylesheet" type="text/css" href="/static/css/view.css">
 </head>
 <body class="" data-ng-app="ButProjectApp">
-<div class="grid-box base-line"></div>
 <div class="outer"
      data-ng-cloak
      data-ng-controller="TopicListController">
     <?php include_once("./application/views/include/navigation.php") ?>
-    <main class="main">
+    <main class="main main-magintop">
         <section  data-ng-cloak data-ng-repeat="List in TopicList.topicData">
             <div class="container">
                 <div class="row">

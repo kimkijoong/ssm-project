@@ -206,20 +206,23 @@ input
     +respond-to($md-container-width)
         width: 150px
 
+.login-btns-position
+    position: relative
+
 
 .findpw
+    position: absolute
     @extend %nanum-regular
     color: $gray-400
     cursor: pointer
     text-decoration: none
-    position: absolute
     right: 0
     +respond-to($xs-container-width)
-        top: px2vw(338, $xs-container-width)
+        top: px2vw(-30, $xs-container-width)
         font-size: px2vw(11, $xs-container-width)
     +respond-to($sm-container-width)
-        top: 338px
+        top: -30px
         font-size: 11px
     +respond-to($md-container-width)
-        top: 338px
+        top: -30px
         font-size: 11px

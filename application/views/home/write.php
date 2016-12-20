@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="/static/css/write.css">
 </head>
 <body class="" data-ng-app="ButProjectApp">
-<div class="grid-box base-line"></div>
+<!-- <div class="grid-box base-line"></div> -->
 <div class="outer"
+
      data-ng-cloak
      >
     <?php include_once("./application/views/include/navigation.php") ?>
