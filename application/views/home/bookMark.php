@@ -53,7 +53,7 @@
                                         <article class="md-col-9 sm-col-9 xs-col-4">
                                             <a href="#" class="bk-wrting-card">
                                                 <div class="bookmark-section1">
-                                                    <img class="profile-img" src="/src/images/userprofile/user_0001.png" alt="">
+                                                    <img class="profile-img" src="/static/images/userprofile/user_0001.png" alt="">
                                                     <p class="username">gongyou</p>
                                                 </div>
                                                 <div class="bookmark-section2">
@@ -70,7 +70,7 @@
                                         <article class="md-col-9 sm-col-9 xs-col-4">
                                             <a href="#" class="bk-wrting-card">
                                                 <div class="bookmark-section1">
-                                                    <img class="profile-img" src="/src/images/userprofile/user_0001.png" alt="">
+                                                    <img class="profile-img" src="/static/images/userprofile/user_0001.png" alt="">
                                                     <p class="username">gongyou</p>
                                                 </div>
                                                 <div class="bookmark-section2">
@@ -91,7 +91,7 @@
                                         <article class="md-col-3 sm-col-3 xs-col-4">
                                             <a href="#" class="bk-author-card">
                                                 <div>
-                                                    <img class="profile-img-author" src="/src/images/userprofile/user_0003.png" alt="">
+                                                    <img class="profile-img-author" src="/static/images/userprofile/user_0003.png" alt="">
                                                     <p class="book-mark-author-username">Username</p>
                                                     <p class="book-mark-author-caption">내일 일을 오늘 걱정하지 말라 어제의 비로 오늘의 옷을 적시지말라</p>
                                                 </div>
@@ -101,7 +101,7 @@
                                         <article class="md-col-3 sm-col-3 xs-col-4">
                                             <a href="#" class="bk-author-card">
                                                 <div>
-                                                    <img class="profile-img-author" src="/src/images/userprofile/user_0003.png" alt="">
+                                                    <img class="profile-img-author" src="/static/images/userprofile/user_0003.png" alt="">
                                                     <p class="book-mark-author-username">Username</p>
                                                     <p class="book-mark-author-caption">내일 일을 오늘 걱정하지 말라 어제의 비로 오늘의 옷을 적시지말라</p>
                                                 </div>
@@ -111,7 +111,7 @@
                                         <article class="md-col-3 sm-col-3 xs-col-4">
                                             <a href="#" class="bk-author-card">
                                                 <div>
-                                                    <img class="profile-img-author" src="/src/images/userprofile/user_0003.png" alt="">
+                                                    <img class="profile-img-author" src="/static/images/userprofile/user_0003.png" alt="">
                                                     <p class="book-mark-author-username">Username</p>
                                                     <p class="book-mark-author-caption">내일 일을 오늘 걱정하지 말라 어제의 비로 오늘의 옷을 적시지말라</p>
                                                 </div>
@@ -121,7 +121,7 @@
                                         <article class="md-col-3 sm-col-3 xs-col-4">
                                             <a href="#" class="bk-author-card">
                                                 <div>
-                                                    <img class="profile-img-author" src="/src/images/userprofile/user_0003.png" alt="">
+                                                    <img class="profile-img-author" src="/static/images/userprofile/user_0003.png" alt="">
                                                     <p class="book-mark-author-username">Username</p>
                                                     <p class="book-mark-author-caption">내일 일을 오늘 걱정하지 말라 어제의 비로 오늘의 옷을 적시지말라</p>
                                                 </div>
@@ -131,7 +131,7 @@
                                         <article class="md-col-3 sm-col-3 xs-col-4">
                                             <a href="#" class="bk-author-card">
                                                 <div>
-                                                    <img class="profile-img-author" src="/src/images/userprofile/user_0003.png" alt="">
+                                                    <img class="profile-img-author" src="/static/images/userprofile/user_0003.png" alt="">
                                                     <p class="book-mark-author-username">Username</p>
                                                     <p class="book-mark-author-caption">내일 일을 오늘 걱정하지 말라 어제의 비로 오늘의 옷을 적시지말라</p>
                                                 </div>

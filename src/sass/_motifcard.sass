@@ -42,27 +42,27 @@
 .motif-write-btn
     border: none
     background: none
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
     cursor: pointer
     transition: box-shadow 0.2s ease
-    &:hover
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
-        outline: none
-        transition: box-shadow 0.2s ease
-    &:active
-        box-shadow: none
-        outline: none
-        transition: box-shadow 0.2s ease
-    &:disabled
-        box-shadow: none
-        cursor: not-allowed
-        pointer-events: none
-        transition: box-shadow 0.2s ease
-    &:focus
-        box-shadow: none
-        outline: none
-        transition: box-shadow 0.2s ease
     & > img
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
+        &:hover
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07)
+            outline: none
+            transition: box-shadow 0.2s ease
+        &:active
+            box-shadow: none
+            outline: none
+            transition: box-shadow 0.2s ease
+        &:disabled
+            box-shadow: none
+            cursor: not-allowed
+            pointer-events: none
+            transition: box-shadow 0.2s ease
+        &:focus
+            box-shadow: none
+            outline: none
+            transition: box-shadow 0.2s ease
         vertical-align: top
         +respond-to($xs-container-width)
             width: px2vw(50, $xs-container-width)
@@ -73,34 +73,13 @@
         +respond-to($md-container-width)
             width: 50px
             height: 50px
-    +respond-to($xs-container-width)
-        display: block
-        text-align: center
-        box-sizing: border-box
-        padding: 0
-        margin:
-            top: px2vw(173, $xs-container-width)
-            left: px2vw(125, $xs-container-width)
-            right: px2vw(125, $xs-container-width)
-    +respond-to($sm-container-width)
-        margin:
-            top: 131px
-            right: 104.5px
-            left: 104.5px
-        padding: 0
-    +respond-to($md-container-width)
-        margin:
-            top: 131px
-            right: 109px
-            left: 109px
-        padding: 0
 
 
 .open-txt
     @extend %noto-bold
     color: $basic-white
     position: absolute
-    z-index: 999
+    z-index: 10
     +respond-to($xs-container-width)
         right: px2vw(11, $xs-container-width)
         top: px2vw(12, $xs-container-width)
@@ -119,7 +98,7 @@
     @extend %noto-bold
     color: $basic-white
     position: absolute
-    z-index: 999
+    z-index: 10
     +respond-to($xs-container-width)
         right: px2vw(8, $xs-container-width)
         top: px2vw(10, $xs-container-width)
@@ -184,3 +163,35 @@
             right: 35px solid $warning-blush-pink
             left: 35px solid transparent
             bottom: 35px solid transparent
+
+
+// motifcard position
+.motif-position
+    position: relative
+
+
+// motif btn position
+.motif-btn-position
+    position: absolute
+    z-index: 15
+    top: 0
+    left: 0
+    display: block
+    text-align: center
+    +respond-to($xs-container-width)
+        width: 100%
+        margin:
+            top: px2vw(336, $xs-container-width)
+            left: auto
+            right: auto
+    +respond-to($sm-container-width)
+        margin:
+            top: 294px
+            right: 104.5px
+            left: 104.5px
+        padding: 0
+    +respond-to($md-container-width)
+        margin:
+            top: 294px
+            right: 109px
+            left: 109px
