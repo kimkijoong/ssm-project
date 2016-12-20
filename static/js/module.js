@@ -103,12 +103,14 @@ var aside = $(".aside");
 		if( text_align.hasClass('left') ) {
 			text_align.removeClass('left');
 			text_align.addClass('center');
+			$(".input-text-align").val("center");
 
 			align_status = text_align.attr('class');
 			textAlignCss(align_status);
 		} else {
 			text_align.removeClass('center');
 			text_align.addClass('left');
+			$(".input-text-align").val("left");
 
 			align_status = text_align.attr('class');
 			textAlignCss(align_status);

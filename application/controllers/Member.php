@@ -8,6 +8,7 @@ class Member extends CI_Controller {
         $this->load->helper('url');
         $this->load->model('Member_model');
         $this->load->model('Img_upload_model');
+        $this->allow = array('index', 'login_page','join_page','find_pw_page','login', 'join_id_select', 'join_name_select', 'join');
     }
     function index()
     {

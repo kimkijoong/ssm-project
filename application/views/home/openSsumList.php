@@ -7,7 +7,6 @@
 </head>
 <body data-ng-app="ButProjectApp">
 	<?php include_once("./application/views/include/navigation.php") ?>
-
 	<main class="main" data-ng-controller="PostListController">
 		<section class="">
 			<h1 class="readable-hidden">Open Ssum (다른 사람들의 공개 씀)</h1>

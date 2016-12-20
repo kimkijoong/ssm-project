@@ -15,7 +15,7 @@ class Home extends CI_Controller {
             redirect('/Login');
         }*/
         $this->load->model('Boarder_model');
-        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList','bookmark','opench', 'mychdetail','topiclistview','mych', 'write', 'setting');
+        $this->allow = array('index', 'main','openSsmList','detailSsum','openSsm_page', 'openSsmList_select', 'TopicList', 'TodayTopic', 'PostList','opench','topiclistview');
     }
     /**
      * Index Page for this controller.
@@ -167,9 +167,10 @@ class Home extends CI_Controller {
         $this->load->view('home/bookMark');
     }
 
-    public function opench()
+    public function opench($topic_seq)
     {
-        $this->load->view('home/openCh');
+        $data = $this->Boarder_model->PostList($topic_seq);
+        $this->load->view('home/openCh', array('data' => $data));
     }
 
     public function mychdetail($topic_seq)
@@ -209,7 +210,8 @@ class Home extends CI_Controller {
     }
     public function PostList(){
         //그날의 주제를 가져온다.
-        $data = $this->Boarder_model->PostList();
+        $topic_seq = null;
+        $data = $this->Boarder_model->PostList($topic_seq);
         echo json_encode($data);
     }
     public function myTopicList(){
