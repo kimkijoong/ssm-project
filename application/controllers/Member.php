@@ -8,6 +8,7 @@ class Member extends CI_Controller {
         $this->load->helper('url');
         $this->load->model('Member_model');
         $this->load->model('Img_upload_model');
+        $this->allow = array('index', 'login_page','join_page','find_pw_page','login', 'join_id_select', 'join_name_select', 'join');
     }
     function index()
     {
@@ -46,6 +47,7 @@ class Member extends CI_Controller {
                     'user_name'     => $member->user_name,
                     'user_email'     => $member->user_email,
                     'user_seq'     => $member->seq,
+                    'user_about'     => $member->user_about,
                     'user_profile' => $member->user_profile,
                     'is_login' => TRUE
                 );
@@ -83,16 +85,31 @@ class Member extends CI_Controller {
             $this->session->set_flashdata('message', '회원가입이 완료되었습니다.');
             redirect($this->session->userdata('new_url'));
         }
-        /*function counsel_check()
-        {
-            $seq = $this->input->POST('seq');
-            $counsel_check = $this->input->POST('counsel_check');
-            $data = $this->Member_model->insert_member($seq, $counsel_check);
-            if ($data == true) {
-                $this->load->helper('url');
-                redirect('/Home');
-            }
-        }*/
+    }
+    function user_edit_profile()
+    {
+        $seq = $this->input->POST('seq');
+        $user_name = $this->input->POST('user_name');
+        $user_about = $this->input->POST('user_about');
+        $user_profile = $this->input->POST('user_profile');
+        $user_pw = $this->input->POST('user_pw');
+        if(!$user_pw){
+            $user_pw = 0;
+        }
+        $this->Member_model->member_user_profile_update($seq, $user_about, $user_name, $user_profile, $user_pw);
+        $data = $this->Member_model->member_select($seq);
+        foreach($data as $member){
+            $newdata = array(
+                'user_name'     => $member->user_name,
+                'user_email'     => $member->user_email,
+                'user_seq'     => $member->seq,
+                'user_about'     => $member->user_about,
+                'user_profile' => $member->user_profile,
+                'is_login' => TRUE
+            );
+        }
+        $this->session->set_userdata($newdata);
+        redirect("/Member/setting");
     }
     public function profile_upload()
     {
@@ -125,15 +142,7 @@ class Member extends CI_Controller {
         $data = $this->Member_model->pw_change($seq, $old_pw, $new_pw);
         echo json_encode($data);
     }
-    function user_edit_profile()
-    {
-        $seq = $this->input->POST('seq');
-        $user_name = $this->input->POST('user_name');
-        $member_about = $this->input->POST('member_about');
-        $member_profile_img = $this->input->POST('member_profile_img');
-        $data = $this->Member_model->member_user_profile_update($seq, $member_about, $user_name, $member_profile_img);
-        echo json_encode($data);
-    }
+
     function pw_change_send_mail()
     {
         $user_email = $this->input->POST('user_email');
@@ -157,5 +166,10 @@ class Member extends CI_Controller {
         } else {
             echo json_encode($data);
         }
+    }
+
+    function setting()
+    {
+        $this->load->view('member/setting');
     }
 }

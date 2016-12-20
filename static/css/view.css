@@ -1,14 +1,26 @@
-@import url(../../static/css/libs/but_grid/grid_style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-@import url(../../static/css/libs/but_grid/grid_style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
-@import url(../../static/css/libs/but_grid/grid_style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-@import url(../../static/css/libs/but_grid/grid_style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
-@import url(../../static/css/libs/but_grid/grid_style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-@import url(../../static/css/libs/but_grid/grid_style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
 html {
   font-family: sans-serif;
@@ -399,7 +411,8 @@ table {
 .txt-card-setting-input,
 .setting-input,
 .txt-card-setting-info,
-.btn-danger {
+.btn-danger,
+.setting-tooltip .setting-tooltip-content {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -459,7 +472,8 @@ input[placeholder] {
 .txt-card-bookmark-username,
 .book-mark-author-username,
 .txt-card-topic-list-title,
-.topic-list-title {
+.topic-list-title,
+.profile-popup-text {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -789,7 +803,8 @@ body {
 .txt-card-setting-input,
 .setting-input,
 .txt-card-setting-info,
-.btn-danger {
+.btn-danger,
+.setting-tooltip .setting-tooltip-content {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -849,7 +864,8 @@ input[placeholder] {
 .txt-card-bookmark-username,
 .book-mark-author-username,
 .txt-card-topic-list-title,
-.topic-list-title {
+.topic-list-title,
+.profile-popup-text {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -1046,7 +1062,7 @@ body {
 .motif-card {
   background-image: url(../../src/images/background/bg-pen-crop.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   position: relative;
 }
@@ -1129,6 +1145,10 @@ body {
   text-align: center;
 }
 
+.openclosebtn[aria-hidden="true"] {
+  display: none;
+}
+
 .txt-slide-date {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
@@ -1155,7 +1175,8 @@ body {
 .txt-card-setting-input,
 .setting-input,
 .txt-card-setting-info,
-.btn-danger {
+.btn-danger,
+.setting-tooltip .setting-tooltip-content {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1215,7 +1236,8 @@ input[placeholder] {
 .txt-card-bookmark-username,
 .book-mark-author-username,
 .txt-card-topic-list-title,
-.topic-list-title {
+.topic-list-title,
+.profile-popup-text {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -1598,6 +1620,14 @@ body {
   transition: box-shadow 0.2s ease;
 }
 
+.tab-list::after,
+.bookmark-section2::after,
+.setting-btn-wrap:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 body {
   background-color: #e9ebee;
 }
@@ -1720,7 +1750,8 @@ body {
 .txt-card-setting-input,
 .setting-input,
 .txt-card-setting-info,
-.btn-danger {
+.btn-danger,
+.setting-tooltip .setting-tooltip-content {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1780,7 +1811,8 @@ input[placeholder] {
 .txt-card-bookmark-username,
 .book-mark-author-username,
 .txt-card-topic-list-title,
-.topic-list-title {
+.topic-list-title,
+.profile-popup-text {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -2000,7 +2032,8 @@ body {
 .txt-card-setting-input,
 .setting-input,
 .txt-card-setting-info,
-.btn-danger {
+.btn-danger,
+.setting-tooltip .setting-tooltip-content {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -2060,7 +2093,8 @@ input[placeholder] {
 .txt-card-bookmark-username,
 .book-mark-author-username,
 .txt-card-topic-list-title,
-.topic-list-title {
+.topic-list-title,
+.profile-popup-text {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -2257,7 +2291,7 @@ body {
 .motif-card {
   background-image: url(../../src/images/background/bg-pen-crop.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   position: relative;
 }
@@ -2340,6 +2374,10 @@ body {
   text-align: center;
 }
 
+.openclosebtn[aria-hidden="true"] {
+  display: none;
+}
+
 .txt-slide-date {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
@@ -2366,7 +2404,8 @@ body {
 .txt-card-setting-input,
 .setting-input,
 .txt-card-setting-info,
-.btn-danger {
+.btn-danger,
+.setting-tooltip .setting-tooltip-content {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -2426,7 +2465,8 @@ input[placeholder] {
 .txt-card-bookmark-username,
 .book-mark-author-username,
 .txt-card-topic-list-title,
-.topic-list-title {
+.topic-list-title,
+.profile-popup-text {
   font-family: 'NanumMyeongjo', serif;
   font-style: normal;
   font-weight: 700;
@@ -2731,15 +2771,6 @@ body {
   height: 806px;
 }
 
-.setting-profile-btn {
-  display: block;
-  margin: 0 auto;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  border-radius: 100%;
-}
-
 .setting-title {
   display: block;
 }
@@ -2763,6 +2794,115 @@ body {
 
 .secession {
   float: left;
+}
+
+.setting-profileimg-wrap {
+  position: relative;
+  display: block;
+  text-align: center;
+  z-index: 20;
+}
+
+.setting-tooltip-content[data-hidden="true"],
+.setting-tooltip-content[aria-hidden="true"] {
+  display: none;
+}
+
+.setting-tooltip-content[data-hidden="false"],
+.setting-tooltip-content[aria-hidden="false"] {
+  display: block;
+}
+
+.setting-tooltip .setting-tooltip-content {
+  position: absolute;
+  box-sizing: border-box;
+  background: #fff;
+  color: #51bcd8;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.setting-profileimg-btn {
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.setting-profileimg-btn:focus {
+  outline: thin dotted;
+}
+
+.add-photo-position {
+  position: fixed;
+  z-index: 100000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.profile-popup-dim {
+  position: absolute;
+  z-index: 50;
+  background-color: rgba(0,0,0,0.46);
+  width: 100vw;
+  height: 100vh;
+}
+
+.photo-popup-layer {
+  position: absolute;
+  z-index: 60;
+  background-color: #fff;
+}
+
+.file-box {
+  text-align: center;
+}
+
+.file-box input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+}
+
+.file-box label {
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  border: solid 3px #9e9e9e;
+  border-radius: 100%;
+}
+
+.file-box label:hover {
+  background-color: #bdbdbd;
+  border: solid 3px #757575;
+}
+
+.file-box label img {
+  display: block;
+}
+
+.profile-popup-text {
+  text-align: center;
+  color: #616161;
+}
+
+.profile-popup-btns {
+  text-align: center;
+}
+
+.profile-popup-btns button {
+  display: inline-block;
+}
+
+#setting-layer[aria-hidden="true"] {
+  display: none;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -4027,16 +4167,6 @@ body {
     margin-top: 37px;
   }
 
-  .setting-profile-btn {
-    width: 120px;
-    height: 120px;
-  }
-
-  .setting-profile-img {
-    width: 120px;
-    height: 120px;
-  }
-
   .setting-title {
     margin-top: 22px;
   }
@@ -4056,6 +4186,70 @@ body {
 
   .modified {
     margin-left: 12px;
+  }
+
+  .setting-tooltip .setting-tooltip-content {
+    font-size: 14px;
+    top: 132px;
+    left: 165px;
+    width: 259px;
+    border: 6px solid #51bcd8;
+    padding: 8px 10px;
+  }
+
+  .setting-profileimg-btn {
+    width: 120px;
+    height: 120px;
+  }
+
+  .setting-profileimg-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .photo-popup-layer {
+    width: 370px;
+    height: 516px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .file-box {
+    margin-top: 60px;
+  }
+
+  .file-box label {
+    width: 170px;
+    height: 170px;
+  }
+
+  .file-box label img {
+    width: 108px;
+    height: 108px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .profile-popup-text .profile-popup-title {
+    margin-top: 53px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .profile-popup-text .profile-popup-caption {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .profile-popup-btns {
+    margin-top: 45px;
+  }
+
+  .profile-popup-btns button:last-child {
+    margin-left: 46px;
   }
 }
 
@@ -5568,17 +5762,6 @@ body {
     margin-top: 8.75vw;
   }
 
-  .setting-profile-btn {
-    width: 25vw;
-    height: 25vw;
-  }
-
-  .setting-profile-img {
-    display: inline-block;
-    width: 25vw;
-    height: 25vw;
-  }
-
   .setting-title {
     margin-top: 5vw;
   }
@@ -5598,6 +5781,69 @@ body {
 
   .modified {
     margin-left: 3.75vw;
+  }
+
+  .setting-tooltip .setting-tooltip-content {
+    font-size: 2.8125vw;
+    border: .625vw solid #51bcd8;
+    padding: 1.875vw 1.875vw;
+    top: 6.25vw;
+    left: 57.5vw;
+  }
+
+  .setting-profileimg-btn {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .setting-profileimg-img {
+    display: inline-block;
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .photo-popup-layer {
+    width: 80vw;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .file-box {
+    margin-top: 14.0625vw;
+  }
+
+  .file-box label {
+    width: 37.5vw;
+    height: 37.5vw;
+  }
+
+  .file-box label img {
+    width: 23.125vw;
+    height: 23.125vw;
+    margin-top: 6.5625vw;
+    margin-left: 6.5625vw;
+  }
+
+  .profile-popup-text .profile-popup-title {
+    font-size: 5vw;
+    margin-top: 9.375vw;
+  }
+
+  .profile-popup-text .profile-popup-caption {
+    font-size: 3.75vw;
+    margin-top: 5vw;
+  }
+
+  .profile-popup-btns {
+    margin-top: 10vw;
+  }
+
+  .profile-popup-btns button:last-child {
+    margin-left: 6.25vw;
   }
 }
 
@@ -6861,16 +7107,6 @@ body {
     margin-top: 37px;
   }
 
-  .setting-profile-btn {
-    width: 120px;
-    height: 120px;
-  }
-
-  .setting-profile-img {
-    width: 120px;
-    height: 120px;
-  }
-
   .setting-title {
     margin-top: 22px;
   }
@@ -6890,6 +7126,70 @@ body {
 
   .modified {
     margin-left: 12px;
+  }
+
+  .setting-tooltip .setting-tooltip-content {
+    font-size: 14px;
+    top: 132px;
+    left: 151px;
+    width: 260px;
+    border: 6px solid #51bcd8;
+    padding: 8px 10px;
+  }
+
+  .setting-profileimg-btn {
+    width: 120px;
+    height: 120px;
+  }
+
+  .setting-profileimg-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .photo-popup-layer {
+    width: 370px;
+    height: 516px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .file-box {
+    margin-top: 60px;
+  }
+
+  .file-box label {
+    width: 170px;
+    height: 170px;
+  }
+
+  .file-box label img {
+    width: 108px;
+    height: 108px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .profile-popup-text .profile-popup-title {
+    margin-top: 53px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .profile-popup-text .profile-popup-caption {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .profile-popup-btns {
+    margin-top: 45px;
+  }
+
+  .profile-popup-btns button:last-child {
+    margin-left: 46px;
   }
 }
 /*# sourceMappingURL=../maps/view.css.map */

@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="/static/css/write.css">
 </head>
 <body class="" data-ng-app="ButProjectApp">
-<div class="grid-box base-line"></div>
+<!-- <div class="grid-box base-line"></div> -->
 <div class="outer"
+
      data-ng-cloak
      >
     <?php include_once("./application/views/include/navigation.php") ?>
@@ -25,7 +26,7 @@
 						<form class="write-box" action="" method="post">
 							<input type="hidden" name="topic_seq" value="<?= $item->seq ?>">
 							<input type="hidden" name="user_seq" value="<?= $this->session->userdata('user_seq') ?>">
-							<input type="hidden" name="text_align" value="left">
+							<input type="hidden" name="text_align" class="input-text-align" value="">
 							<input type="hidden" name="open_post" value="1">
 							<legend class="readable-hidden">write</legend>
 							<fieldset class="row">

@@ -92,9 +92,9 @@ Class Img_upload_model extends CI_Model {
         $origin_file_name = $_FILES['user_file']['name'];
         $config['upload_path'] = $dir_name;
         // git,jpg,png 파일만 업로드를 허용한다.
-        $config['allowed_types'] = 'gif|jpg|png';
+        $config['allowed_types'] = 'gif|jpg|png|PNG';
         // 허용되는 파일의 최대 사이즈
-        $config['max_size'] = '1000';
+        $config['max_size'] = '4000';
         // 이미지인 경우 허용되는 최대 폭
         $config['overwrite'] = FALSE;
         $config['remove_spaces'] = true;
@@ -108,6 +108,7 @@ Class Img_upload_model extends CI_Model {
             return $error;
         } else {
             $data = $this->upload->data();
+            /*$data = $this->upload->data();
             list($w, $h) = getimagesize($dir_name.'/'.$data['file_name']);
             if($w > $h){
                 $width = ($w - $h)/2;
@@ -185,23 +186,12 @@ Class Img_upload_model extends CI_Model {
                         }
                     }
                 }
-            }
+            }*/
 
-           /* $config['image_library'] = 'gd2';
-            $config['source_image'] = $dir_name.'/'.$data['file_name'];
-            $config['create_thumb'] = FALSE;
-            $config['maintain_ratio'] = TRUE;
-            $config['width']         = 360;
-            $config['height']       = 360;
-
-            $this->load->library('image_lib', $config);
-
-            $this->image_lib->resize();*/
             $data_file_name = array(
                 'a' => $dir_name,
                 'b' => $data['file_name'],
-                'c' => $origin_file_name,
-                'd' => $height
+                'c' => $origin_file_name
             );
             return $data_file_name;
         }

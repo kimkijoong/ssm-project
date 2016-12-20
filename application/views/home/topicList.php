@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" href="/static/css/view.css">
 </head>
 <body class="" data-ng-app="ButProjectApp">
-<div class="grid-box base-line"></div>
+<!--<div class="grid-box base-line"></div>-->
 <div class="outer"
      data-ng-cloak
      data-ng-controller="TopicListController">
     <?php include_once("./application/views/include/navigation.php") ?>
-    <main class="main">
+    <main class="main main-magintop">
         <section>
             <div class="container">
                 <div class="row">
@@ -21,7 +21,7 @@
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
                                 <article class="md-col-3 sm-col-3 xs-col-4 motif-position" data-ng-cloak data-ng-repeat="List in TopicList.topicData">
-                                    <a href="#" class="motif-card">
+                                    <a href="/Home/opench/{{List.seq}}" class="motif-card">
                                         <p class="topic-list-time" ng-switch on="List.category">
                                             <span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제
                                         </p>
@@ -29,7 +29,7 @@
                                             {{List.topic}}
                                         </p>
                                         <div class="topic-list-info">
-                                            <span>#{{List.seq}}</span>
+                                            <span>#{{$index +1}}</span>
                                             <span>/</span>
                                             <span>{{List.new_public_date}}</span>
                                         </div>

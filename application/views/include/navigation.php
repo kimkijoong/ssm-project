@@ -6,8 +6,7 @@
 			<h1 class="readable-hidden">씀 로고(메인화면으로 바로가기)</h1>
 
 			<a class="logo-but-white" href="/Home/main">
-				<span class="logo-main">벗</span>
-				<span class="logo-text">Your writing Friend</span>
+				<img class="logo-but-symbol" src="/static/images/icons/logo-text-white.svg" alt="">
 			</a>
 		</section>
 
@@ -24,18 +23,24 @@
 			<section class="menu">
 				<div class="profile-box">
 					<h2 class="readable-hidden">사용자 프로필</h2>
-
-					<a class="profile" href="#">
-						<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
-						<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
-					</a>
+					<?php if($this->session->userdata('is_login')) { ?>
+						<a class="profile" href="#">
+							<img class="user-profile" src="<?= $this->session->userdata('user_profile')?>" alt="사용자 프로필 사진">
+							<p class="pen-name"><?= $this->session->userdata('user_name')?></p>
+						</a>
+					<?php  } else { ?>
+						<a class="profile" href="#">
+							<img class="user-profile" src="/static/img/profile.png" alt="사용자 프로필 사진">
+							<p class="pen-name pen-name-txt">손님</p>
+						</a>
+					<?php } ?>
 				</div>
 
 				<ul class="menu-list">
 					<!-- <li class="list"><a href="#">공개 씀</a></li> -->
-					<li class="list"><a href="/Home/openSsmList">공개 씀</a></li>
-					<li class="list"><a href="/Home/mySsmList">나의 씀</a></li>
-					<li class="list"><a href="/Home/bringInSsm">책갈피</a></li>
+					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/topiclistview">공개 씀</a></li>
+					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/mych">나의 씀</a></li>
+					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/bookmark">책갈피</a></li>
 				</ul>
 
 				<!-- 검색 클릭 시, -->
@@ -62,7 +67,7 @@
 					<?php  } else { ?>
 					<a href="/Member/login_page" class="btn-option btn-login">로그인</a>
 					<?php } ?>
-					<a class="btn-option btn-setting" href="/Member/my_page">설 정</a>
+					<a class="btn-option btn-setting" href="/Member/setting">설 정</a>
 				</div >
 
 				<div class="footer">
@@ -103,17 +108,19 @@
 			</section>
 
 			<section class="slide-box">
-        <div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
-            <h1 class="slide-day">{{List.day}}</h1>
-            <div class="slide-topic-box">
-                <p class="slide-day-topic" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-                <a href="/Home/write_page/{{List.seq1}}" class="slide-topic">"{{List.topic1}}"</a>
-            </div>
-            <div class="slide-topic-box">
-                <p class="slide-day-topic" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-                <a href="/Home/write_page/{{List.seq2}}" class="slide-topic slide-last-topic">"{{List.topic2}}"</a>
-            </div>
-        </div>
+				<div class="slide_content_box">
+					<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData">
+						<h1 class="slide-day side-date-txt">{{List.day}}</h1>
+						<div class="slide-topic-box">
+							<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+							<a href="/Home/write/{{List.seq1}}" class="slide-topic side-topic-txt">"{{List.topic1}}"</a>
+						</div>
+						<div class="slide-topic-box">
+							<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+							<a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic side-topic-txt">"{{List.topic2}}"</a>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<section class="static-btn-bottom-aside">
