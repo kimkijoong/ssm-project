@@ -34,7 +34,6 @@
 							<p class="pen-name pen-name-txt">손님</p>
 						</a>
 					<?php } ?>
-
 				</div>
 
 				<ul class="menu-list">
@@ -109,15 +108,17 @@
 			</section>
 
 			<section class="slide-box">
-				<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
-					<h1 class="slide-day side-date-txt">{{List.day}}</h1>
-					<div class="slide-topic-box">
-						<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-						<a href="/Home/write/{{List.seq1}}" class="slide-topic side-topic-txt">"{{List.topic1}}"</a>
-					</div>
-					<div class="slide-topic-box">
-						<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-						<a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic side-topic-txt">"{{List.topic2}}"</a>
+				<div class="slide_content_box">
+					<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData">
+						<h1 class="slide-day side-date-txt">{{List.day}}</h1>
+						<div class="slide-topic-box">
+							<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+							<a href="/Home/write/{{List.seq1}}" class="slide-topic side-topic-txt">"{{List.topic1}}"</a>
+						</div>
+						<div class="slide-topic-box">
+							<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+							<a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic side-topic-txt">"{{List.topic2}}"</a>
+						</div>
 					</div>
 				</div>
 			</section>
