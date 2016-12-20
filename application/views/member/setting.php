@@ -134,6 +134,7 @@
 //            $('.profile-img-upload-form')[0].submit();
 //        })
         $('.profile-img-upload-form').ajaxForm({
+
             beforeSubmit: function (data,form,option) {
                 //validation체크
                 //막기위해서는 return false를 잡아주면됨

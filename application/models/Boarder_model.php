@@ -335,9 +335,13 @@ Class Boarder_model extends CI_Model {
         $result = $this->db->query("SELECT DATE_FORMAT(public_date,'%Y-%m-%d') new_public_date, group_concat(topic), group_concat(seq), group_concat(category) FROM daily_topic GROUP BY new_public_date order by new_public_date DESC")->result();
         return $result;
     }
-    public function PostList(){
+    public function PostList($topic_seq){
         // 그날의 주제를 가져온다.
-        $result =$this->db->query('SELECT a.seq as seq, a.topic_seq, a.user_seq, a.daily_contant, a.open_post, a.text_align, a.bg_img_url, a.creat_date , b.seq as bseq, b.topic, b.category FROM notebook a left join daily_topic b on a.topic_seq = b.seq order by a.creat_date DESC')->result();
+        if(!$topic_seq){
+            $result =$this->db->query('SELECT a.seq as seq, a.topic_seq, a.user_seq, a.daily_contant, a.open_post, a.text_align, a.bg_img_url, a.creat_date , b.seq as bseq, b.topic, b.category FROM notebook a left join daily_topic b on a.topic_seq = b.seq order by a.creat_date DESC')->result();
+        } else {
+            $result =$this->db->query('SELECT a.seq as seq, a.topic_seq, a.user_seq, a.daily_contant, a.open_post, a.text_align, a.bg_img_url, a.creat_date , b.seq as bseq, b.topic, b.category, d.user_profile, d.user_name FROM notebook a left join daily_topic b on a.topic_seq = b.seq left join member d on a.user_seq = d.seq WHERE topic_seq = '.$topic_seq.' order by a.creat_date DESC')->result();
+        }
         return $result;
     }
     public function myTopicList($user_seq){

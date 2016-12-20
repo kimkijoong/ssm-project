@@ -26,7 +26,7 @@
                                         <div class="content-title">
                                             " <?=$item->topic?> "
                                         </div>
-                                        <div class="content-contents">
+                                        <div class="content-contents" style="text-align: <?=$item->text_align?>">
                                             <?=$item->daily_contant?>
                                         </div>
                                         <div class="content-info">
