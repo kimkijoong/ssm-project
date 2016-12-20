@@ -14,7 +14,7 @@
      data-ng-controller="myTopicController"
      >
     <?php include_once("./application/views/include/navigation.php") ?>
-    <main class="main">
+    <main class="main main-magintop">
         <section  data-ng-cloak>
             <div class="container">
                 <div class="row">

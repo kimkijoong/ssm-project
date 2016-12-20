@@ -796,12 +796,26 @@ section .write-box-wrap {
     float: none;
     margin: 0 auto;
   }
+
+  .main-magintop {
+    margin-top: 55px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .main-magintop {
+    margin-top: 5.9375vw;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
   section .write-box-wrap {
     float: none;
     margin: 0 auto;
+  }
+
+  .main-magintop {
+    margin-top: 55px;
   }
 }
 /*# sourceMappingURL=../maps/common.css.map */

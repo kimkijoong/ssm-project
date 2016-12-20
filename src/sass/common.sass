@@ -505,3 +505,14 @@ section
 		+respond-to($md-container-width)
 			float: none
 			margin: 0 auto
+
+
+
+// 임의의 메인 탑 마진 주는 코드
+.main-magintop
+    +respond-to($xs-container-width)
+        margin-top: px2vw(19, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 55px
+    +respond-to($md-container-width)
+        margin-top: 55px
