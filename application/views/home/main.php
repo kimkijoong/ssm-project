@@ -33,7 +33,7 @@
         						</p>
 
         						<a class="btn-main go-to-write" href="/Home/write/{{List.seq}}">글쓰러 가기</a>
-        						<a class="btn-main go-to-opench .md-pull-2" href="/Home/opench">공개씀 보기</a>
+        						<a class="btn-main go-to-opench" href="/Home/opench/{{List.seq}}">공개씀 보기</a>
                             </div>
                         </div>
 					</div>
