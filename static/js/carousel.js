@@ -15,7 +15,7 @@
 	var btn_next = $('.btn-down');
 	var total_page = $('.total-page');
 	var current_page = $('.current-page');
-	
+	console.log(slide_content_box);
 	setTimeout(function() {
 		var length = $('.slide-content').length;
 		var count = 2;
@@ -76,12 +76,14 @@
 				page -= 1;
 
 				slide_content_box.css('top', -slide_content_box_height);
+				slide_content_box.addClass('top');
 
 				if(page < 1 || current_idx < 0) {
 					page = 1;
 					current_idx = 0;
 					last_idx = 1;
-				} 
+				}
+				console.log(page);
 				current_page.text(page);
 			});
 
@@ -96,7 +98,8 @@
 					page = last_page;
 					current_idx = (page*count)-2;
 					last_idx = current_idx + (count-1);
-				} 
+				}
+				console.log(page);
 				current_page.text(page);
 			});
 		}
@@ -111,7 +114,7 @@
 		// 4. prev or next 누를 때 page number 변경
 		total_page.text(last_page);
 		current_page.text(page);
-	}, 8000);
+	}, 2000);
 	
 	function totalPage($length, $count) {
 		// console.log(Math.ceil($length/$count));
