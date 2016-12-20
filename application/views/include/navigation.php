@@ -6,8 +6,7 @@
 			<h1 class="readable-hidden">씀 로고(메인화면으로 바로가기)</h1>
 
 			<a class="logo-but-white" href="/Home/main">
-				<span class="logo-main">벗</span>
-				<span class="logo-text">Your writing Friend</span>
+				<img class="logo-but-symbol" src="/static/images/icons/logo-text-white.svg" alt="">
 			</a>
 		</section>
 

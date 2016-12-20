@@ -93,9 +93,6 @@ section .main-content {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -103,8 +100,6 @@ section .main-content {
 }
 
 .logo {
-  width: 160px;
-  height: 24px;
   display: inline-block;
 }
 
@@ -558,11 +553,6 @@ section .write-box-wrap {
     margin: 0 auto;
   }
 
-  .logo {
-    width: 210px;
-    height: 29px;
-  }
-
   .logo-but-white {
     font-size: 16px;
   }
@@ -800,11 +790,21 @@ section .write-box-wrap {
   .main-magintop {
     margin-top: 55px;
   }
+
+  .logo-but-symbol {
+    width: 169px;
+    margin-top: 15px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
   .main-magintop {
     margin-top: 5.9375vw;
+  }
+
+  .logo-but-symbol {
+    width: 46.25vw;
+    margin-top: 3.75vw;
   }
 }
 
@@ -816,6 +816,11 @@ section .write-box-wrap {
 
   .main-magintop {
     margin-top: 55px;
+  }
+
+  .logo-but-symbol {
+    width: 169px;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=../maps/common.css.map */
