@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Ssum: main</title>
+    <link rel="stylesheet" src="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link rel="stylesheet" src="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css">
     <link rel="stylesheet" type="text/css" href="/static/css/libs/but_grid/grid_style.css">
     <link rel="stylesheet" type="text/css" href="/static/css/common.css">
     <link rel="stylesheet" type="text/css" href="/static/css/main-style.css">

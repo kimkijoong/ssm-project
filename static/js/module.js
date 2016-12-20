@@ -17,7 +17,7 @@ var aside = $(".aside");
  // 		var documentHeight = $(document).height();
  // 		var currentScroll = $(window).scrollTop() + $(window).height();
 
- // 		// currentScroll 값과 documentHeight 값이 같아졌을 때, 
+ // 		// currentScroll 값과 documentHeight 값이 같아졌을 때,
  // 		// 즉, scroll의 top 높이와 window의 높이값을 더한 값이 html 문서 높이와 같아졌을 때,
  // 		// if(currentScroll == documentHeight) {
  // 		// documentHeight 값이 현재 scroll 위치값에 100을 더한 값보다 작을 때 아래 코드 실행
@@ -38,7 +38,7 @@ var aside = $(".aside");
 	'use strict';
 
 	var align_status = null;
-	var text_align = $('#align-status');	
+	var text_align = $('#align-status');
 
 	// resize
 	$(global).resize(function() {
@@ -186,7 +186,7 @@ function wrapWindowByMask() {
  * 	2016.12.17
  * 	@eunju.K
  * ------------------------------------------------ */
-function changeOffOnClass($dir) { 
+function changeOffOnClass($dir) {
 	switch($dir){
 		case 'left':
 			if(nav.hasClass('off')) {
@@ -210,7 +210,7 @@ function changeOffOnClass($dir) {
 			break;
 	}
 }
-function changeOnOffClass($dir) { 
+function changeOnOffClass($dir) {
 	switch($dir){
 		case 'left':
 			if(nav.hasClass('on')) {
@@ -232,7 +232,7 @@ function changeOnOffClass($dir) {
 			break;
 		default:
 			break;
-	}	
+	}
 }
 
 /* ---------------------------------------
@@ -244,7 +244,7 @@ function changeOnOffClass($dir) {
 function closeBox($dir) {
 	var closeLeft = $("#nav-btn-close");
 	var closeRight = $("#aside-btn-close");
-	
+
 	// close 버튼 눌렀을 때
 	if($dir == "left") {
 		closeLeft.on('click', function(e) {
@@ -305,4 +305,3 @@ function closeBox($dir) {
 	img.attr('src', '');
 	img.attr('src', '/static/images/icons/ic_align_' + align + '.svg');
  }
-
