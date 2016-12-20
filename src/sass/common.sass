@@ -5,7 +5,7 @@
 @import "common-mixin"
 @import "libs/but_grid/_mixins"
 @import "libs/but_grid/_placeholder"
-
+@import "font"
 
 /**-------------------------
  * 	common style
@@ -27,7 +27,7 @@
 		padding-right: 374px;
 .nav-container
 	display: flex
-	align-items: center
+	// align-items: center
 	justify-content: center
 	height: 52px
 	+respond-to($md-container-width)
@@ -35,16 +35,17 @@
 		margin: 0 auto
 
 .logo
-	// +setWH(112px, 18px)
-	+setWH(160px, 24px)
+	// +setWH(148px, 18px)
+	// +setWH(160px, 24px)
 
 	display: inline-block
-	+respond-to($md-container-width)
-		+setWH(210px, 29px)
+	// +respond-to($md-container-width)
+	// 	+setWH(210px, 59px)
+
 .logo-but-white
 	@extend %a
 	// +setFont(size 14px)
-
+    height: 59px
 	line-height: line-height(14)
 	color: #fff
 	+respond-to($md-container-width)
@@ -178,7 +179,7 @@
 
 	// font-size: px2vw(16, $xs-container-width)
 	+font-rule(16)
-	font-weight: 500
+	// font-weight: 500
 	text-align: center
 	padding: 12px 16px
 	+respond-to($md-container-width)
@@ -438,11 +439,11 @@
 	+respond-to($md-container-width)
 		+setPosition(absolute, bottom 0 index 9999)
 .page-number
-	display: flex;
-	align-items: center;
+	display: flex
+	align-items: center
 	justify-content: center
-	padding: 15px 30px;
-	box-sizing: border-box;
+	padding: 15px 30px
+	box-sizing: border-box
 .number
 	@extend %box-sizing
 	+setWH(69px, 18px)
@@ -505,3 +506,27 @@ section
 		+respond-to($md-container-width)
 			float: none
 			margin: 0 auto
+
+
+
+// 임의의 메인 탑 마진 주는 코드
+.main-magintop
+    +respond-to($xs-container-width)
+        margin-top: px2vw(19, $xs-container-width)
+    +respond-to($sm-container-width)
+        margin-top: 55px
+    +respond-to($md-container-width)
+        margin-top: 55px
+
+
+// 로고
+.logo-but-symbol
+    +respond-to($xs-container-width)
+        width: 148px
+        margin-top: 12px
+    +respond-to($sm-container-width)
+        width: 169px
+        margin-top: 10px
+    +respond-to($md-container-width)
+        width: 169px
+        margin-top: 15px

@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </fieldset>
-            <div class="">
+            <div class="login-btns-position">
                 <div class="login-btn-wrap">
                     <button class="btn-login" type="submit">로그인</button>
                     <a class="btn-join" href="/Member/join_page" title="회원가입 페이지 링크">회원가입</a>

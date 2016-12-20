@@ -36,7 +36,7 @@
                 <span class="user-pw-text"></span>
             </div>
         </fieldset>
-        <div class="">
+        <div class="join-btn-position">
             <div class="join-btn-wrap">
                 <button class="join-btn-join join_btn" type="submit">회원가입</button>
                 <a class="join-btn-login" href="/Member/login_page" title="로그인 페이지 링크">로그인</a>
