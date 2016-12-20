@@ -59,6 +59,10 @@ class Home extends CI_Controller {
         $data = $this->Boarder_model->daily_topic_select();
         $this->load->view('home/main',array('data' => $data));
     }
+    public function phpinfo()
+    {
+        $this->load->view('home/mySsum');
+    }
     public function openSsmList()
     {
         $this->load->view('home/openSsumList');
@@ -173,6 +177,10 @@ class Home extends CI_Controller {
         $data = $this->Boarder_model->myTopicOne($topic_seq);
         $this->load->view('home/myChDetail', array('data' => $data));
     }
+    public function mychlist()
+    {
+        $this->load->view('home/mychlist');
+    }
 
     public function topiclistview()
     {
@@ -211,6 +219,11 @@ class Home extends CI_Controller {
     }
     public function myTopicOne($topic_seq){
         $data = $this->Boarder_model->myTopicOne($topic_seq);
+        echo json_encode($data);
+    }
+    public function insertBookMark($topic_seq){
+        $user_seq = $this->session->userdata('user_seq');
+        $data = $this->Boarder_model->insertBookMark($user_seq, $topic_seq);
         echo json_encode($data);
     }
 }

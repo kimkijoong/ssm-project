@@ -69,7 +69,7 @@
 					<?php  } else { ?>
 					<a href="/Member/login_page" class="btn-option btn-login">로그인</a>
 					<?php } ?>
-					<a class="btn-option btn-setting" href="/Member/my_page">설 정</a>
+					<a class="btn-option btn-setting" href="/Member/setting">설 정</a>
 				</div >
 
 				<div class="footer">
@@ -110,17 +110,17 @@
 			</section>
 
 			<section class="slide-box">
-        <div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
-            <h1 class="slide-day">{{List.day}}</h1>
-            <div class="slide-topic-box">
-                <p class="slide-day-topic" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-                <a href="/Home/write/{{List.seq1}}" class="slide-topic">"{{List.topic1}}"</a>
-            </div>
-            <div class="slide-topic-box">
-                <p class="slide-day-topic" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-                <a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic">"{{List.topic2}}"</a>
-            </div>
-        </div>
+				<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
+					<h1 class="slide-day">{{List.day}}</h1>
+					<div class="slide-topic-box">
+						<p class="slide-day-topic" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+						<a href="/Home/write/{{List.seq1}}" class="slide-topic">"{{List.topic1}}"</a>
+					</div>
+					<div class="slide-topic-box">
+						<p class="slide-day-topic" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+						<a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic">"{{List.topic2}}"</a>
+					</div>
+				</div>
 			</section>
 
 			<section class="static-btn-bottom-aside">

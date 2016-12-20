@@ -8,7 +8,7 @@
 // require('jquery');
 let angular = require('angular');
 
-let bipan = angular.module('ButProjectApp', []);
+let ButProjectApp = angular.module('ButProjectApp', []);
 
 // Controllers
 require('./controllers/TopicListController'); // 모든 주제를 service(TopicList)로부터 전달받아 뷰에 전달해준다.

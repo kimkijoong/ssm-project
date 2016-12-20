@@ -1,11 +1,11 @@
 $(document).ready(function() {
-    $('#profile-layer-open').mousedown(function(e){
+    $('#profile-layer-open').click(function(e){
         $('#setting-layer').show();
     });
-    $('#setting-layer-close').mousedown(function(e){
+    $('#setting-layer-close').click(function(e){
         $('#setting-layer').hide();
     });
-    $('.profile-popup-dim').mousedown(function(e){
+    $('.profile-popup-dim').click(function(e){
         $('#setting-layer').hide();
     });
 });

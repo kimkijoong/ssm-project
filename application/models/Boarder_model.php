@@ -355,5 +355,23 @@ Class Boarder_model extends CI_Model {
         $result =$this->db->query('SELECT * FROM daily_topic where seq = '.$post_seq)->result();
         return $result;
     }
+    public function insertBookMark($user_seq, $topic_seq){
+        $new_array = [];
+        $user = $this->db->query('SELECT user_seq FROM bookmark where user_seq = '.$user_seq)->num_rows();
+        if($user){
+            $result = $this->db->query('INSERT INTO bookmark( user_seq, writer_seq_array) VALUES ('.$user_seq.','.$topic_seq.',)')->num_rows();
+        } else {
+            $array = $this->db->query('SELECT writer_seq_array FROM bookmark where user_seq = '.$user_seq)->result();
+            for($i = 0 ; $i < $array.length ; $i++){
+                if($array[$i] == $topic_seq) {
+
+                } else {
+                    $new_array.push($array[$i]);
+                }
+            }
+            $result = $this->db->query('UPDATE bookmark SET writer_seq_array ='.$new_array.' WHERE user_seq ='.$user_seq)->num_rows();
+        }
+        return $result;
+    }
 }
 

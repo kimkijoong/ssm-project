@@ -18,27 +18,27 @@
             </div>
             <div class="join-input-group">
                 <label for="join-user-email">이메일</label>
-                <input class="input-width" type="email" id="user-email" placeholder="이메일을 입력해주세요" required>
+                <input class="input-width user-email" type="email" id="user-email" name="user_email" placeholder="이메일을 입력해주세요" required>
                 <span class="user-email-text"></span>
             </div>
             <div class="join-input-group">
                 <label for="user-name">작가명</label>
-                <input class="input-width" type="text" id="user-name" maxlength="8" placeholder="작가명을 지어주세요" required>
+                <input class="input-width user-name" type="text" id="user-name" name="user_name" maxlength="8" placeholder="작가명을 지어주세요" required>
                 <span class="user-name-text"></span>
             </div>
             <div class="join-input-group">
                 <label for="user-pw">비밀번호</label>
-                <input class="input-width" type="password" id="user-pw" maxlength="16" placeholder="비밀번호를 입력해주세요" required>
+                <input class="input-width user-pw" type="password" id="user-pw" name="user_pw" maxlength="16" placeholder="비밀번호를 입력해주세요" required>
             </div>
             <div class="join-input-group">
                 <label for="user-pw2">비밀번호 확인</label>
-                <input class="input-width" type="password" id="user-pw2" maxlength="16" placeholder="비밀번호를 확인해주세요" required>
+                <input class="input-width user-pw2" type="password" id="user-pw2" maxlength="16" placeholder="비밀번호를 확인해주세요" required>
                 <span class="user-pw-text"></span>
             </div>
         </fieldset>
         <div class="">
             <div class="join-btn-wrap">
-                <button class="join-btn-join" type="submit">회원가입</button>
+                <button class="join-btn-join join_btn" type="submit">회원가입</button>
                 <a class="join-btn-login" href="/Member/login_page" title="로그인 페이지 링크">로그인</a>
             </div>
             <a class="join-findpw" href="/Member/find_pw_page" title="비밀번호 찾기 페이지 링크">비밀번호 찾기</a>

@@ -4203,7 +4203,12 @@ body {
 }
 
 .add-photo-position {
-  position: relative;
+  position: fixed;
+  z-index: 100000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 .profile-popup-dim {
@@ -8305,8 +8310,11 @@ body {
   .photo-popup-layer {
     width: 370px;
     height: 516px;
-    top: 245px;
-    left: 343px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .file-box {
@@ -10843,10 +10851,13 @@ body {
   }
 
   .photo-popup-layer {
-    width: 78.75vw;
-    height: 116.875vw;
-    top: 40vw;
-    left: 10.625vw;
+    width: 80vw;
+    height: 90vh;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .file-box {
@@ -14269,8 +14280,11 @@ body {
   .photo-popup-layer {
     width: 370px;
     height: 516px;
-    top: 245px;
-    left: 343px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 
   .file-box {

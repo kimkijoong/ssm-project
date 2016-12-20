@@ -253,8 +253,12 @@ input[placeholder]
 
 // 딤 처리를 위한 포지션
 .add-photo-position
-    position: relative
-
+    position: fixed
+    z-index: 100000
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
 // 딤 배경
 .profile-popup-dim
     position: absolute
@@ -270,20 +274,23 @@ input[placeholder]
     z-index: 60
     background-color: $basic-white
     +respond-to($xs-container-width)
-        width: px2vw(252, $xs-container-width)
-        height: px2vw(374, $xs-container-width)
-        top: px2vw(128, $xs-container-width)
-        left: px2vw(34, $xs-container-width)
+        width: 80vw
+        height: 90vh
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
     +respond-to($sm-container-width)
         width: 370px
         height: 516px
-        top: 245px
-        left: 343px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
     +respond-to($md-container-width)
         width: 370px
         height: 516px
-        top: 245px
-        left: 343px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
 
 
 
