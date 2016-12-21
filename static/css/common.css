@@ -769,6 +769,7 @@ body {
   width: 129.6px;
   height: 34px;
   float: left;
+  cursor: pointer;
   border: 1px solid #e0e0e0;
   background-color: #e0e0e0;
 }
