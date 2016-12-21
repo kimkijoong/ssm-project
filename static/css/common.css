@@ -675,11 +675,7 @@ body {
   height: 412px;
   position: absolute;
   top: 42px;
-<<<<<<< HEAD
-  padding: 0 24px;
-=======
   overflow: hidden;
->>>>>>> 92ec89beb501f72dcab35074d1de4406a3afc80e
 }
 
 .slide-content-box {

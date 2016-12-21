@@ -41,7 +41,7 @@
 		if(width < 1440) {
 			console.log("1024이하");
 			slide_content_box_height = (slide_content_height+margin_top) * count;
-
+			btn_prev.attr('disabled', 'true');
 			btn_prev.on('click', function() {
 				currunt_top += slide_content_box_height;
 				current_idx -= count;
@@ -52,7 +52,7 @@
 
 				btn_next.removeAttr('disabled');
 
-				if(page < 1 || current_idx < 0) {
+				if(page == 1 || current_idx == 0) {
 					page = 1;
 					current_idx = 0;
 					last_idx = 1;
@@ -71,7 +71,7 @@
 
 				btn_prev.removeAttr('disabled');
 
-				if(page > last_page || current_idx > last_page) {
+				if(page == last_page || current_idx == last_page) {
 					page = last_page;
 					current_idx = (page*count)-2;
 					last_idx = current_idx + (count-1);
