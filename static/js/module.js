@@ -4,36 +4,8 @@ var width = $(window).width();
 var nav = $(".navigation");
 var aside = $(".aside");
 
-/* ---------------------------------------
- * 	Infinite Scroll(무한 스크롤)
- *
- * 	2016.11.29
- * 	@eunju.K
- * 	-- 수정해야 함 **
- * ------------------------------------ */
- // function infiniteScroll() {
- // 	// jQuery
- // 	$(window).scroll(function(){
- // 		var documentHeight = $(document).height();
- // 		var currentScroll = $(window).scrollTop() + $(window).height();
 
- // 		// currentScroll 값과 documentHeight 값이 같아졌을 때,
- // 		// 즉, scroll의 top 높이와 window의 높이값을 더한 값이 html 문서 높이와 같아졌을 때,
- // 		// if(currentScroll == documentHeight) {
- // 		// documentHeight 값이 현재 scroll 위치값에 100을 더한 값보다 작을 때 아래 코드 실행
- // 		// 참고: http://webisfree.com/blog/?titlequery=jquery-%EB%AC%B4%ED%95%9C-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0--%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9D%B4%EB%B2%A4%ED%8A%B8-scroll-
- // 		// 사용자가 최하단이 아닌 하단보다 조금 위에 위치했더라도 미리 새로운 콘텐츠가 추가되기 위함.
-	// 	if(documentHeight <= currentScroll + 100) {
-	//  		// 아래 코드가 성공할 경우,
-	//  		// 해당하는 콘텐츠 영역에 불러온 새로운 글을 추가
- // 			for( var i = 0; i < 10; i++ ) {
- // 				$('<h1>scroll</h1>').appendTo('body');
- // 			}
- // 		}
- // 	});
- // }
 
-// menuSlide();
 (function(global, $) {
 	'use strict';
 
@@ -119,14 +91,6 @@ var aside = $(".aside");
 })(this, this.jQuery);
 
 
-/* ---------------------------------------
- * 	carousel (캐러셀)
- *
- * 	2016.12.02
- * 	@eunju.K
- * ------------------------------------ */
-
-
 
 /* ---------------------------------------
  * 	dim 처리
@@ -146,8 +110,8 @@ function wrapWindowByMask() {
 	});
 
 	if(maskWidth >= 1440) {
-		mask.css('z-index', '999990');
-		$('.aside').css('z-index', '999999')
+		mask.css('z-index', '999999');
+		$('.aside').css('z-index', '999990')
 	}
 
 	// 80% 불투명도

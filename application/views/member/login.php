@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/static/css/view.css">
-    <!-- <link rel="stylesheet" href="/static/css/login.css"> -->
+     <link rel="stylesheet" href="/static/css/login.css">
     <title>but-intro</title>
 </head>
 <body>

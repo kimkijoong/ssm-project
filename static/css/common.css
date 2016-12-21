@@ -509,13 +509,13 @@ body {
 }
 
 .btn-logout,
-.btn-login {
+.nav-btn-login {
   float: left;
   margin-left: 17px;
   cursor: pointer;
 }
 
-.btn-login {
+.nav-btn-login {
   padding: 9px  0;
 }
 
