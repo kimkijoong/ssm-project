@@ -9,7 +9,7 @@
 
 	var slide_content = $('.slide-content');
 	var slide_content_height = slide_content.height();
-	var slide_content_box = $('.slide-contnet-box');
+	var slide_content_box = $('.slide-content-box');
 	var slide_content_box_height = null;
 	var btn_prev = $('.btn-up');
 	var btn_next = $('.btn-down');

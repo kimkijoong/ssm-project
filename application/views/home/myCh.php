@@ -10,8 +10,6 @@
 <body class="" data-ng-app="ButProjectApp">
 <!--<div class="grid-box base-line"></div>-->
 <div class="outer"
-     data-ng-cloak
-     data-ng-controller="myTopicController"
      >
     <?php include_once("./application/views/include/navigation.php") ?>
     <main class="main main-magintop">
@@ -19,7 +17,9 @@
             <div class="container">
                 <div class="row">
                     <div class="main-content xs-col-4 sm-col-11 md-col-11">
-                        <section class="row">
+                        <section class="row"
+                                 data-ng-cloak
+                                 data-ng-controller="myTopicController">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
                                 <article class="md-col-3 sm-col-3 xs-col-4 motif-position" data-ng-repeat="List in PostList.postData | userTopicFilter">
                                     <a href="/Home/myChDetail/{{List.seq}}" class="motif-card">
