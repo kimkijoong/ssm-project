@@ -1180,6 +1180,14 @@ body {
   transition: box-shadow 0.2s ease;
 }
 
+.col-float {
+  float: left;
+}
+
+.col-postion-r {
+  position: relative;
+}
+
 @media only screen and (min-width: 1440px) {
   .txt-page-title {
     font-size: 36px;
@@ -1666,8 +1674,8 @@ body {
 
   .content-contents {
     padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
     line-height: 20px;
   }
 
@@ -2897,8 +2905,8 @@ body {
 
   .content-contents {
     padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
     line-height: 20px;
   }
 

@@ -38,7 +38,7 @@
 
 				<ul class="menu-list">
 					<!-- <li class="list"><a href="#">공개 씀</a></li> -->
-					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/topiclistview">공개 씀</a></li>
+					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/topiclistview">구독목록</a></li>
 					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/mych">나의 씀</a></li>
 					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/bookmark">책갈피</a></li>
 				</ul>
@@ -106,23 +106,20 @@
 					</div>
 				</form>
 			</section>
+			<section class="slide-box slideboxborder">
+				<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
+					<h1 class="slide-day side-date-txt">{{List.day}}</h1>
+					<div class="slide-topic-box">
+						<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+						<a href="/Home/write/{{List.seq1}}" class="slide-topic side-topic-txt">"{{List.topic1}}"</a>
+					</div>
+					<div class="slide-topic-box">
+						<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
+						<a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic side-topic-txt">"{{List.topic2}}"</a>
 
-			<section class="slide-box">
-				<div class="slide-content-box">
-					<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData">
-						<h1 class="slide-day side-date-txt">{{List.day}}</h1>
-						<div class="slide-topic-box">
-							<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-							<a href="/Home/write/{{List.seq1}}" class="slide-topic side-topic-txt">"{{List.topic1}}"</a>
-						</div>
-						<div class="slide-topic-box">
-							<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
-							<a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic side-topic-txt">"{{List.topic2}}"</a>
-						</div>
 					</div>
 				</div>
 			</section>
-
 			<section class="static-btn-bottom-aside">
 				<div class="page-number">
 					<div class="line"></div>

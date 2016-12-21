@@ -1,3 +1,5 @@
+@import "ui-kit"
+
 /////////////////////////////////////////////////////////
 //  default
 /////////////////////////////////////////////////////////
@@ -21,6 +23,20 @@ body
         padding-bottom: 33px
     +respond-to($md-container-width)
         padding-top: 89px
+        padding-bottom: 33px
+
+.page-top-margin
+    +respond-to($xs-container-width)
+        padding-top: px2vw(8, $xs-container-width)
+        padding-bottom: px2vw(8, $xs-container-width)
+        background-color: $basic-white
+        box-shadow: 0 2px 2px 0 $gray-400
+        margin-bottom: px2vw(18, $xs-container-width)
+    +respond-to($sm-container-width)
+        padding-top: 120px
+        padding-bottom: 33px
+    +respond-to($md-container-width)
+        padding-top: 120px
         padding-bottom: 33px
 
 
@@ -77,11 +93,11 @@ body
 
 .tab-contnents
     +respond-to($xs-container-width)
-        margin-top: px2vw(18, $xs-container-width)
+        margin-top: px2vw(108, $xs-container-width)
     +respond-to($sm-container-width)
-        margin-top: 25px
+        margin-top: 255px
     +respond-to($md-container-width)
-        margin-top: 25px
+        margin-top: 255px
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -438,3 +454,13 @@ body
     +respond-to($md-container-width)
         margin-left: auto
         margin-right: auto
+
+
+.bookmark-header
+    position: fixed
+    z-index: 20
+    background-color: $background-color
+
+
+.tab-left-margin
+    margin-left: 0
