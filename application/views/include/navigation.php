@@ -108,7 +108,7 @@
 			</section>
 
 			<section class="slide-box">
-				<div class="slide_content_box">
+				<div class="slide-content-box">
 					<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData">
 						<h1 class="slide-day side-date-txt">{{List.day}}</h1>
 						<div class="slide-topic-box">
@@ -126,7 +126,9 @@
 			<section class="static-btn-bottom-aside">
 				<div class="page-number">
 					<div class="line"></div>
-					<p class="number">1/4</p>
+					<p class="number">
+						<span class="current-page"></span>/<span class="total-page"></span>
+					</p>
 					<div class="line"></div>
 				</div>
 
