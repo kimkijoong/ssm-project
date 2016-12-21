@@ -39,7 +39,7 @@
 
 				<ul class="menu-list">
 					<!-- <li class="list"><a href="#">공개 씀</a></li> -->
-					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/topiclistview">공개 씀</a></li>
+					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/topiclistview">구독목록</a></li>
 					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/mych">나의 씀</a></li>
 					<li class="list waves-effect waves-mint"><a class="list-txt" href="/Home/bookmark">책갈피</a></li>
 				</ul>
@@ -108,7 +108,7 @@
 				</form>
 			</section>
 
-			<section class="slide-box">
+			<section class="slide-box slideboxborder">
 				<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
 					<h1 class="slide-day side-date-txt">{{List.day}}</h1>
 					<div class="slide-topic-box">

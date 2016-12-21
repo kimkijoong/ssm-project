@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>find_password</title>
     <link rel="stylesheet" href="../../../static/css/view.css">
-    <link rel="stylesheet" href="../../../static/css/findpw.css">
+    <!-- <link rel="stylesheet" href="../../../static/css/findpw.css"> -->
 </head>
 <body>
     <div class="form-pw-wrap password-bg">
