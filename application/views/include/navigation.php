@@ -65,7 +65,7 @@
 							<button class="btn-option btn-logout" type="submit">로그아웃</button>
 						</form>
 					<?php  } else { ?>
-					<a href="/Member/login_page" class="btn-option btn-login">로그인</a>
+						<a href="/Member/login_page" class="btn-option btn-login">로그인</a>
 					<?php } ?>
 					<a class="btn-option btn-setting" href="/Member/setting">설 정</a>
 				</div >
@@ -109,7 +109,7 @@
 
 			<section class="slide-box">
 				<div class="slide-content-box">
-					<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData">
+					<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange : range.startDate : range.endDate">
 						<h1 class="slide-day side-date-txt">{{List.day}}</h1>
 						<div class="slide-topic-box">
 							<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category1"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>

@@ -384,7 +384,7 @@ body {
   height: 24px;
   position: absolute;
   top: 14px;
-  background-color: none;
+  background-color: transparent;
 }
 
 .header [id^="btn-"]>img {
@@ -1115,7 +1115,7 @@ section .write-box-wrap {
 
   .slide-box {
     width: 364px;
-    height: 866px;
+    height: 524px;
     position: absolute;
     top: 62px;
   }
