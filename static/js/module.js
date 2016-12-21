@@ -126,35 +126,7 @@ var aside = $(".aside");
  * 	@eunju.K
  * ------------------------------------ */
 
-// (function(global, $) {
-// 	'use strict';
 
-// 	// our project setting value
-// 	var slideBoxHeight = $('.slideBox').height();
-// 	// console.log(slideBoxHeight);
-
-// 	// var slide = Object(function(){
-// 	// 	content_cnt = 3;
-// 	// });
-// 	// console.log(slide);
-// 	// console.log(slide.content_cnt.value);
-
-// 	// setting outer box (class = slideBox)
-// 	$(".slideBox").css({
-// 		'width' : '100%',
-// 		'hegiht' : 'auto',
-// 		'padding' : 0
-// 	});
-
-// 	// setting column box css (class = slide-content)
-// 	$(".slide-content").css({
-
-// 	});
-// })(this, this.jQuery);
-
-
-
-// function //
 
 /* ---------------------------------------
  * 	dim 처리

@@ -55,7 +55,7 @@ ul {
 .search-date label,
 .search,
 .search>input,
-.slide-box,
+.slide-content-box,
 .number,
 section .main-content {
   box-sizing: border-box;
@@ -672,10 +672,29 @@ body {
 }
 
 .slide-box {
-  width: 100%;
+  width: 260px;
   height: 412px;
   position: absolute;
   top: 42px;
+  overflow: hidden;
+  diplay: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.slide-content-box {
+  width: 100%;
+  height: auto;
+  top: 0;
+  right: 0;
+  position: absolute;
   padding: 0 24px;
 }
 
@@ -722,7 +741,7 @@ body {
 
 .static-btn-bottom-aside {
   position: absolute;
-  bottom: 50;
+  bottom: 0;
   width: 100%;
 }
 
@@ -761,6 +780,7 @@ body {
   width: 129.6px;
   height: 34px;
   float: left;
+  cursor: pointer;
   border: 1px solid #e0e0e0;
   background-color: #e0e0e0;
 }
@@ -1108,10 +1128,13 @@ section .write-box-wrap {
   }
 
   .slide-box {
-    width: 100%;
+    width: 364px;
     height: 866px;
     position: absolute;
     top: 62px;
+  }
+
+  .slide-content-box {
     padding: 20px 38px 0 38px;
   }
 

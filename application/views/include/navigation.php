@@ -34,7 +34,6 @@
 							<p class="pen-name pen-name-txt">손님</p>
 						</a>
 					<?php } ?>
-
 				</div>
 
 				<ul class="menu-list">
@@ -107,7 +106,6 @@
 					</div>
 				</form>
 			</section>
-
 			<section class="slide-box slideboxborder">
 				<div class="slide-content" data-ng-cloak data-ng-repeat="List in TopicList.topicData | dateRange: range.startDate : range.endDate | limitTo:2">
 					<h1 class="slide-day side-date-txt">{{List.day}}</h1>
@@ -118,14 +116,16 @@
 					<div class="slide-topic-box">
 						<p class="slide-day-topic side-date-topic-txt" ng-switch on="List.category2"><span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제</p>
 						<a href="/Home/write/{{List.seq2}}" class="slide-topic slide-last-topic side-topic-txt">"{{List.topic2}}"</a>
+
 					</div>
 				</div>
 			</section>
-
 			<section class="static-btn-bottom-aside">
 				<div class="page-number">
 					<div class="line"></div>
-					<p class="number">1/4</p>
+					<p class="number">
+						<span class="current-page"></span>/<span class="total-page"></span>
+					</p>
 					<div class="line"></div>
 				</div>
 

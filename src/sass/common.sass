@@ -1,4 +1,4 @@
-// import
+// import 
 @import "common-init"
 @import "libs/but_grid/_vars"
 @import "libs/but_grid/_functions"
@@ -33,7 +33,7 @@
 	height: 52px
 	+respond-to($md-container-width)
 		+setWH(100%, 62px)
-		margin: 0 auto
+		margin: 0 auto	
 
 .logo
 	// +setWH(148px, 18px)
@@ -54,7 +54,7 @@
 .logo-main
 	@extend %box-sizing
 	+setWH(24px, 24px)
-
+	
 	display: inline-block
 	text-align: center
 	border: 1px solid #fff
@@ -66,7 +66,7 @@
 		+setWH(160px,27px)
 		display: inline-block
 
-
+	
 
 /* mask */
 #mask
@@ -111,7 +111,7 @@
 	border: 0
 	+respond-to($md-container-width)
 		display: none
-
+	
 
 /* menu */
 .navigation
@@ -132,7 +132,7 @@
 	+setWH(100%, auto)
 
 	margin-top: 50px
-
+	
 .profile
 	@extend %clearfix
 	+setWH(100%, 70px)
@@ -153,7 +153,7 @@
 .pen-name
 	+setWH(156px, 20px)
 	+setFont(size 14px weight bold)
-
+	
 	// font-size: px2vw(14, $xs-container-width)
 	line-height: line-height(14)
 	float: left
@@ -178,7 +178,7 @@
 .list > a
 	@extend %a
 	+setWH(auto, 24px)
-
+	
 	// font-size: px2vw(16, $xs-container-width)
 	+font-rule(16)
 	// font-weight: 500
@@ -194,7 +194,7 @@
 	@extend %clearfix
 	+setWH(100%, 66px)
 	+setPosition(absolute, bottom 113px)
-
+	
 	display: flex
 	align-items: center
 	justify-content: center
@@ -281,7 +281,7 @@
 
 .btn-close
 	+setWH(50px, 50px)
-
+	
 	+font-rule(24)
 	color: #fff
 	cursor: pointer
@@ -378,14 +378,21 @@
 			margin-left: 7px
 
 .slide-box
-	@extend %box-sizing
-	+setWH(100%, 412px)
+	+setWH(260px, 412px)
 	+setPosition(absolute, top 42px index 999999)
 
+	overflow: hidden
+	+respond-to($md-container-width)
+		+setWH(364px, 866px)
+		+setPosition(absolute, top 62px index 999999)
+.slide-content-box
+	@extend %box-sizing
+	+setWH(100%, auto)
+	top: 0
+	right: 0
+	position: absolute	
 	padding: 0 24px
 	+respond-to($md-container-width)
-		+setWH(100%, 866px)
-		+setPosition(absolute, top 62px index 999999)
 		padding: 20px 38px 0 38px
 .slide-content
 	+setWH(100%, 184px)
@@ -399,7 +406,7 @@
 .slide-day
 	+setWH(100%, 56px)
 	+setFont(size 38px weight 300)
-
+	
 	line-height: line-height(38)
 	color: #51bcd8
 	text-align: right
@@ -414,7 +421,7 @@
 .slide-day-topic	// , .slide-night-topic
 	+setWH(100%, 18px)
 	+setFont(size 12px weight normal)
-
+	
 	line-height: line-height(12)
 	color: #616161
 	+respond-to($md-container-width)
@@ -424,7 +431,7 @@
 	@extend %a
 	+setWH(100%, 24px)
 	+setFont(size 16px weight 500)
-
+	
 	line-height: line-height(16)
 	color: #616161
 	margin-bottom: 14px
@@ -436,7 +443,7 @@
 // 	margin-bottom: 22px
 
 .static-btn-bottom-aside
-	+setPosition(absolute, bottom 50 index 9999)
+	+setPosition(absolute, bottom 0 index 9999)
 	width: 100%
 	+respond-to($md-container-width)
 		+setPosition(absolute, bottom 0 index 9999)
@@ -450,7 +457,7 @@
 	@extend %box-sizing
 	+setWH(69px, 18px)
 	+setFont(size 12px weight bold)
-
+	
 	line-height: line-height(12)
 	color: #757575
 	text-align: center
@@ -468,6 +475,7 @@
 	+setWH(129.6px, 34px)
 
 	float: left
+	cursor: pointer
 	border: 1px solid #e0e0e0
 	background-color: #e0e0e0
 	+respond-to($md-container-width)
@@ -483,6 +491,7 @@
 
 #aside-btn-close
 	+setPosition(absolute, top 0 left -50px)
+	
 	+respond-to($md-container-width)
 		display: none
 
@@ -510,7 +519,6 @@ section
 			margin: 0 auto
 
 
-
 // 임의의 메인 탑 마진 주는 코드
 .main-magintop
     +respond-to($xs-container-width)
@@ -532,7 +540,7 @@ section
     +respond-to($md-container-width)
         width: 169px
         margin-top: 15px
-
+  
 .slideboxborder
     +respond-to($md-container-width)
         border-left: 1px solid $gray-200
