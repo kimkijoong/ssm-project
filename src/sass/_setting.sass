@@ -20,12 +20,16 @@
     &:active
         @extend %card-normal
     +respond-to($xs-container-width)
+        margin-top: px2vw(20, $xs-container-width)
+        margin-bottom: px2vw(20, $xs-container-width)
         padding:
             left: px2vw(16, $xs-container-width)
             right: px2vw(16, $xs-container-width)
             top: px2vw(24, $xs-container-width)
             bottom: px2vw(24, $xs-container-width)
     +respond-to($md-container-width)
+        margin-top: 55px
+        margin-bottom: 55px
         padding:
             left: 132px
             right: 132px
@@ -37,6 +41,8 @@
             right: 132px
             top: 81px
             bottom: 59px
+        margin-top: 55px
+        margin-bottom: 55px
 
 // 임의의 높이값
 .setting-card-height
