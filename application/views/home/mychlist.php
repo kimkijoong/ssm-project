@@ -12,11 +12,11 @@
      data-ng-cloak
      data-ng-controller="TopicListController">
     <?php include_once("./application/views/include/navigation.php") ?>
-    <main class="main main-magintop">
+    <main class="main main-magintop padding-top">
         <section  data-ng-cloak data-ng-repeat="List in TopicList.topicData">
             <div class="container">
                 <div class="row">
-                    <div class="main-content xs-col-4 sm-col-11 md-col-11">
+                    <div class="xs-col-4 sm-col-11 md-col-11">
                         <section class="row">
                             <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 one-card-align">
                                 <article class="md-col-9 sm-col-9 xs-col-4">
