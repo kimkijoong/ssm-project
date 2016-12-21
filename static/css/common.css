@@ -112,7 +112,8 @@ section .main-content {
 .txt-nav-footer,
 .txt-slide-pagination,
 .txt-card-my-ch-label,
-.txt-card-setting-title {
+.txt-card-setting-title,
+.pen-name {
   font-family: 'Noto Sans KR', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -798,6 +799,10 @@ section .write-box-wrap {
   margin: 0;
 }
 
+.mychml {
+  margin-left: 0;
+}
+
 @media only screen and (min-width: 1440px) {
   .txt-page-title {
     font-size: 36px;
@@ -999,7 +1004,6 @@ section .write-box-wrap {
 
   .pen-name {
     width: 240px;
-    height: 40px;
     font-size: 1.2857rem;
     line-height: 1.5;
     margin: 30px 0;
@@ -1190,6 +1194,42 @@ section .write-box-wrap {
     width: 169px;
     margin-top: 15px;
   }
+
+  .slideboxborder {
+    border-left: 1px solid #eee;
+  }
+
+  .user-profile {
+    width: 120px;
+    height: 120px;
+    margin: 28px 0px 0px 120px;
+  }
+
+  .pen-name {
+    margin-left: 62px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .profile {
+    height: 220px;
+  }
+
+  .menu-list {
+    margin-top: 42px;
+  }
+
+  .cards-top {
+    margin-top: 205px;
+  }
+
+  .padding-top {
+    padding-top: 55px;
+  }
+
+  .my-cards-top {
+    margin-top: 205px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1365,6 +1405,22 @@ section .write-box-wrap {
     width: 148px;
     margin-top: 12px;
   }
+
+  .cards-top {
+    margin-top: 33.75vw;
+  }
+
+  .padding-top {
+    padding-top: 17.1875vw;
+  }
+
+  .my-cards-top {
+    margin-top: 17.8125vw;
+  }
+
+  .my-page-top {
+    margin-top: 16.25vw;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
@@ -1514,6 +1570,34 @@ section .write-box-wrap {
   .logo-but-symbol {
     width: 169px;
     margin-top: 10px;
+  }
+
+  .user-profile {
+    width: 120px;
+    height: 120px;
+    margin: 30px 70px 0px 70px;
+  }
+
+  .pen-name {
+    width: 160px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .profile {
+    height: 220px;
+  }
+
+  .cards-top {
+    margin-top: 205px;
+  }
+
+  .padding-top {
+    padding-top: 55px;
+  }
+
+  .my-cards-top {
+    margin-top: 205px;
   }
 }
 /*# sourceMappingURL=../maps/common.css.map */

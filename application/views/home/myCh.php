@@ -12,17 +12,20 @@
 <div class="outer"
      >
     <?php include_once("./application/views/include/navigation.php") ?>
-    <main class="main main-magintop">
+    <main class="main">
         <section  data-ng-cloak>
             <div class="container">
                 <div class="row">
-                    <div class="main-content xs-col-4 sm-col-11 md-col-11">
-                        <section class="row"
-                                 data-ng-cloak
-                                 data-ng-controller="myTopicController">
-                            <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align">
-                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position" data-ng-repeat="List in PostList.postData | userTopicFilter">
-                                    <a href="/Home/myChDetail/{{List.seq}}" class="motif-card">
+                    <div class="bookmark-header xs-col-4 sm-col-11 md-col-11 ">
+                        <div class="page-top-margin my-page-top">
+                            <h1 class="txt-page-title">" 나의 씀 "</h1>
+                        </div>
+                    </div>
+                    <div class="main-content xs-col-4 sm-col-11 md-col-11 mychml">
+                        <section class="row">
+                            <div class="md-push-1 sm-push-1 md-col-9 sm-col-9 xs-col-4 three-card-align my-cards-top">
+                                <article class="md-col-3 sm-col-3 xs-col-4 motif-position" data-ng-repeat="List in PostList.postData">
+                                    <a href="/Home/mychlist/{{List.seq}}" class="motif-card">
                                         <p class="topic-list-time" ng-switch on="List.category">
                                             <span ng-switch-when="0">낮</span><span ng-switch-default>밤</span>의 주제
                                         </p>

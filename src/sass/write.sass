@@ -1,17 +1,17 @@
-// import 
+// import
 @import "common-init"
 @import "libs/but_grid/_vars"
 @import "libs/but_grid/_functions"
 @import "common-mixin"
 @import "libs/but_grid/_mixins"
 @import "libs/but_grid/_placeholder"
-
+@import "color"
 .write-bar
 	@extend %box-sizing
 	+setWH(100%, 34px)
 	+setPosition(fixed, top 52px left 0)
 	background: #fff
-	
+
 	+respond-to($sm-container-width)
 		+setWH(100%, 52px)
 		top: 52px
@@ -91,7 +91,7 @@
 		background-color: #fff
 		border: 1px solid #9e9e9e
 		+respond-to($sm-container-width)
-			left: 25px	
+			left: 25px
 		+respond-to($md-container-width)
 			// left: 25px
 			// write-bar 위에 고정 안됬을 때
@@ -112,7 +112,7 @@
 
 .write-box-wrap
 	position: relative
-	
+
 .write-box
 	@extend %box-sizing
 	border: 0
@@ -176,4 +176,5 @@
 		+respond-to($md-container-width)
 			+setWH(36px, 36px)
 
-
+body
+    background-color: $background-color

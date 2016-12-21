@@ -145,6 +145,10 @@ ul {
   height: 25px;
 }
 
+body {
+  background-color: #e9ebee;
+}
+
 @media only screen and (min-width: 1440px) {
   .write-bar {
     top: 62px;
