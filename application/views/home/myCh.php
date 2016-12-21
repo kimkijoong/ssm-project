@@ -10,8 +10,6 @@
 <body class="" data-ng-app="ButProjectApp">
 <!--<div class="grid-box base-line"></div>-->
 <div class="outer"
-     data-ng-cloak
-     data-ng-controller="myTopicController"
      >
     <?php include_once("./application/views/include/navigation.php") ?>
     <main class="main">

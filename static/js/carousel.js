@@ -17,7 +17,7 @@
 	var btn_next = $('.btn-down');
 	var total_page = $('.total-page');
 	var current_page = $('.current-page');
-	
+	console.log(slide_content_box);
 	setTimeout(function() {
 		var length = $('.slide-content').length;
 		var count = 2;
@@ -28,6 +28,7 @@
 		var page = 1;
 		var margin_top = parseInt($('.slide-content').css('margin-top'));
 		var currunt_top = 0;
+
 
 		console.log(margin_top);
 		last_page = totalPage(length, count);
@@ -88,7 +89,7 @@
 		// page number 설정
 		total_page.text(last_page);
 		current_page.text(page);
-	}, 8000);
+	}, 2000);
 	
 	function totalPage($length, $count) {
 		// console.log(Math.ceil($length/$count));

@@ -385,7 +385,7 @@ body {
   height: 24px;
   position: absolute;
   top: 14px;
-  background-color: none;
+  background-color: transparent;
 }
 
 .header [id^="btn-"]>img {
@@ -677,16 +677,6 @@ body {
   position: absolute;
   top: 42px;
   overflow: hidden;
-  diplay: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
 }
 
 .slide-content-box {
@@ -1129,7 +1119,7 @@ section .write-box-wrap {
 
   .slide-box {
     width: 364px;
-    height: 866px;
+    height: 524px;
     position: absolute;
     top: 62px;
   }

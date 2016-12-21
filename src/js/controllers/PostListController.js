@@ -1,7 +1,6 @@
 /*! TopicListController.js 2016 */
 'use strict';
 
-let angular = require('angular');
 
 angular
   .module('ButProjectApp')
