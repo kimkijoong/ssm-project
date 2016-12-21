@@ -55,7 +55,7 @@ ul {
 .search-date label,
 .search,
 .search>input,
-.slide-box,
+.slide-content-box,
 .number,
 section .main-content {
   box-sizing: border-box;
@@ -671,17 +671,24 @@ body {
 }
 
 .slide-box {
-  width: 100%;
+  width: 260px;
   height: 412px;
   position: absolute;
   top: 42px;
+<<<<<<< HEAD
   padding: 0 24px;
+=======
+  overflow: hidden;
+>>>>>>> 92ec89beb501f72dcab35074d1de4406a3afc80e
 }
 
 .slide-content-box {
   width: 100%;
-  height: 370px;
+  height: auto;
+  top: 0;
+  right: 0;
   position: absolute;
+  padding: 0 24px;
 }
 
 .slide-content {
@@ -1110,15 +1117,14 @@ section .write-box-wrap {
   }
 
   .slide-box {
-    width: 100%;
+    width: 364px;
     height: 866px;
     position: absolute;
     top: 62px;
-    padding: 20px 38px 0 38px;
   }
 
   .slide-content-box {
-    height: 710px;
+    padding: 20px 38px 0 38px;
   }
 
   .slide-content {

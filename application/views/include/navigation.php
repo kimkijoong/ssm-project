@@ -126,7 +126,9 @@
 			<section class="static-btn-bottom-aside">
 				<div class="page-number">
 					<div class="line"></div>
-					<p class="number">1/4</p>
+					<p class="number">
+						<span class="current-page"></span>/<span class="total-page"></span>
+					</p>
 					<div class="line"></div>
 				</div>
 
