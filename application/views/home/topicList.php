@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="bookmark-header xs-col-4 sm-col-11 md-col-11 ">
                         <div class="page-top-margin my-page-top">
-                            <h1 class="txt-page-title">" 구독목록 "</h1>
+                            <h1 class="txt-page-title">" 글감목록 "</h1>
                         </div>
                     </div>
                     <div class="main-content xs-col-4 sm-col-11 md-col-11 mychml">

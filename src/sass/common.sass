@@ -25,7 +25,7 @@
 	background-color: #51bcd8
 	+respond-to($md-container-width)
 		+setWH(100%, 62px)
-		padding-right: 374px;
+		padding-right: 374px
 .nav-container
 	display: flex
 	// align-items: center
@@ -84,7 +84,7 @@
 	+setWH(24px, 24px)
 	+setPosition(absolute, top 14px)
 
-	background-color: none
+	background-color: transparent
 	+respond-to($md-container-width)
 		+setWH(35px, 35px)
 		+setPosition(absolute, top 13px)
@@ -120,7 +120,7 @@
 	+setPosition(absolute, top 0 left -310px z-index 999999)
 	// left: 0
 	min-height: 568px
-	box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 8px 0 8px 0 rgba(0, 0, 0, 0.25)
 	background-color: #51bcd8
 	+respond-to($md-container-width)
 		+setWH(364px, 100vh)
@@ -220,11 +220,11 @@
 		+setWH(124px, 46px)
 		font-size: font-size(16)
 		line-height: line-height(16)
-.btn-logout, .btn-login
+.btn-logout, .nav-btn-login
 	float: left
 	margin-left: 17px
 	cursor: pointer
-.btn-login
+.nav-btn-login
 	padding: 9px  0
 .btn-setting
 	float: left
@@ -383,7 +383,7 @@
 
 	overflow: hidden
 	+respond-to($md-container-width)
-		+setWH(364px, 866px)
+		+setWH(364px, 524px)
 		+setPosition(absolute, top 62px index 999999)
 .slide-content-box
 	@extend %box-sizing
@@ -463,8 +463,8 @@
 	text-align: center
 	padding: 0 22px
 .line
-	width: 66px;
-	border-top: 1px solid #757575;
+	width: 66px
+	border-top: 1px solid #757575
 	margin: 8px 0
 
 .static-btn

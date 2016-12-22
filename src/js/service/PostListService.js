@@ -1,6 +1,5 @@
 'use strict';
 
-let angular = require('angular');
 
 angular.module('ButProjectApp').service('PostListService', ['$http' , function($http){
   $http.get('/Home/PostList').then(function successCallback (response){

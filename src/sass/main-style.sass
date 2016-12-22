@@ -165,9 +165,16 @@
 
 
 // main position
+section
+	.row
+		.main-content
+			padding-top: 0
 .main-wrapper
+	@extend  %box-sizing
 	position: relative
 	height: 100vh
+	+respond-to($xs-container-width)
+			padding-top: 52px
 
 
 .main-content-position
@@ -175,12 +182,12 @@
 		position: absolute
 		top: 50%
 		left: 0
-		transform: translateY(-60%)
+		transform: translateY(-50%)
 	+respond-to($md-container-width)
 		position: absolute
 		top: 50%
 		left: 0
-		transform: translateY(-60%)
+		transform: translateY(-50%)
 
 
 .list-txt

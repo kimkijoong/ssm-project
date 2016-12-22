@@ -7,7 +7,6 @@
 // ------------------------------------
 // require('jquery');
 let angular = require('angular');
-
 let ButProjectApp = angular.module('ButProjectApp', []);
 
 // Controllers
@@ -22,3 +21,4 @@ require('./service/PostListService'); //서버에 오늘의 주제를 요청하�
 require('./service/myTopicService'); //서버에 오늘의 주제를 요청하여 전달받는다.
 // Filters
 require('./filters/DateRangeFilter');
+require('./filters/userTopicFilter');

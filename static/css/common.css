@@ -385,7 +385,7 @@ body {
   height: 24px;
   position: absolute;
   top: 14px;
-  background-color: none;
+  background-color: transparent;
 }
 
 .header [id^="btn-"]>img {
@@ -509,13 +509,13 @@ body {
 }
 
 .btn-logout,
-.btn-login {
+.nav-btn-login {
   float: left;
   margin-left: 17px;
   cursor: pointer;
 }
 
-.btn-login {
+.nav-btn-login {
   padding: 9px  0;
 }
 
@@ -1119,7 +1119,7 @@ section .write-box-wrap {
 
   .slide-box {
     width: 364px;
-    height: 866px;
+    height: 524px;
     position: absolute;
     top: 62px;
   }

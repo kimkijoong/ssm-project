@@ -47,7 +47,8 @@ ul {
 
 .today-topic,
 .topic,
-.btn-main {
+.btn-main,
+.main-wrapper {
   box-sizing: border-box;
 }
 
@@ -379,6 +380,10 @@ body {
   bottom: 23.75vw;
 }
 
+section .row .main-content {
+  padding-top: 0;
+}
+
 .main-wrapper {
   position: relative;
   height: 100vh;
@@ -583,9 +588,9 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    -webkit-transform: translateY(-60%);
-    -ms-transform: translateY(-60%);
-    transform: translateY(-60%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
   .side-topic-txt {
@@ -756,6 +761,10 @@ body {
 
   .txt-card-setting-info {
     font-size: 3.75vw;
+  }
+
+  .main-wrapper {
+    padding-top: 52px;
   }
 }
 
@@ -948,9 +957,9 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    -webkit-transform: translateY(-60%);
-    -ms-transform: translateY(-60%);
-    transform: translateY(-60%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
   .side-topic-txt {
